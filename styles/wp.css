@@ -1,0 +1,156 @@
+/*
+ * WordPress Design System — friendly alias layer
+ * Imports the canonical tokens, then defines convenient semantic vars
+ * (fg1, fg2, brand, etc.) and ready-to-use heading/body classes.
+ */
+@import url("./design-tokens.css");
+
+:root {
+	/* --- Color aliases ----------------------------------------------- */
+	/* Brand */
+	--brand: var(--wpds-color-bg-interactive-brand-strong);          /* #3858e9 */
+	--brand-active: var(--wpds-color-bg-interactive-brand-strong-active); /* #2e49d9 */
+	--brand-fg: var(--wpds-color-fg-interactive-brand-strong);       /* #eff0f2 */
+	--brand-tint: var(--wpds-color-bg-interactive-brand-weak-active); /* #e6eaf4 */
+
+	/* Foreground */
+	--fg1: var(--wpds-color-fg-content-neutral);          /* #1e1e1e */
+	--fg2: var(--wpds-color-fg-content-neutral-weak);     /* #707070 */
+	--fg3: #8d8d8d;
+	--fg-on-brand: #fff;
+
+	/* Background / surface */
+	--bg-app: var(--wpds-color-bg-surface-neutral);            /* #fcfcfc */
+	--bg-surface: var(--wpds-color-bg-surface-neutral-strong); /* #fff */
+	--bg-muted: var(--wpds-color-bg-surface-neutral-weak);     /* #f4f4f4 */
+	--bg-inverted: #1e1e1e;
+
+	/* Stroke */
+	--stroke-weak: var(--wpds-color-stroke-surface-neutral-weak);   /* #e4e4e4 */
+	--stroke: var(--wpds-color-stroke-surface-neutral);             /* #dbdbdb */
+	--stroke-strong: var(--wpds-color-stroke-surface-neutral-strong); /* #8d8d8d */
+	--stroke-focus: var(--wpds-color-stroke-focus-brand);           /* #3858e9 */
+
+	/* Semantic */
+	--success: var(--wpds-color-fg-content-success-weak);  /* #008030 */
+	--info:    var(--wpds-color-fg-content-info-weak);     /* #006bd7 */
+	--warning: var(--wpds-color-fg-content-warning-weak);  /* #926300 */
+	--caution: var(--wpds-color-fg-content-caution-weak);  /* #826a00 */
+	--error:   var(--wpds-color-fg-content-error-weak);    /* #cc1818 */
+
+	/* --- Type aliases ------------------------------------------------ */
+	--font-body: var(--wpds-typography-font-family-body);
+	--font-heading: var(--wpds-typography-font-family-heading);
+	--font-mono: var(--wpds-typography-font-family-mono);
+
+	--fw-regular: var(--wpds-typography-font-weight-regular);
+	--fw-medium: var(--wpds-typography-font-weight-medium);
+
+	/* --- Radii / shadows --------------------------------------------- */
+	--radius-xs: var(--wpds-border-radius-xs); /* 1 */
+	--radius-sm: var(--wpds-border-radius-sm); /* 2 */
+	--radius-md: var(--wpds-border-radius-md); /* 4 */
+	--radius-lg: var(--wpds-border-radius-lg); /* 8 */
+
+	--shadow-xs: var(--wpds-elevation-xs);
+	--shadow-sm: var(--wpds-elevation-sm);
+	--shadow-md: var(--wpds-elevation-md);
+	--shadow-lg: var(--wpds-elevation-lg);
+}
+
+/* --- Semantic typography classes ------------------------------------ */
+/* Mirror the @wordpress/ui Text variants 1:1. Use these directly:
+ * <h1 class="h1">…</h1>, <p class="body-md">…</p>
+ */
+
+.h1, .heading-2xl {
+	font-family: var(--font-heading);
+	font-size: var(--wpds-typography-font-size-2xl);   /* 32 */
+	line-height: var(--wpds-typography-line-height-2xl); /* 40 */
+	font-weight: var(--fw-medium);
+	margin: 0;
+}
+.h2, .heading-xl {
+	font-family: var(--font-heading);
+	font-size: var(--wpds-typography-font-size-xl);    /* 20 */
+	line-height: var(--wpds-typography-line-height-md); /* 24 */
+	font-weight: var(--fw-medium);
+	margin: 0;
+}
+.h3, .heading-lg {
+	font-family: var(--font-heading);
+	font-size: var(--wpds-typography-font-size-lg);    /* 15 */
+	line-height: var(--wpds-typography-line-height-sm); /* 20 */
+	font-weight: var(--fw-medium);
+	margin: 0;
+}
+.h4, .heading-md {
+	font-family: var(--font-heading);
+	font-size: var(--wpds-typography-font-size-md);    /* 13 */
+	line-height: var(--wpds-typography-line-height-sm); /* 20 */
+	font-weight: var(--fw-medium);
+	margin: 0;
+}
+.h5, .heading-sm {
+	font-family: var(--font-heading);
+	font-size: var(--wpds-typography-font-size-xs);    /* 11 */
+	line-height: var(--wpds-typography-line-height-xs); /* 16 */
+	font-weight: var(--fw-medium);
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	margin: 0;
+}
+
+.body-xl {
+	font-family: var(--font-body);
+	font-size: var(--wpds-typography-font-size-xl);
+	line-height: var(--wpds-typography-line-height-xl);
+	font-weight: var(--fw-regular);
+}
+.body-lg {
+	font-family: var(--font-body);
+	font-size: var(--wpds-typography-font-size-lg);
+	line-height: var(--wpds-typography-line-height-md);
+	font-weight: var(--fw-regular);
+}
+.body-md, .p {
+	font-family: var(--font-body);
+	font-size: var(--wpds-typography-font-size-md);
+	line-height: var(--wpds-typography-line-height-sm);
+	font-weight: var(--fw-regular);
+}
+.body-sm {
+	font-family: var(--font-body);
+	font-size: var(--wpds-typography-font-size-sm);
+	line-height: var(--wpds-typography-line-height-xs);
+	font-weight: var(--fw-regular);
+}
+
+.code, .mono {
+	font-family: var(--font-mono);
+	font-size: var(--wpds-typography-font-size-sm);
+	background: var(--bg-muted);
+	padding: 1px 4px;
+	border-radius: var(--radius-sm);
+}
+
+/* --- Defaults for raw HTML elements --------------------------------- */
+body {
+	font-family: var(--font-body);
+	font-size: 13px;
+	line-height: 20px;
+	font-weight: var(--fw-regular);
+	color: var(--fg1);
+	background: var(--bg-app);
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+}
+a {
+	color: var(--wpds-color-fg-interactive-brand);
+	text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+*:focus-visible {
+	outline: 2px solid var(--stroke-focus);
+	outline-offset: 1px;
+}
