@@ -408,8 +408,8 @@ function SprinklesApp() {
           .sprk-area-select select { width: 100%; max-width: none; }
           .sprk-tabs-scroll { flex: 1 1 auto; }
           .sprk-tabs-scroll > button { padding-left: 10px !important; padding-right: 10px !important; }
-          /* Sticky bar can wrap to two lines here — give it even breathing room. */
-          .sprk-bar-wrap { padding-top: 14px; padding-bottom: 14px; }
+          /* Sticky bar can wrap to two lines here; keep tabs flush to the bottom edge. */
+          .sprk-bar-wrap { padding-top: 14px; padding-bottom: 0; }
         }
         /* Shimmering gradient ribbon (main + sticky strip) — colors drift across. */
         .sprk-ribbon {
