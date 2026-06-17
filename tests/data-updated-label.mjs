@@ -1,5 +1,6 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
+import vm from "node:vm";
 
 const app = readFileSync(resolve("sprinkles-app.jsx"), "utf8");
 const data = readFileSync(resolve("dash-data.js"), "utf8");
@@ -17,8 +18,8 @@ const checks = [
 		source: data,
 	},
 	{
-		name: "generated data exposes a formatted update label helper",
-		pattern: /function dataUpdatedLabel\(\)[\s\S]*Data pulled/,
+		name: "generated data exposes a relative update label helper",
+		pattern: /function dataUpdatedLabel\(\)[\s\S]*Last updated/,
 		source: data,
 	},
 	{
@@ -39,6 +40,55 @@ const checks = [
 ];
 
 const failures = checks.filter((check) => !check.pattern.test(check.source));
+
+function labelFor(nowIso, updatedAtIso) {
+	const source = data.replace(
+		/"updatedAt": "[^"]+"/,
+		`"updatedAt": "${updatedAtIso}"`
+	);
+	const RealDate = Date;
+	const nowMs = RealDate.parse(nowIso);
+
+	class FakeDate extends RealDate {
+		constructor(...args) {
+			super(...(args.length ? args : [nowMs]));
+		}
+
+		static now() {
+			return nowMs;
+		}
+	}
+
+	const sandbox = { Date: FakeDate, window: {} };
+	vm.runInNewContext(source, sandbox);
+	return sandbox.window.DASH.dataUpdatedLabel();
+}
+
+const relativeCases = [
+	{
+		name: "minutes",
+		actual: labelFor("2026-06-17T07:10:00.000Z", "2026-06-17T07:00:00.000Z"),
+		expected: "Last updated 10 minutes ago",
+	},
+	{
+		name: "hours",
+		actual: labelFor("2026-06-17T09:00:00.000Z", "2026-06-17T07:00:00.000Z"),
+		expected: "Last updated 2 hours ago",
+	},
+	{
+		name: "days",
+		actual: labelFor("2026-06-19T07:00:00.000Z", "2026-06-17T07:00:00.000Z"),
+		expected: "Last updated 2 days ago",
+	},
+];
+
+for (const relativeCase of relativeCases) {
+	if (relativeCase.actual !== relativeCase.expected) {
+		failures.push({
+			name: `relative ${relativeCase.name} label: expected "${relativeCase.expected}", got "${relativeCase.actual}"`,
+		});
+	}
+}
 
 if (failures.length) {
 	console.error("Data update label guard failures:");

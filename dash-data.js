@@ -1455,13 +1455,28 @@
 		return (pr.status && pr.status !== "Merged" ? "updated " : "") + whenLabel(pr.ts);
 	}
 
+	function pluralAge(n, unit) {
+		return n + " " + unit + (n === 1 ? "" : "s") + " ago";
+	}
+
+	function dataAgeLabel(ts) {
+		const seconds = Math.max(0, Math.round((Date.now() - ts) / 1000));
+		if (seconds < 45) return "just now";
+		const minutes = Math.round(seconds / 60);
+		if (minutes < 60) return pluralAge(minutes, "minute");
+		const hours = Math.round(minutes / 60);
+		if (hours < 24) return pluralAge(hours, "hour");
+		const days = Math.round(hours / 24);
+		if (days < 30) return pluralAge(days, "day");
+		const months = Math.round(days / 30);
+		if (months < 12) return pluralAge(months, "month");
+		return pluralAge(Math.round(days / 365), "year");
+	}
+
 	function dataUpdatedLabel() {
-		const d = new Date(DATA_META.updatedAt);
-		if (Number.isNaN(d.getTime())) return "Data pulled recently";
-		return "Data pulled " +
-			d.toLocaleDateString(undefined, { month: "short", day: "numeric" }) +
-			" at " +
-			d.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" });
+		const ts = new Date(DATA_META.updatedAt).getTime();
+		if (Number.isNaN(ts)) return "Last updated recently";
+		return "Last updated " + dataAgeLabel(ts);
 	}
 
 	/* Easter egg: rainbow sprinkle burst on merged-badge click */
