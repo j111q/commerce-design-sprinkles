@@ -1263,20 +1263,6 @@
 
 	const OPEN = [
 	{
-		"title": "Improve summary trend indicator contrast",
-		"repo": "woocommerce/woocommerce",
-		"number": 65784,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65784",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1781682531000
-	},
-	{
 		"title": "Improve product editor permalink layout",
 		"repo": "woocommerce/woocommerce",
 		"number": 65640,
@@ -1288,7 +1274,35 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1781682212000
+		"ts": 1781684998000
+	},
+	{
+		"title": "Update product publish panel controls",
+		"repo": "woocommerce/woocommerce",
+		"number": 65794,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65794",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1781684366000
+	},
+	{
+		"title": "Improve summary trend indicator contrast",
+		"repo": "woocommerce/woocommerce",
+		"number": 65784,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65784",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1781684335000
 	},
 	{
 		"title": "Align Order Edit meta boxes with WordPress 7.0 design conventions",
@@ -1535,7 +1549,7 @@
 };
 
 	const DATA_META = {
-	"updatedAt": "2026-06-17T07:49:08.226Z"
+	"updatedAt": "2026-06-17T08:34:08.806Z"
 };
 
 	function person(id) {
