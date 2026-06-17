@@ -10,7 +10,13 @@ const checks = [
 	},
 	{
 		name: "PR card release badge uses a monospace font",
-		pass: /function SFlagBadge[\s\S]*font: "600 10\.5px\/14px \\"Menlo\\", \\"Consolas\\", monospace"/.test(app),
+		pass: /function SFlagBadge[\s\S]*font: "400 10\.5px\/14px \\"Menlo\\", \\"Consolas\\", monospace"/.test(app) &&
+			!/function SFlagBadge[\s\S]*font: "600 10\.5px\/14px \\"Menlo\\", \\"Consolas\\", monospace"/.test(app),
+	},
+	{
+		name: "public release badge does not render the checkmark icon",
+		pass: !app.includes("M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z") &&
+			/\{copy\.path && \(/.test(app),
 	},
 	{
 		name: "PR card repo number inherits the metadata font",

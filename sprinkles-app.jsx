@@ -145,12 +145,11 @@ function SFlagBadge({ flagged }) {
     {
       label: "Public release",
       tooltip: "Included in a public WooCommerce release.",
-      path: "M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z",
       style: { background: "var(--woo-blue-soft)", color: "var(--woo-indigo-deep)" }
     };
   const base = {
     display: "inline-flex", alignItems: "center", gap: 4, borderRadius: 999,
-    font: "600 10.5px/14px \"Menlo\", \"Consolas\", monospace", letterSpacing: "0.01em",
+    font: "400 10.5px/14px \"Menlo\", \"Consolas\", monospace", letterSpacing: "0.01em",
     padding: "2px 8px 2px 7px", boxSizing: "border-box",
     whiteSpace: "nowrap", verticalAlign: "middle", border: "1px solid transparent"
   };
@@ -158,9 +157,11 @@ function SFlagBadge({ flagged }) {
   return (
     <span className="sprk-flag-wrap" tabIndex={0} aria-describedby={tipId}>
       <span className="sprk-flag" style={Object.assign({}, base, copy.style)}>
-        <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d={copy.path} />
-        </svg>
+        {copy.path && (
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d={copy.path} />
+          </svg>
+        )}
         {copy.label}
       </span>
       <span className="sprk-flag-tip" id={tipId} role="tooltip">{copy.tooltip}</span>
