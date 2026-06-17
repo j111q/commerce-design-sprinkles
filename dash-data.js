@@ -1263,6 +1263,20 @@
 
 	const OPEN = [
 	{
+		"title": "Coupon edit: apply 2-column grid sizing standard (720 / 24 / 320)",
+		"repo": "woocommerce/woocommerce",
+		"number": 65717,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65717",
+		"area": "Coupons",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1781687094000
+	},
+	{
 		"title": "Improve product editor permalink layout",
 		"repo": "woocommerce/woocommerce",
 		"number": 65640,
@@ -1274,7 +1288,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1781685967000
+		"ts": 1781686446000
 	},
 	{
 		"title": "Update product publish panel controls",
@@ -1288,7 +1302,7 @@
 		],
 		"reviewers": [],
 		"status": "Draft",
-		"ts": 1781685960000
+		"ts": 1781686348000
 	},
 	{
 		"title": "Improve summary trend indicator contrast",
@@ -1373,20 +1387,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1781279537000
-	},
-	{
-		"title": "Coupon edit: apply 2-column grid sizing standard (720 / 24 / 320)",
-		"repo": "woocommerce/woocommerce",
-		"number": 65717,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65717",
-		"area": "Coupons",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1781273040000
 	},
 	{
 		"title": "Order detail: apply 2-column grid sizing standard (720 / 24 / 320)",
@@ -1549,7 +1549,7 @@
 };
 
 	const DATA_META = {
-	"updatedAt": "2026-06-17T08:50:05.745Z"
+	"updatedAt": "2026-06-17T09:06:52.541Z"
 };
 
 	function person(id) {
