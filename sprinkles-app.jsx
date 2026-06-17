@@ -393,7 +393,7 @@ function SprinklesApp() {
           color: var(--woo-ink-soft); letter-spacing: 0.01em;
           display: inline-flex; align-items: center;
         }
-        .sprk-marquee-sep { margin: 0 16px; opacity: 0.4; }
+        .sprk-marquee-sep { margin: 0 14px; color: var(--woo-pink); font-size: 11px; }
         @keyframes sprk-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
         /* Subtle card hover-lift. */
         .sprk-card { transition: transform 0.14s ease, box-shadow 0.14s ease; }
@@ -428,7 +428,7 @@ function SprinklesApp() {
             return (
               <span key={i} className="sprk-marquee-item">
                 {fact}
-                <span className="sprk-marquee-sep">·</span>
+                <span className="sprk-marquee-sep">❤︎</span>
               </span>);
 
           })}
@@ -485,9 +485,9 @@ function SprinklesApp() {
         } : {})}>
 					{t.headline}
 				</h1>
-				<p style={{ font: "400 19px/1.5 var(--font-sans)", color: "var(--woo-ink-soft)", margin: 0, maxWidth: 600, textWrap: "pretty" }}>
+				<p style={{ font: "400 16px/1.6 'Menlo', 'Consolas', monospace", color: "var(--woo-ink-soft)", margin: 0, maxWidth: 640, textWrap: "pretty" }}>
 					Five designers pushing real improvements into Woo, in production, through pull requests.
-					{" "}<CountUp value={D.TOTALS.merged} /> merged across <CountUp value={D.TOTALS.surfaces} /> focus areas since {D.TOTALS.since}.
+					{" "}<strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.merged} /></strong> merged across <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.surfaces} /></strong> focus areas since {D.TOTALS.since}.
 				</p>
 				<div style={{ display: "flex", alignItems: "center", gap: 14, marginTop: 24 }}>
 					<span style={{ display: "inline-flex", gap: 2 }}>
