@@ -133,7 +133,7 @@ function SBadge({ pr }) {
 function STabs({ active, onChange, tabStyle, counts }) {
   const pills = tabStyle === "Pills";
   return (
-    <div role="tablist" style={{
+    <div className="sprk-tabs-scroll" role="tablist" style={{
       display: "flex", gap: pills ? 8 : 4
     }}>
 			{TABS.map(function (t) {
@@ -188,6 +188,24 @@ function SurfaceSelect({ value, areas, onChange }) {
         <option value="">All focus areas</option>
         {areas.map(function (a) {
           return <option key={a.name} value={a.name}>{a.name} ({a.count})</option>;
+        })}
+      </select>
+    </span>);
+
+}
+
+/* Designer (person) filter as a dropdown — the narrow-width counterpart to the
+   "Who we are" rail roster, mirroring how SurfaceSelect backs the focus chips. */
+function SquadSelect({ value, squad, onChange }) {
+  return (
+    <span className="sprk-area-select">
+      <select
+        aria-label="Filter by designer"
+        value={value || ""}
+        onChange={function (e) {onChange(e.target.value || null);}}>
+        <option value="">All designers</option>
+        {squad.map(function (p) {
+          return <option key={p.id} value={p.id}>{p.name}</option>;
         })}
       </select>
     </span>);
@@ -316,7 +334,13 @@ function SprinklesApp() {
         .pr-title:focus-visible { outline: 2px solid var(--woo-purple); outline-offset: 3px; border-radius: 4px; }
         /* Responsive scaffold — horizontal rhythm + feed/rail columns. */
         .sprk-wrap { max-width: 1180px; margin: 0 auto; box-sizing: border-box; padding-left: 56px; padding-right: 56px; }
-        .sprk-grid { display: grid; grid-template-columns: 1fr 348px; gap: 28px; align-items: start; }
+        .sprk-grid { display: grid; grid-template-columns: minmax(0, 1fr) 348px; gap: 28px; align-items: start; }
+        .sprk-tabs-scroll { max-width: 100%; min-width: 0; overflow-x: auto; overflow-y: hidden; scrollbar-width: none; }
+        .sprk-tabs-scroll::-webkit-scrollbar { display: none; }
+        .sprk-tabs-scroll > button { flex: 0 0 auto; }
+        .sprk-card { min-width: 0; max-width: 100%; }
+        .sprk-card-main { min-width: 0; max-width: 100%; overflow-wrap: anywhere; }
+        .sprk-meta { display: block; min-width: 0; max-width: 100%; overflow-wrap: anywhere; word-break: break-word; }
         @media (max-width: 920px) {
           /* Rail drops below the feed; it reads as a summary footer. */
           .sprk-grid { grid-template-columns: 1fr; }
@@ -324,7 +348,7 @@ function SprinklesApp() {
         @media (max-width: 600px) {
           .sprk-wrap { padding-left: 20px; padding-right: 20px; }
           /* Cards stack: badge over title over avatars, so nothing gets crushed. */
-          .sprk-card { flex-direction: column; gap: 12px !important; }
+          .sprk-card { flex-direction: column; gap: 12px !important; padding: 18px 20px !important; width: 100%; }
           .sprk-card-people { padding-left: 0 !important; }
         }
         /* Compact filter bar — hidden above the viewport until scrolled. */
@@ -353,18 +377,31 @@ function SprinklesApp() {
           background-repeat: no-repeat; background-position: right 12px center;
         }
         .sprk-area-select select:focus-visible { outline: 2px solid var(--woo-purple); outline-offset: 2px; }
+        .sprk-filters { display: inline-flex; align-items: flex-end; flex-wrap: wrap; gap: 10px; min-width: 0; }
+        .sprk-bar-tabs { display: inline-flex; align-items: center; gap: 12px; min-width: 0; max-width: 100%; }
+        /* "Who we are" roster — clickable designer rows (the person filter). */
+        .sprk-roster { display: flex; align-items: center; gap: 10px; width: 100%; padding: 6px 8px; border: 0; background: transparent; border-radius: 10px; cursor: pointer; font: 600 14px/20px var(--font-sans); color: var(--woo-ink); text-align: left; transition: background .12s ease, opacity .12s ease; }
+        .sprk-roster:hover { background: var(--woo-cream); }
+        .sprk-roster.is-on { background: var(--woo-lavender-pale); color: var(--woo-purple-dark); }
+        .sprk-roster.is-dim { opacity: 0.45; }
+        .sprk-roster.is-dim:hover { opacity: 1; }
+        /* Cupcake "logo" — only present in the sticky bar, so it appears on scroll. */
+        .sprk-bar-logo { border: 0; background: transparent; cursor: pointer; font-size: 22px; line-height: 1; padding: 0 2px; }
         @media (max-width: 920px) {
           .sprk-rail { display: none !important; }
           .sprk-area-select { display: inline-flex; }
-          .sprk-bar-avatars { display: none !important; }
           .sprk-wrap { padding-left: 28px; padding-right: 28px; }
         }
         @media (max-width: 600px) {
           .sprk-wrap { padding-left: 20px; padding-right: 20px; }
-          .sprk-area-select { flex-basis: 100%; }
+          .sprk-filters { display: grid; grid-template-columns: minmax(0, 1fr); flex-basis: 100%; width: 100%; }
+          .sprk-filters .sprk-area-select { flex: 1; min-width: 0; }
           .sprk-area-select select { width: 100%; max-width: none; }
-          .sprk-bar-right { flex-basis: 100%; }
-          /* Sticky bar wraps to two lines here — give it even breathing room. */
+          .sprk-tabs-scroll { flex: 1 1 auto; }
+          .sprk-tabs-scroll > button { padding-left: 10px !important; padding-right: 10px !important; }
+          .sprk-bar-tabs { flex: 1 1 100%; width: 100%; }
+          .sprk-bar-logo { flex: 0 0 auto; }
+          /* Sticky bar can wrap to two lines here — give it even breathing room. */
           .sprk-bar-wrap { padding-top: 14px; padding-bottom: 14px; }
         }
         /* Shimmering gradient ribbon (main + sticky strip) — colors drift across. */
@@ -438,22 +475,13 @@ function SprinklesApp() {
 			<div className={"sprk-stickybar" + (stuck ? " is-stuck" : "")} aria-hidden={!stuck}>
 				<div aria-hidden="true" className="sprk-ribbon" style={{ height: 4 }}></div>
 				<div className="sprk-wrap sprk-bar-wrap" style={{ display: "flex", flexWrap: "wrap", alignItems: "center", rowGap: 8, columnGap: 16, justifyContent: "space-between" }}>
-					<STabs active={tab} onChange={setTab} tabStyle={t.tabStyle} counts={tabCounts} />
-					<span className="sprk-bar-right" style={{ display: "inline-flex", alignItems: "center", gap: 12 }}>
+					<span className="sprk-bar-tabs">
+						<button className="sprk-bar-logo" title="Back to top" aria-label="Back to top" onClick={function () {window.scrollTo({ top: 0, behavior: "smooth" });}}>🧁</button>
+						<STabs active={tab} onChange={setTab} tabStyle={t.tabStyle} counts={tabCounts} />
+					</span>
+					<span className="sprk-filters">
+						<SquadSelect value={person} squad={D.SQUAD} onChange={setPerson} />
 						<SurfaceSelect value={surface} areas={D.AREAS} onChange={setSurface} />
-						<span className="sprk-bar-avatars" style={{ display: "inline-flex", gap: 2 }}>
-						{D.SQUAD.map(function (p) {
-              return (
-                <SFilterAvatar
-                  key={p.id}
-                  id={p.id}
-                  size={26}
-                  active={person === p.id}
-                  dimmed={person !== null && person !== p.id}
-                  onClick={function () {setPerson(person === p.id ? null : p.id);}} />);
-
-            })}
-						</span>
 					</span>
 				</div>
 			</div>
@@ -489,37 +517,6 @@ function SprinklesApp() {
 					Five designers pushing real improvements into Woo, in production, through pull requests.
 					{" "}<strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.merged} /></strong> merged across <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.surfaces} /></strong> focus areas since {D.TOTALS.since}.
 				</p>
-				<div style={{ display: "flex", alignItems: "center", gap: 14, marginTop: 24 }}>
-					<span style={{ display: "inline-flex", gap: 2 }}>
-						{D.SQUAD.map(function (p) {
-              return (
-                <SFilterAvatar
-                  key={p.id}
-                  id={p.id}
-                  active={person === p.id}
-                  dimmed={person !== null && person !== p.id}
-                  onClick={function () {setPerson(person === p.id ? null : p.id);}} />);
-
-
-            })}
-					</span>
-					{person ?
-          <span style={{ display: "inline-flex", alignItems: "center", gap: 10, flexWrap: "wrap", font: "500 14px/20px var(--font-sans)", color: "var(--woo-ink-soft)" }}>
-							<span>
-								<strong style={{ color: "var(--woo-ink)", fontWeight: 600 }}>{D.person(person).name}’s PRs</strong>
-								{personAreas.length > 0 ? <span style={{ fontSize: 12.5, fontStyle: "italic", fontWeight: 400 }}>{" · Top focus areas: " + personAreas.join(", ")}</span> : ""}
-							</span>
-							<button
-              onClick={function () {setPerson(null);}}
-              style={{ border: "1px solid var(--woo-rule)", background: "var(--woo-paper)", borderRadius: 999, padding: "3px 12px", font: "600 12px/16px var(--font-sans)", color: "var(--woo-ink)", cursor: "pointer" }}>
-              Clear</button>
-						</span> :
-
-          <span style={{ font: "500 14px/20px var(--font-sans)", color: "var(--woo-ink-soft)" }}>
-							{D.SQUAD.map(function (p) {return p.name;}).join(" · ")}
-						</span>
-          }
-				</div>
 			</div>
 
 			<div className="sprk-wrap sprk-grid">
@@ -527,15 +524,18 @@ function SprinklesApp() {
 				<div ref={tabsAnchor} style={{ display: "flex", flexDirection: "column", gap: 14 }}>
 					<div style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-end", justifyContent: "space-between", gap: 12, borderBottom: "1px solid var(--woo-rule)" }}>
 						<STabs active={tab} onChange={setTab} tabStyle={t.tabStyle} counts={tabCounts} />
-						<SurfaceSelect value={surface} areas={D.AREAS} onChange={setSurface} />
+						<span className="sprk-filters">
+							<SquadSelect value={person} squad={D.SQUAD} onChange={setPerson} />
+							<SurfaceSelect value={surface} areas={D.AREAS} onChange={setSurface} />
+						</span>
 					</div>
 					{rows.map(function (pr) {
             return (
               <div key={pr.status + pr.number} className="sprk-card" style={Object.assign({}, card, { padding: "20px 24px", display: "flex", alignItems: "flex-start", gap: 16 })}>
 								<SBadge pr={pr} />
-								<div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 6 }}>
+								<div className="sprk-card-main" style={{ flex: 1, display: "flex", flexDirection: "column", gap: 6 }}>
 									<a href={pr.url || "#"} target="_blank" rel="noreferrer" className="pr-title" style={{ font: "600 16px/22px var(--font-sans)", letterSpacing: "-0.01em", textWrap: "pretty", color: "var(--woo-ink)", textDecoration: "none" }}>{pr.title}</a>
-									<span style={{ font: "400 13px/18px var(--font-sans)", color: "var(--woo-ink-soft)" }}>
+									<span className="sprk-meta" style={{ font: "400 13px/18px var(--font-sans)", color: "var(--woo-ink-soft)" }}>
 										<span style={{ fontFamily: "Menlo, Consolas, monospace", fontSize: 12 }}>{pr.repo.split("/")[1]}#{pr.number}</span>
 										{"  ·  "}{pr.area}{"  ·  "}{DASH.prWhen(pr)}
 									</span>
@@ -562,6 +562,29 @@ function SprinklesApp() {
 
 				{/* Right rail */}
 				<div className="sprk-rail" style={{ display: "flex", flexDirection: "column", gap: 28 }}>
+					<div style={Object.assign({}, card, { padding: 28 })}>
+						<h2 style={{ font: "700 18px/24px var(--font-sans)", letterSpacing: "-0.015em", margin: "0 0 4px" }}>Who we are</h2>
+						<p style={{ font: "400 13px/18px var(--font-sans)", color: "var(--woo-ink-soft)", margin: "0 0 16px", textWrap: "pretty", display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap", minHeight: 24 }}>
+							{person ?
+							<React.Fragment>
+								Filtering by <strong style={{ color: "var(--woo-ink)", fontWeight: 600 }}>{D.person(person).name}</strong>
+								<button onClick={function () {setPerson(null);}} style={{ border: "1px solid var(--woo-rule)", background: "var(--woo-paper)", borderRadius: 999, padding: "2px 10px", font: "600 12px/16px var(--font-sans)", color: "var(--woo-ink)", cursor: "pointer" }}>Clear</button>
+							</React.Fragment> :
+							"Five designers — tap one to filter"}
+						</p>
+						<div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+							{D.SQUAD.map(function (p) {
+								const on = person === p.id;
+								return (
+									<button key={p.id} onClick={function () {setPerson(on ? null : p.id);}} aria-pressed={on} className={"sprk-roster" + (on ? " is-on" : "") + (person !== null && !on ? " is-dim" : "")}>
+										<SAvatar id={p.id} size={30} />
+										<span>{p.name}</span>
+									</button>);
+							})}
+						</div>
+						{person && personAreas.length > 0 ?
+							<p style={{ font: "400 12.5px/18px var(--font-sans)", fontStyle: "italic", color: "var(--woo-ink-soft)", margin: "14px 0 0", textWrap: "pretty" }}>Top focus areas: {personAreas.join(", ")}</p> : null}
+					</div>
 					<div style={Object.assign({}, card, { padding: 28 })}>
 						<h2 style={{ font: "700 18px/24px var(--font-sans)", letterSpacing: "-0.015em", margin: "0 0 4px" }}>Where we've been</h2>
 						<p style={{ font: "400 13px/18px var(--font-sans)", color: "var(--woo-ink-soft)", margin: "0 0 16px", textWrap: "pretty", display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap", minHeight: 24 }}>
