@@ -1177,6 +1177,19 @@
 
 	const OPEN = [
 	{
+		"title": "Improve summary trend indicator contrast",
+		"repo": "woocommerce/woocommerce",
+		"number": 65784,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65784",
+		"area": "Other admin",
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1781681645000
+	},
+	{
 		"title": "Align Order Edit meta boxes with WordPress 7.0 design conventions",
 		"repo": "woocommerce/woocommerce",
 		"number": 64564,
@@ -1214,19 +1227,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1781624275000
-	},
-	{
-		"title": "Improve summary trend indicator contrast",
-		"repo": "woocommerce/woocommerce",
-		"number": 65784,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65784",
-		"area": "Other admin",
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1781617666000
 	},
 	{
 		"title": "Fix order edit screen text color contrast for WCAG AA",
@@ -1432,7 +1432,7 @@
 };
 
 	const DATA_META = {
-	"updatedAt": "2026-06-17T07:11:05.526Z"
+	"updatedAt": "2026-06-17T07:35:38.513Z"
 };
 
 	function person(id) {
