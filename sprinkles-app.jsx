@@ -412,7 +412,7 @@ function SprinklesApp() {
         .sprk-flag-wrap:focus-visible .sprk-flag { outline: 2px solid var(--woo-purple); outline-offset: 2px; }
         .sprk-flag-tip {
           position: absolute; right: 0; bottom: calc(100% + 8px); z-index: 80;
-          width: max-content; max-width: min(240px, calc(100vw - 48px));
+          width: max-content; max-width: min(208px, calc(100vw - 48px));
           padding: 8px 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.18);
           background: var(--woo-ink); color: var(--woo-paper); box-shadow: 0 10px 24px rgba(30,17,66,0.18);
           font: 500 12px/16px var(--font-sans); letter-spacing: 0; text-align: left; white-space: normal;

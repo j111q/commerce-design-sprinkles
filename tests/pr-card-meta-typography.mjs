@@ -35,6 +35,10 @@ const checks = [
 			app.includes("Merged behind a feature flag; not in a public release yet."),
 	},
 	{
+		name: "release badge tooltip uses a compact line length",
+		pass: /max-width: min\(208px, calc\(100vw - 48px\)\)/.test(app),
+	},
+	{
 		name: "release badge tooltip appears on hover and keyboard focus",
 		pass: /\.sprk-flag-wrap:hover \.sprk-flag-tip/.test(app) &&
 			/\.sprk-flag-wrap:focus \.sprk-flag-tip/.test(app) &&
