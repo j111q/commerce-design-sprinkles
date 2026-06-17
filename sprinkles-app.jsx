@@ -359,6 +359,8 @@ function SprinklesApp() {
   });
   const focusAreas = D.AREAS.map(function (a) {
     return Object.assign({}, a, { count: focusAreaCounts[a.name] || 0 });
+  }).filter(function (a) {
+    return !person || a.count > 0;
   });
   const rows = scoped.filter(TAB_FILTERS[tab]);
   const personAreas = person ? topAreasFor(person) : [];
