@@ -16,6 +16,25 @@ const checks = [
 		name: "PR card repo number inherits the metadata font",
 		pass: /<span>\{pr\.repo\.split\("\/"\)\[1\]\}#\{pr\.number\}<\/span>/.test(app),
 	},
+	{
+		name: "PR card release badge appears after the timestamp",
+		pass: /\{DASH\.prWhen\(pr\)\}\s*\n\s*\{pr\.status === "Merged" && <SFlagBadge flagged=\{pr\.flagged\} \/>/.test(app),
+	},
+	{
+		name: "release badges expose custom tooltip content",
+		pass: /className="sprk-flag-wrap"/.test(app) &&
+			/className="sprk-flag-tip"/.test(app) &&
+			/role="tooltip"/.test(app) &&
+			app.includes("Included in a public WooCommerce release.") &&
+			app.includes("Merged behind a feature flag; not in a public release yet."),
+	},
+	{
+		name: "release badge tooltip appears on hover and keyboard focus",
+		pass: /\.sprk-flag-wrap:hover \.sprk-flag-tip/.test(app) &&
+			/\.sprk-flag-wrap:focus \.sprk-flag-tip/.test(app) &&
+			/\.sprk-flag-wrap:focus-within \.sprk-flag-tip/.test(app) &&
+			/\.sprk-flag-wrap:focus-visible \.sprk-flag-tip/.test(app),
+	},
 ];
 
 const failures = checks.filter((check) => !check.pass);

@@ -134,31 +134,36 @@ function SBadge({ pr }) {
    gated behind a feature flag. A separate dimension from the Merged/Open status
    pill, so it gets its own softer, sentence-case lane with an icon. */
 function SFlagBadge({ flagged }) {
+  const tipId = React.useId();
+  const copy = flagged ?
+    {
+      label: "Feature flagged",
+      tooltip: "Merged behind a feature flag; not in a public release yet.",
+      path: "M14.4 6 14 4H5v17h2v-7h5.6l.4 2h7V6z",
+      style: { background: "transparent", borderColor: "var(--woo-pink)", color: "var(--woo-pink)" }
+    } :
+    {
+      label: "Public release",
+      tooltip: "Included in a public WooCommerce release.",
+      path: "M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z",
+      style: { background: "var(--woo-blue-soft)", color: "var(--woo-indigo-deep)" }
+    };
   const base = {
     display: "inline-flex", alignItems: "center", gap: 4, borderRadius: 999,
     font: "600 10.5px/14px \"Menlo\", \"Consolas\", monospace", letterSpacing: "0.01em",
-    padding: "2px 8px 2px 7px", marginRight: 8, boxSizing: "border-box",
+    padding: "2px 8px 2px 7px", boxSizing: "border-box",
     whiteSpace: "nowrap", verticalAlign: "middle", border: "1px solid transparent"
   };
-  if (flagged) {
-    // Secondary / outline treatment — quieter than the filled "Public release".
-    return (
-      <span className="sprk-flag" title="Behind a feature flag — not in a public release yet"
-        style={Object.assign({}, base, { background: "transparent", borderColor: "var(--woo-pink)", color: "var(--woo-pink)" })}>
-        <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M14.4 6 14 4H5v17h2v-7h5.6l.4 2h7V6z" />
-        </svg>
-        Feature flagged
-      </span>);
 
-  }
   return (
-    <span className="sprk-flag" title="Shipped in a public WooCommerce release"
-      style={Object.assign({}, base, { background: "var(--woo-blue-soft)", color: "var(--woo-indigo-deep)" })}>
-      <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-      </svg>
-      Public release
+    <span className="sprk-flag-wrap" tabIndex={0} aria-describedby={tipId}>
+      <span className="sprk-flag" style={Object.assign({}, base, copy.style)}>
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d={copy.path} />
+        </svg>
+        {copy.label}
+      </span>
+      <span className="sprk-flag-tip" id={tipId} role="tooltip">{copy.tooltip}</span>
     </span>);
 
 }
@@ -402,6 +407,21 @@ function SprinklesApp() {
         .sprk-card { min-width: 0; max-width: 100%; }
         .sprk-card-main { min-width: 0; max-width: 100%; overflow-wrap: anywhere; }
         .sprk-meta { display: block; min-width: 0; max-width: 100%; overflow-wrap: anywhere; word-break: break-word; }
+        .sprk-flag-wrap { position: relative; display: inline-flex; margin-left: 8px; vertical-align: middle; outline: 0; }
+        .sprk-flag-wrap:focus-visible .sprk-flag { outline: 2px solid var(--woo-purple); outline-offset: 2px; }
+        .sprk-flag-tip {
+          position: absolute; right: 0; bottom: calc(100% + 8px); z-index: 80;
+          width: max-content; max-width: min(240px, calc(100vw - 48px));
+          padding: 8px 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.18);
+          background: var(--woo-ink); color: var(--woo-paper); box-shadow: 0 10px 24px rgba(30,17,66,0.18);
+          font: 500 12px/16px var(--font-sans); letter-spacing: 0; text-align: left; white-space: normal;
+          opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(4px);
+          transition: opacity 0.12s ease-out, transform 0.12s ease-out, visibility 0.12s ease-out;
+        }
+        .sprk-flag-wrap:hover .sprk-flag-tip,
+        .sprk-flag-wrap:focus .sprk-flag-tip,
+        .sprk-flag-wrap:focus-within .sprk-flag-tip,
+        .sprk-flag-wrap:focus-visible .sprk-flag-tip { opacity: 1; visibility: visible; transform: translateY(0); }
         @media (max-width: 920px) {
           /* Rail drops below the feed; it reads as a summary footer. */
           .sprk-grid { grid-template-columns: 1fr; }
@@ -605,9 +625,9 @@ function SprinklesApp() {
 								<div className="sprk-card-main" style={{ flex: 1, display: "flex", flexDirection: "column", gap: 6 }}>
 									<a href={pr.url || "#"} target="_blank" rel="noreferrer" className="pr-title" style={{ font: "600 16px/22px var(--font-sans)", letterSpacing: "-0.01em", textWrap: "balance", color: "var(--woo-ink)", textDecoration: "none" }}>{pr.title}</a>
 									<span className="sprk-meta" style={{ font: "400 12px/18px \"Menlo\", \"Consolas\", monospace", color: "var(--woo-ink-soft)" }}>
-										{pr.status === "Merged" && <SFlagBadge flagged={pr.flagged} />}
 										<span>{pr.repo.split("/")[1]}#{pr.number}</span>
 										{"  ·  "}{pr.area}{"  ·  "}{DASH.prWhen(pr)}
+										{pr.status === "Merged" && <SFlagBadge flagged={pr.flagged} />}
 									</span>
 								</div>
 								<span className="sprk-card-people" style={{ display: "inline-flex", paddingLeft: 6 }}>
