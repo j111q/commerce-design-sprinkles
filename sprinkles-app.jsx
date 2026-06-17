@@ -390,20 +390,17 @@ function SprinklesApp() {
           background-repeat: no-repeat; background-position: right 12px center;
         }
         .sprk-area-select select:focus-visible { outline: 2px solid var(--woo-purple); outline-offset: 2px; }
-        .sprk-filters { display: inline-flex; align-items: flex-end; flex-wrap: wrap; gap: 10px; min-width: 0; }
-        .sprk-bar-tabs { display: inline-flex; align-items: center; gap: 12px; min-width: 0; max-width: 100%; }
-        /* "Who we are" roster — clickable designer rows (the person filter). */
-        .sprk-roster { display: flex; align-items: center; gap: 10px; width: 100%; padding: 6px 8px; border: 0; background: transparent; border-radius: 10px; cursor: pointer; font: 600 14px/20px var(--font-sans); color: var(--woo-ink); text-align: left; transition: background .12s ease, opacity .12s ease; }
-        .sprk-roster:hover { background: var(--woo-cream); }
-        .sprk-roster.is-on { background: var(--woo-lavender-pale); color: var(--woo-purple-dark); }
-        .sprk-roster.is-dim { opacity: 0.45; }
-        .sprk-roster.is-dim:hover { opacity: 1; }
+        .sprk-filters { display: none; align-items: flex-end; flex-wrap: wrap; gap: 10px; min-width: 0; }
+        .sprk-bar-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-width: 0; }
+        /* In-flow tab header — filters stack above the tab row on narrow viewports. */
+        .sprk-tabhead { display: flex; flex-direction: column; gap: 12px; }
         /* Cupcake "logo" — only present in the sticky bar, so it appears on scroll. */
         .sprk-bar-logo { border: 0; background: transparent; cursor: pointer; font-size: 22px; line-height: 1; padding: 0 2px; }
         .sprk-updated { font: 500 12px/18px var(--font-sans); color: var(--woo-ink-soft); margin: 10px 0 0; opacity: 0.78; }
         @media (max-width: 920px) {
           .sprk-rail { display: none !important; }
           .sprk-area-select { display: inline-flex; }
+          .sprk-filters { display: inline-flex; }
           .sprk-wrap { padding-left: 28px; padding-right: 28px; }
         }
         @media (max-width: 600px) {
@@ -413,7 +410,6 @@ function SprinklesApp() {
           .sprk-area-select select { width: 100%; max-width: none; }
           .sprk-tabs-scroll { flex: 1 1 auto; }
           .sprk-tabs-scroll > button { padding-left: 10px !important; padding-right: 10px !important; }
-          .sprk-bar-tabs { flex: 1 1 100%; width: 100%; }
           .sprk-bar-logo { flex: 0 0 auto; }
           /* Sticky bar can wrap to two lines here — give it even breathing room. */
           .sprk-bar-wrap { padding-top: 14px; padding-bottom: 14px; }
@@ -499,15 +495,15 @@ function SprinklesApp() {
 			{/* Compact filter bar — slides in on scroll so avatars + tabs stay reachable */}
 			<div className={"sprk-stickybar" + (stuck ? " is-stuck" : "")} aria-hidden={!stuck}>
 				<div aria-hidden="true" className="sprk-ribbon" style={{ height: 4 }}></div>
-				<div className="sprk-wrap sprk-bar-wrap" style={{ display: "flex", flexWrap: "wrap", alignItems: "center", rowGap: 8, columnGap: 16, justifyContent: "space-between" }}>
-					<span className="sprk-bar-tabs">
-						<button className="sprk-bar-logo" title="Back to top" aria-label="Back to top" onClick={function () {window.scrollTo({ top: 0, behavior: "smooth" });}}>🧁</button>
-						<STabs active={tab} onChange={setTab} tabStyle={t.tabStyle} counts={tabCounts} />
-					</span>
+				<div className="sprk-wrap sprk-bar-wrap" style={{ display: "flex", flexDirection: "column", rowGap: 8 }}>
 					<span className="sprk-filters">
 						<SquadSelect value={person} squad={D.SQUAD} onChange={setPerson} />
 						<SurfaceSelect value={surface} areas={D.AREAS} onChange={setSurface} />
 					</span>
+					<div className="sprk-bar-row" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12 }}>
+						<STabs active={tab} onChange={setTab} tabStyle={t.tabStyle} counts={tabCounts} />
+						<button className="sprk-bar-logo" title="Back to top" aria-label="Back to top" onClick={function () {window.scrollTo({ top: 0, behavior: "smooth" });}}>🧁</button>
+					</div>
 				</div>
 			</div>
 			{/* Soft gradient blobs behind the header */}
@@ -548,12 +544,14 @@ function SprinklesApp() {
 			<div className="sprk-wrap sprk-grid">
 				{/* Feed */}
 				<div ref={tabsAnchor} style={{ display: "flex", flexDirection: "column", gap: 14 }}>
-					<div style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-end", justifyContent: "space-between", gap: 12, borderBottom: "1px solid var(--woo-rule)" }}>
-						<STabs active={tab} onChange={setTab} tabStyle={t.tabStyle} counts={tabCounts} />
+					<div className="sprk-tabhead">
 						<span className="sprk-filters">
 							<SquadSelect value={person} squad={D.SQUAD} onChange={setPerson} />
 							<SurfaceSelect value={surface} areas={D.AREAS} onChange={setSurface} />
 						</span>
+						<div className="sprk-tabrow" style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-end", gap: 12, borderBottom: "1px solid var(--woo-rule)" }}>
+							<STabs active={tab} onChange={setTab} tabStyle={t.tabStyle} counts={tabCounts} />
+						</div>
 					</div>
 					{rows.map(function (pr) {
             return (
@@ -589,8 +587,20 @@ function SprinklesApp() {
 				{/* Right rail */}
 				<div className="sprk-rail" style={{ display: "flex", flexDirection: "column", gap: 28 }}>
 					<div style={Object.assign({}, card, { padding: 28 })}>
-						<h2 style={{ font: "700 18px/24px var(--font-sans)", letterSpacing: "-0.015em", margin: "0 0 4px" }}>Who we are</h2>
-						<p style={{ font: "400 13px/18px var(--font-sans)", color: "var(--woo-ink-soft)", margin: "0 0 16px", textWrap: "pretty", display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap", minHeight: 24 }}>
+						<h2 style={{ font: "700 18px/24px var(--font-sans)", letterSpacing: "-0.015em", margin: "0 0 14px" }}>Who we are</h2>
+						<div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+							{D.SQUAD.map(function (p) {
+								return (
+									<SFilterAvatar
+										key={p.id}
+										id={p.id}
+										size={38}
+										active={person === p.id}
+										dimmed={person !== null && person !== p.id}
+										onClick={function () {setPerson(person === p.id ? null : p.id);}} />);
+							})}
+						</div>
+						<p style={{ font: "400 13px/18px var(--font-sans)", color: "var(--woo-ink-soft)", margin: "14px 0 0", textWrap: "pretty", display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap", minHeight: 24 }}>
 							{person ?
 							<React.Fragment>
 								Filtering by <strong style={{ color: "var(--woo-ink)", fontWeight: 600 }}>{D.person(person).name}</strong>
@@ -598,47 +608,33 @@ function SprinklesApp() {
 							</React.Fragment> :
 							"Five designers — tap one to filter"}
 						</p>
-						<div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
-							{D.SQUAD.map(function (p) {
-								const on = person === p.id;
-								return (
-									<button key={p.id} onClick={function () {setPerson(on ? null : p.id);}} aria-pressed={on} className={"sprk-roster" + (on ? " is-on" : "") + (person !== null && !on ? " is-dim" : "")}>
-										<SAvatar id={p.id} size={30} />
-										<span>{p.name}</span>
-									</button>);
-							})}
-						</div>
 						{person && personAreas.length > 0 ?
-							<p style={{ font: "400 12.5px/18px var(--font-sans)", fontStyle: "italic", color: "var(--woo-ink-soft)", margin: "14px 0 0", textWrap: "pretty" }}>Top focus areas: {personAreas.join(", ")}</p> : null}
-					</div>
-					<div style={Object.assign({}, card, { padding: 28 })}>
-						<h2 style={{ font: "700 18px/24px var(--font-sans)", letterSpacing: "-0.015em", margin: "0 0 4px" }}>Where we've been</h2>
-						<p style={{ font: "400 13px/18px var(--font-sans)", color: "var(--woo-ink-soft)", margin: "0 0 16px", textWrap: "pretty", display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap", minHeight: 24 }}>
-							{surface ?
-              <React.Fragment>
-								Filtering by <strong style={{ color: "var(--woo-ink)", fontWeight: 600 }}>{surface}</strong>
-								<button
-                  onClick={function () {setSurface(null);}}
-                  style={{ border: "1px solid var(--woo-rule)", background: "var(--woo-paper)", borderRadius: 999, padding: "2px 10px", font: "600 12px/16px var(--font-sans)", color: "var(--woo-ink)", cursor: "pointer" }}>
-                  Clear</button>
-							</React.Fragment> :
-              "Merged PRs by focus area — tap to filter"}
-						</p>
-						<div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-							{D.AREAS.map(function (a) {
-                const on = surface === a.name;
-                return (
-                  <button
-                    key={a.name}
-                    onClick={function () {setSurface(on ? null : a.name);}}
-                    aria-pressed={on}
-                    title={on ? "Clear focus-area filter" : "Show PRs in " + a.name}
-                    className={"sprk-chip" + (on ? " is-on" : "")}>
-						{a.name}
-						<span className="sprk-chip-n">{a.count}</span>
-					</button>);
-
-              })}
+							<p style={{ font: "400 12.5px/18px var(--font-sans)", fontStyle: "italic", color: "var(--woo-ink-soft)", margin: "8px 0 0", textWrap: "pretty" }}>Top focus areas: {personAreas.join(", ")}</p> : null}
+						<div style={{ borderTop: "1px solid var(--woo-rule)", margin: "24px 0 0", paddingTop: 24 }}>
+							<h2 style={{ font: "700 18px/24px var(--font-sans)", letterSpacing: "-0.015em", margin: "0 0 4px" }}>Where we've been</h2>
+							<p style={{ font: "400 13px/18px var(--font-sans)", color: "var(--woo-ink-soft)", margin: "0 0 16px", textWrap: "pretty", display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap", minHeight: 24 }}>
+								{surface ?
+								<React.Fragment>
+									Filtering by <strong style={{ color: "var(--woo-ink)", fontWeight: 600 }}>{surface}</strong>
+									<button onClick={function () {setSurface(null);}} style={{ border: "1px solid var(--woo-rule)", background: "var(--woo-paper)", borderRadius: 999, padding: "2px 10px", font: "600 12px/16px var(--font-sans)", color: "var(--woo-ink)", cursor: "pointer" }}>Clear</button>
+								</React.Fragment> :
+								"Merged PRs by focus area — tap to filter"}
+							</p>
+							<div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+								{D.AREAS.map(function (a) {
+									const on = surface === a.name;
+									return (
+										<button
+											key={a.name}
+											onClick={function () {setSurface(on ? null : a.name);}}
+											aria-pressed={on}
+											title={on ? "Clear focus-area filter" : "Show PRs in " + a.name}
+											className={"sprk-chip" + (on ? " is-on" : "")}>
+											{a.name}
+											<span className="sprk-chip-n">{a.count}</span>
+										</button>);
+								})}
+							</div>
 						</div>
 					</div>
 				</div>
