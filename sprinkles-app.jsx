@@ -290,7 +290,7 @@ function miniSparkle(e) {
     const dx = Math.cos(angle) * dist, dy = Math.sin(angle) * dist - 6;
     s.textContent = "✦";
     s.style.cssText =
-    "position:fixed;left:" + cx + "px;top:" + cy + "px;font-size:" + (6 + Math.random() * 5) +
+    "position:fixed;left:" + cx + "px;top:" + cy + "px;font-size:" + (4 + Math.random() * 3) +
     "px;line-height:1;color:" + COLORS[Math.floor(Math.random() * COLORS.length)] +
     ";pointer-events:none;z-index:99999;transform:translate(-50%,-50%) scale(0.3);opacity:0;" +
     "transition:transform .5s cubic-bezier(.2,.8,.2,1),opacity .5s ease-out;";

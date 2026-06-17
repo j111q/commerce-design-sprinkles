@@ -1592,10 +1592,10 @@
 			const dist = 70 + Math.random() * 180;
 			const dx = Math.cos(angle) * dist;
 			const dy = Math.sin(angle) * dist - 40;
-			const w = 5 + Math.random() * 4;
+			const w = 3 + Math.random() * 2.5;
 			s.style.cssText =
-				"position:fixed;left:" + x + "px;top:" + y + "px;width:" + w + "px;height:" + (11 + Math.random() * 11) +
-				"px;border-radius:2.5px;pointer-events:none;z-index:99999;background:" +
+				"position:fixed;left:" + x + "px;top:" + y + "px;width:" + w + "px;height:" + (6 + Math.random() * 5) +
+				"px;border-radius:2px;pointer-events:none;z-index:99999;background:" +
 				SPRINKLE_COLORS[Math.floor(Math.random() * SPRINKLE_COLORS.length)] +
 				";transform:rotate(" + Math.random() * 360 + "deg);transition:transform 1s cubic-bezier(0.2,0.8,0.2,1),opacity 1s ease-out;";
 			document.body.appendChild(s);
