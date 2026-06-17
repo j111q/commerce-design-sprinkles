@@ -1263,6 +1263,20 @@
 
 	const OPEN = [
 	{
+		"title": "Improve product editor permalink layout",
+		"repo": "woocommerce/woocommerce",
+		"number": 65640,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65640",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1781688714000
+	},
+	{
 		"title": "Coupon edit: apply 2-column grid sizing standard (720 / 24 / 320)",
 		"repo": "woocommerce/woocommerce",
 		"number": 65717,
@@ -1275,20 +1289,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1781687094000
-	},
-	{
-		"title": "Improve product editor permalink layout",
-		"repo": "woocommerce/woocommerce",
-		"number": 65640,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65640",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1781686446000
 	},
 	{
 		"title": "Update product publish panel controls",
@@ -1549,7 +1549,7 @@
 };
 
 	const DATA_META = {
-	"updatedAt": "2026-06-17T09:28:21.154Z"
+	"updatedAt": "2026-06-17T09:35:26.327Z"
 };
 
 	function person(id) {
