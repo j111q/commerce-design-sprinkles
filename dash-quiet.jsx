@@ -79,7 +79,7 @@ function QMeta({ pr }) {
 			<span aria-hidden="true">·</span>
 			<span>{pr.area}</span>
 			<span aria-hidden="true">·</span>
-			<span>{pr.when}</span>
+			<span>{DASH.prWhen(pr)}</span>
 		</div>
 	);
 }
@@ -157,7 +157,7 @@ function DashQuiet() {
 										<QAvatarStack ids={pr.authors} size={20} />
 									</div>
 									<span style={{ font: "400 13px/18px var(--font-body)" }}>{pr.title}</span>
-									<span style={{ font: "400 11px/16px var(--font-body)", color: "var(--fg3)" }}>{pr.area} · {pr.when}</span>
+									<span style={{ font: "400 11px/16px var(--font-body)", color: "var(--fg3)" }}>{pr.area} · {DASH.prWhen(pr)}</span>
 								</div>
 							))}
 						</QCard>

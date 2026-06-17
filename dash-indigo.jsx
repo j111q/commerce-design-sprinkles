@@ -100,7 +100,7 @@ function DashIndigo() {
 								{pr.authors.map((id) => <IAvatar key={id} id={id} size={22} />)}
 							</div>
 							<span style={{ font: "500 14px/19px var(--font-sans)" }}>{pr.title}</span>
-							<span style={{ font: "400 11px/15px var(--font-sans)", color: "var(--woo-lavender)" }}>{pr.area} · {pr.when}</span>
+							<span style={{ font: "400 11px/15px var(--font-sans)", color: "var(--woo-lavender)" }}>{pr.area} · {DASH.prWhen(pr)}</span>
 						</div>
 					))}
 				</div>
@@ -120,7 +120,7 @@ function DashIndigo() {
 								<span style={{ font: "500 14px/19px var(--font-sans)" }}>{pr.title}</span>
 								<span style={{ font: "400 12px/16px var(--font-sans)", color: "var(--woo-lavender)" }}>
 									<span style={{ fontFamily: "Menlo, Consolas, monospace", fontSize: 11 }}>{pr.repo.split("/")[1]}#{pr.number}</span>
-									{"  ·  "}{pr.area}{"  ·  "}{pr.when}
+									{"  ·  "}{pr.area}{"  ·  "}{DASH.prWhen(pr)}
 								</span>
 							</div>
 							<span style={{ display: "inline-flex", paddingLeft: 7 }}>

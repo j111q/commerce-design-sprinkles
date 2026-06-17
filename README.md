@@ -19,6 +19,10 @@ Static HTML + React (via CDN) + in-browser Babel — no build step. The data is 
 
 ## Refreshing the data
 
+A GitHub Action (`.github/workflows/refresh-data.yml`) re-runs the fetch **every 6 hours** (and on demand via the Actions tab), committing `dash-data.js` only when the PR data actually changes. Relative times ("updated 3h ago") are computed in the browser, so the page always shows accurate times between refreshes.
+
+To refresh manually:
+
 ```sh
 GH_TOKEN=$(gh auth token) node fetch-data.mjs
 ```

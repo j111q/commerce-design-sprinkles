@@ -89,7 +89,7 @@ function DashCream() {
 								<span style={{ font: "600 16px/22px var(--font-sans)", letterSpacing: "-0.01em" }}>{pr.title}</span>
 								<span style={{ font: "400 13px/18px var(--font-sans)", color: "var(--woo-ink-soft)" }}>
 									<span style={{ fontFamily: "var(--font-mono, monospace)", fontSize: 12 }}>{pr.repo.split("/")[1]}#{pr.number}</span>
-									{"  ·  "}{pr.area}{"  ·  "}{pr.when}
+									{"  ·  "}{pr.area}{"  ·  "}{DASH.prWhen(pr)}
 								</span>
 							</div>
 							<span style={{ display: "inline-flex", paddingLeft: 6 }}>
@@ -119,7 +119,7 @@ function DashCream() {
 										<span style={{ display: "inline-flex" }}>{pr.authors.map((id) => <EAvatar key={id} id={id} size={22} />)}</span>
 									</div>
 									<span style={{ font: "500 14px/20px var(--font-sans)" }}>{pr.title}</span>
-									<span style={{ font: "400 12px/16px var(--font-sans)", color: "var(--woo-ink-soft)" }}>{pr.area} · {pr.when}</span>
+									<span style={{ font: "400 12px/16px var(--font-sans)", color: "var(--woo-ink-soft)" }}>{pr.area} · {DASH.prWhen(pr)}</span>
 								</div>
 							))}
 						</div>
