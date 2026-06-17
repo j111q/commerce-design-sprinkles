@@ -394,8 +394,6 @@ function SprinklesApp() {
         .sprk-bar-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-width: 0; }
         /* In-flow tab header — filters stack above the tab row on narrow viewports. */
         .sprk-tabhead { display: flex; flex-direction: column; gap: 12px; }
-        /* Cupcake "logo" — only present in the sticky bar, so it appears on scroll. */
-        .sprk-bar-logo { border: 0; background: transparent; cursor: pointer; font-size: 22px; line-height: 1; padding: 0 2px; }
         .sprk-updated { font: 500 12px/18px var(--font-sans); color: var(--woo-ink-soft); margin: 10px 0 0; opacity: 0.78; }
         @media (max-width: 920px) {
           .sprk-rail { display: none !important; }
@@ -410,7 +408,6 @@ function SprinklesApp() {
           .sprk-area-select select { width: 100%; max-width: none; }
           .sprk-tabs-scroll { flex: 1 1 auto; }
           .sprk-tabs-scroll > button { padding-left: 10px !important; padding-right: 10px !important; }
-          .sprk-bar-logo { flex: 0 0 auto; }
           /* Sticky bar can wrap to two lines here — give it even breathing room. */
           .sprk-bar-wrap { padding-top: 14px; padding-bottom: 14px; }
         }
@@ -461,16 +458,17 @@ function SprinklesApp() {
         @keyframes sprk-tw-pop { 0% { transform: scale(1); } 40% { transform: scale(1.4) rotate(10deg); } 100% { transform: scale(1); } }
         /* Focus-area filter pills. */
         .sprk-chip {
-          display: inline-flex; align-items: center; gap: 7px; border-radius: 999px;
+          display: inline-flex; align-items: center; gap: 6px; border-radius: 999px;
           border: 1px solid var(--woo-rule); background: var(--woo-cream); color: var(--woo-ink);
-          padding: 7px 14px; font: 500 13px/18px var(--font-sans); cursor: pointer;
+          padding: 3px 9px; font: 500 12px/15px var(--font-sans); cursor: pointer;
           transition: background .12s ease-out, color .12s ease-out, border-color .12s ease-out, transform .12s ease-out;
         }
         .sprk-chip:hover { border-color: var(--woo-purple); background: var(--woo-lavender-pale); transform: translateY(-1px); }
         .sprk-chip.is-on { border-color: var(--woo-purple); background: var(--woo-purple); color: #fff; }
         .sprk-chip.is-on:hover { background: var(--woo-purple-dark); border-color: var(--woo-purple-dark); }
-        .sprk-chip-n { font: 700 12px/16px var(--font-sans); color: var(--woo-purple); }
+        .sprk-chip-n { font: 700 10.5px/13px var(--font-sans); color: var(--woo-purple); }
         .sprk-chip.is-on .sprk-chip-n { color: var(--woo-lavender-pale); }
+        .sprk-chip-cloud { display: flex; flex-wrap: wrap; gap: 6px; }
         @media (prefers-reduced-motion: reduce) {
           .sprk-stickybar { transition: none; }
           .sprk-ribbon, .sprk-marquee-track { animation: none; }
@@ -502,7 +500,6 @@ function SprinklesApp() {
 					</span>
 					<div className="sprk-bar-row" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12 }}>
 						<STabs active={tab} onChange={setTab} tabStyle={t.tabStyle} counts={tabCounts} />
-						<button className="sprk-bar-logo" title="Back to top" aria-label="Back to top" onClick={function () {window.scrollTo({ top: 0, behavior: "smooth" });}}>🧁</button>
 					</div>
 				</div>
 			</div>
@@ -600,14 +597,13 @@ function SprinklesApp() {
 										onClick={function () {setPerson(person === p.id ? null : p.id);}} />);
 							})}
 						</div>
+						{person ?
 						<p style={{ font: "400 13px/18px var(--font-sans)", color: "var(--woo-ink-soft)", margin: "14px 0 0", textWrap: "pretty", display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap", minHeight: 24 }}>
-							{person ?
 							<React.Fragment>
 								Filtering by <strong style={{ color: "var(--woo-ink)", fontWeight: 600 }}>{D.person(person).name}</strong>
 								<button onClick={function () {setPerson(null);}} style={{ border: "1px solid var(--woo-rule)", background: "var(--woo-paper)", borderRadius: 999, padding: "2px 10px", font: "600 12px/16px var(--font-sans)", color: "var(--woo-ink)", cursor: "pointer" }}>Clear</button>
-							</React.Fragment> :
-							"Five designers — tap one to filter"}
-						</p>
+							</React.Fragment>
+						</p> : null}
 						{person && personAreas.length > 0 ?
 							<p style={{ font: "400 12.5px/18px var(--font-sans)", fontStyle: "italic", color: "var(--woo-ink-soft)", margin: "8px 0 0", textWrap: "pretty" }}>Top focus areas: {personAreas.join(", ")}</p> : null}
 						<div style={{ borderTop: "1px solid var(--woo-rule)", margin: "24px 0 0", paddingTop: 24 }}>
@@ -618,9 +614,9 @@ function SprinklesApp() {
 									Filtering by <strong style={{ color: "var(--woo-ink)", fontWeight: 600 }}>{surface}</strong>
 									<button onClick={function () {setSurface(null);}} style={{ border: "1px solid var(--woo-rule)", background: "var(--woo-paper)", borderRadius: 999, padding: "2px 10px", font: "600 12px/16px var(--font-sans)", color: "var(--woo-ink)", cursor: "pointer" }}>Clear</button>
 								</React.Fragment> :
-								"Merged PRs by focus area — tap to filter"}
+								"Filter by focus area"}
 							</p>
-							<div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+							<div className="sprk-chip-cloud">
 								{D.AREAS.map(function (a) {
 									const on = surface === a.name;
 									return (
