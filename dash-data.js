@@ -1177,6 +1177,19 @@
 
 	const OPEN = [
 	{
+		"title": "Improve product editor permalink layout",
+		"repo": "woocommerce/woocommerce",
+		"number": 65640,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65640",
+		"area": "Products & catalog",
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1781682212000
+	},
+	{
 		"title": "Improve summary trend indicator contrast",
 		"repo": "woocommerce/woocommerce",
 		"number": 65784,
@@ -1214,19 +1227,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1781626536000
-	},
-	{
-		"title": "Improve product editor permalink layout",
-		"repo": "woocommerce/woocommerce",
-		"number": 65640,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65640",
-		"area": "Products & catalog",
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1781624275000
 	},
 	{
 		"title": "Fix order edit screen text color contrast for WCAG AA",
@@ -1432,7 +1432,7 @@
 };
 
 	const DATA_META = {
-	"updatedAt": "2026-06-17T07:35:38.513Z"
+	"updatedAt": "2026-06-17T07:45:25.235Z"
 };
 
 	function person(id) {
