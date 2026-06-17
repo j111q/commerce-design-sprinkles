@@ -1,4 +1,4 @@
-/* Sprinkles & Co. — squad PR dashboard (Direction B: editorial cream).
+/* Sprinkles & Co. — squad PR dashboard (Direction B: porcelain blue).
    Unified feed with All / Merged / Open / Draft tabs, like the original
    Woo Sprinkles dashboard. Mock data for now; live GitHub wiring comes
    once repos + handles are confirmed. */
@@ -48,7 +48,7 @@ function SAvatar({ id, size = 26 }) {
   const p = DASH.person(id);
   const ring = {
     width: size, height: size, borderRadius: "50%", background: p.color,
-    border: "2px solid var(--woo-cream)", boxSizing: "border-box", flexShrink: 0
+    border: "2px solid var(--woo-bg)", boxSizing: "border-box", flexShrink: 0
   };
   if (p.avatar) {
     return (
@@ -395,7 +395,7 @@ function SprinklesApp() {
   funFacts.push("made with pull requests & 🧁");
 
   return (
-    <div data-screen-label="Sprinkles & Co. dashboard" style={{ background: "var(--woo-cream)", color: "var(--woo-ink)", fontFamily: "var(--font-sans)", minHeight: "100vh", padding: "0 0 56px", position: "relative" }}>
+    <div data-screen-label="Sprinkles & Co. dashboard" style={{ background: "var(--woo-bg)", color: "var(--woo-ink)", fontFamily: "var(--font-sans)", minHeight: "100vh", padding: "0 0 56px", position: "relative" }}>
 			<style>{`
         .pr-title:hover { text-decoration: underline; text-decoration-color: var(--woo-purple); text-underline-offset: 2px; }
         .pr-title:focus-visible { outline: 2px solid var(--woo-purple); outline-offset: 3px; border-radius: 4px; }
@@ -437,7 +437,7 @@ function SprinklesApp() {
         /* Compact filter bar — hidden above the viewport until scrolled. */
         .sprk-stickybar {
           position: fixed; top: 0; left: 0; right: 0; z-index: 50;
-          background: rgba(246,241,237,0.82);
+          background: rgba(245,247,250,0.86);
           -webkit-backdrop-filter: blur(14px) saturate(140%);
           backdrop-filter: blur(14px) saturate(140%);
           border-bottom: 1px solid var(--woo-rule);
@@ -529,7 +529,7 @@ function SprinklesApp() {
         /* Focus-area filter pills. */
         .sprk-chip {
           display: inline-flex; align-items: center; gap: 6px; border-radius: 999px;
-          border: 1px solid var(--woo-rule); background: var(--woo-cream); color: var(--woo-ink);
+          border: 1px solid var(--woo-rule); background: var(--woo-bg); color: var(--woo-ink);
           padding: 3px 9px; font: 500 12px/15px var(--font-sans); cursor: pointer;
           transition: background .12s ease-out, color .12s ease-out, border-color .12s ease-out, transform .12s ease-out;
         }

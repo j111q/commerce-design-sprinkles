@@ -19,11 +19,12 @@
 	--woo-pink-soft: #FAD1E8;
 	--woo-blue: #2F6BFF;
 	--woo-blue-soft: #C9DBFF;
-	--woo-cream: #F6F1ED;
+	--woo-bg: #F5F7FA;
+	--woo-panel-soft: #EEF3FF;
 	--woo-paper: #FFFFFF;
 	--woo-ink: #1A1A1A;
 	--woo-ink-soft: #4A4A4A;
-	--woo-rule: rgba(26, 26, 26, 0.12);
+	--woo-rule: rgba(30, 17, 66, 0.10);
 	--woo-rule-on-dark: rgba(255, 255, 255, 0.18);
 	--font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
