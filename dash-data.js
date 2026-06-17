@@ -1445,20 +1445,6 @@
 		"ts": 1779916658000
 	},
 	{
-		"title": "Polish the variations DataViews table and unify the stock pill",
-		"repo": "woocommerce/woocommerce",
-		"number": 65114,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65114",
-		"area": "Products & catalog",
-		"flagged": true,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1779437541000
-	},
-	{
 		"title": "[DEMO, do not merge] Order detail page polish, all four PRs stacked",
 		"repo": "woocommerce/woocommerce",
 		"number": 65142,
@@ -1549,7 +1535,7 @@
 };
 
 	const DATA_META = {
-	"updatedAt": "2026-06-17T09:35:26.327Z"
+	"updatedAt": "2026-06-17T09:52:17.634Z"
 };
 
 	function person(id) {
