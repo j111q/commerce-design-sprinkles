@@ -604,7 +604,7 @@ function SprinklesApp() {
 								<div className="sprk-card-main" style={{ flex: 1, display: "flex", flexDirection: "column", gap: 6 }}>
 									<a href={pr.url || "#"} target="_blank" rel="noreferrer" className="pr-title" style={{ font: "600 16px/22px var(--font-sans)", letterSpacing: "-0.01em", textWrap: "pretty", color: "var(--woo-ink)", textDecoration: "none" }}>{pr.title}</a>
 									<span className="sprk-meta" style={{ font: "400 13px/18px var(--font-sans)", color: "var(--woo-ink-soft)" }}>
-										<SFlagBadge flagged={pr.flagged} />
+										{pr.status === "Merged" && <SFlagBadge flagged={pr.flagged} />}
 										<span style={{ fontFamily: "Menlo, Consolas, monospace", fontSize: 12 }}>{pr.repo.split("/")[1]}#{pr.number}</span>
 										{"  ·  "}{pr.area}{"  ·  "}{DASH.prWhen(pr)}
 									</span>
