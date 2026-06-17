@@ -1263,6 +1263,20 @@
 
 	const OPEN = [
 	{
+		"title": "Update product publish panel controls",
+		"repo": "woocommerce/woocommerce",
+		"number": 65794,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65794",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1781708435000
+	},
+	{
 		"title": "Update product status filter availability labels",
 		"repo": "woocommerce/woocommerce",
 		"number": 65803,
@@ -1275,20 +1289,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1781700045000
-	},
-	{
-		"title": "Update product publish panel controls",
-		"repo": "woocommerce/woocommerce",
-		"number": 65794,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65794",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1781693666000
 	},
 	{
 		"title": "Improve product editor permalink layout",
@@ -1549,7 +1549,7 @@
 };
 
 	const DATA_META = {
-	"updatedAt": "2026-06-17T12:44:24.672Z"
+	"updatedAt": "2026-06-17T15:21:14.690Z"
 };
 
 	function person(id) {
