@@ -1431,6 +1431,10 @@
 	"since": "April 2026"
 };
 
+	const DATA_META = {
+	"updatedAt": "2026-06-17T06:02:42.000Z"
+};
+
 	function person(id) {
 		return SQUAD.find(function (p) { return p.id === id; });
 	}
@@ -1449,6 +1453,15 @@
 	/* Open/draft PRs read "updated …"; merged PRs just show the time. */
 	function prWhen(pr) {
 		return (pr.status && pr.status !== "Merged" ? "updated " : "") + whenLabel(pr.ts);
+	}
+
+	function dataUpdatedLabel() {
+		const d = new Date(DATA_META.updatedAt);
+		if (Number.isNaN(d.getTime())) return "Data pulled recently";
+		return "Data pulled " +
+			d.toLocaleDateString(undefined, { month: "short", day: "numeric" }) +
+			" at " +
+			d.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" });
 	}
 
 	/* Easter egg: rainbow sprinkle burst on merged-badge click */
@@ -1478,5 +1491,5 @@
 		}
 	}
 
-	window.DASH = { SQUAD: SQUAD, REPOS: REPOS, MERGED: MERGED, OPEN: OPEN, AREAS: AREAS, TOTALS: TOTALS, person: person, whenLabel: whenLabel, prWhen: prWhen, sprinkleBurst: sprinkleBurst };
+	window.DASH = { SQUAD: SQUAD, REPOS: REPOS, MERGED: MERGED, OPEN: OPEN, AREAS: AREAS, TOTALS: TOTALS, DATA_META: DATA_META, person: person, whenLabel: whenLabel, prWhen: prWhen, dataUpdatedLabel: dataUpdatedLabel, sprinkleBurst: sprinkleBurst };
 })();

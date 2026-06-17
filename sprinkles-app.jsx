@@ -400,6 +400,7 @@ function SprinklesApp() {
         .sprk-roster.is-dim:hover { opacity: 1; }
         /* Cupcake "logo" — only present in the sticky bar, so it appears on scroll. */
         .sprk-bar-logo { border: 0; background: transparent; cursor: pointer; font-size: 22px; line-height: 1; padding: 0 2px; }
+        .sprk-updated { font: 500 12px/18px var(--font-sans); color: var(--woo-ink-soft); margin: 10px 0 0; opacity: 0.78; }
         @media (max-width: 920px) {
           .sprk-rail { display: none !important; }
           .sprk-area-select { display: inline-flex; }
@@ -541,6 +542,7 @@ function SprinklesApp() {
 					Five designers pushing real improvements into Woo, in production, through pull requests.
 					{" "}<strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.merged} /></strong> merged across <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.surfaces} /></strong> focus areas since {D.TOTALS.since}.
 				</p>
+				<p className="sprk-updated">{D.dataUpdatedLabel()}</p>
 			</div>
 
 			<div className="sprk-wrap sprk-grid">
