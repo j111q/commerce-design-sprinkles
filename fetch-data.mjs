@@ -101,41 +101,39 @@ function surfaceFor(repo, number, title, labels) {
 
 /* ---- feature-flag status --------------------------------------------------
    "Public" = shipped in a stable WooCommerce release. "Flagged" = gated behind
-   a feature flag (off by default). GitHub exposes no flag field, and labels
-   don't separate the two (needs:documentation lands on both), so we classify by
-   the flagged *project* a PR belongs to — chiefly the new experimental products
-   app (product list + editor + quick-edit drawer) plus a few named flags. */
-const FLAG_RULES = [
-	/feature[- ]flag/i,
-	/experimental/i,
-	/\bbeta\b/i,
-	/blueprint/i,
-	/products? app|product edit(or| drawer)?|product block editor|grouped product edit/i,
-	/quick edit/i,
-	/order[- ]detail[- ]redesign/i,
-	/variations? (classic )?redesign|new variation experience/i,
-	/products? (list|dashboard)|all products/i
+   a feature flag (off by default).
+
+   GitHub exposes no flag field, and neither titles nor labels classify reliably
+   ("product editor" also means the *classic* editor; the needs:documentation
+   label lands on flagged and public PRs alike). The dependable signal is the
+   code a PR actually touches: the flagged "experimental products app" lives in a
+   dedicated JS package and a PHP feature module, so a PR editing either is
+   flagged work. A short title fallback covers the named flags that live in
+   shared code with no package of their own. */
+const FLAG_PATHS = [
+	/(^|\/)packages\/js\/experimental-products-app\//,  // products app — JS / React
+	/(^|\/)src\/Admin\/Features\/ProductDataViews\//     // products app — PHP feature module
 ];
-/* One-off corrections (repo#number → true forces flagged, false forces public).
-   These are products-app PRs whose titles don't name the app, so the keyword
-   scan can't catch them on its own. */
-const FLAG_OVERRIDES = {
-	"woocommerce/woocommerce#65197": true, // products-app delete confirmation copy
-	"woocommerce/woocommerce#65008": true, // trashed-products restore/delete actions
-	"woocommerce/woocommerce#64995": true, // sale price field in the product editor
-	"woocommerce/woocommerce#64821": true, // products-app category filter + column
-	"woocommerce/woocommerce#64741": true, // products-app product-title links
-	"woocommerce/woocommerce#64715": true, // product-editor images field
-	"woocommerce/woocommerce#64710": true, // quick-edit categories helper text
-	"woocommerce/woocommerce#64709": true, // quick-edit SKU helper text
-	"woocommerce/woocommerce#64707": true, // products-app status options
-	"woocommerce/woocommerce#64706": true  // products-app stock column badge
-};
-function isFlagged(repo, number, title) {
+const FLAG_TITLE = /feature[- ]flag|order[- ]detail[- ]redesign|variations? (classic )?redesign|new variation experience|blueprint/i;
+/* One-off corrections (repo#number → true forces flagged, false forces public)
+   for the rare case the signals above misclassify a PR. None needed today. */
+const FLAG_OVERRIDES = {};
+function isFlagged(repo, number, title, files) {
 	const key = repo + "#" + number;
 	if (key in FLAG_OVERRIDES) return FLAG_OVERRIDES[key];
 	if (REPO_SURFACE[repo]) return false; // extensions ship in their own releases
-	return FLAG_RULES.some((re) => re.test(title));
+	if (files.some((p) => FLAG_PATHS.some((re) => re.test(p)))) return true;
+	return FLAG_TITLE.test(title);
+}
+
+/* Changed code files for a PR (changelog entries dropped — they're noise). */
+async function changedFiles(repo, number) {
+	try {
+		const files = await gh(`https://api.github.com/repos/${repo}/pulls/${number}/files?per_page=100`);
+		return files.map((f) => f.filename).filter((p) => !/\/changelog\//.test(p));
+	} catch {
+		return [];
+	}
 }
 
 /* ---- relative time --------------------------------------------------------- */
@@ -205,6 +203,14 @@ async function collect() {
 	const approvals = await pool(needsApproval, 6, (row) => isApproved(row.repo, row.number));
 	needsApproval.forEach((row, i) => { row.approved = approvals[i]; });
 
+	// Feature-flag status keys off changed files, so fetch them for every PR.
+	// Extension-repo PRs are public by rule, so skip those lookups.
+	const allRows = merged.concat(open);
+	const flagTargets = allRows.filter((row) => !REPO_SURFACE[row.repo]);
+	const fileLists = await pool(flagTargets, 8, (row) => changedFiles(row.repo, row.number));
+	flagTargets.forEach((row, i) => { row.files = fileLists[i]; });
+	allRows.forEach((row) => { if (!row.files) row.files = []; });
+
 	const labelsOf = (it) => (it.labels || []).map((l) => l.name);
 
 	const MERGED = merged
@@ -217,7 +223,7 @@ async function collect() {
 				number: row.number,
 				url: row.it.html_url,
 				area: surfaceFor(row.repo, row.number, row.it.title, labels),
-				flagged: isFlagged(row.repo, row.number, row.it.title),
+				flagged: isFlagged(row.repo, row.number, row.it.title, row.files),
 				authors: [row.authorId],
 				reviewers: [],
 				ts,
@@ -237,7 +243,7 @@ async function collect() {
 				number: row.number,
 				url: row.it.html_url,
 				area: surfaceFor(row.repo, row.number, row.it.title, labels),
-				flagged: isFlagged(row.repo, row.number, row.it.title),
+				flagged: isFlagged(row.repo, row.number, row.it.title, row.files),
 				authors: [row.authorId],
 				reviewers: [],
 				status,

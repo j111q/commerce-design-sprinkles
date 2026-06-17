@@ -56,6 +56,20 @@
 
 	const MERGED = [
 	{
+		"title": "Refresh shipping label ready panel",
+		"repo": "woocommerce/woocommerce-shipping",
+		"number": 1604,
+		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1604",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1781615252000,
+		"fresh": true
+	},
+	{
 		"title": "Fix: Improve color contrast for attribute placeholder text (WCAG 2.2 AA)",
 		"repo": "woocommerce/woocommerce",
 		"number": 65608,
@@ -126,6 +140,20 @@
 		"fresh": false
 	},
 	{
+		"title": "Tweak label purchase blue accents",
+		"repo": "woocommerce/woocommerce-shipping",
+		"number": 1605,
+		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1605",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1780895081000,
+		"fresh": false
+	},
+	{
 		"title": "Make WooPay save-info copy smaller",
 		"repo": "Automattic/woocommerce-payments",
 		"number": 11734,
@@ -137,6 +165,20 @@
 		],
 		"reviewers": [],
 		"ts": 1780059781000,
+		"fresh": false
+	},
+	{
+		"title": "Simplify SCAN Forms history empty state",
+		"repo": "woocommerce/woocommerce-shipping",
+		"number": 1594,
+		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1594",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1779963903000,
 		"fresh": false
 	},
 	{
@@ -1268,13 +1310,13 @@
 		"number": 65640,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65640",
 		"area": "Products & catalog",
-		"flagged": true,
+		"flagged": false,
 		"authors": [
 			"poli"
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1781684998000
+		"ts": 1781685967000
 	},
 	{
 		"title": "Update product publish panel controls",
@@ -1288,7 +1330,7 @@
 		],
 		"reviewers": [],
 		"status": "Draft",
-		"ts": 1781684366000
+		"ts": 1781685960000
 	},
 	{
 		"title": "Improve summary trend indicator contrast",
@@ -1422,7 +1464,7 @@
 		"number": 65482,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65482",
 		"area": "Products & catalog",
-		"flagged": true,
+		"flagged": false,
 		"authors": [
 			"poli"
 		],
@@ -1450,7 +1492,7 @@
 		"number": 65114,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65114",
 		"area": "Products & catalog",
-		"flagged": false,
+		"flagged": true,
 		"authors": [
 			"poli"
 		],
@@ -1498,11 +1540,11 @@
 		"count": 25
 	},
 	{
-		"name": "Orders",
-		"count": 4
+		"name": "Shipping",
+		"count": 7
 	},
 	{
-		"name": "Shipping",
+		"name": "Orders",
 		"count": 4
 	},
 	{
@@ -1540,16 +1582,16 @@
 ];
 
 	const TOTALS = {
-	"merged": 86,
+	"merged": 89,
 	"surfaces": 12,
-	"repos": 2,
+	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 44
+	"mergedPublic": 47
 };
 
 	const DATA_META = {
-	"updatedAt": "2026-06-17T08:37:47.619Z"
+	"updatedAt": "2026-06-17T08:49:44.888Z"
 };
 
 	function person(id) {

@@ -138,12 +138,13 @@ function SFlagBadge({ flagged }) {
     display: "inline-flex", alignItems: "center", gap: 4, borderRadius: 999,
     font: "600 10.5px/14px var(--font-sans)", letterSpacing: "0.01em",
     padding: "2px 8px 2px 7px", marginRight: 8, boxSizing: "border-box",
-    whiteSpace: "nowrap", verticalAlign: "middle", color: "var(--woo-indigo-deep)"
+    whiteSpace: "nowrap", verticalAlign: "middle", border: "1px solid transparent"
   };
   if (flagged) {
+    // Secondary / outline treatment — quieter than the filled "Public release".
     return (
-      <span className="sprk-flag" title="Behind a feature flag — not in a stable release yet"
-        style={Object.assign({}, base, { background: "var(--woo-pink-soft)" })}>
+      <span className="sprk-flag" title="Behind a feature flag — not in a public release yet"
+        style={Object.assign({}, base, { background: "transparent", borderColor: "var(--woo-pink)", color: "var(--woo-pink)" })}>
         <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M14.4 6 14 4H5v17h2v-7h5.6l.4 2h7V6z" />
         </svg>
@@ -153,7 +154,7 @@ function SFlagBadge({ flagged }) {
   }
   return (
     <span className="sprk-flag" title="Shipped in a public WooCommerce release"
-      style={Object.assign({}, base, { background: "var(--woo-blue-soft)" })}>
+      style={Object.assign({}, base, { background: "var(--woo-blue-soft)", color: "var(--woo-indigo-deep)" })}>
       <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
         <path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
       </svg>
