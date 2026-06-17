@@ -29,6 +29,10 @@ const checks = [
 		pattern: /\.sprk-card-main\s*\{[\s\S]*min-width: 0;[\s\S]*overflow-wrap: anywhere;[\s\S]*\.sprk-meta\s*\{[\s\S]*overflow-wrap: anywhere;/,
 	},
 	{
+		name: "mobile release badges drop below PR metadata",
+		pattern: /@media \(max-width: 600px\)\s*\{[\s\S]*\.sprk-meta \.sprk-flag-wrap\s*\{[\s\S]*display: flex;[\s\S]*width: max-content;[\s\S]*margin: 6px 0 0;/,
+	},
+	{
 		name: "narrow filters stack as full-width controls",
 		pattern: /@media \(max-width: 600px\)[\s\S]*\.sprk-filters\s*\{[\s\S]*display: grid;[\s\S]*width: 100%;/,
 	},

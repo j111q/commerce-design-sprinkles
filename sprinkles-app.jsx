@@ -432,6 +432,7 @@ function SprinklesApp() {
           /* Cards stack: badge over title over avatars, so nothing gets crushed. */
           .sprk-card { flex-direction: column; gap: 12px !important; padding: 18px 20px !important; width: 100%; }
           .sprk-card-people { padding-left: 0 !important; }
+          .sprk-meta .sprk-flag-wrap { display: flex; width: max-content; margin: 6px 0 0; }
         }
         /* Compact filter bar — hidden above the viewport until scrolled. */
         .sprk-stickybar {
