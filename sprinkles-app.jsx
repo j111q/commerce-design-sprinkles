@@ -130,6 +130,38 @@ function SBadge({ pr }) {
   return <span style={Object.assign({}, base, styles[pr.status])}>{pr.status}</span>;
 }
 
+/* Release status — whether the PR's work is live in a stable release or still
+   gated behind a feature flag. A separate dimension from the Merged/Open status
+   pill, so it gets its own softer, sentence-case lane with an icon. */
+function SFlagBadge({ flagged }) {
+  const base = {
+    display: "inline-flex", alignItems: "center", gap: 4, borderRadius: 999,
+    font: "600 10.5px/14px var(--font-sans)", letterSpacing: "0.01em",
+    padding: "2px 8px 2px 7px", marginRight: 8, boxSizing: "border-box",
+    whiteSpace: "nowrap", verticalAlign: "middle", color: "var(--woo-indigo-deep)"
+  };
+  if (flagged) {
+    return (
+      <span className="sprk-flag" title="Behind a feature flag — not in a stable release yet"
+        style={Object.assign({}, base, { background: "var(--woo-pink-soft)" })}>
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M14.4 6 14 4H5v17h2v-7h5.6l.4 2h7V6z" />
+        </svg>
+        Feature flagged
+      </span>);
+
+  }
+  return (
+    <span className="sprk-flag" title="Shipped in a public WooCommerce release"
+      style={Object.assign({}, base, { background: "var(--woo-blue-soft)" })}>
+      <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+      </svg>
+      Public release
+    </span>);
+
+}
+
 function STabs({ active, onChange, tabStyle, counts }) {
   const pills = tabStyle === "Pills";
   return (
@@ -570,6 +602,7 @@ function SprinklesApp() {
 								<div className="sprk-card-main" style={{ flex: 1, display: "flex", flexDirection: "column", gap: 6 }}>
 									<a href={pr.url || "#"} target="_blank" rel="noreferrer" className="pr-title" style={{ font: "600 16px/22px var(--font-sans)", letterSpacing: "-0.01em", textWrap: "pretty", color: "var(--woo-ink)", textDecoration: "none" }}>{pr.title}</a>
 									<span className="sprk-meta" style={{ font: "400 13px/18px var(--font-sans)", color: "var(--woo-ink-soft)" }}>
+										<SFlagBadge flagged={pr.flagged} />
 										<span style={{ fontFamily: "Menlo, Consolas, monospace", fontSize: 12 }}>{pr.repo.split("/")[1]}#{pr.number}</span>
 										{"  ·  "}{pr.area}{"  ·  "}{DASH.prWhen(pr)}
 									</span>
