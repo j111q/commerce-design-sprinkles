@@ -56,11 +56,26 @@
 
 	const MERGED = [
 	{
+		"title": "Refresh shipping label ready panel",
+		"repo": "woocommerce/woocommerce-shipping",
+		"number": 1604,
+		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1604",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1781615252000,
+		"fresh": true
+	},
+	{
 		"title": "Fix: Improve color contrast for attribute placeholder text (WCAG 2.2 AA)",
 		"repo": "woocommerce/woocommerce",
 		"number": 65608,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65608",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"poli"
 		],
@@ -74,6 +89,7 @@
 		"number": 65667,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65667",
 		"area": "Products & catalog",
+		"flagged": false,
 		"authors": [
 			"poli"
 		],
@@ -87,6 +103,7 @@
 		"number": 65605,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65605",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"poli"
 		],
@@ -100,6 +117,7 @@
 		"number": 64645,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64645",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"j"
 		],
@@ -113,6 +131,7 @@
 		"number": 64846,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64846",
 		"area": "Analytics",
+		"flagged": false,
 		"authors": [
 			"j"
 		],
@@ -121,11 +140,26 @@
 		"fresh": false
 	},
 	{
+		"title": "Tweak label purchase blue accents",
+		"repo": "woocommerce/woocommerce-shipping",
+		"number": 1605,
+		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1605",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1780895081000,
+		"fresh": false
+	},
+	{
 		"title": "Make WooPay save-info copy smaller",
 		"repo": "Automattic/woocommerce-payments",
 		"number": 11734,
 		"url": "https://github.com/Automattic/woocommerce-payments/pull/11734",
 		"area": "Payments",
+		"flagged": false,
 		"authors": [
 			"j"
 		],
@@ -134,11 +168,26 @@
 		"fresh": false
 	},
 	{
+		"title": "Simplify SCAN Forms history empty state",
+		"repo": "woocommerce/woocommerce-shipping",
+		"number": 1594,
+		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1594",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1779963903000,
+		"fresh": false
+	},
+	{
 		"title": "Remove the task list reminder bar from Woo admin",
 		"repo": "woocommerce/woocommerce",
 		"number": 64353,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64353",
 		"area": "Onboarding",
+		"flagged": false,
 		"authors": [
 			"j"
 		],
@@ -152,6 +201,7 @@
 		"number": 65256,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65256",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"poli"
 		],
@@ -165,6 +215,7 @@
 		"number": 65159,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65159",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"poli"
 		],
@@ -178,6 +229,7 @@
 		"number": 65173,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65173",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -191,6 +243,7 @@
 		"number": 65199,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65199",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -204,6 +257,7 @@
 		"number": 65197,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65197",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -217,6 +271,7 @@
 		"number": 65198,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65198",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -230,6 +285,7 @@
 		"number": 65160,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65160",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -243,6 +299,7 @@
 		"number": 65008,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65008",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -256,6 +313,7 @@
 		"number": 65163,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65163",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -269,6 +327,7 @@
 		"number": 65157,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65157",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"j"
 		],
@@ -282,6 +341,7 @@
 		"number": 65000,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65000",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -295,6 +355,7 @@
 		"number": 65108,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65108",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"poli"
 		],
@@ -308,6 +369,7 @@
 		"number": 64885,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64885",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"j"
 		],
@@ -321,6 +383,7 @@
 		"number": 64860,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64860",
 		"area": "Payments",
+		"flagged": false,
 		"authors": [
 			"ann"
 		],
@@ -334,6 +397,7 @@
 		"number": 64809,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64809",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"ann"
 		],
@@ -347,6 +411,7 @@
 		"number": 65131,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65131",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"j"
 		],
@@ -360,6 +425,7 @@
 		"number": 65127,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65127",
 		"area": "Shipping",
+		"flagged": true,
 		"authors": [
 			"poli"
 		],
@@ -373,6 +439,7 @@
 		"number": 64993,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64993",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -386,6 +453,7 @@
 		"number": 64995,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64995",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -399,6 +467,7 @@
 		"number": 64992,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64992",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -412,6 +481,7 @@
 		"number": 64907,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64907",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -425,6 +495,7 @@
 		"number": 64913,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64913",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -438,6 +509,7 @@
 		"number": 64811,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64811",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -451,6 +523,7 @@
 		"number": 64741,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64741",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -464,6 +537,7 @@
 		"number": 64785,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64785",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -477,6 +551,7 @@
 		"number": 64827,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64827",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -490,6 +565,7 @@
 		"number": 64823,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64823",
 		"area": "Shipping",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -503,6 +579,7 @@
 		"number": 64858,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64858",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -516,6 +593,7 @@
 		"number": 64643,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64643",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"j"
 		],
@@ -529,6 +607,7 @@
 		"number": 64851,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64851",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -542,6 +621,7 @@
 		"number": 64784,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64784",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -555,6 +635,7 @@
 		"number": 64822,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64822",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -568,6 +649,7 @@
 		"number": 64814,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64814",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -581,6 +663,7 @@
 		"number": 64816,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64816",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -594,6 +677,7 @@
 		"number": 64821,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64821",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -607,6 +691,7 @@
 		"number": 64826,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64826",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -620,6 +705,7 @@
 		"number": 64799,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64799",
 		"area": "Payments",
+		"flagged": false,
 		"authors": [
 			"ann"
 		],
@@ -633,6 +719,7 @@
 		"number": 64669,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64669",
 		"area": "Orders",
+		"flagged": true,
 		"authors": [
 			"jana"
 		],
@@ -646,6 +733,7 @@
 		"number": 64788,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64788",
 		"area": "Marketplace",
+		"flagged": false,
 		"authors": [
 			"ann"
 		],
@@ -659,6 +747,7 @@
 		"number": 64703,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64703",
 		"area": "Emails",
+		"flagged": false,
 		"authors": [
 			"ann"
 		],
@@ -672,6 +761,7 @@
 		"number": 64203,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64203",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"ann"
 		],
@@ -685,6 +775,7 @@
 		"number": 64204,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64204",
 		"area": "Shipping",
+		"flagged": false,
 		"authors": [
 			"ann"
 		],
@@ -698,6 +789,7 @@
 		"number": 64420,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64420",
 		"area": "Marketplace",
+		"flagged": false,
 		"authors": [
 			"ann"
 		],
@@ -711,6 +803,7 @@
 		"number": 64715,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64715",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -724,6 +817,7 @@
 		"number": 64713,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64713",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -737,6 +831,7 @@
 		"number": 64476,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64476",
 		"area": "Orders",
+		"flagged": false,
 		"authors": [
 			"j"
 		],
@@ -750,6 +845,7 @@
 		"number": 64705,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64705",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -763,6 +859,7 @@
 		"number": 64704,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64704",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -776,6 +873,7 @@
 		"number": 64702,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64702",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -789,6 +887,7 @@
 		"number": 64707,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64707",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -802,6 +901,7 @@
 		"number": 64706,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64706",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -815,6 +915,7 @@
 		"number": 64709,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64709",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -828,6 +929,7 @@
 		"number": 64714,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64714",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -841,6 +943,7 @@
 		"number": 64710,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64710",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -854,6 +957,7 @@
 		"number": 64249,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64249",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"ann"
 		],
@@ -867,6 +971,7 @@
 		"number": 64280,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64280",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"ann"
 		],
@@ -880,6 +985,7 @@
 		"number": 64496,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64496",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"vero"
 		],
@@ -893,6 +999,7 @@
 		"number": 64453,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64453",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"j"
 		],
@@ -906,6 +1013,7 @@
 		"number": 64354,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64354",
 		"area": "Orders",
+		"flagged": false,
 		"authors": [
 			"ann"
 		],
@@ -919,6 +1027,7 @@
 		"number": 64186,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64186",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"ann"
 		],
@@ -932,6 +1041,7 @@
 		"number": 64454,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64454",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"j"
 		],
@@ -945,6 +1055,7 @@
 		"number": 64443,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64443",
 		"area": "Home",
+		"flagged": false,
 		"authors": [
 			"j"
 		],
@@ -958,6 +1069,7 @@
 		"number": 64212,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64212",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"ann"
 		],
@@ -971,6 +1083,7 @@
 		"number": 64237,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64237",
 		"area": "Settings",
+		"flagged": false,
 		"authors": [
 			"ann"
 		],
@@ -984,6 +1097,7 @@
 		"number": 64244,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64244",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"ann"
 		],
@@ -997,6 +1111,7 @@
 		"number": 64181,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64181",
 		"area": "Shipping",
+		"flagged": false,
 		"authors": [
 			"ann"
 		],
@@ -1010,6 +1125,7 @@
 		"number": 64327,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64327",
 		"area": "Coupons",
+		"flagged": false,
 		"authors": [
 			"ann"
 		],
@@ -1023,6 +1139,7 @@
 		"number": 64389,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64389",
 		"area": "Orders",
+		"flagged": false,
 		"authors": [
 			"ann"
 		],
@@ -1036,6 +1153,7 @@
 		"number": 64417,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64417",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"ann"
 		],
@@ -1049,6 +1167,7 @@
 		"number": 64276,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64276",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"j"
 		],
@@ -1062,6 +1181,7 @@
 		"number": 64397,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64397",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"ann"
 		],
@@ -1075,6 +1195,7 @@
 		"number": 64262,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64262",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"ann"
 		],
@@ -1088,6 +1209,7 @@
 		"number": 64322,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64322",
 		"area": "Settings",
+		"flagged": false,
 		"authors": [
 			"ann"
 		],
@@ -1101,6 +1223,7 @@
 		"number": 64196,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64196",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"j"
 		],
@@ -1114,6 +1237,7 @@
 		"number": 64191,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64191",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"j"
 		],
@@ -1127,6 +1251,7 @@
 		"number": 64357,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64357",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"j"
 		],
@@ -1140,6 +1265,7 @@
 		"number": 64187,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64187",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"j"
 		],
@@ -1153,6 +1279,7 @@
 		"number": 64334,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64334",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"j"
 		],
@@ -1166,6 +1293,7 @@
 		"number": 64286,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64286",
 		"area": "Emails",
+		"flagged": false,
 		"authors": [
 			"ann"
 		],
@@ -1182,6 +1310,7 @@
 		"number": 65640,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65640",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"poli"
 		],
@@ -1195,6 +1324,7 @@
 		"number": 65784,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65784",
 		"area": "Other admin",
+		"flagged": false,
 		"authors": [
 			"poli"
 		],
@@ -1208,6 +1338,7 @@
 		"number": 64564,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64564",
 		"area": "Orders",
+		"flagged": false,
 		"authors": [
 			"j"
 		],
@@ -1221,6 +1352,7 @@
 		"number": 65788,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65788",
 		"area": "Products & catalog",
+		"flagged": false,
 		"authors": [
 			"j"
 		],
@@ -1234,6 +1366,7 @@
 		"number": 65714,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65714",
 		"area": "Orders",
+		"flagged": false,
 		"authors": [
 			"jana"
 		],
@@ -1247,6 +1380,7 @@
 		"number": 65704,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65704",
 		"area": "Home",
+		"flagged": false,
 		"authors": [
 			"poli"
 		],
@@ -1260,6 +1394,7 @@
 		"number": 65205,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65205",
 		"area": "Orders",
+		"flagged": false,
 		"authors": [
 			"jana"
 		],
@@ -1273,6 +1408,7 @@
 		"number": 65717,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65717",
 		"area": "Coupons",
+		"flagged": false,
 		"authors": [
 			"jana"
 		],
@@ -1286,6 +1422,7 @@
 		"number": 65699,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65699",
 		"area": "Orders",
+		"flagged": false,
 		"authors": [
 			"jana"
 		],
@@ -1299,6 +1436,7 @@
 		"number": 64711,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64711",
 		"area": "Orders",
+		"flagged": false,
 		"authors": [
 			"jana"
 		],
@@ -1312,6 +1450,7 @@
 		"number": 65482,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65482",
 		"area": "Products & catalog",
+		"flagged": true,
 		"authors": [
 			"poli"
 		],
@@ -1325,6 +1464,7 @@
 		"number": 65176,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65176",
 		"area": "Orders",
+		"flagged": false,
 		"authors": [
 			"jana"
 		],
@@ -1338,6 +1478,7 @@
 		"number": 65114,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65114",
 		"area": "Products & catalog",
+		"flagged": false,
 		"authors": [
 			"poli"
 		],
@@ -1351,6 +1492,7 @@
 		"number": 65142,
 		"url": "https://github.com/woocommerce/woocommerce/pull/65142",
 		"area": "Orders",
+		"flagged": false,
 		"authors": [
 			"jana"
 		],
@@ -1364,6 +1506,7 @@
 		"number": 64626,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64626",
 		"area": "Orders",
+		"flagged": false,
 		"authors": [
 			"jana"
 		],
@@ -1383,11 +1526,11 @@
 		"count": 25
 	},
 	{
-		"name": "Orders",
-		"count": 4
+		"name": "Shipping",
+		"count": 7
 	},
 	{
-		"name": "Shipping",
+		"name": "Orders",
 		"count": 4
 	},
 	{
@@ -1425,14 +1568,16 @@
 ];
 
 	const TOTALS = {
-	"merged": 86,
+	"merged": 89,
 	"surfaces": 12,
-	"repos": 2,
-	"since": "April 2026"
+	"repos": 3,
+	"since": "April 2026",
+	"mergedFlagged": 42,
+	"mergedPublic": 47
 };
 
 	const DATA_META = {
-	"updatedAt": "2026-06-17T07:45:25.235Z"
+	"updatedAt": "2026-06-17T07:48:16.027Z"
 };
 
 	function person(id) {

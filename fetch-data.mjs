@@ -99,6 +99,45 @@ function surfaceFor(repo, number, title, labels) {
 	return "Other admin";
 }
 
+/* ---- feature-flag status --------------------------------------------------
+   "Public" = shipped in a stable WooCommerce release. "Flagged" = gated behind
+   a feature flag (off by default). GitHub exposes no flag field, and labels
+   don't separate the two (needs:documentation lands on both), so we classify by
+   the flagged *project* a PR belongs to — chiefly the new experimental products
+   app (product list + editor + quick-edit drawer) plus a few named flags. */
+const FLAG_RULES = [
+	/feature[- ]flag/i,
+	/experimental/i,
+	/\bbeta\b/i,
+	/blueprint/i,
+	/products? app|product edit(or| drawer)?|product block editor|grouped product edit/i,
+	/quick edit/i,
+	/order[- ]detail[- ]redesign/i,
+	/variations? (classic )?redesign|new variation experience/i,
+	/products? (list|dashboard)|all products/i
+];
+/* One-off corrections (repo#number → true forces flagged, false forces public).
+   These are products-app PRs whose titles don't name the app, so the keyword
+   scan can't catch them on its own. */
+const FLAG_OVERRIDES = {
+	"woocommerce/woocommerce#65197": true, // products-app delete confirmation copy
+	"woocommerce/woocommerce#65008": true, // trashed-products restore/delete actions
+	"woocommerce/woocommerce#64995": true, // sale price field in the product editor
+	"woocommerce/woocommerce#64821": true, // products-app category filter + column
+	"woocommerce/woocommerce#64741": true, // products-app product-title links
+	"woocommerce/woocommerce#64715": true, // product-editor images field
+	"woocommerce/woocommerce#64710": true, // quick-edit categories helper text
+	"woocommerce/woocommerce#64709": true, // quick-edit SKU helper text
+	"woocommerce/woocommerce#64707": true, // products-app status options
+	"woocommerce/woocommerce#64706": true  // products-app stock column badge
+};
+function isFlagged(repo, number, title) {
+	const key = repo + "#" + number;
+	if (key in FLAG_OVERRIDES) return FLAG_OVERRIDES[key];
+	if (REPO_SURFACE[repo]) return false; // extensions ship in their own releases
+	return FLAG_RULES.some((re) => re.test(title));
+}
+
 /* ---- relative time --------------------------------------------------------- */
 function monthYear(iso) {
 	return new Date(iso).toLocaleDateString("en-US", { month: "long", year: "numeric" });
@@ -178,6 +217,7 @@ async function collect() {
 				number: row.number,
 				url: row.it.html_url,
 				area: surfaceFor(row.repo, row.number, row.it.title, labels),
+				flagged: isFlagged(row.repo, row.number, row.it.title),
 				authors: [row.authorId],
 				reviewers: [],
 				ts,
@@ -197,6 +237,7 @@ async function collect() {
 				number: row.number,
 				url: row.it.html_url,
 				area: surfaceFor(row.repo, row.number, row.it.title, labels),
+				flagged: isFlagged(row.repo, row.number, row.it.title),
 				authors: [row.authorId],
 				reviewers: [],
 				status,
@@ -214,11 +255,14 @@ async function collect() {
 
 	const repos = new Set(MERGED.concat(OPEN).map((pr) => pr.repo));
 	const earliest = MERGED.reduce((min, pr) => Math.min(min, pr.ts), Date.now());
+	const mergedFlagged = MERGED.filter((pr) => pr.flagged).length;
 	const TOTALS = {
 		merged: MERGED.length,
 		surfaces: AREAS.length,
 		repos: repos.size,
-		since: monthYear(new Date(earliest).toISOString())
+		since: monthYear(new Date(earliest).toISOString()),
+		mergedFlagged: mergedFlagged,
+		mergedPublic: MERGED.length - mergedFlagged
 	};
 
 	return { MERGED, OPEN, AREAS, TOTALS };
