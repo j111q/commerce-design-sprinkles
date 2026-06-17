@@ -56,20 +56,6 @@
 
 	const MERGED = [
 	{
-		"title": "Refresh shipping label ready panel",
-		"repo": "woocommerce/woocommerce-shipping",
-		"number": 1604,
-		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1604",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"ts": 1781615252000,
-		"fresh": true
-	},
-	{
 		"title": "Fix: Improve color contrast for attribute placeholder text (WCAG 2.2 AA)",
 		"repo": "woocommerce/woocommerce",
 		"number": 65608,
@@ -140,20 +126,6 @@
 		"fresh": false
 	},
 	{
-		"title": "Tweak label purchase blue accents",
-		"repo": "woocommerce/woocommerce-shipping",
-		"number": 1605,
-		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1605",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"ts": 1780895081000,
-		"fresh": false
-	},
-	{
 		"title": "Make WooPay save-info copy smaller",
 		"repo": "Automattic/woocommerce-payments",
 		"number": 11734,
@@ -165,20 +137,6 @@
 		],
 		"reviewers": [],
 		"ts": 1780059781000,
-		"fresh": false
-	},
-	{
-		"title": "Simplify SCAN Forms history empty state",
-		"repo": "woocommerce/woocommerce-shipping",
-		"number": 1594,
-		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1594",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"ts": 1779963903000,
 		"fresh": false
 	},
 	{
@@ -1540,11 +1498,11 @@
 		"count": 25
 	},
 	{
-		"name": "Shipping",
-		"count": 7
+		"name": "Orders",
+		"count": 4
 	},
 	{
-		"name": "Orders",
+		"name": "Shipping",
 		"count": 4
 	},
 	{
@@ -1582,16 +1540,16 @@
 ];
 
 	const TOTALS = {
-	"merged": 89,
+	"merged": 86,
 	"surfaces": 12,
-	"repos": 3,
+	"repos": 2,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 47
+	"mergedPublic": 44
 };
 
 	const DATA_META = {
-	"updatedAt": "2026-06-17T08:49:44.888Z"
+	"updatedAt": "2026-06-17T08:50:05.745Z"
 };
 
 	function person(id) {
