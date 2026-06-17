@@ -315,6 +315,19 @@ function SprinklesApp() {
   });
   const tabCounts = {};
   TABS.forEach(function (tb) {tabCounts[tb] = scoped.filter(TAB_FILTERS[tb]).length;});
+  /* Focus-area chips act like facet counts: follow person + tab, but ignore
+     the active focus-area filter so every chip remains comparable/clickable. */
+  const focusAreaRows = FEED.filter(function (pr) {
+    if (person && pr.authors.indexOf(person) === -1) return false;
+    return TAB_FILTERS[tab](pr);
+  });
+  const focusAreaCounts = {};
+  focusAreaRows.forEach(function (pr) {
+    focusAreaCounts[pr.area] = (focusAreaCounts[pr.area] || 0) + 1;
+  });
+  const focusAreas = D.AREAS.map(function (a) {
+    return Object.assign({}, a, { count: focusAreaCounts[a.name] || 0 });
+  });
   const rows = scoped.filter(TAB_FILTERS[tab]);
   const personAreas = person ? topAreasFor(person) : [];
   const glow = (t.gradientGlow || 0) / 100;
@@ -617,7 +630,7 @@ function SprinklesApp() {
 								"Filter by focus area"}
 							</p>
 							<div className="sprk-chip-cloud">
-								{D.AREAS.map(function (a) {
+								{focusAreas.map(function (a) {
 									const on = surface === a.name;
 									return (
 										<button
