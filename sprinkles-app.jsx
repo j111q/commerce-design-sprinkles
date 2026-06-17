@@ -136,7 +136,7 @@ function SBadge({ pr }) {
 function SFlagBadge({ flagged }) {
   const base = {
     display: "inline-flex", alignItems: "center", gap: 4, borderRadius: 999,
-    font: "600 10.5px/14px var(--font-sans)", letterSpacing: "0.01em",
+    font: "600 10.5px/14px \"Menlo\", \"Consolas\", monospace", letterSpacing: "0.01em",
     padding: "2px 8px 2px 7px", marginRight: 8, boxSizing: "border-box",
     whiteSpace: "nowrap", verticalAlign: "middle", border: "1px solid transparent"
   };
@@ -604,9 +604,9 @@ function SprinklesApp() {
 								<SBadge pr={pr} />
 								<div className="sprk-card-main" style={{ flex: 1, display: "flex", flexDirection: "column", gap: 6 }}>
 									<a href={pr.url || "#"} target="_blank" rel="noreferrer" className="pr-title" style={{ font: "600 16px/22px var(--font-sans)", letterSpacing: "-0.01em", textWrap: "pretty", color: "var(--woo-ink)", textDecoration: "none" }}>{pr.title}</a>
-									<span className="sprk-meta" style={{ font: "400 13px/18px var(--font-sans)", color: "var(--woo-ink-soft)" }}>
+									<span className="sprk-meta" style={{ font: "400 12px/18px \"Menlo\", \"Consolas\", monospace", color: "var(--woo-ink-soft)" }}>
 										{pr.status === "Merged" && <SFlagBadge flagged={pr.flagged} />}
-										<span style={{ fontFamily: "Menlo, Consolas, monospace", fontSize: 12 }}>{pr.repo.split("/")[1]}#{pr.number}</span>
+										<span>{pr.repo.split("/")[1]}#{pr.number}</span>
 										{"  ·  "}{pr.area}{"  ·  "}{DASH.prWhen(pr)}
 									</span>
 								</div>
