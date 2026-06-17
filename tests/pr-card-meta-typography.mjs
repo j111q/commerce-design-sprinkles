@@ -31,12 +31,19 @@ const checks = [
 		pass: /className="sprk-flag-wrap"/.test(app) &&
 			/className="sprk-flag-tip"/.test(app) &&
 			/role="tooltip"/.test(app) &&
-			app.includes("Included in a public WooCommerce release.") &&
-			app.includes("Merged behind a feature flag; not in a public release yet."),
+			app.includes("Included in a public WooCommerce\\u00a0release.") &&
+			app.includes("Merged behind a feature flag; not in a public release\\u00a0yet."),
 	},
 	{
 		name: "release badge tooltip uses a compact line length",
-		pass: /max-width: min\(208px, calc\(100vw - 48px\)\)/.test(app),
+		pass: /max-width: min\(184px, calc\(100vw - 48px\)\)/.test(app),
+	},
+	{
+		name: "release badge tooltip protects final phrases from widows",
+		pass: !app.includes("WooCommerce release.") &&
+			!app.includes("release yet.") &&
+			app.includes("WooCommerce\\u00a0release.") &&
+			app.includes("release\\u00a0yet."),
 	},
 	{
 		name: "release badge tooltip appears on hover and keyboard focus",

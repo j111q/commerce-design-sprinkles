@@ -138,13 +138,13 @@ function SFlagBadge({ flagged }) {
   const copy = flagged ?
     {
       label: "Feature flagged",
-      tooltip: "Merged behind a feature flag; not in a public release yet.",
+      tooltip: "Merged behind a feature flag; not in a public release\u00a0yet.",
       path: "M14.4 6 14 4H5v17h2v-7h5.6l.4 2h7V6z",
       style: { background: "transparent", borderColor: "var(--woo-pink)", color: "var(--woo-pink)" }
     } :
     {
       label: "Public release",
-      tooltip: "Included in a public WooCommerce release.",
+      tooltip: "Included in a public WooCommerce\u00a0release.",
       style: { background: "var(--woo-blue-soft)", color: "var(--woo-indigo-deep)" }
     };
   const base = {
@@ -412,7 +412,7 @@ function SprinklesApp() {
         .sprk-flag-wrap:focus-visible .sprk-flag { outline: 2px solid var(--woo-purple); outline-offset: 2px; }
         .sprk-flag-tip {
           position: absolute; right: 0; bottom: calc(100% + 8px); z-index: 80;
-          width: max-content; max-width: min(208px, calc(100vw - 48px));
+          width: max-content; max-width: min(184px, calc(100vw - 48px));
           padding: 8px 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.18);
           background: var(--woo-ink); color: var(--woo-paper); box-shadow: 0 10px 24px rgba(30,17,66,0.18);
           font: 500 12px/16px var(--font-sans); letter-spacing: 0; text-align: left; white-space: normal;
