@@ -1277,32 +1277,18 @@
 
 	const OPEN = [
 	{
-		"title": "Update product publish panel controls",
+		"title": "Improve legacy WooCommerce dashboard widgets",
 		"repo": "woocommerce/woocommerce",
-		"number": 65794,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65794",
-		"area": "Products & catalog",
+		"number": 65704,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65704",
+		"area": "Home",
 		"flagged": false,
 		"authors": [
 			"poli"
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1781794713000
-	},
-	{
-		"title": "Order detail: apply 2-column grid sizing standard (720 / 24 / 320)",
-		"repo": "woocommerce/woocommerce",
-		"number": 65699,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65699",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1781793026000
+		"ts": 1781807720000
 	},
 	{
 		"title": "Improve classic product editor publish date field",
@@ -1316,7 +1302,35 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1781781640000
+		"ts": 1781802495000
+	},
+	{
+		"title": "Order detail: apply 2-column grid sizing standard (720 / 24 / 320)",
+		"repo": "woocommerce/woocommerce",
+		"number": 65699,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65699",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1781797967000
+	},
+	{
+		"title": "Update product publish panel controls",
+		"repo": "woocommerce/woocommerce",
+		"number": 65794,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65794",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1781794989000
 	},
 	{
 		"title": "Update product status filter availability labels",
@@ -1345,20 +1359,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1781779288000
-	},
-	{
-		"title": "Improve legacy WooCommerce dashboard widgets",
-		"repo": "woocommerce/woocommerce",
-		"number": 65704,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65704",
-		"area": "Home",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1781767122000
 	},
 	{
 		"title": "Improve product editor permalink layout",
@@ -1563,7 +1563,7 @@
 };
 
 	const DATA_META = {
-	"updatedAt": "2026-06-18T14:59:17.084Z"
+	"updatedAt": "2026-06-18T20:22:01.651Z"
 };
 
 	function person(id) {
