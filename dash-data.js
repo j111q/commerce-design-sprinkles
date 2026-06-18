@@ -56,6 +56,20 @@
 
 	const MERGED = [
 	{
+		"title": "Improve summary trend indicator contrast",
+		"repo": "woocommerce/woocommerce",
+		"number": 65784,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65784",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"ts": 1781764150000,
+		"fresh": true
+	},
+	{
 		"title": "Fix: Improve color contrast for attribute placeholder text (WCAG 2.2 AA)",
 		"repo": "woocommerce/woocommerce",
 		"number": 65608,
@@ -1263,6 +1277,20 @@
 
 	const OPEN = [
 	{
+		"title": "Improve classic product editor publish date field",
+		"repo": "woocommerce/woocommerce",
+		"number": 65826,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65826",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1781776109000
+	},
+	{
 		"title": "Update product publish panel controls",
 		"repo": "woocommerce/woocommerce",
 		"number": 65794,
@@ -1274,7 +1302,21 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1781729924000
+		"ts": 1781773188000
+	},
+	{
+		"title": "Improve legacy WooCommerce dashboard widgets",
+		"repo": "woocommerce/woocommerce",
+		"number": 65704,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65704",
+		"area": "Home",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1781767122000
 	},
 	{
 		"title": "Update product status filter availability labels",
@@ -1319,20 +1361,6 @@
 		"ts": 1781687094000
 	},
 	{
-		"title": "Improve summary trend indicator contrast",
-		"repo": "woocommerce/woocommerce",
-		"number": 65784,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65784",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1781684335000
-	},
-	{
 		"title": "Align Order Edit meta boxes with WordPress 7.0 design conventions",
 		"repo": "woocommerce/woocommerce",
 		"number": 64564,
@@ -1373,20 +1401,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1781604154000
-	},
-	{
-		"title": "Improve legacy WooCommerce dashboard widgets",
-		"repo": "woocommerce/woocommerce",
-		"number": 65704,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65704",
-		"area": "Home",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1781596269000
 	},
 	{
 		"title": "Hide downloads metabox on orders without downloadable items",
@@ -1495,7 +1509,7 @@
 	},
 	{
 		"name": "Other admin",
-		"count": 25
+		"count": 26
 	},
 	{
 		"name": "Orders",
@@ -1540,16 +1554,16 @@
 ];
 
 	const TOTALS = {
-	"merged": 86,
+	"merged": 87,
 	"surfaces": 12,
 	"repos": 2,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 44
+	"mergedPublic": 45
 };
 
 	const DATA_META = {
-	"updatedAt": "2026-06-18T03:33:41.907Z"
+	"updatedAt": "2026-06-18T10:16:15.221Z"
 };
 
 	function person(id) {
