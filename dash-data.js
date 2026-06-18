@@ -1277,20 +1277,6 @@
 
 	const OPEN = [
 	{
-		"title": "Improve classic product editor publish date field",
-		"repo": "woocommerce/woocommerce",
-		"number": 65826,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65826",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1781776109000
-	},
-	{
 		"title": "Update product publish panel controls",
 		"repo": "woocommerce/woocommerce",
 		"number": 65794,
@@ -1302,7 +1288,63 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1781773188000
+		"ts": 1781794713000
+	},
+	{
+		"title": "Order detail: apply 2-column grid sizing standard (720 / 24 / 320)",
+		"repo": "woocommerce/woocommerce",
+		"number": 65699,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65699",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1781793026000
+	},
+	{
+		"title": "Improve classic product editor publish date field",
+		"repo": "woocommerce/woocommerce",
+		"number": 65826,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65826",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1781781640000
+	},
+	{
+		"title": "Update product status filter availability labels",
+		"repo": "woocommerce/woocommerce",
+		"number": 65803,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65803",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1781779463000
+	},
+	{
+		"title": "Coupon edit: apply 2-column grid sizing standard (720 / 24 / 320)",
+		"repo": "woocommerce/woocommerce",
+		"number": 65717,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65717",
+		"area": "Coupons",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1781779288000
 	},
 	{
 		"title": "Improve legacy WooCommerce dashboard widgets",
@@ -1319,20 +1361,6 @@
 		"ts": 1781767122000
 	},
 	{
-		"title": "Update product status filter availability labels",
-		"repo": "woocommerce/woocommerce",
-		"number": 65803,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65803",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1781700045000
-	},
-	{
 		"title": "Improve product editor permalink layout",
 		"repo": "woocommerce/woocommerce",
 		"number": 65640,
@@ -1345,20 +1373,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1781688714000
-	},
-	{
-		"title": "Coupon edit: apply 2-column grid sizing standard (720 / 24 / 320)",
-		"repo": "woocommerce/woocommerce",
-		"number": 65717,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65717",
-		"area": "Coupons",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1781687094000
 	},
 	{
 		"title": "Align Order Edit meta boxes with WordPress 7.0 design conventions",
@@ -1415,20 +1429,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1781279537000
-	},
-	{
-		"title": "Order detail: apply 2-column grid sizing standard (720 / 24 / 320)",
-		"repo": "woocommerce/woocommerce",
-		"number": 65699,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65699",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1781269696000
 	},
 	{
 		"title": "Add prev/next order navigation to Order detail page header",
@@ -1563,7 +1563,7 @@
 };
 
 	const DATA_META = {
-	"updatedAt": "2026-06-18T10:16:15.221Z"
+	"updatedAt": "2026-06-18T14:59:17.084Z"
 };
 
 	function person(id) {
