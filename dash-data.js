@@ -1277,6 +1277,20 @@
 
 	const OPEN = [
 	{
+		"title": "Order detail: apply 2-column grid sizing standard (720 / 24 / 320)",
+		"repo": "woocommerce/woocommerce",
+		"number": 65699,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65699",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1781860337000
+	},
+	{
 		"title": "Improve legacy WooCommerce dashboard widgets",
 		"repo": "woocommerce/woocommerce",
 		"number": 65704,
@@ -1303,20 +1317,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1781802495000
-	},
-	{
-		"title": "Order detail: apply 2-column grid sizing standard (720 / 24 / 320)",
-		"repo": "woocommerce/woocommerce",
-		"number": 65699,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65699",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1781797967000
 	},
 	{
 		"title": "Update product publish panel controls",
@@ -1563,7 +1563,7 @@
 };
 
 	const DATA_META = {
-	"updatedAt": "2026-06-19T03:55:31.703Z"
+	"updatedAt": "2026-06-19T10:20:52.799Z"
 };
 
 	function person(id) {
