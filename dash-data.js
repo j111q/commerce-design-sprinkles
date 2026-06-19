@@ -1277,6 +1277,20 @@
 
 	const OPEN = [
 	{
+		"title": "Hide downloads metabox on orders without downloadable items",
+		"repo": "woocommerce/woocommerce",
+		"number": 65205,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65205",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1781883116000
+	},
+	{
 		"title": "Order detail: apply 2-column grid sizing standard (720 / 24 / 320)",
 		"repo": "woocommerce/woocommerce",
 		"number": 65699,
@@ -1417,20 +1431,6 @@
 		"ts": 1781604154000
 	},
 	{
-		"title": "Hide downloads metabox on orders without downloadable items",
-		"repo": "woocommerce/woocommerce",
-		"number": 65205,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65205",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1781279537000
-	},
-	{
 		"title": "Add prev/next order navigation to Order detail page header",
 		"repo": "woocommerce/woocommerce",
 		"number": 64711,
@@ -1563,7 +1563,7 @@
 };
 
 	const DATA_META = {
-	"updatedAt": "2026-06-19T14:56:47.385Z"
+	"updatedAt": "2026-06-19T19:44:49.654Z"
 };
 
 	function person(id) {
