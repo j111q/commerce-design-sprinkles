@@ -67,7 +67,7 @@
 		],
 		"reviewers": [],
 		"ts": 1781764150000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "Fix: Improve color contrast for attribute placeholder text (WCAG 2.2 AA)",
@@ -1563,7 +1563,7 @@
 };
 
 	const DATA_META = {
-	"updatedAt": "2026-06-21T03:44:13.700Z"
+	"updatedAt": "2026-06-21T09:43:58.844Z"
 };
 
 	function person(id) {
