@@ -1277,6 +1277,20 @@
 
 	const OPEN = [
 	{
+		"title": "Order detail: apply 2-column grid sizing standard (720 / 24 / 320)",
+		"repo": "woocommerce/woocommerce",
+		"number": 65699,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65699",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1782141230000
+	},
+	{
 		"title": "Update product status filter availability labels",
 		"repo": "woocommerce/woocommerce",
 		"number": 65803,
@@ -1288,7 +1302,21 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1782128484000
+		"ts": 1782136161000
+	},
+	{
+		"title": "Fix express payment button focus outline",
+		"repo": "woocommerce/woocommerce",
+		"number": 65901,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65901",
+		"area": "Payments",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1782132577000
 	},
 	{
 		"title": "Improve legacy WooCommerce dashboard widgets",
@@ -1317,20 +1345,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1781883116000
-	},
-	{
-		"title": "Order detail: apply 2-column grid sizing standard (720 / 24 / 320)",
-		"repo": "woocommerce/woocommerce",
-		"number": 65699,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65699",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1781860337000
 	},
 	{
 		"title": "Improve classic product editor publish date field",
@@ -1563,7 +1577,7 @@
 };
 
 	const DATA_META = {
-	"updatedAt": "2026-06-22T11:47:00.943Z"
+	"updatedAt": "2026-06-22T16:49:06.135Z"
 };
 
 	function person(id) {
