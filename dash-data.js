@@ -1288,7 +1288,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1782224003000
+		"ts": 1782226642000
 	},
 	{
 		"title": "Improve legacy WooCommerce dashboard widgets",
@@ -1591,7 +1591,7 @@
 };
 
 	const DATA_META = {
-	"updatedAt": "2026-06-23T14:40:38.787Z"
+	"updatedAt": "2026-06-23T19:56:44.789Z"
 };
 
 	function person(id) {
