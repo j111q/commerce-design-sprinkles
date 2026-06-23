@@ -1277,6 +1277,20 @@
 
 	const OPEN = [
 	{
+		"title": "Update product status filter availability labels",
+		"repo": "woocommerce/woocommerce",
+		"number": 65803,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65803",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1782201433000
+	},
+	{
 		"title": "Order detail: apply 2-column grid sizing standard (720 / 24 / 320)",
 		"repo": "woocommerce/woocommerce",
 		"number": 65699,
@@ -1289,20 +1303,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1782141230000
-	},
-	{
-		"title": "Update product status filter availability labels",
-		"repo": "woocommerce/woocommerce",
-		"number": 65803,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65803",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1782136161000
 	},
 	{
 		"title": "Fix express payment button focus outline",
@@ -1577,7 +1577,7 @@
 };
 
 	const DATA_META = {
-	"updatedAt": "2026-06-23T02:51:31.229Z"
+	"updatedAt": "2026-06-23T09:32:43.102Z"
 };
 
 	function person(id) {
