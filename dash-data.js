@@ -1277,6 +1277,48 @@
 
 	const OPEN = [
 	{
+		"title": "Fix express payment button focus outline",
+		"repo": "woocommerce/woocommerce",
+		"number": 65901,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65901",
+		"area": "Payments",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1782224003000
+	},
+	{
+		"title": "Improve legacy WooCommerce dashboard widgets",
+		"repo": "woocommerce/woocommerce",
+		"number": 65704,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65704",
+		"area": "Home",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1782222993000
+	},
+	{
+		"title": "Update Product Filters description copy",
+		"repo": "woocommerce/woocommerce",
+		"number": 65925,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65925",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1782222950000
+	},
+	{
 		"title": "Update product status filter availability labels",
 		"repo": "woocommerce/woocommerce",
 		"number": 65803,
@@ -1288,7 +1330,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1782201433000
+		"ts": 1782217500000
 	},
 	{
 		"title": "Order detail: apply 2-column grid sizing standard (720 / 24 / 320)",
@@ -1303,34 +1345,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1782141230000
-	},
-	{
-		"title": "Fix express payment button focus outline",
-		"repo": "woocommerce/woocommerce",
-		"number": 65901,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65901",
-		"area": "Payments",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1782132577000
-	},
-	{
-		"title": "Improve legacy WooCommerce dashboard widgets",
-		"repo": "woocommerce/woocommerce",
-		"number": 65704,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65704",
-		"area": "Home",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1782124820000
 	},
 	{
 		"title": "Hide downloads metabox on orders without downloadable items",
@@ -1577,7 +1591,7 @@
 };
 
 	const DATA_META = {
-	"updatedAt": "2026-06-23T09:32:43.102Z"
+	"updatedAt": "2026-06-23T14:40:38.787Z"
 };
 
 	function person(id) {
