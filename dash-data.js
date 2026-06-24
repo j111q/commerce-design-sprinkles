@@ -1288,7 +1288,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1782309899000
+		"ts": 1782312069000
 	},
 	{
 		"title": "Update product status filter availability labels",
@@ -1359,20 +1359,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1781883116000
-	},
-	{
-		"title": "Update product publish panel controls",
-		"repo": "woocommerce/woocommerce",
-		"number": 65794,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65794",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1781794989000
 	},
 	{
 		"title": "Coupon edit: apply 2-column grid sizing standard (720 / 24 / 320)",
@@ -1577,7 +1563,7 @@
 };
 
 	const DATA_META = {
-	"updatedAt": "2026-06-24T14:22:58.359Z"
+	"updatedAt": "2026-06-24T19:41:43.530Z"
 };
 
 	function person(id) {
