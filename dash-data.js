@@ -1277,20 +1277,6 @@
 
 	const OPEN = [
 	{
-		"title": "Improve legacy WooCommerce dashboard widgets",
-		"repo": "woocommerce/woocommerce",
-		"number": 65704,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65704",
-		"area": "Home",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1782292849000
-	},
-	{
 		"title": "Fix express payment button focus outline",
 		"repo": "woocommerce/woocommerce",
 		"number": 65901,
@@ -1302,7 +1288,35 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1782292831000
+		"ts": 1782309899000
+	},
+	{
+		"title": "Update product status filter availability labels",
+		"repo": "woocommerce/woocommerce",
+		"number": 65803,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65803",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Approved",
+		"ts": 1782308725000
+	},
+	{
+		"title": "Improve legacy WooCommerce dashboard widgets",
+		"repo": "woocommerce/woocommerce",
+		"number": 65704,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65704",
+		"area": "Home",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Approved",
+		"ts": 1782296633000
 	},
 	{
 		"title": "Update Product Filters description copy",
@@ -1317,20 +1331,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1782222950000
-	},
-	{
-		"title": "Update product status filter availability labels",
-		"repo": "woocommerce/woocommerce",
-		"number": 65803,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65803",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1782217500000
 	},
 	{
 		"title": "Order detail: apply 2-column grid sizing standard (720 / 24 / 320)",
@@ -1359,20 +1359,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1781883116000
-	},
-	{
-		"title": "Improve classic product editor publish date field",
-		"repo": "woocommerce/woocommerce",
-		"number": 65826,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65826",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1781802495000
 	},
 	{
 		"title": "Update product publish panel controls",
@@ -1591,7 +1577,7 @@
 };
 
 	const DATA_META = {
-	"updatedAt": "2026-06-24T09:22:11.146Z"
+	"updatedAt": "2026-06-24T14:22:58.359Z"
 };
 
 	function person(id) {
