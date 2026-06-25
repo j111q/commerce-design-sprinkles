@@ -102,11 +102,20 @@ const BLESSINGS = [
   "thank you and may your colours be saturated",
   "thank you and be blessed with good kerning",
   "thank you and may your spacing tokens resolve",
-  "thank you and may your hover states feel intentional"
+  "thank you and may your hover states feel intentional",
+  "thank you and may your Figma layers auto-name themselves",
+  "thank you and may your colour contrast pass on the first try",
+  "thank you and may your tap targets be generous",
+  "thank you and may your modals center themselves",
+  "thank you and may your prototypes never desync",
+  "thank you and may your bezier curves be kind",
+  "thank you and may your screenshots crop themselves politely",
+  "thank you and may your viewport never betray you",
+  "thank you and may your z-indexes stay humble"
 ];
 
 function SKudosCard({ kudos, className = "" }) {
-  const topKudos = (kudos || []).slice(0, 6);
+  const visibleKudos = kudos || [];
   const [blessingIndex, setBlessingIndex] = React.useState(0);
   const [blessingVisible, setBlessingVisible] = React.useState(false);
   const [activeReviewer, setActiveReviewer] = React.useState(null);
@@ -137,7 +146,7 @@ function SKudosCard({ kudos, className = "" }) {
     reviewerTimer.current = window.setTimeout(function () {setActiveReviewer(null);}, 4400);
   }
 
-  if (!topKudos.length) return null;
+  if (!visibleKudos.length) return null;
 
   return (
     <div className={"sprk-kudos-card " + className}>
@@ -146,7 +155,7 @@ function SKudosCard({ kudos, className = "" }) {
         To the devs who patiently review our PRs, thank you!
       </p>
       <div className="sprk-kudos-list">
-        {topKudos.map(function (kudos) {
+        {visibleKudos.map(function (kudos) {
           const label = kudos.reviewedPrs + " PR" + (kudos.reviewedPrs === 1 ? "" : "s");
           return (
             <button
@@ -617,21 +626,21 @@ function SprinklesApp() {
         .sprk-chip-cloud { display: flex; flex-wrap: wrap; gap: 6px; }
         .sprk-kudos-mobile { display: none; max-width: 640px; margin-top: 16px; }
         .sprk-kudos-card {
-          position: relative; padding: 16px 18px 15px; border-radius: 12px; box-sizing: border-box;
-          border: 1px solid rgba(127,84,179,0.14); background: rgba(255,255,255,0.66);
-          box-shadow: 0 6px 18px rgba(30,17,66,0.04);
+          position: relative; padding: 14px 16px 14px; border-radius: 10px; box-sizing: border-box;
+          border: 1px solid rgba(127,84,179,0.1); background: rgba(255,255,255,0.32);
+          box-shadow: none; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
         }
-        .sprk-kudos-list { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 5px; padding-top: 2px; }
+        .sprk-kudos-list { display: flex; flex-wrap: wrap; align-items: center; gap: 7px 4px; padding-top: 2px; }
         .sprk-kudos-person {
           position: relative; display: inline-flex; align-items: center; justify-content: center;
-          width: 32px; height: 32px; border-radius: 50%; color: var(--woo-ink);
+          width: 30px; height: 30px; border-radius: 50%; color: var(--woo-ink);
           text-decoration: none; transition: transform 0.12s ease-out;
           border: 0; padding: 0; background: transparent; cursor: pointer;
         }
         .sprk-kudos-person:hover { transform: translateY(-1px); }
         .sprk-kudos-person:focus-visible { outline: 2px solid var(--woo-purple); outline-offset: 3px; }
         .sprk-kudos-avatar {
-          width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;
+          width: 30px; height: 30px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;
           object-fit: cover; border: 2px solid var(--woo-paper); background: var(--woo-bg); box-sizing: border-box;
           box-shadow: 0 0 0 1px var(--woo-rule);
         }

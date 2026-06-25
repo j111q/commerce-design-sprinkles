@@ -3,7 +3,7 @@
  * Usage:  GH_TOKEN=$(gh auth token) node fetch-data.mjs
  *
  * Searches the woocommerce org for each squad member's merged + open PRs,
- * derives a product "surface" per PR, summarizes formal review kudos,
+ * derives a product "surface" per PR, summarizes review and comment kudos,
  * and writes the result into dash-data.js as plain JS literals so the
  * prototype stays self-contained (no runtime fetch / auth in the canvas).
  *
@@ -136,7 +136,7 @@ async function changedFiles(repo, number) {
 	}
 }
 
-/* Formal PR reviews for kudos and approved-open status. */
+/* PR reviews and review comments for kudos and approved-open status. */
 async function pullReviews(repo, number) {
 	try {
 		const reviews = await gh(`https://api.github.com/repos/${repo}/pulls/${number}/reviews?per_page=100`);
@@ -152,6 +152,49 @@ async function pullReviews(repo, number) {
 	} catch {
 		return [];
 	}
+}
+
+async function pullReviewComments(repo, number) {
+	try {
+		const comments = await gh(`https://api.github.com/repos/${repo}/pulls/${number}/comments?per_page=100`);
+		return comments
+			.filter((comment) => comment.user && comment.user.login)
+			.map((comment) => ({
+				login: comment.user.login,
+				avatar: comment.user.avatar_url,
+				url: comment.user.html_url,
+				state: "COMMENTED",
+				submittedAt: comment.updated_at || comment.created_at
+			}));
+	} catch {
+		return [];
+	}
+}
+
+async function pullIssueComments(repo, number) {
+	try {
+		const comments = await gh(`https://api.github.com/repos/${repo}/issues/${number}/comments?per_page=100`);
+		return comments
+			.filter((comment) => comment.user && comment.user.login)
+			.map((comment) => ({
+				login: comment.user.login,
+				avatar: comment.user.avatar_url,
+				url: comment.user.html_url,
+				state: "COMMENTED",
+				submittedAt: comment.updated_at || comment.created_at
+			}));
+	} catch {
+		return [];
+	}
+}
+
+async function pullReviewSignals(repo, number) {
+	const [reviews, reviewComments, issueComments] = await Promise.all([
+		pullReviews(repo, number),
+		pullReviewComments(repo, number),
+		pullIssueComments(repo, number)
+	]);
+	return reviews.concat(reviewComments, issueComments);
 }
 
 function buildKudos(rows, squad) {
@@ -281,12 +324,12 @@ async function collect() {
 	flagTargets.forEach((row, i) => { row.files = fileLists[i]; });
 	allRows.forEach((row) => { if (!row.files) row.files = []; });
 
-	const reviewLists = await pool(allRows, 6, (row) => pullReviews(row.repo, row.number));
+	const reviewLists = await pool(allRows, 6, (row) => pullReviewSignals(row.repo, row.number));
 	allRows.forEach((row, i) => { row.reviews = reviewLists[i] || []; });
 	open.forEach((row) => {
 		row.approved = !row.draft && row.reviews.some((review) => review.state === "APPROVED");
 	});
-	const KUDOS = buildKudos(allRows, active);
+	const KUDOS = buildKudos(merged, active);
 
 	const labelsOf = (it) => (it.labels || []).map((l) => l.name);
 

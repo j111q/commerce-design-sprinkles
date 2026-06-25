@@ -11,6 +11,8 @@ vm.runInNewContext(data, context);
 const D = context.window.DASH;
 const squadHandles = new Set(D.SQUAD.map((person) => person.handle).filter(Boolean).map((handle) => handle.toLowerCase()));
 const generatedKudos = D.KUDOS || [];
+const blessingMatch = app.match(/const BLESSINGS = \[([\s\S]*?)\];/);
+const blessingLines = blessingMatch ? Array.from(blessingMatch[1].matchAll(/"([^"]+)"/g), (match) => match[1]) : [];
 
 const checks = [
 	{
@@ -19,13 +21,23 @@ const checks = [
 		source: fetcher
 	},
 	{
+		name: "fetcher pulls PR review comments from GitHub",
+		pattern: /pulls\/\$\{number\}\/comments\?per_page=100/,
+		source: fetcher
+	},
+	{
+		name: "fetcher pulls PR conversation comments from GitHub",
+		pattern: /issues\/\$\{number\}\/comments\?per_page=100/,
+		source: fetcher
+	},
+	{
 		name: "fetcher aggregates review data into KUDOS",
 		pattern: /function buildKudos\([\s\S]*reviewedPrs[\s\S]*approvals[\s\S]*latestAt/,
 		source: fetcher
 	},
 	{
-		name: "fetcher emits KUDOS with the generated dashboard data",
-		pattern: /const KUDOS = buildKudos\(allRows, active\);[\s\S]*return \{ MERGED, OPEN, AREAS, TOTALS, KUDOS \};/,
+		name: "fetcher bases KUDOS on merged PRs",
+		pattern: /const KUDOS = buildKudos\(merged, active\);[\s\S]*return \{ MERGED, OPEN, AREAS, TOTALS, KUDOS \};/,
 		source: fetcher
 	},
 	{
@@ -79,6 +91,10 @@ const checks = [
 		source: app
 	},
 	{
+		name: "app shows every generated kudos reviewer",
+		pass: !/slice\(0,\s*6\)/.test(app)
+	},
+	{
 		name: "app hides review counts by default",
 		pass: !/sprk-kudos-count/.test(app)
 	},
@@ -98,6 +114,15 @@ const checks = [
 		source: app
 	},
 	{
+		name: "app includes a larger pool of silly blessings",
+		pass: blessingLines.length >= 12 && blessingLines.every((line) => line.startsWith("thank you and "))
+	},
+	{
+		name: "app includes design-flavored silly blessings",
+		pass: blessingLines.includes("thank you and may your Figma layers auto-name themselves") &&
+			blessingLines.includes("thank you and may your z-indexes stay humble")
+	},
+	{
 		name: "app renders one blessing bubble overlay",
 		pattern: /sprk-blessing-bubble[\s\S]*aria-live="polite"/,
 		source: app
@@ -105,6 +130,11 @@ const checks = [
 	{
 		name: "app does not auto-rotate blessing copy",
 		pass: !/setInterval/.test(app)
+	},
+	{
+		name: "app makes the kudos card visually quieter",
+		pattern: /sprk-kudos-card \{[\s\S]*background: rgba\(255,255,255,0\.3[\d]\);[\s\S]*box-shadow: none;/,
+		source: app
 	}
 ];
 
