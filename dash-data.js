@@ -56,6 +56,20 @@
 
 	const MERGED = [
 	{
+		"title": "Update product status filter availability labels",
+		"repo": "woocommerce/woocommerce",
+		"number": 65803,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65803",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"ts": 1782375204000,
+		"fresh": true
+	},
+	{
 		"title": "Improve summary trend indicator contrast",
 		"repo": "woocommerce/woocommerce",
 		"number": 65784,
@@ -1288,21 +1302,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1782349732000
-	},
-	{
-		"title": "Update product status filter availability labels",
-		"repo": "woocommerce/woocommerce",
-		"number": 65803,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65803",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1782308725000
+		"ts": 1782377043000
 	},
 	{
 		"title": "Improve legacy WooCommerce dashboard widgets",
@@ -1505,7 +1505,7 @@
 	const AREAS = [
 	{
 		"name": "Products & catalog",
-		"count": 40
+		"count": 41
 	},
 	{
 		"name": "Other admin",
@@ -1554,16 +1554,16 @@
 ];
 
 	const TOTALS = {
-	"merged": 87,
+	"merged": 88,
 	"surfaces": 12,
 	"repos": 2,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 45
+	"mergedPublic": 46
 };
 
 	const DATA_META = {
-	"updatedAt": "2026-06-25T02:52:05.597Z"
+	"updatedAt": "2026-06-25T08:55:37.745Z"
 };
 
 	function person(id) {
