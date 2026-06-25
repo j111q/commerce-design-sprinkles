@@ -147,8 +147,13 @@ const checks = [
 		source: app
 	},
 	{
+		name: "app balances reviewer thank-you bubble wrapping",
+		pattern: /sprk-kudos-review-bubble \{[^}]*width: max-content;[^}]*max-width: min\(24ch, calc\(100vw - 72px\)\);[^}]*text-wrap: balance;/,
+		source: app
+	},
+	{
 		name: "app renders the tiny blessing button with the new label",
-		pattern: /receive your special thanks 😌/,
+		pattern: /click to receive your special thanks 😌/,
 		source: app
 	},
 	{
@@ -171,12 +176,32 @@ const checks = [
 	},
 	{
 		name: "app balances blessing bubble wrapping",
-		pattern: /sprk-blessing-bubble \{[\s\S]*text-wrap: balance;/,
+		pattern: /sprk-blessing-bubble \{[^}]*text-wrap: balance;/,
 		source: app
 	},
 	{
 		name: "app keeps blessing bubbles snug with more left padding",
-		pattern: /sprk-blessing-bubble \{[\s\S]*width: fit-content;[\s\S]*max-width: min\(24ch, calc\(100vw - 72px\)\);[\s\S]*padding: 7px 10px 7px 13px;/,
+		pattern: /sprk-blessing-bubble \{[^}]*width: fit-content;[^}]*max-width: min\(24ch, calc\(100vw - 72px\)\);[^}]*padding: 7px 10px 7px 13px;/,
+		source: app
+	},
+	{
+		name: "app keeps blessing bubbles mounted for a soft exit",
+		pattern: /BLESSING_SHOW_MS[\s\S]*BLESSING_EXIT_MS[\s\S]*blessingPhase[\s\S]*setBlessingPhase\("leaving"\)[\s\S]*setBlessingPhase\("idle"\)/,
+		source: app
+	},
+	{
+		name: "app applies visible and leaving classes to blessing bubbles",
+		pattern: /className=\{"sprk-blessing-bubble is-" \+ blessingPhase\}/,
+		source: app
+	},
+	{
+		name: "app gives blessing bubbles a rainbow glow",
+		pattern: /sprk-blessing-bubble::before \{[\s\S]*linear-gradient[\s\S]*filter: blur/,
+		source: app
+	},
+	{
+		name: "app softly bounces blessing bubbles in and out",
+		pattern: /sprk-blessing-bubble\.is-visible[\s\S]*sprk-blessing-enter[\s\S]*sprk-blessing-bubble\.is-leaving[\s\S]*sprk-blessing-exit[\s\S]*@keyframes sprk-blessing-enter[\s\S]*@keyframes sprk-blessing-exit/,
 		source: app
 	},
 	{

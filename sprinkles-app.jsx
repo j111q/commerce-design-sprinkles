@@ -112,38 +112,50 @@ const BLESSINGS = [
   "thank you and we wish you many cute empty states"
 ];
 
+const BLESSING_SHOW_MS = 4300;
+const BLESSING_EXIT_MS = 560;
+
 function SKudosCard({ kudos, className = "" }) {
   const visibleKudos = kudos || [];
   const [expanded, setExpanded] = React.useState(false);
   const [blessingIndex, setBlessingIndex] = React.useState(0);
-  const [blessingVisible, setBlessingVisible] = React.useState(false);
+  const [blessingPhase, setBlessingPhase] = React.useState("idle");
   const [activeReviewer, setActiveReviewer] = React.useState(null);
   const closeTimer = React.useRef(null);
+  const exitTimer = React.useRef(null);
   const reviewerTimer = React.useRef(null);
+  const blessingVisible = blessingPhase !== "idle";
 
   React.useEffect(function () {
     return function () {
       if (closeTimer.current) window.clearTimeout(closeTimer.current);
+      if (exitTimer.current) window.clearTimeout(exitTimer.current);
       if (reviewerTimer.current) window.clearTimeout(reviewerTimer.current);
     };
   }, []);
 
   function blessDevs() {
-    setBlessingVisible(true);
+    setBlessingPhase("visible");
     setBlessingIndex(function (index) {
       let next = Math.floor(Math.random() * BLESSINGS.length);
       if (BLESSINGS.length > 1 && next === index) next = (next + 1) % BLESSINGS.length;
       return next;
     });
     if (closeTimer.current) window.clearTimeout(closeTimer.current);
-    closeTimer.current = window.setTimeout(function () {setBlessingVisible(false);}, 5400);
+    if (exitTimer.current) window.clearTimeout(exitTimer.current);
+    closeTimer.current = window.setTimeout(function () {
+      setBlessingPhase("leaving");
+      exitTimer.current = window.setTimeout(function () {setBlessingPhase("idle");}, BLESSING_EXIT_MS);
+    }, BLESSING_SHOW_MS);
   }
 
   function toggleKudos() {
     const nextExpanded = !expanded;
     setExpanded(nextExpanded);
     if (!nextExpanded) {
-      setBlessingVisible(false);
+      if (closeTimer.current) window.clearTimeout(closeTimer.current);
+      if (exitTimer.current) window.clearTimeout(exitTimer.current);
+      setBlessingPhase("idle");
       setActiveReviewer(null);
     }
   }
@@ -189,9 +201,9 @@ function SKudosCard({ kudos, className = "" }) {
             })}
           </div>
           <div className="sprk-blessing-wrap">
-            <button type="button" className="sprk-blessing-button" onClick={blessDevs}>receive your special thanks 😌</button>
+            <button type="button" className="sprk-blessing-button" onClick={blessDevs}>click to receive your special thanks 😌</button>
             {blessingVisible ?
-              <span className="sprk-blessing-bubble" aria-live="polite">{BLESSINGS[blessingIndex]}</span> : null}
+              <span key={blessingIndex} className={"sprk-blessing-bubble is-" + blessingPhase} aria-live="polite">{BLESSINGS[blessingIndex]}</span> : null}
           </div>
         </div> :
         null}
@@ -680,11 +692,11 @@ function SprinklesApp() {
         .sprk-kudos-fallback { color: var(--woo-purple-dark); font: 700 11px/1 var(--font-sans); }
         .sprk-kudos-review-bubble {
           position: absolute; left: 50%; bottom: calc(100% + 8px); z-index: 22;
-          width: max-content; max-width: min(210px, calc(100vw - 72px)); transform: translateX(-50%);
-          padding: 7px 9px; border-radius: 999px; border: 1px solid rgba(127,84,179,0.18);
+          width: max-content; max-width: min(24ch, calc(100vw - 72px)); transform: translateX(-50%);
+          padding: 7px 10px; border-radius: 14px; border: 1px solid rgba(127,84,179,0.18);
           background: var(--woo-paper); color: var(--woo-ink); box-shadow: 0 10px 24px rgba(30,17,66,0.12);
-          font: 500 11px/15px var(--font-sans); text-align: center; white-space: normal;
-          animation: sprk-blessing-pop 0.18s ease-out;
+          font: 500 11px/15px var(--font-sans); text-align: center; white-space: normal; text-wrap: balance;
+          animation: sprk-review-pop 0.18s ease-out;
         }
         .sprk-blessing-wrap { position: relative; display: flex; width: 100%; margin-top: 13px; }
         .sprk-blessing-button {
@@ -696,19 +708,37 @@ function SprinklesApp() {
         .sprk-blessing-button:hover { border-color: rgba(127,84,179,0.34); background: rgba(127,84,179,0.1); }
         .sprk-blessing-button:focus-visible { outline: 2px solid var(--woo-purple); outline-offset: 2px; }
         .sprk-blessing-bubble {
-          position: absolute; left: 0; bottom: calc(100% + 8px); z-index: 20; width: fit-content;
+          position: absolute; left: 0; bottom: calc(100% + 8px); z-index: 20; width: fit-content; isolation: isolate;
           max-width: min(24ch, calc(100vw - 72px)); padding: 7px 10px 7px 13px; border-radius: 14px;
           border: 1px solid rgba(127,84,179,0.18); background: var(--woo-paper); color: var(--woo-ink);
           box-shadow: 0 10px 24px rgba(30,17,66,0.12); font: 500 11px/15px var(--font-sans);
-          text-align: left; white-space: normal; text-wrap: balance; animation: sprk-blessing-pop 0.18s ease-out;
+          text-align: left; white-space: normal; text-wrap: balance;
         }
-        @keyframes sprk-blessing-pop { from { opacity: 0; transform: translateY(3px) scale(0.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
+        .sprk-blessing-bubble::before {
+          content: ""; position: absolute; inset: -4px; z-index: -1; border-radius: 18px;
+          background: linear-gradient(135deg, rgba(127,84,179,0.42), rgba(69,199,209,0.34), rgba(255,204,94,0.34), rgba(236,116,178,0.36));
+          filter: blur(8px); opacity: 0.72;
+        }
+        .sprk-blessing-bubble.is-visible { animation: sprk-blessing-enter 0.42s cubic-bezier(0.18,1.34,0.32,1) both; }
+        .sprk-blessing-bubble.is-leaving { pointer-events: none; animation: sprk-blessing-exit 0.5s ease-in both; }
+        @keyframes sprk-review-pop { from { opacity: 0; transform: translateX(-50%) translateY(3px) scale(0.98); } to { opacity: 1; transform: translateX(-50%) translateY(0) scale(1); } }
+        @keyframes sprk-blessing-enter {
+          0% { opacity: 0; transform: translateY(8px) scale(0.96); }
+          55% { opacity: 1; transform: translateY(-4px) scale(1.03); }
+          78% { opacity: 1; transform: translateY(1px) scale(0.995); }
+          100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        @keyframes sprk-blessing-exit {
+          0% { opacity: 1; transform: translateY(0) scale(1); }
+          45% { opacity: 0.9; transform: translateY(-4px) scale(1.02); }
+          100% { opacity: 0; transform: translateY(7px) scale(0.96); }
+        }
         @media (max-width: 920px) {
           .sprk-kudos-mobile { display: block; }
         }
         @media (prefers-reduced-motion: reduce) {
           .sprk-stickybar { transition: none; }
-          .sprk-ribbon, .sprk-marquee-track, .sprk-blessing-bubble, .sprk-kudos-review-bubble { animation: none; }
+          .sprk-ribbon, .sprk-marquee-track, .sprk-blessing-bubble, .sprk-blessing-bubble::before, .sprk-kudos-review-bubble { animation: none; }
           .sprk-card, .sprk-avatar, .sprk-chip, .sprk-kudos-person { transition: none; }
         }
       `}</style>
