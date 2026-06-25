@@ -1291,6 +1291,20 @@
 
 	const OPEN = [
 	{
+		"title": "Fix express payment button focus outline",
+		"repo": "woocommerce/woocommerce",
+		"number": 65901,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65901",
+		"area": "Payments",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1782383372000
+	},
+	{
 		"title": "Improve legacy WooCommerce dashboard widgets",
 		"repo": "woocommerce/woocommerce",
 		"number": 65704,
@@ -1303,20 +1317,6 @@
 		"reviewers": [],
 		"status": "Approved",
 		"ts": 1782382700000
-	},
-	{
-		"title": "Fix express payment button focus outline",
-		"repo": "woocommerce/woocommerce",
-		"number": 65901,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65901",
-		"area": "Payments",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1782380684000
 	},
 	{
 		"title": "Update Product Filters description copy",
@@ -1734,7 +1734,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-06-25T10:19:51.102Z"
+	"updatedAt": "2026-06-25T10:30:00.808Z"
 };
 
 	function person(id) {
