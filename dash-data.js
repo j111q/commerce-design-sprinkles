@@ -56,6 +56,20 @@
 
 	const MERGED = [
 	{
+		"title": "Improve legacy WooCommerce dashboard widgets",
+		"repo": "woocommerce/woocommerce",
+		"number": 65704,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65704",
+		"area": "Home",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"ts": 1782397585000,
+		"fresh": true
+	},
+	{
 		"title": "Update product status filter availability labels",
 		"repo": "woocommerce/woocommerce",
 		"number": 65803,
@@ -1302,21 +1316,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1782397223000
-	},
-	{
-		"title": "Improve legacy WooCommerce dashboard widgets",
-		"repo": "woocommerce/woocommerce",
-		"number": 65704,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65704",
-		"area": "Home",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1782397025000
+		"ts": 1782397971000
 	},
 	{
 		"title": "Fix express payment button focus outline",
@@ -1528,6 +1528,10 @@
 		"count": 2
 	},
 	{
+		"name": "Home",
+		"count": 2
+	},
+	{
 		"name": "Marketplace",
 		"count": 2
 	},
@@ -1544,22 +1548,18 @@
 		"count": 1
 	},
 	{
-		"name": "Home",
-		"count": 1
-	},
-	{
 		"name": "Onboarding",
 		"count": 1
 	}
 ];
 
 	const TOTALS = {
-	"merged": 88,
+	"merged": 89,
 	"surfaces": 12,
 	"repos": 2,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 46
+	"mergedPublic": 47
 };
 
 	const KUDOS = [
@@ -1668,12 +1668,36 @@
 		"latestAt": "2026-05-12T08:35:44.000Z"
 	},
 	{
+		"login": "m1r0",
+		"avatar": "https://avatars.githubusercontent.com/u/1612178?u=5590e563adb88885fea6c5d4ab9dd1798bd3a8fa&v=4",
+		"url": "https://github.com/m1r0",
+		"reviewedPrs": 1,
+		"approvals": 1,
+		"latestAt": "2026-06-25T14:25:11.000Z"
+	},
+	{
+		"login": "PanosSynetos",
+		"avatar": "https://avatars.githubusercontent.com/u/2484390?u=686d5070a1fb733985ac8043984102117d505a9c&v=4",
+		"url": "https://github.com/PanosSynetos",
+		"reviewedPrs": 1,
+		"approvals": 1,
+		"latestAt": "2026-06-25T13:18:48.000Z"
+	},
+	{
 		"login": "kmanijak",
 		"avatar": "https://avatars.githubusercontent.com/u/20098064?u=90fe666e70c13d1826ae20946c920c264b18e42a&v=4",
 		"url": "https://github.com/kmanijak",
 		"reviewedPrs": 1,
 		"approvals": 1,
 		"latestAt": "2026-06-24T10:54:10.000Z"
+	},
+	{
+		"login": "retrofox",
+		"avatar": "https://avatars.githubusercontent.com/u/77539?u=feee3238d23063d6b00d3dd9f812df061a27f6f4&v=4",
+		"url": "https://github.com/retrofox",
+		"reviewedPrs": 1,
+		"approvals": 1,
+		"latestAt": "2026-06-24T08:47:12.000Z"
 	},
 	{
 		"login": "htdat",
@@ -1708,6 +1732,14 @@
 		"latestAt": "2026-04-27T08:51:12.000Z"
 	},
 	{
+		"login": "jamesckemp",
+		"avatar": "https://avatars.githubusercontent.com/u/1853915?v=4",
+		"url": "https://github.com/jamesckemp",
+		"reviewedPrs": 1,
+		"approvals": 0,
+		"latestAt": "2026-06-24T09:50:10.000Z"
+	},
+	{
 		"login": "lauroraa",
 		"avatar": "https://avatars.githubusercontent.com/u/82584767?v=4",
 		"url": "https://github.com/lauroraa",
@@ -1718,7 +1750,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-06-25T14:23:45.127Z"
+	"updatedAt": "2026-06-25T14:33:25.086Z"
 };
 
 	function person(id) {
