@@ -21,7 +21,7 @@ const expectedBlessings = [
 	"thank you and may your spacing tokens feel spacious",
 	"thank you and we wish you enticingly clickable buttons",
 	"thank you and may your icons look visually balanced",
-	"thank you and may your colour contrast pass on the first try",
+	"thank you and i hope your screen is never too bright for your eyes",
 	"thank you and we hope your life feels intentional and intuitive",
 	"thank you and may all your buttons be clicked",
 	"thank you and may you never feel lost in layers",
