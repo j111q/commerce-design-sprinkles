@@ -113,49 +113,71 @@ const BLESSINGS = [
 ];
 
 const BLESSING_SHOW_MS = 4300;
-const BLESSING_EXIT_MS = 560;
+const BLESSING_EXIT_MS = 620;
+const BLESSING_SPOTS = [
+  { x: -44, y: -4, rotate: -2.5 },
+  { x: -18, y: -18, rotate: 1.5 },
+  { x: 0, y: -8, rotate: -0.5 },
+  { x: 24, y: -20, rotate: 2 },
+  { x: 46, y: -6, rotate: -1.5 },
+  { x: 12, y: 4, rotate: 1 }
+];
 
 function SKudosCard({ kudos, className = "" }) {
   const visibleKudos = kudos || [];
   const [expanded, setExpanded] = React.useState(false);
-  const [blessingIndex, setBlessingIndex] = React.useState(0);
-  const [blessingPhase, setBlessingPhase] = React.useState("idle");
+  const [blessingBubbles, setBlessingBubbles] = React.useState([]);
   const [activeReviewer, setActiveReviewer] = React.useState(null);
-  const closeTimer = React.useRef(null);
-  const exitTimer = React.useRef(null);
+  const blessingTimers = React.useRef([]);
+  const blessingId = React.useRef(0);
+  const lastBlessingIndex = React.useRef(-1);
   const reviewerTimer = React.useRef(null);
-  const blessingVisible = blessingPhase !== "idle";
 
   React.useEffect(function () {
     return function () {
-      if (closeTimer.current) window.clearTimeout(closeTimer.current);
-      if (exitTimer.current) window.clearTimeout(exitTimer.current);
+      blessingTimers.current.forEach(function (timer) {window.clearTimeout(timer);});
       if (reviewerTimer.current) window.clearTimeout(reviewerTimer.current);
     };
   }, []);
 
   function blessDevs() {
-    setBlessingPhase("visible");
-    setBlessingIndex(function (index) {
-      let next = Math.floor(Math.random() * BLESSINGS.length);
-      if (BLESSINGS.length > 1 && next === index) next = (next + 1) % BLESSINGS.length;
-      return next;
-    });
-    if (closeTimer.current) window.clearTimeout(closeTimer.current);
-    if (exitTimer.current) window.clearTimeout(exitTimer.current);
-    closeTimer.current = window.setTimeout(function () {
-      setBlessingPhase("leaving");
-      exitTimer.current = window.setTimeout(function () {setBlessingPhase("idle");}, BLESSING_EXIT_MS);
+    let next = Math.floor(Math.random() * BLESSINGS.length);
+    if (BLESSINGS.length > 1 && next === lastBlessingIndex.current) next = (next + 1) % BLESSINGS.length;
+    lastBlessingIndex.current = next;
+
+    const spot = BLESSING_SPOTS[Math.floor(Math.random() * BLESSING_SPOTS.length)];
+    const id = ++blessingId.current;
+    const bubble = {
+      id,
+      text: BLESSINGS[next],
+      phase: "visible",
+      x: spot.x + Math.round((Math.random() - 0.5) * 10),
+      y: spot.y + Math.round((Math.random() - 0.5) * 6),
+      rotate: spot.rotate + Math.round((Math.random() - 0.5) * 10) / 10,
+      z: 20 + id
+    };
+    setBlessingBubbles(function (bubbles) {return bubbles.concat(bubble);});
+
+    const leaveTimer = window.setTimeout(function () {
+      setBlessingBubbles(function (bubbles) {
+        return bubbles.map(function (bubble) {
+          return bubble.id === id ? Object.assign({}, bubble, { phase: "leaving" }) : bubble;
+        });
+      });
     }, BLESSING_SHOW_MS);
+    const removeTimer = window.setTimeout(function () {
+      setBlessingBubbles(function (bubbles) {return bubbles.filter(function (bubble) {return bubble.id !== id;});});
+    }, BLESSING_SHOW_MS + BLESSING_EXIT_MS);
+    blessingTimers.current.push(leaveTimer, removeTimer);
   }
 
   function toggleKudos() {
     const nextExpanded = !expanded;
     setExpanded(nextExpanded);
     if (!nextExpanded) {
-      if (closeTimer.current) window.clearTimeout(closeTimer.current);
-      if (exitTimer.current) window.clearTimeout(exitTimer.current);
-      setBlessingPhase("idle");
+      blessingTimers.current.forEach(function (timer) {window.clearTimeout(timer);});
+      blessingTimers.current = [];
+      setBlessingBubbles([]);
       setActiveReviewer(null);
     }
   }
@@ -202,8 +224,16 @@ function SKudosCard({ kudos, className = "" }) {
           </div>
           <div className="sprk-blessing-wrap">
             <button type="button" className="sprk-blessing-button" onClick={blessDevs}>click to receive your special thanks 😌</button>
-            {blessingVisible ?
-              <span key={blessingIndex} className={"sprk-blessing-bubble is-" + blessingPhase} aria-live="polite">{BLESSINGS[blessingIndex]}</span> : null}
+            {blessingBubbles.map(function (bubble) {
+              return (
+                <span
+                  key={bubble.id}
+                  className={"sprk-blessing-bubble is-" + bubble.phase}
+                  style={{ "--bubble-x": bubble.x + "px", "--bubble-y": bubble.y + "px", "--bubble-rotate": bubble.rotate + "deg", "--bubble-z": bubble.z }}
+                  aria-live="polite">
+                  {bubble.text}
+                </span>);
+            })}
           </div>
         </div> :
         null}
@@ -708,30 +738,31 @@ function SprinklesApp() {
         .sprk-blessing-button:hover { border-color: rgba(127,84,179,0.34); background: rgba(127,84,179,0.1); }
         .sprk-blessing-button:focus-visible { outline: 2px solid var(--woo-purple); outline-offset: 2px; }
         .sprk-blessing-bubble {
-          position: absolute; left: 0; bottom: calc(100% + 8px); z-index: 20; width: fit-content; isolation: isolate;
-          max-width: min(24ch, calc(100vw - 72px)); padding: 7px 10px 7px 13px; border-radius: 14px;
+          position: absolute; left: 50%; bottom: calc(100% + 8px); z-index: var(--bubble-z); width: max-content; isolation: isolate;
+          max-width: min(24ch, calc(100vw - 72px)); padding: 7px 11px; border-radius: 14px;
           border: 1px solid rgba(127,84,179,0.18); background: var(--woo-paper); color: var(--woo-ink);
           box-shadow: 0 10px 24px rgba(30,17,66,0.12); font: 500 11px/15px var(--font-sans);
-          text-align: left; white-space: normal; text-wrap: balance;
+          text-align: center; white-space: normal; text-wrap: balance;
+          transform: translate(calc(-50% + var(--bubble-x)), var(--bubble-y)) rotate(var(--bubble-rotate));
+          will-change: opacity, transform;
         }
         .sprk-blessing-bubble::before {
           content: ""; position: absolute; inset: -4px; z-index: -1; border-radius: 18px;
           background: linear-gradient(135deg, rgba(127,84,179,0.42), rgba(69,199,209,0.34), rgba(255,204,94,0.34), rgba(236,116,178,0.36));
           filter: blur(8px); opacity: 0.72;
         }
-        .sprk-blessing-bubble.is-visible { animation: sprk-blessing-enter 0.42s cubic-bezier(0.18,1.34,0.32,1) both; }
-        .sprk-blessing-bubble.is-leaving { pointer-events: none; animation: sprk-blessing-exit 0.5s ease-in both; }
+        .sprk-blessing-bubble.is-visible { animation: sprk-blessing-enter 0.48s cubic-bezier(0.2,0.9,0.22,1) both; }
+        .sprk-blessing-bubble.is-leaving { pointer-events: none; animation: sprk-blessing-exit 0.58s ease-in both; }
         @keyframes sprk-review-pop { from { opacity: 0; transform: translateX(-50%) translateY(3px) scale(0.98); } to { opacity: 1; transform: translateX(-50%) translateY(0) scale(1); } }
         @keyframes sprk-blessing-enter {
-          0% { opacity: 0; transform: translateY(8px) scale(0.96); }
-          55% { opacity: 1; transform: translateY(-4px) scale(1.03); }
-          78% { opacity: 1; transform: translateY(1px) scale(0.995); }
-          100% { opacity: 1; transform: translateY(0) scale(1); }
+          0% { opacity: 0; transform: translate(calc(-50% + var(--bubble-x)), calc(var(--bubble-y) + 5px)) rotate(var(--bubble-rotate)) scale(0.985); }
+          62% { opacity: 1; transform: translate(calc(-50% + var(--bubble-x)), calc(var(--bubble-y) - 2px)) rotate(var(--bubble-rotate)) scale(1.01); }
+          100% { opacity: 1; transform: translate(calc(-50% + var(--bubble-x)), var(--bubble-y)) rotate(var(--bubble-rotate)) scale(1); }
         }
         @keyframes sprk-blessing-exit {
-          0% { opacity: 1; transform: translateY(0) scale(1); }
-          45% { opacity: 0.9; transform: translateY(-4px) scale(1.02); }
-          100% { opacity: 0; transform: translateY(7px) scale(0.96); }
+          0% { opacity: 1; transform: translate(calc(-50% + var(--bubble-x)), var(--bubble-y)) rotate(var(--bubble-rotate)) scale(1); }
+          42% { opacity: 0.82; transform: translate(calc(-50% + var(--bubble-x)), calc(var(--bubble-y) - 2px)) rotate(var(--bubble-rotate)) scale(1.005); }
+          100% { opacity: 0; transform: translate(calc(-50% + var(--bubble-x)), calc(var(--bubble-y) + 5px)) rotate(var(--bubble-rotate)) scale(0.985); }
         }
         @media (max-width: 920px) {
           .sprk-kudos-mobile { display: block; }

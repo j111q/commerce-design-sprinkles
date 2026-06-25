@@ -170,8 +170,8 @@ const checks = [
 		pass: blessingLines.length >= 12 && blessingLines.every((line) => line.startsWith("thank you and "))
 	},
 	{
-		name: "app renders one blessing bubble overlay",
-		pattern: /sprk-blessing-bubble[\s\S]*aria-live="polite"/,
+		name: "app renders independent blessing bubble overlays",
+		pattern: /blessingBubbles\.map\(function \(bubble\)[\s\S]*className=\{"sprk-blessing-bubble is-" \+ bubble\.phase\}[\s\S]*aria-live="polite"/,
 		source: app
 	},
 	{
@@ -180,18 +180,18 @@ const checks = [
 		source: app
 	},
 	{
-		name: "app keeps blessing bubbles snug with more left padding",
-		pattern: /sprk-blessing-bubble \{[^}]*width: fit-content;[^}]*max-width: min\(24ch, calc\(100vw - 72px\)\);[^}]*padding: 7px 10px 7px 13px;/,
+		name: "app centers blessing bubbles with equal padding",
+		pattern: /sprk-blessing-bubble \{[^}]*width: max-content;[^}]*max-width: min\(24ch, calc\(100vw - 72px\)\);[^}]*padding: 7px 11px;[^}]*text-align: center;/,
 		source: app
 	},
 	{
-		name: "app keeps blessing bubbles mounted for a soft exit",
-		pattern: /BLESSING_SHOW_MS[\s\S]*BLESSING_EXIT_MS[\s\S]*blessingPhase[\s\S]*setBlessingPhase\("leaving"\)[\s\S]*setBlessingPhase\("idle"\)/,
+		name: "app gives each blessing bubble a random-feeling position",
+		pattern: /BLESSING_SPOTS[\s\S]*--bubble-x[\s\S]*--bubble-y[\s\S]*--bubble-rotate/,
 		source: app
 	},
 	{
-		name: "app applies visible and leaving classes to blessing bubbles",
-		pattern: /className=\{"sprk-blessing-bubble is-" \+ blessingPhase\}/,
+		name: "app keeps multiple blessing bubbles mounted for soft exits",
+		pattern: /blessingBubbles[\s\S]*setBlessingBubbles\(function \(bubbles\) \{return bubbles\.concat\(bubble\);\}\)[\s\S]*phase: "leaving"[\s\S]*filter\(function \(bubble\) \{return bubble\.id !== id;\}\)/,
 		source: app
 	},
 	{
@@ -201,12 +201,12 @@ const checks = [
 	},
 	{
 		name: "app softly bounces blessing bubbles in and out",
-		pattern: /sprk-blessing-bubble\.is-visible[\s\S]*sprk-blessing-enter[\s\S]*sprk-blessing-bubble\.is-leaving[\s\S]*sprk-blessing-exit[\s\S]*@keyframes sprk-blessing-enter[\s\S]*@keyframes sprk-blessing-exit/,
+		pattern: /sprk-blessing-bubble\.is-visible[\s\S]*sprk-blessing-enter 0\.48s[\s\S]*sprk-blessing-bubble\.is-leaving[\s\S]*sprk-blessing-exit 0\.58s[\s\S]*translate\(calc\(-50% \+ var\(--bubble-x\)\), calc\(var\(--bubble-y\) \+ 5px\)\)[\s\S]*translate\(calc\(-50% \+ var\(--bubble-x\)\), calc\(var\(--bubble-y\) - 2px\)\)/,
 		source: app
 	},
 	{
-		name: "app no longer lets blessing bubbles reserve max-content width",
-		pass: !/sprk-blessing-bubble \{[\s\S]*width: max-content;/.test(app)
+		name: "app no longer uses a single replaceable blessing bubble",
+		pass: !/const \[blessingPhase|const \[blessingIndex|blessingVisible|setBlessingPhase/.test(app)
 	},
 	{
 		name: "app does not auto-rotate blessing copy",
