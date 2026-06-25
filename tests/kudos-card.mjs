@@ -14,6 +14,20 @@ const generatedKudos = D.KUDOS || [];
 const automatedReviewerPattern = /(?:\[bot\]|bot|copilot|code.?rabbit|cursor|devin|claude|openai|chatgpt|gemini)/i;
 const blessingMatch = app.match(/const BLESSINGS = \[([\s\S]*?)\];/);
 const blessingLines = blessingMatch ? Array.from(blessingMatch[1].matchAll(/"([^"]+)"/g), (match) => match[1]) : [];
+const expectedBlessings = [
+	"thank you and may all your pixels always align",
+	"thank you and may your colours forever be saturated",
+	"thank you and we hope your text will always have good kerning",
+	"thank you and may your spacing tokens feel spacious",
+	"thank you and we wish you enticingly clickable buttons",
+	"thank you and may your icons look visually balanced",
+	"thank you and may your colour contrast pass on the first try",
+	"thank you and we hope your life feels intentional and intuitive",
+	"thank you and may all your buttons be clicked",
+	"thank you and may you never feel lost in layers",
+	"thank you and we hope the palette of your life is harmonious",
+	"thank you and we wish you many cute empty states"
+];
 
 const checks = [
 	{
@@ -128,18 +142,12 @@ const checks = [
 		source: app
 	},
 	{
-		name: "app includes thank-you blessing lines",
-		pattern: /BLESSINGS = \[[\s\S]*thank you and may your pixels always align[\s\S]*thank you and may your colours be saturated[\s\S]*thank you and be blessed with good kerning/,
-		source: app
+		name: "app uses Jill's exact blessing list",
+		pass: JSON.stringify(blessingLines) === JSON.stringify(expectedBlessings)
 	},
 	{
 		name: "app includes a larger pool of silly blessings",
 		pass: blessingLines.length >= 12 && blessingLines.every((line) => line.startsWith("thank you and "))
-	},
-	{
-		name: "app includes design-flavored silly blessings",
-		pass: blessingLines.includes("thank you and may your Figma layers auto-name themselves") &&
-			blessingLines.includes("thank you and may your z-indexes stay humble")
 	},
 	{
 		name: "app renders one blessing bubble overlay",

@@ -98,20 +98,18 @@ function SFilterAvatar({ id, active, dimmed, onClick, size = 36 }) {
 }
 
 const BLESSINGS = [
-  "thank you and may your pixels always align",
-  "thank you and may your colours be saturated",
-  "thank you and be blessed with good kerning",
-  "thank you and may your spacing tokens resolve",
-  "thank you and may your hover states feel intentional",
-  "thank you and may your Figma layers auto-name themselves",
+  "thank you and may all your pixels always align",
+  "thank you and may your colours forever be saturated",
+  "thank you and we hope your text will always have good kerning",
+  "thank you and may your spacing tokens feel spacious",
+  "thank you and we wish you enticingly clickable buttons",
+  "thank you and may your icons look visually balanced",
   "thank you and may your colour contrast pass on the first try",
-  "thank you and may your tap targets be generous",
-  "thank you and may your modals center themselves",
-  "thank you and may your prototypes never desync",
-  "thank you and may your bezier curves be kind",
-  "thank you and may your screenshots crop themselves politely",
-  "thank you and may your viewport never betray you",
-  "thank you and may your z-indexes stay humble"
+  "thank you and we hope your life feels intentional and intuitive",
+  "thank you and may all your buttons be clicked",
+  "thank you and may you never feel lost in layers",
+  "thank you and we hope the palette of your life is harmonious",
+  "thank you and we wish you many cute empty states"
 ];
 
 function SKudosCard({ kudos, className = "" }) {
