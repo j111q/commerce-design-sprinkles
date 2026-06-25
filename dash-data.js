@@ -1301,8 +1301,8 @@
 			"poli"
 		],
 		"reviewers": [],
-		"status": "Open",
-		"ts": 1782383590000
+		"status": "Approved",
+		"ts": 1782393766000
 	},
 	{
 		"title": "Improve legacy WooCommerce dashboard widgets",
@@ -1316,7 +1316,7 @@
 		],
 		"reviewers": [],
 		"status": "Approved",
-		"ts": 1782383478000
+		"ts": 1782393528000
 	},
 	{
 		"title": "Update Product Filters description copy",
@@ -1668,6 +1668,22 @@
 		"latestAt": "2026-05-12T08:35:44.000Z"
 	},
 	{
+		"login": "tjcafferkey",
+		"avatar": "https://avatars.githubusercontent.com/u/8639742?u=8468454f62312af6c53fb31669b44a696cd54f21&v=4",
+		"url": "https://github.com/tjcafferkey",
+		"reviewedPrs": 1,
+		"approvals": 1,
+		"latestAt": "2026-06-25T13:22:46.000Z"
+	},
+	{
+		"login": "PanosSynetos",
+		"avatar": "https://avatars.githubusercontent.com/u/2484390?u=686d5070a1fb733985ac8043984102117d505a9c&v=4",
+		"url": "https://github.com/PanosSynetos",
+		"reviewedPrs": 1,
+		"approvals": 1,
+		"latestAt": "2026-06-25T13:18:48.000Z"
+	},
+	{
 		"login": "kmanijak",
 		"avatar": "https://avatars.githubusercontent.com/u/20098064?u=90fe666e70c13d1826ae20946c920c264b18e42a&v=4",
 		"url": "https://github.com/kmanijak",
@@ -1708,22 +1724,6 @@
 		"latestAt": "2026-04-27T08:51:12.000Z"
 	},
 	{
-		"login": "PanosSynetos",
-		"avatar": "https://avatars.githubusercontent.com/u/2484390?u=686d5070a1fb733985ac8043984102117d505a9c&v=4",
-		"url": "https://github.com/PanosSynetos",
-		"reviewedPrs": 1,
-		"approvals": 0,
-		"latestAt": "2026-06-25T10:31:18.000Z"
-	},
-	{
-		"login": "tjcafferkey",
-		"avatar": "https://avatars.githubusercontent.com/u/8639742?u=8468454f62312af6c53fb31669b44a696cd54f21&v=4",
-		"url": "https://github.com/tjcafferkey",
-		"reviewedPrs": 1,
-		"approvals": 0,
-		"latestAt": "2026-06-25T07:21:28.000Z"
-	},
-	{
 		"login": "ralucaStan",
 		"avatar": "https://avatars.githubusercontent.com/u/1628454?u=ec5ec9053e8f15085ff7fe62829a005bdc1a70c4&v=4",
 		"url": "https://github.com/ralucaStan",
@@ -1734,7 +1734,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-06-25T10:39:04.646Z"
+	"updatedAt": "2026-06-25T13:52:54.368Z"
 };
 
 	function person(id) {
