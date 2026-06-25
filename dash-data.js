@@ -1714,14 +1714,6 @@
 		"reviewedPrs": 1,
 		"approvals": 0,
 		"latestAt": "2026-06-18T10:44:23.000Z"
-	},
-	{
-		"login": "Copilot",
-		"avatar": "https://avatars.githubusercontent.com/in/946600?v=4",
-		"url": "https://github.com/apps/copilot-pull-request-reviewer",
-		"reviewedPrs": 1,
-		"approvals": 0,
-		"latestAt": "2026-05-11T08:54:03.000Z"
 	}
 ];
 

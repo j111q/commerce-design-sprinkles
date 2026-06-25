@@ -11,6 +11,7 @@ vm.runInNewContext(data, context);
 const D = context.window.DASH;
 const squadHandles = new Set(D.SQUAD.map((person) => person.handle).filter(Boolean).map((handle) => handle.toLowerCase()));
 const generatedKudos = D.KUDOS || [];
+const automatedReviewerPattern = /(?:\[bot\]|bot|copilot|code.?rabbit|cursor|devin|claude|openai|chatgpt|gemini)/i;
 const blessingMatch = app.match(/const BLESSINGS = \[([\s\S]*?)\];/);
 const blessingLines = blessingMatch ? Array.from(blessingMatch[1].matchAll(/"([^"]+)"/g), (match) => match[1]) : [];
 
@@ -36,6 +37,11 @@ const checks = [
 		source: fetcher
 	},
 	{
+		name: "fetcher filters automated review accounts",
+		pattern: /function isAutomatedReviewer\([\s\S]*copilot[\s\S]*code\.\?rabbit[\s\S]*devin/,
+		source: fetcher
+	},
+	{
 		name: "fetcher bases KUDOS on merged PRs",
 		pattern: /const KUDOS = buildKudos\(merged, active\);[\s\S]*return \{ MERGED, OPEN, AREAS, TOTALS, KUDOS \};/,
 		source: fetcher
@@ -55,8 +61,11 @@ const checks = [
 		pass: generatedKudos.length > 0
 	},
 	{
-		name: "generated KUDOS excludes bots and squad members",
-		pass: generatedKudos.every((kudos) => !/(?:\[bot\]|bot)$/i.test(kudos.login) && !squadHandles.has(kudos.login.toLowerCase()))
+		name: "generated KUDOS excludes bots, AI reviewers, and squad members",
+		pass: generatedKudos.every((kudos) =>
+			!automatedReviewerPattern.test(kudos.login + " " + kudos.url) &&
+			!squadHandles.has(kudos.login.toLowerCase())
+		)
 	},
 	{
 		name: "generated KUDOS entries include avatars, profile URLs, and PR counts",
@@ -87,7 +96,7 @@ const checks = [
 	},
 	{
 		name: "app renders reviewer avatars and PR counts",
-		pattern: /kudos\.reviewedPrs[\s\S]*kudos\.avatar[\s\S]*reviewed " \+ label \+ "! 💜"/,
+		pattern: /kudos\.reviewedPrs[\s\S]*kudos\.avatar[\s\S]*thank you @" \+ kudos\.login \+ " for reviewing " \+ label \+ "! 💜"/,
 		source: app
 	},
 	{

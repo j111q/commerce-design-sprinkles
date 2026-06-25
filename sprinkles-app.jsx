@@ -185,7 +185,7 @@ function SKudosCard({ kudos, className = "" }) {
                     <img className="sprk-kudos-avatar" src={kudos.avatar + (kudos.avatar.indexOf("?") >= 0 ? "&" : "?") + "s=56"} alt="" loading="lazy" /> :
                     <span className="sprk-kudos-avatar sprk-kudos-fallback" aria-hidden="true">{kudos.login.slice(0, 1).toUpperCase()}</span>}
                   {activeReviewer === kudos.login ?
-                    <span className="sprk-kudos-review-bubble" aria-live="polite">{"@" + kudos.login + " reviewed " + label + "! 💜"}</span> : null}
+                    <span className="sprk-kudos-review-bubble" aria-live="polite">{"thank you @" + kudos.login + " for reviewing " + label + "! 💜"}</span> : null}
                 </button>);
             })}
           </div>

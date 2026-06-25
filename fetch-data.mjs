@@ -197,8 +197,9 @@ async function pullReviewSignals(repo, number) {
 	return reviews.concat(reviewComments, issueComments);
 }
 
-function isBotLogin(login) {
-	return /(?:\[bot\]|bot)$/i.test(login);
+function isAutomatedReviewer(review) {
+	const hay = [review.login, review.url].filter(Boolean).join(" ");
+	return /(?:\[bot\]|bot$|copilot|code.?rabbit|cursor|devin|claude|openai|chatgpt|gemini)/i.test(hay);
 }
 
 function buildKudos(rows, squad) {
@@ -218,7 +219,7 @@ function buildKudos(rows, squad) {
 			const loginKey = review.login.toLowerCase();
 			if (loginKey === authorLogin) continue;
 			if (squadHandles.has(loginKey)) continue;
-			if (isBotLogin(review.login)) continue;
+			if (isAutomatedReviewer(review)) continue;
 
 			const submittedAt = new Date(review.submittedAt || row.dateIso).getTime();
 			const existing = reviewersForPr.get(loginKey) || {
