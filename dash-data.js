@@ -1291,18 +1291,18 @@
 
 	const OPEN = [
 	{
-		"title": "Fix express payment button focus outline",
+		"title": "Fix order edit screen text color contrast for WCAG AA",
 		"repo": "woocommerce/woocommerce",
-		"number": 65901,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65901",
-		"area": "Payments",
+		"number": 65714,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65714",
+		"area": "Orders",
 		"flagged": false,
 		"authors": [
-			"poli"
+			"jana"
 		],
 		"reviewers": [],
-		"status": "Approved",
-		"ts": 1782393766000
+		"status": "Open",
+		"ts": 1782397223000
 	},
 	{
 		"title": "Improve legacy WooCommerce dashboard widgets",
@@ -1316,7 +1316,21 @@
 		],
 		"reviewers": [],
 		"status": "Approved",
-		"ts": 1782393528000
+		"ts": 1782397025000
+	},
+	{
+		"title": "Fix express payment button focus outline",
+		"repo": "woocommerce/woocommerce",
+		"number": 65901,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65901",
+		"area": "Payments",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Approved",
+		"ts": 1782393766000
 	},
 	{
 		"title": "Update Product Filters description copy",
@@ -1415,20 +1429,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1781626536000
-	},
-	{
-		"title": "Fix order edit screen text color contrast for WCAG AA",
-		"repo": "woocommerce/woocommerce",
-		"number": 65714,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65714",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1781604154000
 	},
 	{
 		"title": "Add prev/next order navigation to Order detail page header",
@@ -1718,7 +1718,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-06-25T14:12:24.728Z"
+	"updatedAt": "2026-06-25T14:21:00.825Z"
 };
 
 	function person(id) {
