@@ -56,7 +56,7 @@ const checks = [
 	},
 	{
 		name: "app renders the kudos card copy",
-		pattern: /Kudos and blessings[\s\S]*To the patient devs who review our PRs and thoughtfully teach us how to do them better next time\./,
+		pattern: /Kudos and blessings[\s\S]*To the devs who patiently review our PRs, thank you!/,
 		source: app
 	},
 	{
@@ -89,12 +89,12 @@ const checks = [
 	},
 	{
 		name: "app renders the tiny blessing button with the new label",
-		pattern: /receive today's blessing/,
+		pattern: /receive your thanks/,
 		source: app
 	},
 	{
-		name: "app includes blessing lines",
-		pattern: /BLESSINGS = \[[\s\S]*May your pixels always align[\s\S]*May your colours be saturated[\s\S]*Be blessed with good kerning/,
+		name: "app includes thank-you blessing lines",
+		pattern: /BLESSINGS = \[[\s\S]*thank you and may your pixels always align[\s\S]*thank you and may your colours be saturated[\s\S]*thank you and be blessed with good kerning/,
 		source: app
 	},
 	{

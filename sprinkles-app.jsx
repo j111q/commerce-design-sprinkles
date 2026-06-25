@@ -98,11 +98,11 @@ function SFilterAvatar({ id, active, dimmed, onClick, size = 36 }) {
 }
 
 const BLESSINGS = [
-  "May your pixels always align",
-  "May your colours be saturated",
-  "Be blessed with good kerning",
-  "May your spacing tokens resolve",
-  "May your hover states feel intentional"
+  "thank you and may your pixels always align",
+  "thank you and may your colours be saturated",
+  "thank you and be blessed with good kerning",
+  "thank you and may your spacing tokens resolve",
+  "thank you and may your hover states feel intentional"
 ];
 
 function SKudosCard({ kudos, className = "" }) {
@@ -143,7 +143,7 @@ function SKudosCard({ kudos, className = "" }) {
     <div className={"sprk-kudos-card " + className}>
       <h2 style={{ font: "600 13px/18px var(--font-sans)", color: "var(--woo-ink)", margin: "0 0 4px" }}>Kudos and blessings</h2>
       <p style={{ font: "400 11.5px/16px var(--font-sans)", color: "var(--woo-ink-soft)", margin: "0 0 12px", textWrap: "pretty" }}>
-        To the patient devs who review our PRs and thoughtfully teach us how to do them better next time.
+        To the devs who patiently review our PRs, thank you!
       </p>
       <div className="sprk-kudos-list">
         {topKudos.map(function (kudos) {
@@ -165,7 +165,7 @@ function SKudosCard({ kudos, className = "" }) {
         })}
       </div>
       <div className="sprk-blessing-wrap">
-        <button type="button" className="sprk-blessing-button" onClick={blessDevs}>receive today's blessing</button>
+        <button type="button" className="sprk-blessing-button" onClick={blessDevs}>receive your thanks</button>
         {blessingVisible ?
           <span className="sprk-blessing-bubble" aria-live="polite">{BLESSINGS[blessingIndex]}</span> : null}
       </div>
