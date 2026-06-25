@@ -107,27 +107,34 @@ const BLESSINGS = [
 
 function SKudosCard({ kudos, className = "" }) {
   const topKudos = (kudos || []).slice(0, 6);
-  const [blessingOpen, setBlessingOpen] = React.useState(false);
   const [blessingIndex, setBlessingIndex] = React.useState(0);
+  const [blessingVisible, setBlessingVisible] = React.useState(false);
+  const [activeReviewer, setActiveReviewer] = React.useState(null);
   const closeTimer = React.useRef(null);
+  const reviewerTimer = React.useRef(null);
 
   React.useEffect(function () {
-    if (!blessingOpen) return;
-    const interval = window.setInterval(function () {
-      setBlessingIndex(function (index) {return (index + 1) % BLESSINGS.length;});
-    }, 1800);
-    return function () {window.clearInterval(interval);};
-  }, [blessingOpen]);
-
-  React.useEffect(function () {
-    return function () {if (closeTimer.current) window.clearTimeout(closeTimer.current);};
+    return function () {
+      if (closeTimer.current) window.clearTimeout(closeTimer.current);
+      if (reviewerTimer.current) window.clearTimeout(reviewerTimer.current);
+    };
   }, []);
 
   function blessDevs() {
-    setBlessingOpen(true);
-    setBlessingIndex(function (index) {return (index + 1) % BLESSINGS.length;});
+    setBlessingVisible(true);
+    setBlessingIndex(function (index) {
+      let next = Math.floor(Math.random() * BLESSINGS.length);
+      if (BLESSINGS.length > 1 && next === index) next = (next + 1) % BLESSINGS.length;
+      return next;
+    });
     if (closeTimer.current) window.clearTimeout(closeTimer.current);
-    closeTimer.current = window.setTimeout(function () {setBlessingOpen(false);}, 7200);
+    closeTimer.current = window.setTimeout(function () {setBlessingVisible(false);}, 5400);
+  }
+
+  function showReviewerKudos(kudos) {
+    setActiveReviewer(kudos.login);
+    if (reviewerTimer.current) window.clearTimeout(reviewerTimer.current);
+    reviewerTimer.current = window.setTimeout(function () {setActiveReviewer(null);}, 4400);
   }
 
   if (!topKudos.length) return null;
@@ -135,32 +142,31 @@ function SKudosCard({ kudos, className = "" }) {
   return (
     <div className={"sprk-kudos-card " + className}>
       <h2 style={{ font: "600 13px/18px var(--font-sans)", color: "var(--woo-ink)", margin: "0 0 4px" }}>Kudos and blessings</h2>
-      <p style={{ font: "400 12.5px/18px var(--font-sans)", color: "var(--woo-ink-soft)", margin: "0 0 12px", textWrap: "pretty" }}>
-        To the devs who review our PRs.
+      <p style={{ font: "400 11.5px/16px var(--font-sans)", color: "var(--woo-ink-soft)", margin: "0 0 12px", textWrap: "pretty" }}>
+        To the patient devs who review our PRs and thoughtfully teach us how to do them better next time.
       </p>
       <div className="sprk-kudos-list">
         {topKudos.map(function (kudos) {
-          const href = kudos.url || "https://github.com/" + kudos.login;
           const label = kudos.reviewedPrs + " PR" + (kudos.reviewedPrs === 1 ? "" : "s");
           return (
-            <a
+            <button
+              type="button"
               key={kudos.login}
-              href={href}
-              target="_blank"
-              rel="noreferrer"
               className="sprk-kudos-person"
-              title={"@" + kudos.login + " reviewed " + label}
-              aria-label={kudos.login + ", reviewed " + label}>
+              title={"Show kudos for @" + kudos.login}
+              aria-label={"Show kudos for " + kudos.login}
+              onClick={function () {showReviewerKudos(kudos);}}>
               {kudos.avatar ?
                 <img className="sprk-kudos-avatar" src={kudos.avatar + (kudos.avatar.indexOf("?") >= 0 ? "&" : "?") + "s=56"} alt="" loading="lazy" /> :
                 <span className="sprk-kudos-avatar sprk-kudos-fallback" aria-hidden="true">{kudos.login.slice(0, 1).toUpperCase()}</span>}
-              <span className="sprk-kudos-count">{kudos.reviewedPrs}</span>
-            </a>);
+              {activeReviewer === kudos.login ?
+                <span className="sprk-kudos-review-bubble" aria-live="polite">{"@" + kudos.login + " reviewed " + label + "! 💜"}</span> : null}
+            </button>);
         })}
       </div>
       <div className="sprk-blessing-wrap">
-        <button type="button" className="sprk-blessing-button" onClick={blessDevs}>Bless you kind devs</button>
-        {blessingOpen ?
+        <button type="button" className="sprk-blessing-button" onClick={blessDevs}>receive today's blessing</button>
+        {blessingVisible ?
           <span className="sprk-blessing-bubble" aria-live="polite">{BLESSINGS[blessingIndex]}</span> : null}
       </div>
     </div>);
@@ -620,6 +626,7 @@ function SprinklesApp() {
           position: relative; display: inline-flex; align-items: center; justify-content: center;
           width: 32px; height: 32px; border-radius: 50%; color: var(--woo-ink);
           text-decoration: none; transition: transform 0.12s ease-out;
+          border: 0; padding: 0; background: transparent; cursor: pointer;
         }
         .sprk-kudos-person:hover { transform: translateY(-1px); }
         .sprk-kudos-person:focus-visible { outline: 2px solid var(--woo-purple); outline-offset: 3px; }
@@ -629,11 +636,13 @@ function SprinklesApp() {
           box-shadow: 0 0 0 1px var(--woo-rule);
         }
         .sprk-kudos-fallback { color: var(--woo-purple-dark); font: 700 11px/1 var(--font-sans); }
-        .sprk-kudos-count {
-          position: absolute; right: -4px; bottom: -3px; min-width: 15px; height: 15px; padding: 0 3px;
-          border-radius: 999px; background: var(--woo-paper); border: 1px solid var(--woo-rule);
-          font: 600 8.5px/14px "Menlo", "Consolas", monospace; color: var(--woo-purple-dark);
-          text-align: center; box-sizing: border-box;
+        .sprk-kudos-review-bubble {
+          position: absolute; left: 50%; bottom: calc(100% + 8px); z-index: 22;
+          width: max-content; max-width: min(210px, calc(100vw - 72px)); transform: translateX(-50%);
+          padding: 7px 9px; border-radius: 999px; border: 1px solid rgba(127,84,179,0.18);
+          background: var(--woo-paper); color: var(--woo-ink); box-shadow: 0 10px 24px rgba(30,17,66,0.12);
+          font: 500 11px/15px var(--font-sans); text-align: center; white-space: normal;
+          animation: sprk-blessing-pop 0.18s ease-out;
         }
         .sprk-blessing-wrap { position: relative; display: inline-flex; margin-top: 13px; }
         .sprk-blessing-button {
@@ -656,7 +665,7 @@ function SprinklesApp() {
         }
         @media (prefers-reduced-motion: reduce) {
           .sprk-stickybar { transition: none; }
-          .sprk-ribbon, .sprk-marquee-track, .sprk-blessing-bubble { animation: none; }
+          .sprk-ribbon, .sprk-marquee-track, .sprk-blessing-bubble, .sprk-kudos-review-bubble { animation: none; }
           .sprk-card, .sprk-avatar, .sprk-chip, .sprk-kudos-person { transition: none; }
         }
       `}</style>

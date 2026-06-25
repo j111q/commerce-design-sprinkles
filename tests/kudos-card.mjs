@@ -56,7 +56,7 @@ const checks = [
 	},
 	{
 		name: "app renders the kudos card copy",
-		pattern: /Kudos and blessings[\s\S]*To the devs who review our PRs\./,
+		pattern: /Kudos and blessings[\s\S]*To the patient devs who review our PRs and thoughtfully teach us how to do them better next time\./,
 		source: app
 	},
 	{
@@ -75,23 +75,36 @@ const checks = [
 	},
 	{
 		name: "app renders reviewer avatars and PR counts",
-		pattern: /kudos\.reviewedPrs[\s\S]*kudos\.avatar/,
+		pattern: /kudos\.reviewedPrs[\s\S]*kudos\.avatar[\s\S]*reviewed " \+ label \+ "! 💜"/,
 		source: app
 	},
 	{
-		name: "app renders the tiny blessing button",
-		pattern: /Bless you kind devs/,
+		name: "app hides review counts by default",
+		pass: !/sprk-kudos-count/.test(app)
+	},
+	{
+		name: "app renders review count only in an avatar tap bubble",
+		pattern: /sprk-kudos-review-bubble[\s\S]*aria-live="polite"/,
 		source: app
 	},
 	{
-		name: "app includes rotating blessing lines",
+		name: "app renders the tiny blessing button with the new label",
+		pattern: /receive today's blessing/,
+		source: app
+	},
+	{
+		name: "app includes blessing lines",
 		pattern: /BLESSINGS = \[[\s\S]*May your pixels always align[\s\S]*May your colours be saturated[\s\S]*Be blessed with good kerning/,
 		source: app
 	},
 	{
-		name: "app renders a blessing bubble overlay",
+		name: "app renders one blessing bubble overlay",
 		pattern: /sprk-blessing-bubble[\s\S]*aria-live="polite"/,
 		source: app
+	},
+	{
+		name: "app does not auto-rotate blessing copy",
+		pass: !/setInterval/.test(app)
 	}
 ];
 
