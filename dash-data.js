@@ -56,6 +56,20 @@
 
 	const MERGED = [
 	{
+		"title": "Fix order edit screen text color contrast for WCAG AA",
+		"repo": "woocommerce/woocommerce",
+		"number": 65714,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65714",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"ts": 1782400699000,
+		"fresh": true
+	},
+	{
 		"title": "Improve legacy WooCommerce dashboard widgets",
 		"repo": "woocommerce/woocommerce",
 		"number": 65704,
@@ -1305,18 +1319,18 @@
 
 	const OPEN = [
 	{
-		"title": "Fix order edit screen text color contrast for WCAG AA",
+		"title": "Align Order Edit meta boxes with WordPress 7.0 design conventions",
 		"repo": "woocommerce/woocommerce",
-		"number": 65714,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65714",
+		"number": 64564,
+		"url": "https://github.com/woocommerce/woocommerce/pull/64564",
 		"area": "Orders",
 		"flagged": false,
 		"authors": [
-			"jana"
+			"j"
 		],
 		"reviewers": [],
-		"status": "Approved",
-		"ts": 1782398462000
+		"status": "Open",
+		"ts": 1782400551000
 	},
 	{
 		"title": "Fix express payment button focus outline",
@@ -1330,7 +1344,7 @@
 		],
 		"reviewers": [],
 		"status": "Approved",
-		"ts": 1782393766000
+		"ts": 1782398633000
 	},
 	{
 		"title": "Update Product Filters description copy",
@@ -1401,20 +1415,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1781688714000
-	},
-	{
-		"title": "Align Order Edit meta boxes with WordPress 7.0 design conventions",
-		"repo": "woocommerce/woocommerce",
-		"number": 64564,
-		"url": "https://github.com/woocommerce/woocommerce/pull/64564",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"j"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1781627493000
 	},
 	{
 		"title": "Migrate customer stock notification screens to the order actions \"more actions\" menu",
@@ -1513,7 +1513,7 @@
 	},
 	{
 		"name": "Orders",
-		"count": 4
+		"count": 5
 	},
 	{
 		"name": "Shipping",
@@ -1554,12 +1554,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 89,
+	"merged": 90,
 	"surfaces": 12,
 	"repos": 2,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 47
+	"mergedPublic": 48
 };
 
 	const KUDOS = [
@@ -1618,6 +1618,14 @@
 		"reviewedPrs": 3,
 		"approvals": 3,
 		"latestAt": "2026-06-10T14:50:52.000Z"
+	},
+	{
+		"login": "mikejolley",
+		"avatar": "https://avatars.githubusercontent.com/u/90977?v=4",
+		"url": "https://github.com/mikejolley",
+		"reviewedPrs": 2,
+		"approvals": 2,
+		"latestAt": "2026-06-25T14:40:10.000Z"
 	},
 	{
 		"login": "dmallory42",
@@ -1708,14 +1716,6 @@
 		"latestAt": "2026-05-29T05:02:10.000Z"
 	},
 	{
-		"login": "mikejolley",
-		"avatar": "https://avatars.githubusercontent.com/u/90977?v=4",
-		"url": "https://github.com/mikejolley",
-		"reviewedPrs": 1,
-		"approvals": 1,
-		"latestAt": "2026-05-12T11:58:15.000Z"
-	},
-	{
 		"login": "raicem",
 		"avatar": "https://avatars.githubusercontent.com/u/10389957?u=c300f2d9650aa1fd6c3201b1aca67a2f68f979cf&v=4",
 		"url": "https://github.com/raicem",
@@ -1750,7 +1750,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-06-25T14:41:58.356Z"
+	"updatedAt": "2026-06-25T15:59:47.197Z"
 };
 
 	function person(id) {
