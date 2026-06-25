@@ -97,6 +97,40 @@ function SFilterAvatar({ id, active, dimmed, onClick, size = 36 }) {
 
 }
 
+function SKudosCard({ kudos }) {
+  const topKudos = (kudos || []).slice(0, 6);
+  if (!topKudos.length) return null;
+
+  return (
+    <div className="sprk-kudos">
+      <h2 style={{ font: "700 16px/22px var(--font-sans)", letterSpacing: "-0.01em", margin: "0 0 4px" }}>Kudos and cupcakes</h2>
+      <p style={{ font: "400 12.5px/18px var(--font-sans)", color: "var(--woo-ink-soft)", margin: "0 0 12px", textWrap: "pretty" }}>
+        To the devs who review our PRs.
+      </p>
+      <div className="sprk-kudos-list">
+        {topKudos.map(function (kudos) {
+          const href = kudos.url || "https://github.com/" + kudos.login;
+          const label = kudos.reviewedPrs + " PR" + (kudos.reviewedPrs === 1 ? "" : "s");
+          return (
+            <a
+              key={kudos.login}
+              href={href}
+              target="_blank"
+              rel="noreferrer"
+              className="sprk-kudos-person"
+              title={"@" + kudos.login + " reviewed " + label}
+              aria-label={kudos.login + ", reviewed " + label}>
+              {kudos.avatar ?
+                <img className="sprk-kudos-avatar" src={kudos.avatar + (kudos.avatar.indexOf("?") >= 0 ? "&" : "?") + "s=56"} alt="" loading="lazy" /> :
+                <span className="sprk-kudos-avatar sprk-kudos-fallback" aria-hidden="true">{kudos.login.slice(0, 1).toUpperCase()}</span>}
+              <span className="sprk-kudos-count">{kudos.reviewedPrs}</span>
+            </a>);
+        })}
+      </div>
+    </div>);
+
+}
+
 function SBadge({ pr }) {
   const base = {
     display: "inline-flex", alignItems: "center", gap: 5, borderRadius: 999,
@@ -539,10 +573,31 @@ function SprinklesApp() {
         .sprk-chip-n { font: 700 10.5px/13px var(--font-sans); color: var(--woo-purple); }
         .sprk-chip.is-on .sprk-chip-n { color: var(--woo-lavender-pale); }
         .sprk-chip-cloud { display: flex; flex-wrap: wrap; gap: 6px; }
+        .sprk-kudos { border-top: 1px solid var(--woo-rule); margin-top: 22px; padding-top: 18px; }
+        .sprk-kudos-list { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 5px; padding-top: 2px; }
+        .sprk-kudos-person {
+          position: relative; display: inline-flex; align-items: center; justify-content: center;
+          width: 32px; height: 32px; border-radius: 50%; color: var(--woo-ink);
+          text-decoration: none; transition: transform 0.12s ease-out;
+        }
+        .sprk-kudos-person:hover { transform: translateY(-1px); }
+        .sprk-kudos-person:focus-visible { outline: 2px solid var(--woo-purple); outline-offset: 3px; }
+        .sprk-kudos-avatar {
+          width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;
+          object-fit: cover; border: 2px solid var(--woo-paper); background: var(--woo-bg); box-sizing: border-box;
+          box-shadow: 0 0 0 1px var(--woo-rule);
+        }
+        .sprk-kudos-fallback { color: var(--woo-purple-dark); font: 700 11px/1 var(--font-sans); }
+        .sprk-kudos-count {
+          position: absolute; right: -4px; bottom: -3px; min-width: 15px; height: 15px; padding: 0 3px;
+          border-radius: 999px; background: var(--woo-paper); border: 1px solid var(--woo-rule);
+          font: 600 8.5px/14px "Menlo", "Consolas", monospace; color: var(--woo-purple-dark);
+          text-align: center; box-sizing: border-box;
+        }
         @media (prefers-reduced-motion: reduce) {
           .sprk-stickybar { transition: none; }
           .sprk-ribbon, .sprk-marquee-track { animation: none; }
-          .sprk-card, .sprk-avatar, .sprk-chip { transition: none; }
+          .sprk-card, .sprk-avatar, .sprk-chip, .sprk-kudos-person { transition: none; }
         }
       `}</style>
 			{/* Brand ribbon */}
@@ -703,6 +758,7 @@ function SprinklesApp() {
 								})}
 							</div>
 						</div>
+						<SKudosCard kudos={D.KUDOS} />
 					</div>
 				</div>
 			</div>

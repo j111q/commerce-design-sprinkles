@@ -3,7 +3,7 @@
  * Usage:  GH_TOKEN=$(gh auth token) node fetch-data.mjs
  *
  * Searches the woocommerce org for each squad member's merged + open PRs,
- * derives a product "surface" per PR, finds which squad members reviewed it,
+ * derives a product "surface" per PR, summarizes formal review kudos,
  * and writes the result into dash-data.js as plain JS literals so the
  * prototype stays self-contained (no runtime fetch / auth in the canvas).
  *
@@ -136,19 +136,94 @@ async function changedFiles(repo, number) {
 	}
 }
 
+/* Formal PR reviews for kudos and approved-open status. */
+async function pullReviews(repo, number) {
+	try {
+		const reviews = await gh(`https://api.github.com/repos/${repo}/pulls/${number}/reviews?per_page=100`);
+		return reviews
+			.filter((review) => review.user && review.user.login)
+			.map((review) => ({
+				login: review.user.login,
+				avatar: review.user.avatar_url,
+				url: review.user.html_url,
+				state: review.state,
+				submittedAt: review.submitted_at
+			}));
+	} catch {
+		return [];
+	}
+}
+
+function buildKudos(rows, squad) {
+	const squadHandles = new Set(
+		squad
+			.map((p) => p.handle)
+			.filter(Boolean)
+			.map((handle) => handle.toLowerCase())
+	);
+	const byReviewer = new Map();
+
+	for (const row of rows) {
+		const authorLogin = row.it.user && row.it.user.login ? row.it.user.login.toLowerCase() : "";
+		const reviewersForPr = new Map();
+
+		for (const review of row.reviews || []) {
+			const loginKey = review.login.toLowerCase();
+			if (loginKey === authorLogin) continue;
+			if (squadHandles.has(loginKey)) continue;
+			if (/\[bot\]$/i.test(review.login)) continue;
+
+			const submittedAt = new Date(review.submittedAt || row.dateIso).getTime();
+			const existing = reviewersForPr.get(loginKey) || {
+				login: review.login,
+				avatar: review.avatar,
+				url: review.url,
+				states: new Set(),
+				latestAt: 0
+			};
+			existing.states.add(review.state);
+			existing.latestAt = Math.max(existing.latestAt, Number.isNaN(submittedAt) ? 0 : submittedAt);
+			reviewersForPr.set(loginKey, existing);
+		}
+
+		for (const reviewer of reviewersForPr.values()) {
+			const existing = byReviewer.get(reviewer.login.toLowerCase()) || {
+				login: reviewer.login,
+				avatar: reviewer.avatar,
+				url: reviewer.url,
+				reviewedPrs: 0,
+				approvals: 0,
+				latestAt: 0
+			};
+			existing.reviewedPrs += 1;
+			if (reviewer.states.has("APPROVED")) existing.approvals += 1;
+			existing.latestAt = Math.max(existing.latestAt, reviewer.latestAt);
+			if (!existing.avatar && reviewer.avatar) existing.avatar = reviewer.avatar;
+			if (!existing.url && reviewer.url) existing.url = reviewer.url;
+			byReviewer.set(reviewer.login.toLowerCase(), existing);
+		}
+	}
+
+	return Array.from(byReviewer.values())
+		.sort((a, b) =>
+			b.reviewedPrs - a.reviewedPrs ||
+			b.approvals - a.approvals ||
+			b.latestAt - a.latestAt ||
+			a.login.localeCompare(b.login)
+		)
+		.map((reviewer) => ({
+			login: reviewer.login,
+			avatar: reviewer.avatar,
+			url: reviewer.url,
+			reviewedPrs: reviewer.reviewedPrs,
+			approvals: reviewer.approvals,
+			latestAt: reviewer.latestAt ? new Date(reviewer.latestAt).toISOString() : null
+		}));
+}
+
 /* ---- relative time --------------------------------------------------------- */
 function monthYear(iso) {
 	return new Date(iso).toLocaleDateString("en-US", { month: "long", year: "numeric" });
-}
-
-/* ---- approval: does an open PR have an APPROVED review? -------------------- */
-async function isApproved(repo, number) {
-	try {
-		const reviews = await gh(`https://api.github.com/repos/${repo}/pulls/${number}/reviews?per_page=100`);
-		return reviews.some((r) => r.state === "APPROVED");
-	} catch {
-		return false;
-	}
 }
 
 /* ---- pooled map (gentle on the API) ---------------------------------------- */
@@ -198,11 +273,6 @@ async function collect() {
 		}
 	}
 
-	// Only open, non-draft PRs need a reviews lookup (for the Approved status).
-	const needsApproval = open.filter((row) => !row.draft);
-	const approvals = await pool(needsApproval, 6, (row) => isApproved(row.repo, row.number));
-	needsApproval.forEach((row, i) => { row.approved = approvals[i]; });
-
 	// Feature-flag status keys off changed files, so fetch them for every PR.
 	// Extension-repo PRs are public by rule, so skip those lookups.
 	const allRows = merged.concat(open);
@@ -210,6 +280,13 @@ async function collect() {
 	const fileLists = await pool(flagTargets, 8, (row) => changedFiles(row.repo, row.number));
 	flagTargets.forEach((row, i) => { row.files = fileLists[i]; });
 	allRows.forEach((row) => { if (!row.files) row.files = []; });
+
+	const reviewLists = await pool(allRows, 6, (row) => pullReviews(row.repo, row.number));
+	allRows.forEach((row, i) => { row.reviews = reviewLists[i] || []; });
+	open.forEach((row) => {
+		row.approved = !row.draft && row.reviews.some((review) => review.state === "APPROVED");
+	});
+	const KUDOS = buildKudos(allRows, active);
 
 	const labelsOf = (it) => (it.labels || []).map((l) => l.name);
 
@@ -271,7 +348,7 @@ async function collect() {
 		mergedPublic: MERGED.length - mergedFlagged
 	};
 
-	return { MERGED, OPEN, AREAS, TOTALS };
+	return { MERGED, OPEN, AREAS, TOTALS, KUDOS };
 }
 
 /* ---- emit dash-data.js ----------------------------------------------------- */
@@ -347,7 +424,7 @@ const HELPERS = `
 		}
 	}`;
 
-function emit({ MERGED, OPEN, AREAS, TOTALS }) {
+function emit({ MERGED, OPEN, AREAS, TOTALS, KUDOS }) {
 	const SQUAD_OUT = SQUAD.map((p) => ({ id: p.id, name: p.name, handle: p.handle, avatar: p.avatar || null, color: p.color, fg: p.fg }));
 	const DATA_META = { updatedAt: new Date().toISOString() };
 	const j = (v) => JSON.stringify(v, null, "\t");
@@ -368,10 +445,12 @@ function emit({ MERGED, OPEN, AREAS, TOTALS }) {
 
 	const TOTALS = ${j(TOTALS)};
 
+	const KUDOS = ${j(KUDOS)};
+
 	const DATA_META = ${j(DATA_META)};
 ${HELPERS}
 
-	window.DASH = { SQUAD: SQUAD, REPOS: REPOS, MERGED: MERGED, OPEN: OPEN, AREAS: AREAS, TOTALS: TOTALS, DATA_META: DATA_META, person: person, whenLabel: whenLabel, prWhen: prWhen, dataUpdatedLabel: dataUpdatedLabel, sprinkleBurst: sprinkleBurst };
+	window.DASH = { SQUAD: SQUAD, REPOS: REPOS, MERGED: MERGED, OPEN: OPEN, AREAS: AREAS, TOTALS: TOTALS, KUDOS: KUDOS, DATA_META: DATA_META, person: person, whenLabel: whenLabel, prWhen: prWhen, dataUpdatedLabel: dataUpdatedLabel, sprinkleBurst: sprinkleBurst };
 })();
 `;
 }
@@ -380,5 +459,6 @@ const data = await collect();
 writeFileSync(new URL("./dash-data.js", import.meta.url), emit(data));
 console.log(
 	`Wrote dash-data.js — ${data.MERGED.length} merged, ${data.OPEN.length} open, ` +
-	`${data.AREAS.length} surfaces, ${data.TOTALS.repos} repos, since ${data.TOTALS.since}`
+	`${data.AREAS.length} surfaces, ${data.TOTALS.repos} repos, ${data.KUDOS.length} kudos, ` +
+	`since ${data.TOTALS.since}`
 );

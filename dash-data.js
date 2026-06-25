@@ -84,6 +84,20 @@
 		"fresh": false
 	},
 	{
+		"title": "Refresh shipping label ready panel",
+		"repo": "woocommerce/woocommerce-shipping",
+		"number": 1604,
+		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1604",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1781615252000,
+		"fresh": false
+	},
+	{
 		"title": "Fix: Improve color contrast for attribute placeholder text (WCAG 2.2 AA)",
 		"repo": "woocommerce/woocommerce",
 		"number": 65608,
@@ -154,6 +168,20 @@
 		"fresh": false
 	},
 	{
+		"title": "Tweak label purchase blue accents",
+		"repo": "woocommerce/woocommerce-shipping",
+		"number": 1605,
+		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1605",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1780895081000,
+		"fresh": false
+	},
+	{
 		"title": "Make WooPay save-info copy smaller",
 		"repo": "Automattic/woocommerce-payments",
 		"number": 11734,
@@ -165,6 +193,20 @@
 		],
 		"reviewers": [],
 		"ts": 1780059781000,
+		"fresh": false
+	},
+	{
+		"title": "Simplify SCAN Forms history empty state",
+		"repo": "woocommerce/woocommerce-shipping",
+		"number": 1594,
+		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1594",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1779963903000,
 		"fresh": false
 	},
 	{
@@ -1302,7 +1344,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1782377043000
+		"ts": 1782380684000
 	},
 	{
 		"title": "Improve legacy WooCommerce dashboard widgets",
@@ -1512,11 +1554,11 @@
 		"count": 26
 	},
 	{
-		"name": "Orders",
-		"count": 4
+		"name": "Shipping",
+		"count": 7
 	},
 	{
-		"name": "Shipping",
+		"name": "Orders",
 		"count": 4
 	},
 	{
@@ -1554,16 +1596,179 @@
 ];
 
 	const TOTALS = {
-	"merged": 88,
+	"merged": 91,
 	"surfaces": 12,
-	"repos": 2,
+	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 46
+	"mergedPublic": 49
 };
 
+	const KUDOS = [
+	{
+		"login": "gigitux",
+		"avatar": "https://avatars.githubusercontent.com/u/4463174?u=e62244f638a3dc7b760cf883bf3a15f62844f87c&v=4",
+		"url": "https://github.com/gigitux",
+		"reviewedPrs": 40,
+		"approvals": 39,
+		"latestAt": "2026-05-22T13:18:09.000Z"
+	},
+	{
+		"login": "ayushpahwa",
+		"avatar": "https://avatars.githubusercontent.com/u/8526215?u=4b9aa323a770ea89605eaa11a0dc9c9ac0e7dfde&v=4",
+		"url": "https://github.com/ayushpahwa",
+		"reviewedPrs": 10,
+		"approvals": 10,
+		"latestAt": "2026-05-11T07:31:32.000Z"
+	},
+	{
+		"login": "chihsuan",
+		"avatar": "https://avatars.githubusercontent.com/u/4344253?u=893568c74d526595be65e1748b2fde2626a185f2&v=4",
+		"url": "https://github.com/chihsuan",
+		"reviewedPrs": 9,
+		"approvals": 9,
+		"latestAt": "2026-06-18T06:29:03.000Z"
+	},
+	{
+		"login": "mordeth",
+		"avatar": "https://avatars.githubusercontent.com/u/8667118?u=9607f4dc0fb4cad1132842efea47cae8aff424f3&v=4",
+		"url": "https://github.com/mordeth",
+		"reviewedPrs": 7,
+		"approvals": 7,
+		"latestAt": "2026-05-22T08:34:53.000Z"
+	},
+	{
+		"login": "samnajian",
+		"avatar": "https://avatars.githubusercontent.com/u/789421?u=02f17ad708b24dea93c1293301ed3dca390285ec&v=4",
+		"url": "https://github.com/samnajian",
+		"reviewedPrs": 5,
+		"approvals": 5,
+		"latestAt": "2026-06-16T13:07:25.000Z"
+	},
+	{
+		"login": "sunyatasattva",
+		"avatar": "https://avatars.githubusercontent.com/u/1847066?v=4",
+		"url": "https://github.com/sunyatasattva",
+		"reviewedPrs": 4,
+		"approvals": 3,
+		"latestAt": "2026-06-16T15:29:17.000Z"
+	},
+	{
+		"login": "Aljullu",
+		"avatar": "https://avatars.githubusercontent.com/u/3616980?v=4",
+		"url": "https://github.com/Aljullu",
+		"reviewedPrs": 4,
+		"approvals": 3,
+		"latestAt": "2026-06-10T14:50:52.000Z"
+	},
+	{
+		"login": "jorgeatorres",
+		"avatar": "https://avatars.githubusercontent.com/u/184724?u=04d9507fd3e519c04c272ab4e3c6f70566b1ab92&v=4",
+		"url": "https://github.com/jorgeatorres",
+		"reviewedPrs": 3,
+		"approvals": 2,
+		"latestAt": "2026-06-02T08:48:13.000Z"
+	},
+	{
+		"login": "dmallory42",
+		"avatar": "https://avatars.githubusercontent.com/u/11770181?u=6cffd497439a5032fdeda7281e630cacbc32c280&v=4",
+		"url": "https://github.com/dmallory42",
+		"reviewedPrs": 2,
+		"approvals": 2,
+		"latestAt": "2026-05-22T06:48:11.000Z"
+	},
+	{
+		"login": "pavel-mailpoet",
+		"avatar": "https://avatars.githubusercontent.com/u/29194603?u=7699130e48b744e07259aa993a534efe069b6426&v=4",
+		"url": "https://github.com/pavel-mailpoet",
+		"reviewedPrs": 2,
+		"approvals": 2,
+		"latestAt": "2026-05-12T07:50:53.000Z"
+	},
+	{
+		"login": "oaratovskyi",
+		"avatar": "https://avatars.githubusercontent.com/u/79862886?u=19ddb00b40b8fcdbe626a94511c8acc6fd92703f&v=4",
+		"url": "https://github.com/oaratovskyi",
+		"reviewedPrs": 2,
+		"approvals": 2,
+		"latestAt": "2026-04-22T16:50:27.000Z"
+	},
+	{
+		"login": "mikejolley",
+		"avatar": "https://avatars.githubusercontent.com/u/90977?v=4",
+		"url": "https://github.com/mikejolley",
+		"reviewedPrs": 2,
+		"approvals": 1,
+		"latestAt": "2026-06-11T14:00:16.000Z"
+	},
+	{
+		"login": "bor0",
+		"avatar": "https://avatars.githubusercontent.com/u/1620929?u=b5f83b6a7cbe4b2b7d4611f4452b619810ee4e91&v=4",
+		"url": "https://github.com/bor0",
+		"reviewedPrs": 2,
+		"approvals": 1,
+		"latestAt": "2026-05-12T08:35:44.000Z"
+	},
+	{
+		"login": "kmanijak",
+		"avatar": "https://avatars.githubusercontent.com/u/20098064?u=90fe666e70c13d1826ae20946c920c264b18e42a&v=4",
+		"url": "https://github.com/kmanijak",
+		"reviewedPrs": 1,
+		"approvals": 1,
+		"latestAt": "2026-06-24T10:54:10.000Z"
+	},
+	{
+		"login": "retrofox",
+		"avatar": "https://avatars.githubusercontent.com/u/77539?u=feee3238d23063d6b00d3dd9f812df061a27f6f4&v=4",
+		"url": "https://github.com/retrofox",
+		"reviewedPrs": 1,
+		"approvals": 1,
+		"latestAt": "2026-06-24T08:47:12.000Z"
+	},
+	{
+		"login": "htdat",
+		"avatar": "https://avatars.githubusercontent.com/u/10045087?u=e04306a561e084898133cbeabc10b7a335aa61a7&v=4",
+		"url": "https://github.com/htdat",
+		"reviewedPrs": 1,
+		"approvals": 1,
+		"latestAt": "2026-05-29T05:02:10.000Z"
+	},
+	{
+		"login": "raicem",
+		"avatar": "https://avatars.githubusercontent.com/u/10389957?u=c300f2d9650aa1fd6c3201b1aca67a2f68f979cf&v=4",
+		"url": "https://github.com/raicem",
+		"reviewedPrs": 1,
+		"approvals": 1,
+		"latestAt": "2026-05-08T09:48:40.000Z"
+	},
+	{
+		"login": "Ferdev",
+		"avatar": "https://avatars.githubusercontent.com/u/130142?v=4",
+		"url": "https://github.com/Ferdev",
+		"reviewedPrs": 1,
+		"approvals": 1,
+		"latestAt": "2026-04-27T08:51:12.000Z"
+	},
+	{
+		"login": "tjcafferkey",
+		"avatar": "https://avatars.githubusercontent.com/u/8639742?u=8468454f62312af6c53fb31669b44a696cd54f21&v=4",
+		"url": "https://github.com/tjcafferkey",
+		"reviewedPrs": 1,
+		"approvals": 0,
+		"latestAt": "2026-06-25T07:21:28.000Z"
+	},
+	{
+		"login": "ralucaStan",
+		"avatar": "https://avatars.githubusercontent.com/u/1628454?u=ec5ec9053e8f15085ff7fe62829a005bdc1a70c4&v=4",
+		"url": "https://github.com/ralucaStan",
+		"reviewedPrs": 1,
+		"approvals": 0,
+		"latestAt": "2026-06-18T15:52:07.000Z"
+	}
+];
+
 	const DATA_META = {
-	"updatedAt": "2026-06-25T08:55:37.745Z"
+	"updatedAt": "2026-06-25T10:15:00.285Z"
 };
 
 	function person(id) {
@@ -1637,5 +1842,5 @@
 		}
 	}
 
-	window.DASH = { SQUAD: SQUAD, REPOS: REPOS, MERGED: MERGED, OPEN: OPEN, AREAS: AREAS, TOTALS: TOTALS, DATA_META: DATA_META, person: person, whenLabel: whenLabel, prWhen: prWhen, dataUpdatedLabel: dataUpdatedLabel, sprinkleBurst: sprinkleBurst };
+	window.DASH = { SQUAD: SQUAD, REPOS: REPOS, MERGED: MERGED, OPEN: OPEN, AREAS: AREAS, TOTALS: TOTALS, KUDOS: KUDOS, DATA_META: DATA_META, person: person, whenLabel: whenLabel, prWhen: prWhen, dataUpdatedLabel: dataUpdatedLabel, sprinkleBurst: sprinkleBurst };
 })();
