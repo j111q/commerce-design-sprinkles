@@ -56,7 +56,7 @@ const checks = [
 	},
 	{
 		name: "generated KUDOS excludes bots and squad members",
-		pass: generatedKudos.every((kudos) => !/\[bot\]$/i.test(kudos.login) && !squadHandles.has(kudos.login.toLowerCase()))
+		pass: generatedKudos.every((kudos) => !/(?:\[bot\]|bot)$/i.test(kudos.login) && !squadHandles.has(kudos.login.toLowerCase()))
 	},
 	{
 		name: "generated KUDOS entries include avatars, profile URLs, and PR counts",

@@ -197,6 +197,10 @@ async function pullReviewSignals(repo, number) {
 	return reviews.concat(reviewComments, issueComments);
 }
 
+function isBotLogin(login) {
+	return /(?:\[bot\]|bot)$/i.test(login);
+}
+
 function buildKudos(rows, squad) {
 	const squadHandles = new Set(
 		squad
@@ -214,7 +218,7 @@ function buildKudos(rows, squad) {
 			const loginKey = review.login.toLowerCase();
 			if (loginKey === authorLogin) continue;
 			if (squadHandles.has(loginKey)) continue;
-			if (/\[bot\]$/i.test(review.login)) continue;
+			if (isBotLogin(review.login)) continue;
 
 			const submittedAt = new Date(review.submittedAt || row.dateIso).getTime();
 			const existing = reviewersForPr.get(loginKey) || {

@@ -1572,14 +1572,6 @@
 		"latestAt": "2026-05-22T13:18:09.000Z"
 	},
 	{
-		"login": "woocommercebot",
-		"avatar": "https://avatars.githubusercontent.com/u/30233865?v=4",
-		"url": "https://github.com/woocommercebot",
-		"reviewedPrs": 11,
-		"approvals": 0,
-		"latestAt": "2026-05-22T13:45:40.000Z"
-	},
-	{
 		"login": "ayushpahwa",
 		"avatar": "https://avatars.githubusercontent.com/u/8526215?u=4b9aa323a770ea89605eaa11a0dc9c9ac0e7dfde&v=4",
 		"url": "https://github.com/ayushpahwa",
