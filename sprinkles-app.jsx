@@ -160,11 +160,12 @@ function SKudosCard({ kudos, className = "" }) {
     <div className={"sprk-kudos-card " + (expanded ? "is-expanded " : "is-collapsed ") + className}>
       <h2 className="sprk-kudos-heading">
         <button type="button" className="sprk-kudos-toggle" aria-expanded={expanded} onClick={toggleKudos}>
-          kudos to reviewers
+          <span className="sprk-kudos-title">kudos to reviewers 💜</span>
+          <span className="sprk-kudos-chevron" aria-hidden="true"></span>
         </button>
       </h2>
       {expanded ?
-        <React.Fragment>
+        <div className="sprk-kudos-body">
           <p style={{ font: "400 11.5px/16px var(--font-sans)", color: "var(--woo-ink-soft)", margin: "0 0 12px", textWrap: "pretty" }}>
             To the devs who patiently review our PRs, thank you!
           </p>
@@ -192,7 +193,7 @@ function SKudosCard({ kudos, className = "" }) {
             {blessingVisible ?
               <span className="sprk-blessing-bubble" aria-live="polite">{BLESSINGS[blessingIndex]}</span> : null}
           </div>
-        </React.Fragment> :
+        </div> :
         null}
     </div>);
 
@@ -646,16 +647,22 @@ function SprinklesApp() {
           border: 1px solid rgba(127,84,179,0.1); background: rgba(255,255,255,0.32);
           box-shadow: none; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
         }
-        .sprk-kudos-card.is-collapsed { padding: 10px 12px; }
         .sprk-kudos-heading { margin: 0; }
         .sprk-kudos-toggle {
-          display: flex; align-items: center; justify-content: flex-start; width: 100%;
+          display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%;
           border: 0; padding: 0; background: transparent; color: var(--woo-ink);
           font: 600 13px/18px var(--font-sans); text-align: left; cursor: pointer;
         }
+        .sprk-kudos-title { min-width: 0; }
+        .sprk-kudos-chevron {
+          flex: 0 0 auto; width: 7px; height: 7px; margin-right: 2px; box-sizing: border-box;
+          border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
+          opacity: 0.72; transform: translateY(-1px) rotate(45deg); transition: transform 0.14s ease-out;
+        }
+        .sprk-kudos-card.is-expanded .sprk-kudos-chevron { transform: translateY(2px) rotate(225deg); }
         .sprk-kudos-toggle:hover { color: var(--woo-purple-dark); }
         .sprk-kudos-toggle:focus-visible { outline: 2px solid var(--woo-purple); outline-offset: 3px; border-radius: 5px; }
-        .sprk-kudos-card.is-expanded .sprk-kudos-heading { margin-bottom: 4px; }
+        .sprk-kudos-body { margin-top: 8px; }
         .sprk-kudos-list { display: flex; flex-wrap: wrap; align-items: center; gap: 7px 4px; padding-top: 2px; }
         .sprk-kudos-person {
           position: relative; display: inline-flex; align-items: center; justify-content: center;

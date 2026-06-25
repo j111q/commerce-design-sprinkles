@@ -91,8 +91,23 @@ const checks = [
 	},
 	{
 		name: "app renders the kudos card copy",
-		pattern: /kudos to reviewers[\s\S]*To the devs who patiently review our PRs, thank you!/,
+		pattern: /kudos to reviewers 💜[\s\S]*To the devs who patiently review our PRs, thank you!/,
 		source: app
+	},
+	{
+		name: "app renders a kudos chevron state indicator",
+		pattern: /className="sprk-kudos-chevron"[\s\S]*aria-hidden="true"/,
+		source: app
+	},
+	{
+		name: "app gives the kudos chevron open and collapsed states",
+		pattern: /sprk-kudos-chevron[\s\S]*\.sprk-kudos-card\.is-expanded \.sprk-kudos-chevron/,
+		source: app
+	},
+	{
+		name: "app keeps the kudos heading position stable while toggling",
+		pass: !/sprk-kudos-card\.is-collapsed \{ padding:/.test(app) &&
+			!/sprk-kudos-card\.is-expanded \.sprk-kudos-heading \{ margin-bottom:/.test(app)
 	},
 	{
 		name: "app no longer uses old kudos headings",
