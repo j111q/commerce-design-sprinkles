@@ -1315,8 +1315,8 @@
 			"jana"
 		],
 		"reviewers": [],
-		"status": "Open",
-		"ts": 1782397971000
+		"status": "Approved",
+		"ts": 1782398462000
 	},
 	{
 		"title": "Fix express payment button focus outline",
@@ -1750,7 +1750,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-06-25T14:33:25.086Z"
+	"updatedAt": "2026-06-25T14:41:58.356Z"
 };
 
 	function person(id) {
