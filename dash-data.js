@@ -1567,9 +1567,17 @@
 		"login": "gigitux",
 		"avatar": "https://avatars.githubusercontent.com/u/4463174?u=e62244f638a3dc7b760cf883bf3a15f62844f87c&v=4",
 		"url": "https://github.com/gigitux",
-		"reviewedPrs": 40,
+		"reviewedPrs": 41,
 		"approvals": 39,
 		"latestAt": "2026-05-22T13:18:09.000Z"
+	},
+	{
+		"login": "woocommercebot",
+		"avatar": "https://avatars.githubusercontent.com/u/30233865?v=4",
+		"url": "https://github.com/woocommercebot",
+		"reviewedPrs": 11,
+		"approvals": 0,
+		"latestAt": "2026-05-22T13:45:40.000Z"
 	},
 	{
 		"login": "ayushpahwa",
@@ -1596,28 +1604,28 @@
 		"latestAt": "2026-05-22T08:34:53.000Z"
 	},
 	{
+		"login": "robcmcdowall",
+		"avatar": "https://avatars.githubusercontent.com/u/123248278?v=4",
+		"url": "https://github.com/robcmcdowall",
+		"reviewedPrs": 4,
+		"approvals": 0,
+		"latestAt": "2026-06-18T14:54:14.000Z"
+	},
+	{
 		"login": "sunyatasattva",
 		"avatar": "https://avatars.githubusercontent.com/u/1847066?v=4",
 		"url": "https://github.com/sunyatasattva",
-		"reviewedPrs": 4,
+		"reviewedPrs": 3,
 		"approvals": 3,
-		"latestAt": "2026-06-16T15:29:17.000Z"
+		"latestAt": "2026-06-11T18:28:30.000Z"
 	},
 	{
 		"login": "Aljullu",
 		"avatar": "https://avatars.githubusercontent.com/u/3616980?v=4",
 		"url": "https://github.com/Aljullu",
-		"reviewedPrs": 4,
+		"reviewedPrs": 3,
 		"approvals": 3,
 		"latestAt": "2026-06-10T14:50:52.000Z"
-	},
-	{
-		"login": "jorgeatorres",
-		"avatar": "https://avatars.githubusercontent.com/u/184724?u=04d9507fd3e519c04c272ab4e3c6f70566b1ab92&v=4",
-		"url": "https://github.com/jorgeatorres",
-		"reviewedPrs": 3,
-		"approvals": 2,
-		"latestAt": "2026-06-02T08:48:13.000Z"
 	},
 	{
 		"login": "dmallory42",
@@ -1644,20 +1652,20 @@
 		"latestAt": "2026-05-05T09:58:19.000Z"
 	},
 	{
+		"login": "jorgeatorres",
+		"avatar": "https://avatars.githubusercontent.com/u/184724?u=04d9507fd3e519c04c272ab4e3c6f70566b1ab92&v=4",
+		"url": "https://github.com/jorgeatorres",
+		"reviewedPrs": 2,
+		"approvals": 2,
+		"latestAt": "2026-04-29T08:36:56.000Z"
+	},
+	{
 		"login": "oaratovskyi",
 		"avatar": "https://avatars.githubusercontent.com/u/79862886?u=19ddb00b40b8fcdbe626a94511c8acc6fd92703f&v=4",
 		"url": "https://github.com/oaratovskyi",
 		"reviewedPrs": 2,
 		"approvals": 2,
-		"latestAt": "2026-04-22T16:50:27.000Z"
-	},
-	{
-		"login": "mikejolley",
-		"avatar": "https://avatars.githubusercontent.com/u/90977?v=4",
-		"url": "https://github.com/mikejolley",
-		"reviewedPrs": 2,
-		"approvals": 1,
-		"latestAt": "2026-06-11T14:00:16.000Z"
+		"latestAt": "2026-04-24T08:07:07.000Z"
 	},
 	{
 		"login": "bor0",
@@ -1668,22 +1676,6 @@
 		"latestAt": "2026-05-12T08:35:44.000Z"
 	},
 	{
-		"login": "tjcafferkey",
-		"avatar": "https://avatars.githubusercontent.com/u/8639742?u=8468454f62312af6c53fb31669b44a696cd54f21&v=4",
-		"url": "https://github.com/tjcafferkey",
-		"reviewedPrs": 1,
-		"approvals": 1,
-		"latestAt": "2026-06-25T13:22:46.000Z"
-	},
-	{
-		"login": "PanosSynetos",
-		"avatar": "https://avatars.githubusercontent.com/u/2484390?u=686d5070a1fb733985ac8043984102117d505a9c&v=4",
-		"url": "https://github.com/PanosSynetos",
-		"reviewedPrs": 1,
-		"approvals": 1,
-		"latestAt": "2026-06-25T13:18:48.000Z"
-	},
-	{
 		"login": "kmanijak",
 		"avatar": "https://avatars.githubusercontent.com/u/20098064?u=90fe666e70c13d1826ae20946c920c264b18e42a&v=4",
 		"url": "https://github.com/kmanijak",
@@ -1692,20 +1684,20 @@
 		"latestAt": "2026-06-24T10:54:10.000Z"
 	},
 	{
-		"login": "retrofox",
-		"avatar": "https://avatars.githubusercontent.com/u/77539?u=feee3238d23063d6b00d3dd9f812df061a27f6f4&v=4",
-		"url": "https://github.com/retrofox",
-		"reviewedPrs": 1,
-		"approvals": 1,
-		"latestAt": "2026-06-24T08:47:12.000Z"
-	},
-	{
 		"login": "htdat",
 		"avatar": "https://avatars.githubusercontent.com/u/10045087?u=e04306a561e084898133cbeabc10b7a335aa61a7&v=4",
 		"url": "https://github.com/htdat",
 		"reviewedPrs": 1,
 		"approvals": 1,
 		"latestAt": "2026-05-29T05:02:10.000Z"
+	},
+	{
+		"login": "mikejolley",
+		"avatar": "https://avatars.githubusercontent.com/u/90977?v=4",
+		"url": "https://github.com/mikejolley",
+		"reviewedPrs": 1,
+		"approvals": 1,
+		"latestAt": "2026-05-12T11:58:15.000Z"
 	},
 	{
 		"login": "raicem",
@@ -1724,17 +1716,25 @@
 		"latestAt": "2026-04-27T08:51:12.000Z"
 	},
 	{
-		"login": "ralucaStan",
-		"avatar": "https://avatars.githubusercontent.com/u/1628454?u=ec5ec9053e8f15085ff7fe62829a005bdc1a70c4&v=4",
-		"url": "https://github.com/ralucaStan",
+		"login": "lauroraa",
+		"avatar": "https://avatars.githubusercontent.com/u/82584767?v=4",
+		"url": "https://github.com/lauroraa",
 		"reviewedPrs": 1,
 		"approvals": 0,
-		"latestAt": "2026-06-18T15:52:07.000Z"
+		"latestAt": "2026-06-18T10:44:23.000Z"
+	},
+	{
+		"login": "Copilot",
+		"avatar": "https://avatars.githubusercontent.com/in/946600?v=4",
+		"url": "https://github.com/apps/copilot-pull-request-reviewer",
+		"reviewedPrs": 1,
+		"approvals": 0,
+		"latestAt": "2026-05-11T08:54:03.000Z"
 	}
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-06-25T13:52:54.368Z"
+	"updatedAt": "2026-06-25T14:01:45.811Z"
 };
 
 	function person(id) {
