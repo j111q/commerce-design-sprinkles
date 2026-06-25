@@ -68,12 +68,12 @@ const checks = [
 	},
 	{
 		name: "app renders the kudos card copy",
-		pattern: /Kudos and blessings[\s\S]*To the devs who patiently review our PRs, thank you!/,
+		pattern: /kudos to reviewers[\s\S]*To the devs who patiently review our PRs, thank you!/,
 		source: app
 	},
 	{
-		name: "app no longer uses the old kudos heading",
-		pass: !/Kudos and cupcakes/.test(app)
+		name: "app no longer uses old kudos headings",
+		pass: !/Kudos and cupcakes|Kudos and blessings/.test(app)
 	},
 	{
 		name: "app renders mobile kudos below Last updated and before the grid",
@@ -91,6 +91,11 @@ const checks = [
 		source: app
 	},
 	{
+		name: "app collapses the kudos card by default",
+		pattern: /const \[expanded, setExpanded\] = React\.useState\(false\);[\s\S]*aria-expanded=\{expanded\}[\s\S]*\{expanded \?/,
+		source: app
+	},
+	{
 		name: "app shows every generated kudos reviewer",
 		pass: !/slice\(0,\s*6\)/.test(app)
 	},
@@ -105,7 +110,12 @@ const checks = [
 	},
 	{
 		name: "app renders the tiny blessing button with the new label",
-		pattern: /receive your thanks/,
+		pattern: /receive your special thanks 😌/,
+		source: app
+	},
+	{
+		name: "app makes the blessing button full width",
+		pattern: /sprk-blessing-button \{[\s\S]*width: 100%;[\s\S]*justify-content: center;/,
 		source: app
 	},
 	{
@@ -125,6 +135,11 @@ const checks = [
 	{
 		name: "app renders one blessing bubble overlay",
 		pattern: /sprk-blessing-bubble[\s\S]*aria-live="polite"/,
+		source: app
+	},
+	{
+		name: "app balances blessing bubble wrapping",
+		pattern: /sprk-blessing-bubble \{[\s\S]*text-wrap: balance;/,
 		source: app
 	},
 	{
