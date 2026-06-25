@@ -84,20 +84,6 @@
 		"fresh": false
 	},
 	{
-		"title": "Refresh shipping label ready panel",
-		"repo": "woocommerce/woocommerce-shipping",
-		"number": 1604,
-		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1604",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"ts": 1781615252000,
-		"fresh": false
-	},
-	{
 		"title": "Fix: Improve color contrast for attribute placeholder text (WCAG 2.2 AA)",
 		"repo": "woocommerce/woocommerce",
 		"number": 65608,
@@ -168,20 +154,6 @@
 		"fresh": false
 	},
 	{
-		"title": "Tweak label purchase blue accents",
-		"repo": "woocommerce/woocommerce-shipping",
-		"number": 1605,
-		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1605",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"ts": 1780895081000,
-		"fresh": false
-	},
-	{
 		"title": "Make WooPay save-info copy smaller",
 		"repo": "Automattic/woocommerce-payments",
 		"number": 11734,
@@ -193,20 +165,6 @@
 		],
 		"reviewers": [],
 		"ts": 1780059781000,
-		"fresh": false
-	},
-	{
-		"title": "Simplify SCAN Forms history empty state",
-		"repo": "woocommerce/woocommerce-shipping",
-		"number": 1594,
-		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1594",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"ts": 1779963903000,
 		"fresh": false
 	},
 	{
@@ -1333,6 +1291,20 @@
 
 	const OPEN = [
 	{
+		"title": "Improve legacy WooCommerce dashboard widgets",
+		"repo": "woocommerce/woocommerce",
+		"number": 65704,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65704",
+		"area": "Home",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Approved",
+		"ts": 1782382700000
+	},
+	{
 		"title": "Fix express payment button focus outline",
 		"repo": "woocommerce/woocommerce",
 		"number": 65901,
@@ -1345,20 +1317,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1782380684000
-	},
-	{
-		"title": "Improve legacy WooCommerce dashboard widgets",
-		"repo": "woocommerce/woocommerce",
-		"number": 65704,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65704",
-		"area": "Home",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1782296633000
 	},
 	{
 		"title": "Update Product Filters description copy",
@@ -1554,11 +1512,11 @@
 		"count": 26
 	},
 	{
-		"name": "Shipping",
-		"count": 7
+		"name": "Orders",
+		"count": 4
 	},
 	{
-		"name": "Orders",
+		"name": "Shipping",
 		"count": 4
 	},
 	{
@@ -1596,12 +1554,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 91,
+	"merged": 88,
 	"surfaces": 12,
-	"repos": 3,
+	"repos": 2,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 49
+	"mergedPublic": 46
 };
 
 	const KUDOS = [
@@ -1636,14 +1594,6 @@
 		"reviewedPrs": 7,
 		"approvals": 7,
 		"latestAt": "2026-05-22T08:34:53.000Z"
-	},
-	{
-		"login": "samnajian",
-		"avatar": "https://avatars.githubusercontent.com/u/789421?u=02f17ad708b24dea93c1293301ed3dca390285ec&v=4",
-		"url": "https://github.com/samnajian",
-		"reviewedPrs": 5,
-		"approvals": 5,
-		"latestAt": "2026-06-16T13:07:25.000Z"
 	},
 	{
 		"login": "sunyatasattva",
@@ -1684,6 +1634,14 @@
 		"reviewedPrs": 2,
 		"approvals": 2,
 		"latestAt": "2026-05-12T07:50:53.000Z"
+	},
+	{
+		"login": "samnajian",
+		"avatar": "https://avatars.githubusercontent.com/u/789421?u=02f17ad708b24dea93c1293301ed3dca390285ec&v=4",
+		"url": "https://github.com/samnajian",
+		"reviewedPrs": 2,
+		"approvals": 2,
+		"latestAt": "2026-05-05T09:58:19.000Z"
 	},
 	{
 		"login": "oaratovskyi",
@@ -1750,6 +1708,14 @@
 		"latestAt": "2026-04-27T08:51:12.000Z"
 	},
 	{
+		"login": "PanosSynetos",
+		"avatar": "https://avatars.githubusercontent.com/u/2484390?u=686d5070a1fb733985ac8043984102117d505a9c&v=4",
+		"url": "https://github.com/PanosSynetos",
+		"reviewedPrs": 1,
+		"approvals": 0,
+		"latestAt": "2026-06-25T10:18:20.000Z"
+	},
+	{
 		"login": "tjcafferkey",
 		"avatar": "https://avatars.githubusercontent.com/u/8639742?u=8468454f62312af6c53fb31669b44a696cd54f21&v=4",
 		"url": "https://github.com/tjcafferkey",
@@ -1768,7 +1734,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-06-25T10:15:00.285Z"
+	"updatedAt": "2026-06-25T10:19:51.102Z"
 };
 
 	function person(id) {
