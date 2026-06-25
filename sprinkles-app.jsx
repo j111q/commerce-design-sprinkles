@@ -696,8 +696,8 @@ function SprinklesApp() {
         .sprk-blessing-button:hover { border-color: rgba(127,84,179,0.34); background: rgba(127,84,179,0.1); }
         .sprk-blessing-button:focus-visible { outline: 2px solid var(--woo-purple); outline-offset: 2px; }
         .sprk-blessing-bubble {
-          position: absolute; left: 0; bottom: calc(100% + 8px); z-index: 20; width: max-content;
-          max-width: min(220px, calc(100vw - 72px)); padding: 7px 9px; border-radius: 999px;
+          position: absolute; left: 0; bottom: calc(100% + 8px); z-index: 20; width: fit-content;
+          max-width: min(24ch, calc(100vw - 72px)); padding: 7px 10px 7px 13px; border-radius: 14px;
           border: 1px solid rgba(127,84,179,0.18); background: var(--woo-paper); color: var(--woo-ink);
           box-shadow: 0 10px 24px rgba(30,17,66,0.12); font: 500 11px/15px var(--font-sans);
           text-align: left; white-space: normal; text-wrap: balance; animation: sprk-blessing-pop 0.18s ease-out;

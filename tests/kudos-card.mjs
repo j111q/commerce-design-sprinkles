@@ -175,6 +175,15 @@ const checks = [
 		source: app
 	},
 	{
+		name: "app keeps blessing bubbles snug with more left padding",
+		pattern: /sprk-blessing-bubble \{[\s\S]*width: fit-content;[\s\S]*max-width: min\(24ch, calc\(100vw - 72px\)\);[\s\S]*padding: 7px 10px 7px 13px;/,
+		source: app
+	},
+	{
+		name: "app no longer lets blessing bubbles reserve max-content width",
+		pass: !/sprk-blessing-bubble \{[\s\S]*width: max-content;/.test(app)
+	},
+	{
 		name: "app does not auto-rotate blessing copy",
 		pass: !/setInterval/.test(app)
 	},
