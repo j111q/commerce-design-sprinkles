@@ -1302,7 +1302,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1782383372000
+		"ts": 1782383590000
 	},
 	{
 		"title": "Improve legacy WooCommerce dashboard widgets",
@@ -1316,7 +1316,7 @@
 		],
 		"reviewers": [],
 		"status": "Approved",
-		"ts": 1782382700000
+		"ts": 1782383478000
 	},
 	{
 		"title": "Update Product Filters description copy",
@@ -1713,7 +1713,7 @@
 		"url": "https://github.com/PanosSynetos",
 		"reviewedPrs": 1,
 		"approvals": 0,
-		"latestAt": "2026-06-25T10:18:20.000Z"
+		"latestAt": "2026-06-25T10:31:18.000Z"
 	},
 	{
 		"login": "tjcafferkey",
@@ -1734,7 +1734,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-06-25T10:30:00.808Z"
+	"updatedAt": "2026-06-25T10:39:04.646Z"
 };
 
 	function person(id) {
