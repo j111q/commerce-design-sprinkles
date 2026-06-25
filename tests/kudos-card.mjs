@@ -56,17 +56,41 @@ const checks = [
 	},
 	{
 		name: "app renders the kudos card copy",
-		pattern: /Kudos and cupcakes[\s\S]*To the devs who review our PRs\./,
+		pattern: /Kudos and blessings[\s\S]*To the devs who review our PRs\./,
 		source: app
 	},
 	{
-		name: "app passes D.KUDOS into the kudos card",
-		pattern: /<SKudosCard kudos=\{D\.KUDOS\} \/>/,
+		name: "app no longer uses the old kudos heading",
+		pass: !/Kudos and cupcakes/.test(app)
+	},
+	{
+		name: "app renders mobile kudos below Last updated and before the grid",
+		pattern: /<p className="sprk-updated">\{D\.dataUpdatedLabel\(\)\}<\/p>[\s\S]*<div className="sprk-kudos-mobile">[\s\S]*<SKudosCard kudos=\{D\.KUDOS\} \/>[\s\S]*<\/div>[\s\S]*<div className="sprk-wrap sprk-grid">/,
+		source: app
+	},
+	{
+		name: "app renders desktop kudos as its own rail card",
+		pattern: /<div className="sprk-rail"[\s\S]*<div style=\{Object\.assign\(\{\}, card, \{ padding: 28 \}\)\}>[\s\S]*<\/div>\s*<SKudosCard kudos=\{D\.KUDOS\} className="sprk-kudos-rail" \/>[\s\S]*<\/div>/,
 		source: app
 	},
 	{
 		name: "app renders reviewer avatars and PR counts",
 		pattern: /kudos\.reviewedPrs[\s\S]*kudos\.avatar/,
+		source: app
+	},
+	{
+		name: "app renders the tiny blessing button",
+		pattern: /Bless you kind devs/,
+		source: app
+	},
+	{
+		name: "app includes rotating blessing lines",
+		pattern: /BLESSINGS = \[[\s\S]*May your pixels always align[\s\S]*May your colours be saturated[\s\S]*Be blessed with good kerning/,
+		source: app
+	},
+	{
+		name: "app renders a blessing bubble overlay",
+		pattern: /sprk-blessing-bubble[\s\S]*aria-live="polite"/,
 		source: app
 	}
 ];

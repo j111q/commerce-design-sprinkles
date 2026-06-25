@@ -97,13 +97,44 @@ function SFilterAvatar({ id, active, dimmed, onClick, size = 36 }) {
 
 }
 
-function SKudosCard({ kudos }) {
+const BLESSINGS = [
+  "May your pixels always align",
+  "May your colours be saturated",
+  "Be blessed with good kerning",
+  "May your spacing tokens resolve",
+  "May your hover states feel intentional"
+];
+
+function SKudosCard({ kudos, className = "" }) {
   const topKudos = (kudos || []).slice(0, 6);
+  const [blessingOpen, setBlessingOpen] = React.useState(false);
+  const [blessingIndex, setBlessingIndex] = React.useState(0);
+  const closeTimer = React.useRef(null);
+
+  React.useEffect(function () {
+    if (!blessingOpen) return;
+    const interval = window.setInterval(function () {
+      setBlessingIndex(function (index) {return (index + 1) % BLESSINGS.length;});
+    }, 1800);
+    return function () {window.clearInterval(interval);};
+  }, [blessingOpen]);
+
+  React.useEffect(function () {
+    return function () {if (closeTimer.current) window.clearTimeout(closeTimer.current);};
+  }, []);
+
+  function blessDevs() {
+    setBlessingOpen(true);
+    setBlessingIndex(function (index) {return (index + 1) % BLESSINGS.length;});
+    if (closeTimer.current) window.clearTimeout(closeTimer.current);
+    closeTimer.current = window.setTimeout(function () {setBlessingOpen(false);}, 7200);
+  }
+
   if (!topKudos.length) return null;
 
   return (
-    <div className="sprk-kudos">
-      <h2 style={{ font: "700 16px/22px var(--font-sans)", letterSpacing: "-0.01em", margin: "0 0 4px" }}>Kudos and cupcakes</h2>
+    <div className={"sprk-kudos-card " + className}>
+      <h2 style={{ font: "600 13px/18px var(--font-sans)", color: "var(--woo-ink)", margin: "0 0 4px" }}>Kudos and blessings</h2>
       <p style={{ font: "400 12.5px/18px var(--font-sans)", color: "var(--woo-ink-soft)", margin: "0 0 12px", textWrap: "pretty" }}>
         To the devs who review our PRs.
       </p>
@@ -126,6 +157,11 @@ function SKudosCard({ kudos }) {
               <span className="sprk-kudos-count">{kudos.reviewedPrs}</span>
             </a>);
         })}
+      </div>
+      <div className="sprk-blessing-wrap">
+        <button type="button" className="sprk-blessing-button" onClick={blessDevs}>Bless you kind devs</button>
+        {blessingOpen ?
+          <span className="sprk-blessing-bubble" aria-live="polite">{BLESSINGS[blessingIndex]}</span> : null}
       </div>
     </div>);
 
@@ -573,7 +609,12 @@ function SprinklesApp() {
         .sprk-chip-n { font: 700 10.5px/13px var(--font-sans); color: var(--woo-purple); }
         .sprk-chip.is-on .sprk-chip-n { color: var(--woo-lavender-pale); }
         .sprk-chip-cloud { display: flex; flex-wrap: wrap; gap: 6px; }
-        .sprk-kudos { border-top: 1px solid var(--woo-rule); margin-top: 22px; padding-top: 18px; }
+        .sprk-kudos-mobile { display: none; max-width: 640px; margin-top: 16px; }
+        .sprk-kudos-card {
+          position: relative; padding: 16px 18px 15px; border-radius: 12px; box-sizing: border-box;
+          border: 1px solid rgba(127,84,179,0.14); background: rgba(255,255,255,0.66);
+          box-shadow: 0 6px 18px rgba(30,17,66,0.04);
+        }
         .sprk-kudos-list { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 5px; padding-top: 2px; }
         .sprk-kudos-person {
           position: relative; display: inline-flex; align-items: center; justify-content: center;
@@ -594,9 +635,28 @@ function SprinklesApp() {
           font: 600 8.5px/14px "Menlo", "Consolas", monospace; color: var(--woo-purple-dark);
           text-align: center; box-sizing: border-box;
         }
+        .sprk-blessing-wrap { position: relative; display: inline-flex; margin-top: 13px; }
+        .sprk-blessing-button {
+          border: 1px solid rgba(127,84,179,0.22); background: rgba(127,84,179,0.06); color: var(--woo-purple-dark);
+          border-radius: 999px; padding: 3px 8px; font: 500 10.5px/14px var(--font-sans);
+          cursor: pointer; white-space: nowrap;
+        }
+        .sprk-blessing-button:hover { border-color: rgba(127,84,179,0.34); background: rgba(127,84,179,0.1); }
+        .sprk-blessing-button:focus-visible { outline: 2px solid var(--woo-purple); outline-offset: 2px; }
+        .sprk-blessing-bubble {
+          position: absolute; left: 0; bottom: calc(100% + 8px); z-index: 20; width: max-content;
+          max-width: min(220px, calc(100vw - 72px)); padding: 7px 9px; border-radius: 999px;
+          border: 1px solid rgba(127,84,179,0.18); background: var(--woo-paper); color: var(--woo-ink);
+          box-shadow: 0 10px 24px rgba(30,17,66,0.12); font: 500 11px/15px var(--font-sans);
+          text-align: left; white-space: normal; animation: sprk-blessing-pop 0.18s ease-out;
+        }
+        @keyframes sprk-blessing-pop { from { opacity: 0; transform: translateY(3px) scale(0.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
+        @media (max-width: 920px) {
+          .sprk-kudos-mobile { display: block; }
+        }
         @media (prefers-reduced-motion: reduce) {
           .sprk-stickybar { transition: none; }
-          .sprk-ribbon, .sprk-marquee-track { animation: none; }
+          .sprk-ribbon, .sprk-marquee-track, .sprk-blessing-bubble { animation: none; }
           .sprk-card, .sprk-avatar, .sprk-chip, .sprk-kudos-person { transition: none; }
         }
       `}</style>
@@ -661,6 +721,9 @@ function SprinklesApp() {
 					{" "}<strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.merged} /></strong> merged across <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.surfaces} /></strong> focus areas since {D.TOTALS.since} — <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.mergedPublic} /></strong> in public releases, <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.mergedFlagged} /></strong> behind feature flags.
 				</p>
 				<p className="sprk-updated">{D.dataUpdatedLabel()}</p>
+				<div className="sprk-kudos-mobile">
+					<SKudosCard kudos={D.KUDOS} />
+				</div>
 			</div>
 
 			<div className="sprk-wrap sprk-grid">
@@ -758,8 +821,8 @@ function SprinklesApp() {
 								})}
 							</div>
 						</div>
-						<SKudosCard kudos={D.KUDOS} />
 					</div>
+					<SKudosCard kudos={D.KUDOS} className="sprk-kudos-rail" />
 				</div>
 			</div>
 
