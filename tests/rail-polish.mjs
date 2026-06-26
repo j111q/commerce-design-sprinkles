@@ -36,6 +36,14 @@ const checks = [
 		name: "focus-area chip cloud uses a compact gap",
 		pass: /className="sprk-chip-cloud"/.test(app) && /\.sprk-chip-cloud\s*\{[\s\S]*gap: 6px;/.test(app),
 	},
+	{
+		name: "right rail scrolls when taller than the viewport",
+		pass: /\.sprk-rail\s*\{[^}]*max-height: calc\(100vh - 88px\);[^}]*overflow-y: auto;[^}]*overscroll-behavior: contain;/.test(app),
+	},
+	{
+		name: "right rail keeps its scrollbar unobtrusive",
+		pass: /\.sprk-rail\s*\{[^}]*scrollbar-width: thin;[^}]*scrollbar-color: rgba\(127,84,179,0\.28\) transparent;/.test(app),
+	},
 ];
 
 const failures = checks.filter((check) => !check.pass);

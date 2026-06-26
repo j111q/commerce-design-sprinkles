@@ -593,7 +593,14 @@ function SprinklesApp() {
         /* Desktop/tablet: tabs sit flush to the bar's bottom edge. */
         .sprk-bar-wrap { padding-top: 10px; padding-bottom: 0; }
         /* Surface map stays in view as the feed scrolls (desktop two-column only). */
-        .sprk-rail { position: sticky; top: 72px; }
+        .sprk-rail {
+          position: sticky; top: 72px; max-height: calc(100vh - 88px);
+          overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain;
+          scrollbar-width: thin; scrollbar-color: rgba(127,84,179,0.28) transparent;
+        }
+        .sprk-rail::-webkit-scrollbar { width: 8px; }
+        .sprk-rail::-webkit-scrollbar-track { background: transparent; }
+        .sprk-rail::-webkit-scrollbar-thumb { background: rgba(127,84,179,0.24); border-radius: 999px; }
         .sprk-area-select { display: none; }
         .sprk-area-select select {
           -webkit-appearance: none; appearance: none; font: 600 13px/1 var(--font-sans);
