@@ -1333,18 +1333,18 @@
 
 	const OPEN = [
 	{
-		"title": "Align Order Edit meta boxes with WordPress 7.0 design conventions",
+		"title": "Add search and pagination to order tax modal",
 		"repo": "woocommerce/woocommerce",
-		"number": 64564,
-		"url": "https://github.com/woocommerce/woocommerce/pull/64564",
+		"number": 66039,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66039",
 		"area": "Orders",
 		"flagged": false,
 		"authors": [
 			"j"
 		],
 		"reviewers": [],
-		"status": "Open",
-		"ts": 1782400551000
+		"status": "Draft",
+		"ts": 1782478826000
 	},
 	{
 		"title": "Update Product Filters description copy",
@@ -1357,8 +1357,22 @@
 			"poli"
 		],
 		"reviewers": [],
-		"status": "Draft",
-		"ts": 1782222950000
+		"status": "Open",
+		"ts": 1782476374000
+	},
+	{
+		"title": "Align Order Edit meta boxes with WordPress 7.0 design conventions",
+		"repo": "woocommerce/woocommerce",
+		"number": 64564,
+		"url": "https://github.com/woocommerce/woocommerce/pull/64564",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"j"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1782400551000
 	},
 	{
 		"title": "Order detail: apply 2-column grid sizing standard (720 / 24 / 320)",
@@ -1766,7 +1780,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-06-26T09:08:03.178Z"
+	"updatedAt": "2026-06-26T14:15:59.007Z"
 };
 
 	function person(id) {
