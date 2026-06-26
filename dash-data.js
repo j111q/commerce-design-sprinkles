@@ -56,6 +56,20 @@
 
 	const MERGED = [
 	{
+		"title": "Fix express payment button focus outline",
+		"repo": "woocommerce/woocommerce",
+		"number": 65901,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65901",
+		"area": "Payments",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"ts": 1782460651000,
+		"fresh": true
+	},
+	{
 		"title": "Fix order edit screen text color contrast for WCAG AA",
 		"repo": "woocommerce/woocommerce",
 		"number": 65714,
@@ -1333,20 +1347,6 @@
 		"ts": 1782400551000
 	},
 	{
-		"title": "Fix express payment button focus outline",
-		"repo": "woocommerce/woocommerce",
-		"number": 65901,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65901",
-		"area": "Payments",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1782398633000
-	},
-	{
 		"title": "Update Product Filters description copy",
 		"repo": "woocommerce/woocommerce",
 		"number": 65925,
@@ -1516,12 +1516,12 @@
 		"count": 5
 	},
 	{
-		"name": "Shipping",
+		"name": "Payments",
 		"count": 4
 	},
 	{
-		"name": "Payments",
-		"count": 3
+		"name": "Shipping",
+		"count": 4
 	},
 	{
 		"name": "Emails",
@@ -1554,12 +1554,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 90,
+	"merged": 91,
 	"surfaces": 12,
 	"repos": 2,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 48
+	"mergedPublic": 49
 };
 
 	const KUDOS = [
@@ -1676,6 +1676,14 @@
 		"latestAt": "2026-05-12T08:35:44.000Z"
 	},
 	{
+		"login": "tjcafferkey",
+		"avatar": "https://avatars.githubusercontent.com/u/8639742?u=8468454f62312af6c53fb31669b44a696cd54f21&v=4",
+		"url": "https://github.com/tjcafferkey",
+		"reviewedPrs": 1,
+		"approvals": 1,
+		"latestAt": "2026-06-26T07:18:02.000Z"
+	},
+	{
 		"login": "m1r0",
 		"avatar": "https://avatars.githubusercontent.com/u/1612178?u=5590e563adb88885fea6c5d4ab9dd1798bd3a8fa&v=4",
 		"url": "https://github.com/m1r0",
@@ -1732,6 +1740,14 @@
 		"latestAt": "2026-04-27T08:51:12.000Z"
 	},
 	{
+		"login": "elizaan36",
+		"avatar": "https://avatars.githubusercontent.com/u/5121465?v=4",
+		"url": "https://github.com/elizaan36",
+		"reviewedPrs": 1,
+		"approvals": 0,
+		"latestAt": "2026-06-25T01:08:52.000Z"
+	},
+	{
 		"login": "jamesckemp",
 		"avatar": "https://avatars.githubusercontent.com/u/1853915?v=4",
 		"url": "https://github.com/jamesckemp",
@@ -1750,7 +1766,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-06-26T02:57:11.441Z"
+	"updatedAt": "2026-06-26T08:58:09.553Z"
 };
 
 	function person(id) {
