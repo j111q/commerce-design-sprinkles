@@ -1333,6 +1333,20 @@
 
 	const OPEN = [
 	{
+		"title": "Add search and pagination to order tax modal",
+		"repo": "woocommerce/woocommerce",
+		"number": 66039,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66039",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"j"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1782565823000
+	},
+	{
 		"title": "Update Product Filters description copy",
 		"repo": "woocommerce/woocommerce",
 		"number": 65925,
@@ -1345,20 +1359,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1782492062000
-	},
-	{
-		"title": "Add search and pagination to order tax modal",
-		"repo": "woocommerce/woocommerce",
-		"number": 66039,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66039",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"j"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1782478826000
 	},
 	{
 		"title": "Align Order Edit meta boxes with WordPress 7.0 design conventions",
@@ -1780,7 +1780,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-06-27T08:32:04.118Z"
+	"updatedAt": "2026-06-27T13:24:43.132Z"
 };
 
 	function person(id) {
