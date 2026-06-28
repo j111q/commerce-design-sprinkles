@@ -109,7 +109,7 @@
 		],
 		"reviewers": [],
 		"ts": 1782375204000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "Improve summary trend indicator contrast",
@@ -1780,7 +1780,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-06-28T03:26:34.662Z"
+	"updatedAt": "2026-06-28T08:46:52.773Z"
 };
 
 	function person(id) {
