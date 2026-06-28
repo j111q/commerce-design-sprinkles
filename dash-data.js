@@ -81,7 +81,7 @@
 		],
 		"reviewers": [],
 		"ts": 1782400699000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "Improve legacy WooCommerce dashboard widgets",
@@ -95,7 +95,7 @@
 		],
 		"reviewers": [],
 		"ts": 1782397585000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "Update product status filter availability labels",
@@ -1780,7 +1780,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-06-28T13:28:46.774Z"
+	"updatedAt": "2026-06-28T19:13:26.265Z"
 };
 
 	function person(id) {
