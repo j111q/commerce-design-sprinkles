@@ -1333,6 +1333,48 @@
 
 	const OPEN = [
 	{
+		"title": "Fix product description editor alignment in classic product editor",
+		"repo": "woocommerce/woocommerce",
+		"number": 66087,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66087",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Approved",
+		"ts": 1782745325000
+	},
+	{
+		"title": "Hide downloads metabox by default on the order edit screen",
+		"repo": "woocommerce/woocommerce",
+		"number": 65205,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65205",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1782742213000
+	},
+	{
+		"title": "Update WooCommerce catalog visibility publish panel layout",
+		"repo": "woocommerce/woocommerce",
+		"number": 66080,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66080",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1782731831000
+	},
+	{
 		"title": "Add search and pagination to order tax modal",
 		"repo": "woocommerce/woocommerce",
 		"number": 66039,
@@ -1375,20 +1417,6 @@
 		"ts": 1782727712000
 	},
 	{
-		"title": "Update WooCommerce catalog visibility publish panel layout",
-		"repo": "woocommerce/woocommerce",
-		"number": 66080,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66080",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1782727250000
-	},
-	{
 		"title": "Order detail: apply 2-column grid sizing standard (720 / 24 / 320)",
 		"repo": "woocommerce/woocommerce",
 		"number": 65699,
@@ -1403,20 +1431,6 @@
 		"ts": 1782724448000
 	},
 	{
-		"title": "Hide downloads metabox on orders without downloadable items",
-		"repo": "woocommerce/woocommerce",
-		"number": 65205,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65205",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1782723610000
-	},
-	{
 		"title": "Coupon edit: apply 2-column grid sizing standard (720 / 24 / 320)",
 		"repo": "woocommerce/woocommerce",
 		"number": 65717,
@@ -1429,20 +1443,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1781779288000
-	},
-	{
-		"title": "Improve product editor permalink layout",
-		"repo": "woocommerce/woocommerce",
-		"number": 65640,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65640",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1781688714000
 	},
 	{
 		"title": "Migrate customer stock notification screens to the order actions \"more actions\" menu",
@@ -1794,7 +1794,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-06-29T10:49:55.472Z"
+	"updatedAt": "2026-06-29T15:40:00.354Z"
 };
 
 	function person(id) {
