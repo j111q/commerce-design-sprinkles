@@ -837,7 +837,7 @@ function SprinklesApp() {
 					{t.headline}
 				</h1>
 				<p style={{ font: "400 16px/1.6 'Menlo', 'Consolas', monospace", color: "var(--woo-ink-soft)", margin: 0, maxWidth: 640, textWrap: "pretty" }}>
-					Five designers pushing pull requests in Woo.
+					Five designers making pull requests in Woo.
 					{" "}<strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.merged} /></strong> merged across <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.surfaces} /></strong> focus areas since {D.TOTALS.since} — <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.mergedPublic} /></strong> in public releases, <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.mergedFlagged} /></strong> behind feature flags.
 				</p>
 				<p className="sprk-updated">{D.dataUpdatedLabel()}</p>
