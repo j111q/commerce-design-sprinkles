@@ -1343,8 +1343,8 @@
 			"j"
 		],
 		"reviewers": [],
-		"status": "Draft",
-		"ts": 1782565823000
+		"status": "Open",
+		"ts": 1782719602000
 	},
 	{
 		"title": "Update Product Filters description copy",
@@ -1780,7 +1780,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-06-29T03:31:48.504Z"
+	"updatedAt": "2026-06-29T07:55:10.782Z"
 };
 
 	function person(id) {
