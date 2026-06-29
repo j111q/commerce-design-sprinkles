@@ -67,7 +67,7 @@
 		],
 		"reviewers": [],
 		"ts": 1782460651000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "Fix order edit screen text color contrast for WCAG AA",
@@ -1344,7 +1344,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1782719602000
+		"ts": 1782728029000
 	},
 	{
 		"title": "Update Product Filters description copy",
@@ -1358,7 +1358,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1782492062000
+		"ts": 1782727917000
 	},
 	{
 		"title": "Align Order Edit meta boxes with WordPress 7.0 design conventions",
@@ -1372,7 +1372,21 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1782400551000
+		"ts": 1782727712000
+	},
+	{
+		"title": "Update WooCommerce catalog visibility publish panel layout",
+		"repo": "woocommerce/woocommerce",
+		"number": 66080,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66080",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1782727250000
 	},
 	{
 		"title": "Order detail: apply 2-column grid sizing standard (720 / 24 / 320)",
@@ -1386,7 +1400,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1782141230000
+		"ts": 1782724448000
 	},
 	{
 		"title": "Hide downloads metabox on orders without downloadable items",
@@ -1400,7 +1414,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1781883116000
+		"ts": 1782723610000
 	},
 	{
 		"title": "Coupon edit: apply 2-column grid sizing standard (720 / 24 / 320)",
@@ -1780,7 +1794,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-06-29T07:55:10.782Z"
+	"updatedAt": "2026-06-29T10:49:55.472Z"
 };
 
 	function person(id) {
