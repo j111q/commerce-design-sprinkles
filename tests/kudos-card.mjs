@@ -125,7 +125,7 @@ const checks = [
 	},
 	{
 		name: "app renders reviewer avatars and PR counts",
-		pattern: /kudos\.reviewedPrs[\s\S]*kudos\.avatar[\s\S]*thank you @" \+ kudos\.login \+ " for reviewing " \+ label \+ "! 💜"/,
+		pattern: /function showReviewerKudos\(kudos, event\)[\s\S]*kudos\.reviewedPrs[\s\S]*thank you @" \+ kudos\.login \+ " for reviewing " \+ label \+ "! 💜"[\s\S]*kudos\.avatar/,
 		source: app
 	},
 	{
@@ -148,8 +148,33 @@ const checks = [
 	},
 	{
 		name: "app balances reviewer thank-you bubble wrapping",
-		pattern: /sprk-kudos-review-bubble \{[^}]*width: max-content;[^}]*max-width: min\(24ch, calc\(100vw - 72px\)\);[^}]*text-wrap: balance;/,
+		pattern: /sprk-kudos-review-bubble \{[^}]*width: max-content;[^}]*max-width: min\(24ch, calc\(100vw - 32px\)\);[^}]*text-wrap: balance;/,
 		source: app
+	},
+	{
+		name: "app clamps reviewer thank-you bubbles inside the viewport",
+		pattern: /function showReviewerKudos\(kudos, event\)[\s\S]*getBoundingClientRect\(\)[\s\S]*halfWidth[\s\S]*minLeft[\s\S]*maxLeft[\s\S]*center[\s\S]*setActiveReviewer\(\{[\s\S]*login: kudos\.login[\s\S]*left: Math\.round\(Math\.min\(maxLeft, Math\.max\(minLeft, center\)\)\)[\s\S]*top:/,
+		source: app
+	},
+	{
+		name: "app positions reviewer bubbles with viewport coordinates",
+		pattern: /className="sprk-kudos-review-bubble"[\s\S]*style=\{\{[\s\S]*"--reviewer-bubble-left": activeReviewer\.left \+ "px"[\s\S]*"--reviewer-bubble-top": activeReviewer\.top \+ "px"/,
+		source: app
+	},
+	{
+		name: "app renders reviewer bubbles outside avatar clipping context",
+		pattern: /ReactDOM\.createPortal\([\s\S]*className="sprk-kudos-review-bubble"[\s\S]*document\.body[\s\S]*sprk-kudos-review-bubble \{[^}]*position: fixed;[^}]*left: var\(--reviewer-bubble-left\);[^}]*top: var\(--reviewer-bubble-top\);[^}]*max-width: min\(24ch, calc\(100vw - 32px\)\);[^}]*transform: translate\(-50%, -100%\);/,
+		source: app
+	},
+	{
+		name: "reviewer bubble animation preserves above-avatar positioning",
+		pattern: /@keyframes sprk-review-pop \{ from \{ opacity: 0; transform: translate\(-50%, calc\(-100% \+ 3px\)\) scale\(0\.98\); \} to \{ opacity: 1; transform: translate\(-50%, -100%\) scale\(1\); \} \}/,
+		source: app
+	},
+	{
+		name: "reviewer avatar hover does not transform the fixed bubble container",
+		pass: !/\.sprk-kudos-person:hover\s*\{[^}]*transform:/.test(app) &&
+			/\.sprk-kudos-person:hover \.sprk-kudos-avatar\s*\{[^}]*transform: translateY\(-1px\);/.test(app)
 	},
 	{
 		name: "app renders the tiny blessing button with the new label",
