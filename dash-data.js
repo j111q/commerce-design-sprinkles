@@ -20,7 +20,7 @@
 		"avatar": "https://avatars.githubusercontent.com/u/13378873?v=4",
 		"color": "#3C2A7D",
 		"fg": "#fff",
-		"privateMerged": 0
+		"privateMerged": 4
 	},
 	{
 		"id": "poli",
@@ -1593,8 +1593,8 @@
 	"since": "April 2026",
 	"mergedFlagged": 42,
 	"mergedPublic": 49,
-	"privateMerged": 0,
-	"privateUpdated": null
+	"privateMerged": 4,
+	"privateUpdated": "2026-06-30"
 };
 
 	const KUDOS = [
@@ -1801,7 +1801,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-06-30T05:37:06.174Z"
+	"updatedAt": "2026-06-30T05:46:13.123Z"
 };
 
 	function person(id) {
