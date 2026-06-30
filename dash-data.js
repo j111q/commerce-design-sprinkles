@@ -61,6 +61,20 @@
 
 	const MERGED = [
 	{
+		"title": "Fix product description editor alignment in classic product editor",
+		"repo": "woocommerce/woocommerce",
+		"number": 66087,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66087",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"ts": 1782805349000,
+		"fresh": true
+	},
+	{
 		"title": "Fix express payment button focus outline",
 		"repo": "woocommerce/woocommerce",
 		"number": 65901,
@@ -1352,20 +1366,6 @@
 		"ts": 1782796500000
 	},
 	{
-		"title": "Fix product description editor alignment in classic product editor",
-		"repo": "woocommerce/woocommerce",
-		"number": 66087,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66087",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1782745325000
-	},
-	{
 		"title": "Hide downloads metabox by default on the order edit screen",
 		"repo": "woocommerce/woocommerce",
 		"number": 65205,
@@ -1538,7 +1538,7 @@
 	const AREAS = [
 	{
 		"name": "Products & catalog",
-		"count": 41
+		"count": 42
 	},
 	{
 		"name": "Other admin",
@@ -1587,12 +1587,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 91,
+	"merged": 92,
 	"surfaces": 12,
 	"repos": 2,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 49,
+	"mergedPublic": 50,
 	"privateMerged": 4,
 	"privateUpdated": "2026-06-30"
 };
@@ -1631,6 +1631,14 @@
 		"latestAt": "2026-05-22T08:34:53.000Z"
 	},
 	{
+		"login": "Aljullu",
+		"avatar": "https://avatars.githubusercontent.com/u/3616980?v=4",
+		"url": "https://github.com/Aljullu",
+		"reviewedPrs": 4,
+		"approvals": 4,
+		"latestAt": "2026-06-29T15:02:05.000Z"
+	},
+	{
 		"login": "robcmcdowall",
 		"avatar": "https://avatars.githubusercontent.com/u/123248278?v=4",
 		"url": "https://github.com/robcmcdowall",
@@ -1645,14 +1653,6 @@
 		"reviewedPrs": 3,
 		"approvals": 3,
 		"latestAt": "2026-06-11T18:28:30.000Z"
-	},
-	{
-		"login": "Aljullu",
-		"avatar": "https://avatars.githubusercontent.com/u/3616980?v=4",
-		"url": "https://github.com/Aljullu",
-		"reviewedPrs": 3,
-		"approvals": 3,
-		"latestAt": "2026-06-10T14:50:52.000Z"
 	},
 	{
 		"login": "mikejolley",
@@ -1801,7 +1801,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-06-30T05:46:13.123Z"
+	"updatedAt": "2026-06-30T07:45:56.711Z"
 };
 
 	function person(id) {
