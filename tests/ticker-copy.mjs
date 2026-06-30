@@ -10,6 +10,12 @@ const checks = [
 		pass: app.includes(`funFacts.push("${tickerLine}");`),
 	},
 	{
+		name: "ticker merged total includes private repo merges",
+		pass: app.includes(
+			`funFacts.push((D.TOTALS.merged + D.TOTALS.privateMerged) + " merged across " + D.TOTALS.surfaces + " focus areas");`
+		),
+	},
+	{
 		name: "ticker renders pushed fun facts in the marquee",
 		pass: /funFacts\.concat\(funFacts\)\.map/.test(app) &&
 			/className="sprk-marquee-item"/.test(app),
