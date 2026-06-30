@@ -839,6 +839,14 @@ function SprinklesApp() {
 				<p style={{ font: "400 16px/1.6 'Menlo', 'Consolas', monospace", color: "var(--woo-ink-soft)", margin: 0, maxWidth: 640, textWrap: "pretty" }}>
 					Five designers making pull requests in Woo.
 					{" "}<strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.merged} /></strong> merged across <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.surfaces} /></strong> focus areas since {D.TOTALS.since} — <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.mergedPublic} /></strong> in public releases, <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.mergedFlagged} /></strong> behind feature flags.
+						{D.TOTALS.privateMerged > 0 &&
+						<span
+							title={"Shipped in private Woo repos — details stay under wraps until release.\n" +
+							D.SQUAD.filter(function (p) {return p.privateMerged;}).
+							map(function (p) {return p.name + " — " + p.privateMerged;}).join("\n")}
+							style={{ borderBottom: "1px dotted var(--woo-ink-soft)", cursor: "help" }}>
+							{" "}Plus <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.privateMerged} /></strong> more shipped in private repos.
+						</span>}
 				</p>
 				<p className="sprk-updated">{D.dataUpdatedLabel()}</p>
 				<div className="sprk-kudos-mobile">

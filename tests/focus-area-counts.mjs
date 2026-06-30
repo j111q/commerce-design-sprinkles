@@ -10,11 +10,11 @@ vm.runInNewContext(data, context);
 const D = context.window.DASH;
 const feed = D.MERGED.map((pr) => ({ ...pr, status: "Merged" })).concat(D.OPEN);
 const globalProducts = feed.filter((pr) => pr.area === "Products & catalog").length;
-const jillProducts = feed.filter((pr) => pr.area === "Products & catalog" && pr.authors.includes("j")).length;
+const jillProducts = feed.filter((pr) => pr.area === "Products & catalog" && pr.authors.includes("jill")).length;
 const areaNames = D.AREAS.map((area) => area.name);
 const jillCounts = {};
 feed.forEach((pr) => {
-	if (!pr.authors.includes("j")) return;
+	if (!pr.authors.includes("jill")) return;
 	jillCounts[pr.area] = (jillCounts[pr.area] || 0) + 1;
 });
 const jillZeroCountAreas = areaNames.filter((name) => !jillCounts[name]);

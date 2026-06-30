@@ -5,12 +5,13 @@
 (function () {
 	const SQUAD = [
 	{
-		"id": "j",
+		"id": "jill",
 		"name": "Jill",
 		"handle": "j111q",
 		"avatar": "https://avatars.githubusercontent.com/u/65582817?v=4",
 		"color": "#7F54B3",
-		"fg": "#fff"
+		"fg": "#fff",
+		"privateMerged": 0
 	},
 	{
 		"id": "ann",
@@ -18,7 +19,8 @@
 		"handle": "annchichi",
 		"avatar": "https://avatars.githubusercontent.com/u/13378873?v=4",
 		"color": "#3C2A7D",
-		"fg": "#fff"
+		"fg": "#fff",
+		"privateMerged": 0
 	},
 	{
 		"id": "poli",
@@ -26,7 +28,8 @@
 		"handle": "poligilad-auto",
 		"avatar": "https://avatars.githubusercontent.com/u/83961704?v=4",
 		"color": "#533582",
-		"fg": "#fff"
+		"fg": "#fff",
+		"privateMerged": 0
 	},
 	{
 		"id": "jana",
@@ -34,15 +37,17 @@
 		"handle": "JanaMW27",
 		"avatar": "https://avatars.githubusercontent.com/u/71137829?v=4",
 		"color": "#C9B8E8",
-		"fg": "#1E1142"
+		"fg": "#1E1142",
+		"privateMerged": 0
 	},
 	{
-		"id": "vero",
+		"id": "veronica",
 		"name": "Veronica",
 		"handle": "verofasulo",
 		"avatar": "https://avatars.githubusercontent.com/u/98944206?v=4",
 		"color": "#E84A9C",
-		"fg": "#fff"
+		"fg": "#fff",
+		"privateMerged": 0
 	}
 ];
 
@@ -55,6 +60,20 @@
 ];
 
 	const MERGED = [
+	{
+		"title": "Fix FedEx phone notice spacing",
+		"repo": "woocommerce/woocommerce-shipping",
+		"number": 1619,
+		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1619",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1782726989000,
+		"fresh": true
+	},
 	{
 		"title": "Fix express payment button focus outline",
 		"repo": "woocommerce/woocommerce",
@@ -126,6 +145,20 @@
 		"fresh": false
 	},
 	{
+		"title": "Refresh shipping label ready panel",
+		"repo": "woocommerce/woocommerce-shipping",
+		"number": 1604,
+		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1604",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1781615252000,
+		"fresh": false
+	},
+	{
 		"title": "Fix: Improve color contrast for attribute placeholder text (WCAG 2.2 AA)",
 		"repo": "woocommerce/woocommerce",
 		"number": 65608,
@@ -175,7 +208,7 @@
 		"area": "Other admin",
 		"flagged": false,
 		"authors": [
-			"j"
+			"jill"
 		],
 		"reviewers": [],
 		"ts": 1781173544000,
@@ -189,10 +222,24 @@
 		"area": "Analytics",
 		"flagged": false,
 		"authors": [
-			"j"
+			"jill"
 		],
 		"reviewers": [],
 		"ts": 1781082492000,
+		"fresh": false
+	},
+	{
+		"title": "Tweak label purchase blue accents",
+		"repo": "woocommerce/woocommerce-shipping",
+		"number": 1605,
+		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1605",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1780895081000,
 		"fresh": false
 	},
 	{
@@ -203,10 +250,24 @@
 		"area": "Payments",
 		"flagged": false,
 		"authors": [
-			"j"
+			"jill"
 		],
 		"reviewers": [],
 		"ts": 1780059781000,
+		"fresh": false
+	},
+	{
+		"title": "Simplify SCAN Forms history empty state",
+		"repo": "woocommerce/woocommerce-shipping",
+		"number": 1594,
+		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1594",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1779963903000,
 		"fresh": false
 	},
 	{
@@ -217,7 +278,7 @@
 		"area": "Onboarding",
 		"flagged": false,
 		"authors": [
-			"j"
+			"jill"
 		],
 		"reviewers": [],
 		"ts": 1779462593000,
@@ -259,7 +320,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1779286460000,
@@ -273,7 +334,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1779281478000,
@@ -287,7 +348,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1779281344000,
@@ -301,7 +362,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1779281131000,
@@ -315,7 +376,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1779278809000,
@@ -329,7 +390,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1779278632000,
@@ -343,7 +404,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1779273636000,
@@ -357,7 +418,7 @@
 		"area": "Other admin",
 		"flagged": false,
 		"authors": [
-			"j"
+			"jill"
 		],
 		"reviewers": [],
 		"ts": 1779243098000,
@@ -371,7 +432,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1779190735000,
@@ -399,7 +460,7 @@
 		"area": "Other admin",
 		"flagged": false,
 		"authors": [
-			"j"
+			"jill"
 		],
 		"reviewers": [],
 		"ts": 1779171846000,
@@ -441,7 +502,7 @@
 		"area": "Other admin",
 		"flagged": false,
 		"authors": [
-			"j"
+			"jill"
 		],
 		"reviewers": [],
 		"ts": 1779157310000,
@@ -469,7 +530,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778837391000,
@@ -483,7 +544,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778837203000,
@@ -497,7 +558,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778836778000,
@@ -511,7 +572,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778781879000,
@@ -525,7 +586,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778773017000,
@@ -539,7 +600,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778764764000,
@@ -553,7 +614,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778763809000,
@@ -567,7 +628,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778754812000,
@@ -581,7 +642,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778754746000,
@@ -595,7 +656,7 @@
 		"area": "Shipping",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778745693000,
@@ -609,7 +670,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778745597000,
@@ -623,7 +684,7 @@
 		"area": "Other admin",
 		"flagged": false,
 		"authors": [
-			"j"
+			"jill"
 		],
 		"reviewers": [],
 		"ts": 1778731997000,
@@ -637,7 +698,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778709845000,
@@ -651,7 +712,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778709638000,
@@ -665,7 +726,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778687160000,
@@ -679,7 +740,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778663235000,
@@ -693,7 +754,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778662788000,
@@ -707,7 +768,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778662707000,
@@ -721,7 +782,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778661897000,
@@ -833,7 +894,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778501772000,
@@ -847,7 +908,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778495818000,
@@ -861,7 +922,7 @@
 		"area": "Orders",
 		"flagged": false,
 		"authors": [
-			"j"
+			"jill"
 		],
 		"reviewers": [],
 		"ts": 1778477831000,
@@ -875,7 +936,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778244040000,
@@ -889,7 +950,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778242076000,
@@ -903,7 +964,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778241024000,
@@ -917,7 +978,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778236124000,
@@ -931,7 +992,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778235334000,
@@ -945,7 +1006,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778230688000,
@@ -959,7 +1020,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778230645000,
@@ -973,7 +1034,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1778230579000,
@@ -1015,7 +1076,7 @@
 		"area": "Products & catalog",
 		"flagged": true,
 		"authors": [
-			"vero"
+			"veronica"
 		],
 		"reviewers": [],
 		"ts": 1777882855000,
@@ -1029,7 +1090,7 @@
 		"area": "Other admin",
 		"flagged": false,
 		"authors": [
-			"j"
+			"jill"
 		],
 		"reviewers": [],
 		"ts": 1777872173000,
@@ -1071,7 +1132,7 @@
 		"area": "Other admin",
 		"flagged": false,
 		"authors": [
-			"j"
+			"jill"
 		],
 		"reviewers": [],
 		"ts": 1777475416000,
@@ -1085,7 +1146,7 @@
 		"area": "Home",
 		"flagged": false,
 		"authors": [
-			"j"
+			"jill"
 		],
 		"reviewers": [],
 		"ts": 1777432301000,
@@ -1197,7 +1258,7 @@
 		"area": "Other admin",
 		"flagged": false,
 		"authors": [
-			"j"
+			"jill"
 		],
 		"reviewers": [],
 		"ts": 1777368221000,
@@ -1253,7 +1314,7 @@
 		"area": "Other admin",
 		"flagged": false,
 		"authors": [
-			"j"
+			"jill"
 		],
 		"reviewers": [],
 		"ts": 1777345927000,
@@ -1267,7 +1328,7 @@
 		"area": "Other admin",
 		"flagged": false,
 		"authors": [
-			"j"
+			"jill"
 		],
 		"reviewers": [],
 		"ts": 1777289336000,
@@ -1281,7 +1342,7 @@
 		"area": "Other admin",
 		"flagged": false,
 		"authors": [
-			"j"
+			"jill"
 		],
 		"reviewers": [],
 		"ts": 1777268611000,
@@ -1295,7 +1356,7 @@
 		"area": "Other admin",
 		"flagged": false,
 		"authors": [
-			"j"
+			"jill"
 		],
 		"reviewers": [],
 		"ts": 1777023317000,
@@ -1309,7 +1370,7 @@
 		"area": "Other admin",
 		"flagged": false,
 		"authors": [
-			"j"
+			"jill"
 		],
 		"reviewers": [],
 		"ts": 1776928898000,
@@ -1332,6 +1393,20 @@
 ];
 
 	const OPEN = [
+	{
+		"title": "Migrate customer stock notification screens to the order actions \"more actions\" menu",
+		"repo": "woocommerce/woocommerce",
+		"number": 65788,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65788",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1782796500000
+	},
 	{
 		"title": "Fix product description editor alignment in classic product editor",
 		"repo": "woocommerce/woocommerce",
@@ -1382,7 +1457,7 @@
 		"area": "Orders",
 		"flagged": false,
 		"authors": [
-			"j"
+			"jill"
 		],
 		"reviewers": [],
 		"status": "Open",
@@ -1410,7 +1485,7 @@
 		"area": "Orders",
 		"flagged": false,
 		"authors": [
-			"j"
+			"jill"
 		],
 		"reviewers": [],
 		"status": "Open",
@@ -1443,20 +1518,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1781779288000
-	},
-	{
-		"title": "Migrate customer stock notification screens to the order actions \"more actions\" menu",
-		"repo": "woocommerce/woocommerce",
-		"number": 65788,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65788",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"j"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1781626536000
 	},
 	{
 		"title": "Add prev/next order navigation to Order detail page header",
@@ -1540,15 +1601,15 @@
 		"count": 26
 	},
 	{
+		"name": "Shipping",
+		"count": 8
+	},
+	{
 		"name": "Orders",
 		"count": 5
 	},
 	{
 		"name": "Payments",
-		"count": 4
-	},
-	{
-		"name": "Shipping",
 		"count": 4
 	},
 	{
@@ -1582,12 +1643,14 @@
 ];
 
 	const TOTALS = {
-	"merged": 91,
+	"merged": 95,
 	"surfaces": 12,
-	"repos": 2,
+	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 49
+	"mergedPublic": 53,
+	"privateMerged": 0,
+	"privateUpdated": null
 };
 
 	const KUDOS = [
@@ -1624,6 +1687,14 @@
 		"latestAt": "2026-05-22T08:34:53.000Z"
 	},
 	{
+		"login": "samnajian",
+		"avatar": "https://avatars.githubusercontent.com/u/789421?u=02f17ad708b24dea93c1293301ed3dca390285ec&v=4",
+		"url": "https://github.com/samnajian",
+		"reviewedPrs": 5,
+		"approvals": 5,
+		"latestAt": "2026-06-16T13:07:25.000Z"
+	},
+	{
 		"login": "robcmcdowall",
 		"avatar": "https://avatars.githubusercontent.com/u/123248278?v=4",
 		"url": "https://github.com/robcmcdowall",
@@ -1648,6 +1719,14 @@
 		"latestAt": "2026-06-10T14:50:52.000Z"
 	},
 	{
+		"login": "Ferdev",
+		"avatar": "https://avatars.githubusercontent.com/u/130142?v=4",
+		"url": "https://github.com/Ferdev",
+		"reviewedPrs": 2,
+		"approvals": 2,
+		"latestAt": "2026-06-29T07:57:37.000Z"
+	},
+	{
 		"login": "mikejolley",
 		"avatar": "https://avatars.githubusercontent.com/u/90977?v=4",
 		"url": "https://github.com/mikejolley",
@@ -1670,14 +1749,6 @@
 		"reviewedPrs": 2,
 		"approvals": 2,
 		"latestAt": "2026-05-12T07:50:53.000Z"
-	},
-	{
-		"login": "samnajian",
-		"avatar": "https://avatars.githubusercontent.com/u/789421?u=02f17ad708b24dea93c1293301ed3dca390285ec&v=4",
-		"url": "https://github.com/samnajian",
-		"reviewedPrs": 2,
-		"approvals": 2,
-		"latestAt": "2026-05-05T09:58:19.000Z"
 	},
 	{
 		"login": "jorgeatorres",
@@ -1760,14 +1831,6 @@
 		"latestAt": "2026-05-08T09:48:40.000Z"
 	},
 	{
-		"login": "Ferdev",
-		"avatar": "https://avatars.githubusercontent.com/u/130142?v=4",
-		"url": "https://github.com/Ferdev",
-		"reviewedPrs": 1,
-		"approvals": 1,
-		"latestAt": "2026-04-27T08:51:12.000Z"
-	},
-	{
 		"login": "elizaan36",
 		"avatar": "https://avatars.githubusercontent.com/u/5121465?v=4",
 		"url": "https://github.com/elizaan36",
@@ -1794,7 +1857,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-06-30T05:13:32.316Z"
+	"updatedAt": "2026-06-30T05:15:28.773Z"
 };
 
 	function person(id) {

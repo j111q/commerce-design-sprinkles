@@ -9,7 +9,7 @@
  *
  * Squad handles with `handle: null` are skipped until a real handle lands. */
 
-import { writeFileSync } from "fs";
+import { writeFileSync, readFileSync } from "fs";
 
 /* WooCommerce core + first-party extension repos to scan. Add/remove freely;
    repos with no squad PRs are harmless (they just contribute nothing). */
@@ -32,11 +32,11 @@ if (!TOKEN) {
    Colors mirror the original prototype. Add a real `handle` to bring a
    teammate's real PRs in; leave null to keep them out of the live data. */
 const SQUAD = [
-	{ id: "j",    name: "Jill",     handle: "j111q",          color: "#7F54B3", fg: "#fff" },
+	{ id: "jill", name: "Jill",     handle: "j111q",          color: "#7F54B3", fg: "#fff" },
 	{ id: "ann",  name: "Ann",      handle: "annchichi",      color: "#3C2A7D", fg: "#fff" },
 	{ id: "poli", name: "Poli",     handle: "poligilad-auto", color: "#533582", fg: "#fff" },
 	{ id: "jana", name: "Jana",     handle: "JanaMW27",       color: "#C9B8E8", fg: "#1E1142" },
-	{ id: "vero", name: "Veronica", handle: "verofasulo",     color: "#E84A9C", fg: "#fff" }
+	{ id: "veronica", name: "Veronica", handle: "verofasulo", color: "#E84A9C", fg: "#fff" }
 ];
 
 /* ---- github ---------------------------------------------------------------- */
@@ -472,8 +472,26 @@ const HELPERS = `
 		}
 	}`;
 
+/* Private-PR overlay — counts shipped in private repos, produced by the separate
+   private counter repo and committed here as private-prs.json. Counts only,
+   keyed by handle: no titles, links, or repo names ever cross over. Missing file
+   => all zeros, so the dashboard works fine before the counter pipeline is live. */
+function readPrivateCounts() {
+	try {
+		const raw = JSON.parse(readFileSync(new URL("./private-prs.json", import.meta.url), "utf8"));
+		return { byDesigner: raw.byDesigner || {}, total: raw.total || 0, lastUpdated: raw.lastUpdated || null };
+	} catch {
+		return { byDesigner: {}, total: 0, lastUpdated: null };
+	}
+}
+
 function emit({ MERGED, OPEN, AREAS, TOTALS, KUDOS }) {
-	const SQUAD_OUT = SQUAD.map((p) => ({ id: p.id, name: p.name, handle: p.handle, avatar: p.avatar || null, color: p.color, fg: p.fg }));
+	const PRIV = readPrivateCounts();
+	const SQUAD_OUT = SQUAD.map((p) => ({
+		id: p.id, name: p.name, handle: p.handle, avatar: p.avatar || null, color: p.color, fg: p.fg,
+		privateMerged: PRIV.byDesigner[p.handle] || 0
+	}));
+	TOTALS = Object.assign({}, TOTALS, { privateMerged: PRIV.total, privateUpdated: PRIV.lastUpdated });
 	const DATA_META = { updatedAt: new Date().toISOString() };
 	const j = (v) => JSON.stringify(v, null, "\t");
 	return `/* Shared data for the squad PR dashboard directions.
