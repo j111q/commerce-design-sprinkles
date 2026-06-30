@@ -1352,6 +1352,34 @@
 
 	const OPEN = [
 	{
+		"title": "Add Woo Home click tracking to Things to do next tasks",
+		"repo": "woocommerce/woocommerce",
+		"number": 66125,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66125",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1782846803000
+	},
+	{
+		"title": "Update Product Filters description copy",
+		"repo": "woocommerce/woocommerce",
+		"number": 65925,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65925",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1782832919000
+	},
+	{
 		"title": "Fix duplicate shipping marketplace link",
 		"repo": "woocommerce/woocommerce",
 		"number": 66110,
@@ -1392,34 +1420,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1782827243000
-	},
-	{
-		"title": "Hide downloads metabox by default on the order edit screen",
-		"repo": "woocommerce/woocommerce",
-		"number": 65205,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65205",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1782827240000
-	},
-	{
-		"title": "Update Product Filters description copy",
-		"repo": "woocommerce/woocommerce",
-		"number": 65925,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65925",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1782822989000
 	},
 	{
 		"title": "Migrate customer stock notification screens to the order actions \"more actions\" menu",
@@ -1789,6 +1789,14 @@
 		"latestAt": "2026-04-27T08:51:12.000Z"
 	},
 	{
+		"login": "beaulebens",
+		"avatar": "https://avatars.githubusercontent.com/u/108942?v=4",
+		"url": "https://github.com/beaulebens",
+		"reviewedPrs": 1,
+		"approvals": 0,
+		"latestAt": "2026-06-30T14:34:53.000Z"
+	},
+	{
 		"login": "PV-Web",
 		"avatar": "https://avatars.githubusercontent.com/u/10065830?v=4",
 		"url": "https://github.com/PV-Web",
@@ -1823,7 +1831,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-06-30T14:11:00.161Z"
+	"updatedAt": "2026-06-30T19:49:50.852Z"
 };
 
 	function person(id) {
