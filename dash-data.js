@@ -1352,6 +1352,76 @@
 
 	const OPEN = [
 	{
+		"title": "Fix duplicate shipping marketplace link",
+		"repo": "woocommerce/woocommerce",
+		"number": 66110,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66110",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1782828508000
+	},
+	{
+		"title": "Align Order Edit meta boxes with WordPress 7.0 design conventions",
+		"repo": "woocommerce/woocommerce",
+		"number": 64564,
+		"url": "https://github.com/woocommerce/woocommerce/pull/64564",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1782827995000
+	},
+	{
+		"title": "Update WooCommerce catalog visibility publish panel layout",
+		"repo": "woocommerce/woocommerce",
+		"number": 66080,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66080",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1782827243000
+	},
+	{
+		"title": "Hide downloads metabox by default on the order edit screen",
+		"repo": "woocommerce/woocommerce",
+		"number": 65205,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65205",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1782827240000
+	},
+	{
+		"title": "Update Product Filters description copy",
+		"repo": "woocommerce/woocommerce",
+		"number": 65925,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65925",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1782822989000
+	},
+	{
 		"title": "Migrate customer stock notification screens to the order actions \"more actions\" menu",
 		"repo": "woocommerce/woocommerce",
 		"number": 65788,
@@ -1366,34 +1436,6 @@
 		"ts": 1782796500000
 	},
 	{
-		"title": "Hide downloads metabox by default on the order edit screen",
-		"repo": "woocommerce/woocommerce",
-		"number": 65205,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65205",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1782742213000
-	},
-	{
-		"title": "Update WooCommerce catalog visibility publish panel layout",
-		"repo": "woocommerce/woocommerce",
-		"number": 66080,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66080",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1782731831000
-	},
-	{
 		"title": "Add search and pagination to order tax modal",
 		"repo": "woocommerce/woocommerce",
 		"number": 66039,
@@ -1406,34 +1448,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1782728029000
-	},
-	{
-		"title": "Update Product Filters description copy",
-		"repo": "woocommerce/woocommerce",
-		"number": 65925,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65925",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1782727917000
-	},
-	{
-		"title": "Align Order Edit meta boxes with WordPress 7.0 design conventions",
-		"repo": "woocommerce/woocommerce",
-		"number": 64564,
-		"url": "https://github.com/woocommerce/woocommerce/pull/64564",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1782727712000
 	},
 	{
 		"title": "Order detail: apply 2-column grid sizing standard (720 / 24 / 320)",
@@ -1775,6 +1789,14 @@
 		"latestAt": "2026-04-27T08:51:12.000Z"
 	},
 	{
+		"login": "PV-Web",
+		"avatar": "https://avatars.githubusercontent.com/u/10065830?v=4",
+		"url": "https://github.com/PV-Web",
+		"reviewedPrs": 1,
+		"approvals": 0,
+		"latestAt": "2026-06-30T09:50:28.000Z"
+	},
+	{
 		"login": "elizaan36",
 		"avatar": "https://avatars.githubusercontent.com/u/5121465?v=4",
 		"url": "https://github.com/elizaan36",
@@ -1801,7 +1823,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-06-30T09:27:45.939Z"
+	"updatedAt": "2026-06-30T14:11:00.161Z"
 };
 
 	function person(id) {
