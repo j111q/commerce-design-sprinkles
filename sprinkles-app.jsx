@@ -838,15 +838,7 @@ function SprinklesApp() {
 				</h1>
 				<p style={{ font: "400 16px/1.6 'Menlo', 'Consolas', monospace", color: "var(--woo-ink-soft)", margin: 0, maxWidth: 640, textWrap: "pretty" }}>
 					Five designers making pull requests in Woo.
-					{" "}<strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.merged} /></strong> merged across <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.surfaces} /></strong> focus areas since {D.TOTALS.since} — <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.mergedPublic} /></strong> in public releases, <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.mergedFlagged} /></strong> behind feature flags.
-						{D.TOTALS.privateMerged > 0 &&
-						<span
-							title={"Shipped in private Woo repos — details stay under wraps until release.\n" +
-							D.SQUAD.filter(function (p) {return p.privateMerged;}).
-							map(function (p) {return p.name + " — " + p.privateMerged;}).join("\n")}
-							style={{ borderBottom: "1px dotted var(--woo-ink-soft)", cursor: "help" }}>
-							{" "}Plus <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.privateMerged} /></strong> more shipped in private repos.
-						</span>}
+					{" "}<strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.merged + D.TOTALS.privateMerged} /></strong> merged across <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.surfaces} /></strong> focus areas since {D.TOTALS.since} — <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.mergedPublic + D.TOTALS.privateMerged} /></strong> in public releases, and <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.mergedFlagged} /></strong> behind feature flags.
 				</p>
 				<p className="sprk-updated">{D.dataUpdatedLabel()}</p>
 				<div className="sprk-kudos-mobile">
@@ -948,6 +940,13 @@ function SprinklesApp() {
 										</button>);
 								})}
 							</div>
+							{(function () {
+								const n = person ? ((D.person(person) || {}).privateMerged || 0) : D.TOTALS.privateMerged;
+								return n > 0 ?
+									<p style={{ font: "400 12px/16px var(--font-sans)", fontStyle: "italic", color: "var(--woo-ink-soft)", margin: "12px 0 0", textWrap: "pretty" }}>
+										+ {n} more merged in private repo{n === 1 ? "" : "s"}
+									</p> : null;
+							})()}
 						</div>
 					</div>
 					<SKudosCard kudos={D.KUDOS} className="sprk-kudos-rail" />
