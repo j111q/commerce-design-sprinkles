@@ -599,6 +599,7 @@ function SprinklesApp() {
   map(function (r) {var n = _tally(r[0]);return n ? n + " PRs " + r[1] : null;}).filter(Boolean);
   funFacts.push(D.SQUAD.length + " designers and don’t ask us how many tokens");
   funFacts.push(D.TOTALS.merged + " merged across " + D.TOTALS.surfaces + " focus areas");
+  funFacts.push("designers chasing the dopamine hit of hitting merge");
   funFacts.push("made with pull requests & 🧁");
 
   return (
