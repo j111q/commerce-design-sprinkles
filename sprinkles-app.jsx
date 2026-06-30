@@ -42,6 +42,7 @@ const TAB_FILTERS = {
   "Draft": function (pr) {return pr.status === "Draft";}
 };
 const TABS = Object.keys(TAB_FILTERS);
+const MERGED_TAB_TOOLTIP = "PRs merged in public repos, excludes PRs in private repos";
 
 /* ---- atoms ----------------------------------------------------------- */
 function SAvatar({ id, size = 26 }) {
@@ -313,14 +314,32 @@ function SFlagBadge({ flagged }) {
 
 }
 
-function STabs({ active, onChange, tabStyle, counts }) {
+function STabs({ active, onChange, tabStyle, counts, idPrefix }) {
   const pills = tabStyle === "Pills";
+  const [mergedTabTip, setMergedTabTip] = React.useState(null);
+  const tooltipId = (idPrefix || "tabs") + "-merged-tab-tooltip";
+  function showMergedTabTooltip(event) {
+    const rect = event.currentTarget.getBoundingClientRect();
+    const halfWidth = 126;
+    const margin = 16;
+    const minLeft = margin + halfWidth;
+    const maxLeft = Math.max(minLeft, window.innerWidth - margin - halfWidth);
+    const center = rect.left + rect.width / 2;
+    setMergedTabTip({
+      left: Math.round(Math.min(maxLeft, Math.max(minLeft, center))),
+      top: Math.round(rect.bottom + 10)
+    });
+  }
+  function hideMergedTabTooltip() {
+    setMergedTabTip(null);
+  }
   return (
     <div className="sprk-tabs-scroll" role="tablist" style={{
       display: "flex", gap: pills ? 8 : 4
     }}>
 			{TABS.map(function (t) {
         const isActive = t === active;
+        const isMerged = t === "Merged";
         const pillStyle = {
           border: "1px solid " + (isActive ? "var(--woo-purple)" : "var(--woo-rule)"),
           background: isActive ? "var(--woo-purple)" : "var(--woo-paper)",
@@ -334,10 +353,17 @@ function STabs({ active, onChange, tabStyle, counts }) {
           borderRadius: 0, padding: "8px 14px 10px", marginBottom: -1
         };
         return (
+          <React.Fragment key={t}>
           <button
-            key={t}
             role="tab"
+            className="sprk-tab-btn"
             aria-selected={isActive}
+            aria-describedby={isMerged ? tooltipId : undefined}
+            title={isMerged ? MERGED_TAB_TOOLTIP : undefined}
+            onMouseEnter={isMerged ? showMergedTabTooltip : undefined}
+            onFocus={isMerged ? showMergedTabTooltip : undefined}
+            onMouseLeave={isMerged ? hideMergedTabTooltip : undefined}
+            onBlur={isMerged ? hideMergedTabTooltip : undefined}
             onClick={function () {onChange(t);}}
             style={Object.assign({
               font: "600 14px/20px var(--font-sans)", cursor: "pointer",
@@ -351,10 +377,26 @@ function STabs({ active, onChange, tabStyle, counts }) {
               color: isActive ? pills ? "var(--woo-lavender-pale)" : "var(--woo-purple)" : "var(--woo-ink-soft)",
               opacity: 0.9
             }}>{counts[t]}</span>
-					</button>);
+					</button>
+          {isMerged && (
+            <span
+              className="sprk-tab-tip"
+              id={tooltipId}
+              role="tooltip"
+              style={{
+                left: mergedTabTip ? mergedTabTip.left : -9999,
+                top: mergedTabTip ? mergedTabTip.top : -9999,
+                opacity: mergedTabTip ? 1 : 0,
+                visibility: mergedTabTip ? "visible" : "hidden",
+                transform: "translateX(-50%) translateY(" + (mergedTabTip ? "0" : "4px") + ")"
+              }}>
+              {MERGED_TAB_TOOLTIP}
+            </span>
+          )}
+          </React.Fragment>);
 
       })}
-		</div>);
+    </div>);
 
 }
 
@@ -549,6 +591,14 @@ function SprinklesApp() {
         .sprk-tabs-scroll { max-width: 100%; min-width: 0; overflow-x: auto; overflow-y: hidden; scrollbar-width: none; }
         .sprk-tabs-scroll::-webkit-scrollbar { display: none; }
         .sprk-tabs-scroll > button { flex: 0 0 auto; }
+        .sprk-tab-btn { position: relative; }
+        .sprk-tab-tip {
+          position: fixed; z-index: 90; width: max-content; max-width: min(252px, calc(100vw - 32px));
+          box-sizing: border-box; padding: 8px 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.18);
+          background: var(--woo-ink); color: var(--woo-paper); box-shadow: 0 10px 24px rgba(30,17,66,0.18);
+          font: 500 12px/16px var(--font-sans); letter-spacing: 0; text-align: center; white-space: normal; text-wrap: balance;
+          pointer-events: none; transition: opacity 0.12s ease-out, transform 0.12s ease-out, visibility 0.12s ease-out;
+        }
         .sprk-card { min-width: 0; max-width: 100%; }
         .sprk-card-main { min-width: 0; max-width: 100%; overflow-wrap: anywhere; }
         .sprk-meta { display: block; min-width: 0; max-width: 100%; overflow-wrap: anywhere; word-break: break-word; }
@@ -804,7 +854,7 @@ function SprinklesApp() {
 						<SurfaceSelect value={surface} areas={D.AREAS} onChange={setSurface} />
 					</span>
 					<div className="sprk-bar-row" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12 }}>
-						<STabs active={tab} onChange={setTab} tabStyle={t.tabStyle} counts={tabCounts} />
+						<STabs active={tab} onChange={setTab} tabStyle={t.tabStyle} counts={tabCounts} idPrefix="sticky" />
 					</div>
 				</div>
 			</div>
@@ -855,7 +905,7 @@ function SprinklesApp() {
 							<SurfaceSelect value={surface} areas={D.AREAS} onChange={setSurface} />
 						</span>
 						<div className="sprk-tabrow" style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-end", gap: 12, borderBottom: "1px solid var(--woo-rule)" }}>
-							<STabs active={tab} onChange={setTab} tabStyle={t.tabStyle} counts={tabCounts} />
+							<STabs active={tab} onChange={setTab} tabStyle={t.tabStyle} counts={tabCounts} idPrefix="feed" />
 						</div>
 					</div>
 					{rows.map(function (pr) {
