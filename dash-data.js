@@ -1392,7 +1392,21 @@
 		],
 		"reviewers": [],
 		"status": "Draft",
-		"ts": 1782898680000
+		"ts": 1782901915000
+	},
+	{
+		"title": "Update Product Filters description copy",
+		"repo": "woocommerce/woocommerce",
+		"number": 65925,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65925",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Approved",
+		"ts": 1782901385000
 	},
 	{
 		"title": "Align Order Edit meta boxes with WordPress 7.0 design conventions",
@@ -1463,20 +1477,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1782846803000
-	},
-	{
-		"title": "Update Product Filters description copy",
-		"repo": "woocommerce/woocommerce",
-		"number": 65925,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65925",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1782832919000
 	},
 	{
 		"title": "Update WooCommerce catalog visibility publish panel layout",
@@ -1739,7 +1739,7 @@
 	"mergedFlagged": 42,
 	"mergedPublic": 52,
 	"privateMerged": 4,
-	"privateUpdated": "2026-06-30"
+	"privateUpdated": "2026-07-01"
 };
 
 	const KUDOS = [
@@ -1986,7 +1986,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-01T09:39:19.765Z"
+	"updatedAt": "2026-07-01T10:39:05.977Z"
 };
 
 	function person(id) {
