@@ -62,6 +62,20 @@
 
 	const MERGED = [
 	{
+		"title": "Update Product Filters description copy",
+		"repo": "woocommerce/woocommerce",
+		"number": 65925,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65925",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"ts": 1782914648000,
+		"fresh": true
+	},
+	{
 		"title": "Editor: Improve Classic Editor status dropdown layout",
 		"repo": "WordPress/wordpress-develop",
 		"number": 12304,
@@ -1381,32 +1395,18 @@
 
 	const OPEN = [
 	{
-		"title": "Fix free shipping value in order summaries",
+		"title": "Update WooCommerce catalog visibility publish panel layout",
 		"repo": "woocommerce/woocommerce",
-		"number": 66153,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66153",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1782901915000
-	},
-	{
-		"title": "Update Product Filters description copy",
-		"repo": "woocommerce/woocommerce",
-		"number": 65925,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65925",
-		"area": "Products & catalog",
+		"number": 66080,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66080",
+		"area": "Other admin",
 		"flagged": false,
 		"authors": [
 			"poli"
 		],
 		"reviewers": [],
 		"status": "Approved",
-		"ts": 1782901385000
+		"ts": 1782915797000
 	},
 	{
 		"title": "Align Order Edit meta boxes with WordPress 7.0 design conventions",
@@ -1420,7 +1420,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1782897181000
+		"ts": 1782908232000
 	},
 	{
 		"title": "Fix duplicate shipping marketplace link",
@@ -1434,7 +1434,21 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1782888697000
+		"ts": 1782902593000
+	},
+	{
+		"title": "Fix free shipping value in order summaries",
+		"repo": "woocommerce/woocommerce",
+		"number": 66153,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66153",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1782901915000
 	},
 	{
 		"title": "Fix email order item alignment",
@@ -1477,20 +1491,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1782846803000
-	},
-	{
-		"title": "Update WooCommerce catalog visibility publish panel layout",
-		"repo": "woocommerce/woocommerce",
-		"number": 66080,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66080",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1782827243000
 	},
 	{
 		"title": "Migrate customer stock notification screens to the order actions \"more actions\" menu",
@@ -1679,7 +1679,7 @@
 	const AREAS = [
 	{
 		"name": "Products & catalog",
-		"count": 42
+		"count": 43
 	},
 	{
 		"name": "Other admin",
@@ -1732,12 +1732,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 94,
+	"merged": 95,
 	"surfaces": 13,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 52,
+	"mergedPublic": 53,
 	"privateMerged": 4,
 	"privateUpdated": "2026-07-01"
 };
@@ -1779,9 +1779,9 @@
 		"login": "Aljullu",
 		"avatar": "https://avatars.githubusercontent.com/u/3616980?v=4",
 		"url": "https://github.com/Aljullu",
-		"reviewedPrs": 4,
-		"approvals": 4,
-		"latestAt": "2026-06-29T15:02:05.000Z"
+		"reviewedPrs": 5,
+		"approvals": 5,
+		"latestAt": "2026-07-01T10:23:04.000Z"
 	},
 	{
 		"login": "robcmcdowall",
@@ -1880,6 +1880,14 @@
 		"latestAt": "2026-06-30T13:34:07.000Z"
 	},
 	{
+		"login": "lauroraa",
+		"avatar": "https://avatars.githubusercontent.com/u/82584767?v=4",
+		"url": "https://github.com/lauroraa",
+		"reviewedPrs": 2,
+		"approvals": 0,
+		"latestAt": "2026-06-30T10:50:39.000Z"
+	},
+	{
 		"login": "tjcafferkey",
 		"avatar": "https://avatars.githubusercontent.com/u/8639742?u=8468454f62312af6c53fb31669b44a696cd54f21&v=4",
 		"url": "https://github.com/tjcafferkey",
@@ -1944,20 +1952,20 @@
 		"latestAt": "2026-04-27T08:51:12.000Z"
 	},
 	{
+		"login": "PV-Web",
+		"avatar": "https://avatars.githubusercontent.com/u/10065830?v=4",
+		"url": "https://github.com/PV-Web",
+		"reviewedPrs": 1,
+		"approvals": 0,
+		"latestAt": "2026-07-01T10:47:48.000Z"
+	},
+	{
 		"login": "beaulebens",
 		"avatar": "https://avatars.githubusercontent.com/u/108942?v=4",
 		"url": "https://github.com/beaulebens",
 		"reviewedPrs": 1,
 		"approvals": 0,
 		"latestAt": "2026-06-30T14:34:53.000Z"
-	},
-	{
-		"login": "PV-Web",
-		"avatar": "https://avatars.githubusercontent.com/u/10065830?v=4",
-		"url": "https://github.com/PV-Web",
-		"reviewedPrs": 1,
-		"approvals": 0,
-		"latestAt": "2026-06-30T09:50:28.000Z"
 	},
 	{
 		"login": "elizaan36",
@@ -1974,19 +1982,11 @@
 		"reviewedPrs": 1,
 		"approvals": 0,
 		"latestAt": "2026-06-24T09:50:10.000Z"
-	},
-	{
-		"login": "lauroraa",
-		"avatar": "https://avatars.githubusercontent.com/u/82584767?v=4",
-		"url": "https://github.com/lauroraa",
-		"reviewedPrs": 1,
-		"approvals": 0,
-		"latestAt": "2026-06-18T10:44:23.000Z"
 	}
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-01T10:39:05.977Z"
+	"updatedAt": "2026-07-01T14:27:22.623Z"
 };
 
 	function person(id) {
