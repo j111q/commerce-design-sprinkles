@@ -1,8 +1,8 @@
-/* Regenerates dash-data.js with REAL WooCommerce-org PR data.
+/* Regenerates dash-data.js with REAL WooCommerce-org and WordPress Core PR data.
  *
  * Usage:  GH_TOKEN=$(gh auth token) node fetch-data.mjs
  *
- * Searches the woocommerce org for each squad member's merged + open PRs,
+ * Searches the configured public repos for each squad member's merged + open PRs,
  * derives a product "surface" per PR, summarizes review and comment kudos,
  * and writes the result into dash-data.js as plain JS literals so the
  * prototype stays self-contained (no runtime fetch / auth in the canvas).
@@ -11,15 +11,17 @@
 
 import { writeFileSync, readFileSync } from "fs";
 
-/* WooCommerce core + first-party extension repos to scan. Add/remove freely;
+/* WooCommerce core, first-party extension repos, and WordPress Core to scan. Add/remove freely;
    repos with no squad PRs are harmless (they just contribute nothing). */
 const REPOS = [
 	"woocommerce/woocommerce",             // core
 	"Automattic/woocommerce-payments",     // WooPayments
 	"mailpoet/mailpoet",                   // MailPoet
 	"woocommerce/woocommerce-shipping",    // Woo Shipping
-	"woocommerce/google-listings-and-ads"  // Google for WooCommerce
+	"woocommerce/google-listings-and-ads", // Google for WooCommerce
+	"WordPress/wordpress-develop"          // WordPress Core mirror
 ];
+const WORDPRESS_CORE_REPO = "WordPress/wordpress-develop";
 const REPO_Q = REPOS.map((r) => `repo:${r}`).join(" ");
 
 const TOKEN = process.env.GH_TOKEN;
@@ -59,6 +61,11 @@ function search(handle, qualifier) {
 	return gh(`https://api.github.com/search/issues?q=${q}&sort=updated&order=desc&per_page=100`);
 }
 
+function searchWordPressCoreClosedPrs(handle) {
+	const q = encodeURIComponent(`author:${handle} repo:${WORDPRESS_CORE_REPO} is:pr is:closed`);
+	return gh(`https://api.github.com/search/issues?q=${q}&sort=updated&order=desc&per_page=100`);
+}
+
 /* ---- surface (area) mapping -----------------------------------------------
    A PR in a dedicated extension repo takes that repo's surface (a shipping-repo
    PR is Shipping no matter what its title says). Core PRs fall to an ordered
@@ -68,7 +75,8 @@ const REPO_SURFACE = {
 	"woocommerce/woocommerce-shipping": "Shipping",
 	"Automattic/woocommerce-payments": "Payments",
 	"mailpoet/mailpoet": "Emails",
-	"woocommerce/google-listings-and-ads": "Marketing"
+	"woocommerce/google-listings-and-ads": "Marketing",
+	"WordPress/wordpress-develop": "WordPress"
 };
 const SURFACE_RULES = [
 	[/analytics|\breport/i,                              "Analytics"],
@@ -121,7 +129,7 @@ const FLAG_OVERRIDES = {};
 function isFlagged(repo, number, title, files) {
 	const key = repo + "#" + number;
 	if (key in FLAG_OVERRIDES) return FLAG_OVERRIDES[key];
-	if (REPO_SURFACE[repo]) return false; // extensions ship in their own releases
+	if (REPO_SURFACE[repo]) return false; // non-Woo-core repos ship outside Woo feature flags
 	if (files.some((p) => FLAG_PATHS.some((re) => re.test(p)))) return true;
 	return FLAG_TITLE.test(title);
 }
@@ -171,11 +179,18 @@ async function pullReviewComments(repo, number) {
 	}
 }
 
-async function pullIssueComments(repo, number) {
+async function issueComments(repo, number) {
 	try {
-		const comments = await gh(`https://api.github.com/repos/${repo}/issues/${number}/comments?per_page=100`);
-		return comments
-			.filter((comment) => comment.user && comment.user.login)
+		return await gh(`https://api.github.com/repos/${repo}/issues/${number}/comments?per_page=100`);
+	} catch {
+		return [];
+	}
+}
+
+async function pullIssueComments(repo, number) {
+	const comments = await issueComments(repo, number);
+	return comments
+		.filter((comment) => comment.user && comment.user.login)
 			.map((comment) => ({
 				login: comment.user.login,
 				avatar: comment.user.avatar_url,
@@ -183,9 +198,18 @@ async function pullIssueComments(repo, number) {
 				state: "COMMENTED",
 				submittedAt: comment.updated_at || comment.created_at
 			}));
-	} catch {
-		return [];
-	}
+}
+
+async function hasWordPressCoreSvnMergeComment(repo, number) {
+	if (repo !== WORDPRESS_CORE_REPO) return false;
+	const comments = await issueComments(repo, number);
+	return comments.some((comment) => {
+		const body = comment.body || "";
+		const login = comment.user && comment.user.login;
+		return login === "github-actions[bot]" &&
+			/SVN changeset/i.test(body) &&
+			/fixes the Trac ticket/i.test(body);
+	});
 }
 
 async function pullReviewSignals(repo, number) {
@@ -307,13 +331,28 @@ async function collect() {
 
 	const merged = [];
 	const open = [];
+	const mergedKeys = new Set();
 
 	for (const p of active) {
-		const [m, o] = await Promise.all([search(p.handle, "is:merged"), search(p.handle, "is:open")]);
+		const [m, o, wpClosed] = await Promise.all([
+			search(p.handle, "is:merged"),
+			search(p.handle, "is:open"),
+			searchWordPressCoreClosedPrs(p.handle)
+		]);
 
 		for (const it of m.items) {
 			const { repo, number } = parseRepoNumber(it);
+			mergedKeys.add(repo + "#" + number);
 			merged.push({ it, repo, number, authorId: p.id, dateIso: it.closed_at || it.updated_at });
+		}
+		for (const it of wpClosed.items) {
+			const { repo, number } = parseRepoNumber(it);
+			const key = repo + "#" + number;
+			if (mergedKeys.has(key)) continue;
+			if (await hasWordPressCoreSvnMergeComment(repo, number)) {
+				mergedKeys.add(key);
+				merged.push({ it, repo, number, authorId: p.id, dateIso: it.closed_at || it.updated_at });
+			}
 		}
 		for (const it of o.items) {
 			const { repo, number } = parseRepoNumber(it);
@@ -495,7 +534,7 @@ function emit({ MERGED, OPEN, AREAS, TOTALS, KUDOS }) {
 	const DATA_META = { updatedAt: new Date().toISOString() };
 	const j = (v) => JSON.stringify(v, null, "\t");
 	return `/* Shared data for the squad PR dashboard directions.
-   GENERATED by fetch-data.mjs from real WooCommerce PRs — do not hand-edit.
+   GENERATED by fetch-data.mjs from real public PRs — do not hand-edit.
    Re-run:  GH_TOKEN=$(gh auth token) node fetch-data.mjs */
 
 (function () {
