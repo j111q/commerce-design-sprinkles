@@ -1381,6 +1381,20 @@
 
 	const OPEN = [
 	{
+		"title": "Fix free shipping value in order summaries",
+		"repo": "woocommerce/woocommerce",
+		"number": 66153,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66153",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1782898680000
+	},
+	{
 		"title": "Align Order Edit meta boxes with WordPress 7.0 design conventions",
 		"repo": "woocommerce/woocommerce",
 		"number": 64564,
@@ -1392,7 +1406,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1782896291000
+		"ts": 1782897181000
 	},
 	{
 		"title": "Fix duplicate shipping marketplace link",
@@ -1972,7 +1986,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-01T09:04:28.915Z"
+	"updatedAt": "2026-07-01T09:39:19.765Z"
 };
 
 	function person(id) {
