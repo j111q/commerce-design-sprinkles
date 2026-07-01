@@ -104,20 +104,6 @@
 		"fresh": true
 	},
 	{
-		"title": "Fix FedEx phone notice spacing",
-		"repo": "woocommerce/woocommerce-shipping",
-		"number": 1619,
-		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1619",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"ts": 1782726989000,
-		"fresh": true
-	},
-	{
 		"title": "Fix express payment button focus outline",
 		"repo": "woocommerce/woocommerce",
 		"number": 65901,
@@ -185,20 +171,6 @@
 		],
 		"reviewers": [],
 		"ts": 1781764150000,
-		"fresh": false
-	},
-	{
-		"title": "Refresh shipping label ready panel",
-		"repo": "woocommerce/woocommerce-shipping",
-		"number": 1604,
-		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1604",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"ts": 1781615252000,
 		"fresh": false
 	},
 	{
@@ -272,20 +244,6 @@
 		"fresh": false
 	},
 	{
-		"title": "Tweak label purchase blue accents",
-		"repo": "woocommerce/woocommerce-shipping",
-		"number": 1605,
-		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1605",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"ts": 1780895081000,
-		"fresh": false
-	},
-	{
 		"title": "Make WooPay save-info copy smaller",
 		"repo": "Automattic/woocommerce-payments",
 		"number": 11734,
@@ -297,20 +255,6 @@
 		],
 		"reviewers": [],
 		"ts": 1780059781000,
-		"fresh": false
-	},
-	{
-		"title": "Simplify SCAN Forms history empty state",
-		"repo": "woocommerce/woocommerce-shipping",
-		"number": 1594,
-		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1594",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"ts": 1779963903000,
 		"fresh": false
 	},
 	{
@@ -1448,7 +1392,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1782894594000
+		"ts": 1782896064000
 	},
 	{
 		"title": "Fix duplicate shipping marketplace link",
@@ -1728,15 +1672,15 @@
 		"count": 26
 	},
 	{
-		"name": "Shipping",
-		"count": 8
-	},
-	{
 		"name": "Orders",
 		"count": 5
 	},
 	{
 		"name": "Payments",
+		"count": 4
+	},
+	{
+		"name": "Shipping",
 		"count": 4
 	},
 	{
@@ -1774,12 +1718,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 98,
+	"merged": 94,
 	"surfaces": 13,
-	"repos": 4,
+	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 56,
+	"mergedPublic": 52,
 	"privateMerged": 4,
 	"privateUpdated": "2026-06-30"
 };
@@ -1818,14 +1762,6 @@
 		"latestAt": "2026-05-22T08:34:53.000Z"
 	},
 	{
-		"login": "samnajian",
-		"avatar": "https://avatars.githubusercontent.com/u/789421?u=02f17ad708b24dea93c1293301ed3dca390285ec&v=4",
-		"url": "https://github.com/samnajian",
-		"reviewedPrs": 5,
-		"approvals": 5,
-		"latestAt": "2026-06-16T13:07:25.000Z"
-	},
-	{
 		"login": "Aljullu",
 		"avatar": "https://avatars.githubusercontent.com/u/3616980?v=4",
 		"url": "https://github.com/Aljullu",
@@ -1858,14 +1794,6 @@
 		"latestAt": "2026-06-30T21:43:14.000Z"
 	},
 	{
-		"login": "Ferdev",
-		"avatar": "https://avatars.githubusercontent.com/u/130142?v=4",
-		"url": "https://github.com/Ferdev",
-		"reviewedPrs": 2,
-		"approvals": 2,
-		"latestAt": "2026-06-29T07:57:37.000Z"
-	},
-	{
 		"login": "mikejolley",
 		"avatar": "https://avatars.githubusercontent.com/u/90977?v=4",
 		"url": "https://github.com/mikejolley",
@@ -1888,6 +1816,14 @@
 		"reviewedPrs": 2,
 		"approvals": 2,
 		"latestAt": "2026-05-12T07:50:53.000Z"
+	},
+	{
+		"login": "samnajian",
+		"avatar": "https://avatars.githubusercontent.com/u/789421?u=02f17ad708b24dea93c1293301ed3dca390285ec&v=4",
+		"url": "https://github.com/samnajian",
+		"reviewedPrs": 2,
+		"approvals": 2,
+		"latestAt": "2026-05-05T09:58:19.000Z"
 	},
 	{
 		"login": "jorgeatorres",
@@ -1986,6 +1922,14 @@
 		"latestAt": "2026-05-08T09:48:40.000Z"
 	},
 	{
+		"login": "Ferdev",
+		"avatar": "https://avatars.githubusercontent.com/u/130142?v=4",
+		"url": "https://github.com/Ferdev",
+		"reviewedPrs": 1,
+		"approvals": 1,
+		"latestAt": "2026-04-27T08:51:12.000Z"
+	},
+	{
 		"login": "beaulebens",
 		"avatar": "https://avatars.githubusercontent.com/u/108942?v=4",
 		"url": "https://github.com/beaulebens",
@@ -2028,7 +1972,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-01T08:53:37.835Z"
+	"updatedAt": "2026-07-01T08:55:03.784Z"
 };
 
 	function person(id) {
