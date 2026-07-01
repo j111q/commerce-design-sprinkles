@@ -62,6 +62,20 @@
 
 	const MERGED = [
 	{
+		"title": "Align Order Edit meta boxes with WordPress 7.0 design conventions",
+		"repo": "woocommerce/woocommerce",
+		"number": 64564,
+		"url": "https://github.com/woocommerce/woocommerce/pull/64564",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"ts": 1782924322000,
+		"fresh": true
+	},
+	{
 		"title": "Update Product Filters description copy",
 		"repo": "woocommerce/woocommerce",
 		"number": 65925,
@@ -1395,6 +1409,34 @@
 
 	const OPEN = [
 	{
+		"title": "Migrate customer stock notification screens to the order actions \"more actions\" menu",
+		"repo": "woocommerce/woocommerce",
+		"number": 65788,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65788",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1782924324000
+	},
+	{
+		"title": "Fix free shipping value in order summaries",
+		"repo": "woocommerce/woocommerce",
+		"number": 66153,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66153",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1782919495000
+	},
+	{
 		"title": "Update WooCommerce catalog visibility publish panel layout",
 		"repo": "woocommerce/woocommerce",
 		"number": 66080,
@@ -1406,21 +1448,7 @@
 		],
 		"reviewers": [],
 		"status": "Approved",
-		"ts": 1782915797000
-	},
-	{
-		"title": "Align Order Edit meta boxes with WordPress 7.0 design conventions",
-		"repo": "woocommerce/woocommerce",
-		"number": 64564,
-		"url": "https://github.com/woocommerce/woocommerce/pull/64564",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1782908232000
+		"ts": 1782916436000
 	},
 	{
 		"title": "Fix duplicate shipping marketplace link",
@@ -1435,20 +1463,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1782902593000
-	},
-	{
-		"title": "Fix free shipping value in order summaries",
-		"repo": "woocommerce/woocommerce",
-		"number": 66153,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66153",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1782901915000
 	},
 	{
 		"title": "Fix email order item alignment",
@@ -1491,20 +1505,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1782846803000
-	},
-	{
-		"title": "Migrate customer stock notification screens to the order actions \"more actions\" menu",
-		"repo": "woocommerce/woocommerce",
-		"number": 65788,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65788",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1782796500000
 	},
 	{
 		"title": "Improve custom fields editing flow",
@@ -1687,7 +1687,7 @@
 	},
 	{
 		"name": "Orders",
-		"count": 5
+		"count": 6
 	},
 	{
 		"name": "Payments",
@@ -1732,12 +1732,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 95,
+	"merged": 96,
 	"surfaces": 13,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 53,
+	"mergedPublic": 54,
 	"privateMerged": 4,
 	"privateUpdated": "2026-07-01"
 };
@@ -1779,7 +1779,7 @@
 		"login": "Aljullu",
 		"avatar": "https://avatars.githubusercontent.com/u/3616980?v=4",
 		"url": "https://github.com/Aljullu",
-		"reviewedPrs": 5,
+		"reviewedPrs": 6,
 		"approvals": 5,
 		"latestAt": "2026-07-01T10:23:04.000Z"
 	},
@@ -1790,6 +1790,14 @@
 		"reviewedPrs": 4,
 		"approvals": 0,
 		"latestAt": "2026-06-18T14:54:14.000Z"
+	},
+	{
+		"login": "jorgeatorres",
+		"avatar": "https://avatars.githubusercontent.com/u/184724?u=04d9507fd3e519c04c272ab4e3c6f70566b1ab92&v=4",
+		"url": "https://github.com/jorgeatorres",
+		"reviewedPrs": 3,
+		"approvals": 3,
+		"latestAt": "2026-07-01T16:45:20.000Z"
 	},
 	{
 		"login": "sunyatasattva",
@@ -1838,14 +1846,6 @@
 		"reviewedPrs": 2,
 		"approvals": 2,
 		"latestAt": "2026-05-05T09:58:19.000Z"
-	},
-	{
-		"login": "jorgeatorres",
-		"avatar": "https://avatars.githubusercontent.com/u/184724?u=04d9507fd3e519c04c272ab4e3c6f70566b1ab92&v=4",
-		"url": "https://github.com/jorgeatorres",
-		"reviewedPrs": 2,
-		"approvals": 2,
-		"latestAt": "2026-04-29T08:36:56.000Z"
 	},
 	{
 		"login": "oaratovskyi",
@@ -1986,7 +1986,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-01T14:27:22.623Z"
+	"updatedAt": "2026-07-01T19:48:37.703Z"
 };
 
 	function person(id) {
