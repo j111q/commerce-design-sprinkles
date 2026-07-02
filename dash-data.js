@@ -1434,7 +1434,21 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1783000032000
+		"ts": 1783019651000
+	},
+	{
+		"title": "Fix duplicate shipping marketplace link",
+		"repo": "woocommerce/woocommerce",
+		"number": 66110,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66110",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1783009310000
 	},
 	{
 		"title": "Add Woo Home click tracking to Things to do next tasks",
@@ -1448,7 +1462,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1782999753000
+		"ts": 1783004461000
 	},
 	{
 		"title": "Add skip action to Things to do next tasks",
@@ -1477,34 +1491,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1782981345000
-	},
-	{
-		"title": "Fix free shipping value in order summaries",
-		"repo": "woocommerce/woocommerce",
-		"number": 66153,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66153",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1782980512000
-	},
-	{
-		"title": "Fix duplicate shipping marketplace link",
-		"repo": "woocommerce/woocommerce",
-		"number": 66110,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66110",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1782965075000
 	},
 	{
 		"title": "Migrate customer stock notification screens to the order actions \"more actions\" menu",
@@ -2014,7 +2000,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-02T13:51:09.019Z"
+	"updatedAt": "2026-07-02T19:18:53.497Z"
 };
 
 	function person(id) {
