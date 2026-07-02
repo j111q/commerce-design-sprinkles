@@ -1423,6 +1423,20 @@
 
 	const OPEN = [
 	{
+		"title": "Improve Woo Home dashboard card visuals",
+		"repo": "woocommerce/woocommerce",
+		"number": 66198,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66198",
+		"area": "Home",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1783000032000
+	},
+	{
 		"title": "Add Woo Home click tracking to Things to do next tasks",
 		"repo": "woocommerce/woocommerce",
 		"number": 66125,
@@ -1434,7 +1448,21 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1782985379000
+		"ts": 1782999753000
+	},
+	{
+		"title": "Add skip action to Things to do next tasks",
+		"repo": "woocommerce/woocommerce",
+		"number": 66199,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66199",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1782998532000
 	},
 	{
 		"title": "Administration: Add box reordering toggle to Screen Options.",
@@ -1986,7 +2014,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-02T09:56:16.859Z"
+	"updatedAt": "2026-07-02T13:51:09.019Z"
 };
 
 	function person(id) {
