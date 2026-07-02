@@ -1423,6 +1423,20 @@
 
 	const OPEN = [
 	{
+		"title": "Add Woo Home click tracking to Things to do next tasks",
+		"repo": "woocommerce/woocommerce",
+		"number": 66125,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66125",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1782985379000
+	},
+	{
 		"title": "Administration: Add box reordering toggle to Screen Options.",
 		"repo": "WordPress/wordpress-develop",
 		"number": 12180,
@@ -1505,20 +1519,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1782881731000
-	},
-	{
-		"title": "Add Woo Home click tracking to Things to do next tasks",
-		"repo": "woocommerce/woocommerce",
-		"number": 66125,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66125",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1782846803000
 	},
 	{
 		"title": "Improve custom fields editing flow",
@@ -1739,7 +1739,7 @@
 	"mergedFlagged": 42,
 	"mergedPublic": 55,
 	"privateMerged": 4,
-	"privateUpdated": "2026-07-01"
+	"privateUpdated": "2026-07-02"
 };
 
 	const KUDOS = [
@@ -1986,7 +1986,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-02T08:50:50.738Z"
+	"updatedAt": "2026-07-02T09:56:16.859Z"
 };
 
 	function person(id) {
