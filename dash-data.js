@@ -1423,6 +1423,20 @@
 
 	const OPEN = [
 	{
+		"title": "Administration: Add box reordering toggle to Screen Options.",
+		"repo": "WordPress/wordpress-develop",
+		"number": 12180,
+		"url": "https://github.com/WordPress/wordpress-develop/pull/12180",
+		"area": "WordPress",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1782981345000
+	},
+	{
 		"title": "Fix free shipping value in order summaries",
 		"repo": "woocommerce/woocommerce",
 		"number": 66153,
@@ -1434,7 +1448,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1782980056000
+		"ts": 1782980512000
 	},
 	{
 		"title": "Fix duplicate shipping marketplace link",
@@ -1575,20 +1589,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1782588847000
-	},
-	{
-		"title": "Administration: Add box reordering toggle to Screen Options.",
-		"repo": "WordPress/wordpress-develop",
-		"number": 12180,
-		"url": "https://github.com/WordPress/wordpress-develop/pull/12180",
-		"area": "WordPress",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1782588254000
 	},
 	{
 		"title": "Coupon edit: apply 2-column grid sizing standard (720 / 24 / 320)",
@@ -1986,7 +1986,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-02T08:14:33.728Z"
+	"updatedAt": "2026-07-02T08:50:50.738Z"
 };
 
 	function person(id) {
