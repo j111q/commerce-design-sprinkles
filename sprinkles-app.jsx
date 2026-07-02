@@ -511,19 +511,6 @@ function miniSparkle(e) {
   }
 }
 
-/* Easter egg: click a card avatar and it does a random little dance. */
-const AVATAR_TWIRLS = ["sprk-tw-spin", "sprk-tw-wobble", "sprk-tw-flip", "sprk-tw-bounce", "sprk-tw-pop"];
-function avatarTwirl(e) {
-  const av = e.currentTarget.querySelector(".sprk-avatar");
-  if (!av || (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches)) return;
-  AVATAR_TWIRLS.forEach(function (c) {av.classList.remove(c);});
-  void av.offsetWidth; // restart the animation even on rapid re-clicks
-  const cls = AVATAR_TWIRLS[Math.floor(Math.random() * AVATAR_TWIRLS.length)];
-  av.classList.add(cls);
-  const done = function () {av.classList.remove(cls);av.removeEventListener("animationend", done);};
-  av.addEventListener("animationend", done);
-}
-
 /* ---- app ------------------------------------------------------------- */
 function SprinklesApp() {
   const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
@@ -738,17 +725,6 @@ function SprinklesApp() {
         /* Avatar peek — squad faces tilt & pop on hover. */
         .sprk-avatar { transition: transform 0.16s cubic-bezier(.3,.7,.4,1); position: relative; }
         .sprk-avatar:hover { transform: scale(1.18) rotate(-5deg); z-index: 2; }
-        /* Easter egg: random little dance when a card avatar is clicked. */
-        .sprk-tw-spin   { animation: sprk-tw-spin   0.6s cubic-bezier(.3,.7,.4,1); }
-        .sprk-tw-wobble { animation: sprk-tw-wobble 0.5s ease-in-out; }
-        .sprk-tw-flip   { animation: sprk-tw-flip   0.6s ease-in-out; }
-        .sprk-tw-bounce { animation: sprk-tw-bounce 0.6s cubic-bezier(.3,.7,.4,1); }
-        .sprk-tw-pop    { animation: sprk-tw-pop    0.5s cubic-bezier(.3,.7,.4,1); }
-        @keyframes sprk-tw-spin { to { transform: rotate(360deg); } }
-        @keyframes sprk-tw-wobble { 0%,100% { transform: rotate(0); } 25% { transform: rotate(-18deg); } 75% { transform: rotate(18deg); } }
-        @keyframes sprk-tw-flip { to { transform: rotateY(360deg); } }
-        @keyframes sprk-tw-bounce { 0%,100% { transform: translateY(0); } 40% { transform: translateY(-10px); } 70% { transform: translateY(-4px); } }
-        @keyframes sprk-tw-pop { 0% { transform: scale(1); } 40% { transform: scale(1.4) rotate(10deg); } 100% { transform: scale(1); } }
         /* Focus-area filter pills. */
         .sprk-chip {
           display: inline-flex; align-items: center; gap: 6px; border-radius: 999px;
@@ -944,7 +920,8 @@ function SprinklesApp() {
 								</div>
 								<span className="sprk-card-people" style={{ display: "inline-flex", paddingLeft: 6 }}>
 									{pr.authors.map(function (id) {
-                    return <span key={id} onClick={avatarTwirl} title="boop" style={{ marginLeft: -6, display: "inline-flex", cursor: "pointer" }}><SAvatar id={id} size={26} /></span>;
+                    const designer = DASH.person(id);
+                    return <button key={id} type="button" onClick={function () {setPerson(id);}} title={"Filter by " + designer.name} aria-label={"Filter by " + designer.name} style={{ marginLeft: -6, display: "inline-flex", cursor: "pointer", border: 0, padding: 0, background: "transparent", borderRadius: "50%" }}><SAvatar id={id} size={26} /></button>;
                   })}
 								</span>
 							</div>);
