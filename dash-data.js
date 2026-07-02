@@ -62,6 +62,20 @@
 
 	const MERGED = [
 	{
+		"title": "Update WooCommerce catalog visibility publish panel layout",
+		"repo": "woocommerce/woocommerce",
+		"number": 66080,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66080",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"ts": 1782979871000,
+		"fresh": true
+	},
+	{
 		"title": "Align Order Edit meta boxes with WordPress 7.0 design conventions",
 		"repo": "woocommerce/woocommerce",
 		"number": 64564,
@@ -1419,8 +1433,8 @@
 			"ann"
 		],
 		"reviewers": [],
-		"status": "Draft",
-		"ts": 1782971150000
+		"status": "Open",
+		"ts": 1782980056000
 	},
 	{
 		"title": "Fix duplicate shipping marketplace link",
@@ -1449,20 +1463,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1782924324000
-	},
-	{
-		"title": "Update WooCommerce catalog visibility publish panel layout",
-		"repo": "woocommerce/woocommerce",
-		"number": 66080,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66080",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1782916436000
 	},
 	{
 		"title": "Fix email order item alignment",
@@ -1683,7 +1683,7 @@
 	},
 	{
 		"name": "Other admin",
-		"count": 26
+		"count": 27
 	},
 	{
 		"name": "Orders",
@@ -1732,12 +1732,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 96,
+	"merged": 97,
 	"surfaces": 13,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 54,
+	"mergedPublic": 55,
 	"privateMerged": 4,
 	"privateUpdated": "2026-07-01"
 };
@@ -1779,9 +1779,9 @@
 		"login": "Aljullu",
 		"avatar": "https://avatars.githubusercontent.com/u/3616980?v=4",
 		"url": "https://github.com/Aljullu",
-		"reviewedPrs": 6,
-		"approvals": 5,
-		"latestAt": "2026-07-01T10:23:04.000Z"
+		"reviewedPrs": 7,
+		"approvals": 6,
+		"latestAt": "2026-07-01T14:18:05.000Z"
 	},
 	{
 		"login": "robcmcdowall",
@@ -1986,7 +1986,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-02T08:08:42.571Z"
+	"updatedAt": "2026-07-02T08:14:33.728Z"
 };
 
 	function person(id) {
