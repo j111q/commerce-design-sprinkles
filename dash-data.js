@@ -1409,6 +1409,34 @@
 
 	const OPEN = [
 	{
+		"title": "Fix free shipping value in order summaries",
+		"repo": "woocommerce/woocommerce",
+		"number": 66153,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66153",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1782971150000
+	},
+	{
+		"title": "Fix duplicate shipping marketplace link",
+		"repo": "woocommerce/woocommerce",
+		"number": 66110,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66110",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1782965075000
+	},
+	{
 		"title": "Migrate customer stock notification screens to the order actions \"more actions\" menu",
 		"repo": "woocommerce/woocommerce",
 		"number": 65788,
@@ -1423,20 +1451,6 @@
 		"ts": 1782924324000
 	},
 	{
-		"title": "Fix free shipping value in order summaries",
-		"repo": "woocommerce/woocommerce",
-		"number": 66153,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66153",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1782919495000
-	},
-	{
 		"title": "Update WooCommerce catalog visibility publish panel layout",
 		"repo": "woocommerce/woocommerce",
 		"number": 66080,
@@ -1449,20 +1463,6 @@
 		"reviewers": [],
 		"status": "Approved",
 		"ts": 1782916436000
-	},
-	{
-		"title": "Fix duplicate shipping marketplace link",
-		"repo": "woocommerce/woocommerce",
-		"number": 66110,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66110",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1782902593000
 	},
 	{
 		"title": "Fix email order item alignment",
@@ -1986,7 +1986,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-02T02:52:39.074Z"
+	"updatedAt": "2026-07-02T08:08:42.571Z"
 };
 
 	function person(id) {
