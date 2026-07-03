@@ -62,6 +62,20 @@
 
 	const MERGED = [
 	{
+		"title": "Fix email order item alignment",
+		"repo": "woocommerce/woocommerce",
+		"number": 66141,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66141",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1783074732000,
+		"fresh": true
+	},
+	{
 		"title": "Update WooCommerce catalog visibility publish panel layout",
 		"repo": "woocommerce/woocommerce",
 		"number": 66080,
@@ -1423,18 +1437,18 @@
 
 	const OPEN = [
 	{
-		"title": "Fix email order item alignment",
+		"title": "Fix Date and Status columns ignoring Screen Options on small screens",
 		"repo": "woocommerce/woocommerce",
-		"number": 66141,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66141",
-		"area": "Orders",
+		"number": 66242,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66242",
+		"area": "Other admin",
 		"flagged": false,
 		"authors": [
-			"ann"
+			"jana"
 		],
 		"reviewers": [],
-		"status": "Approved",
-		"ts": 1783068106000
+		"status": "Draft",
+		"ts": 1783085644000
 	},
 	{
 		"title": "Fix duplicate shipping marketplace link",
@@ -1448,7 +1462,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1783058561000
+		"ts": 1783073482000
 	},
 	{
 		"title": "Add TreeSelect prototype source references",
@@ -1687,7 +1701,7 @@
 	},
 	{
 		"name": "Orders",
-		"count": 6
+		"count": 7
 	},
 	{
 		"name": "Payments",
@@ -1732,12 +1746,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 97,
+	"merged": 98,
 	"surfaces": 13,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 55,
+	"mergedPublic": 56,
 	"privateMerged": 4,
 	"privateUpdated": "2026-07-03"
 };
@@ -1888,6 +1902,14 @@
 		"latestAt": "2026-06-30T10:50:39.000Z"
 	},
 	{
+		"login": "NeosinneR",
+		"avatar": "https://avatars.githubusercontent.com/u/470616?v=4",
+		"url": "https://github.com/NeosinneR",
+		"reviewedPrs": 1,
+		"approvals": 1,
+		"latestAt": "2026-07-03T10:18:49.000Z"
+	},
+	{
 		"login": "tjcafferkey",
 		"avatar": "https://avatars.githubusercontent.com/u/8639742?u=8468454f62312af6c53fb31669b44a696cd54f21&v=4",
 		"url": "https://github.com/tjcafferkey",
@@ -1986,7 +2008,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-03T09:52:52.724Z"
+	"updatedAt": "2026-07-03T13:54:51.988Z"
 };
 
 	function person(id) {
