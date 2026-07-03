@@ -1448,7 +1448,21 @@
 		],
 		"reviewers": [],
 		"status": "Draft",
-		"ts": 1783085644000
+		"ts": 1783105367000
+	},
+	{
+		"title": "Add Woo Home click tracking to Things to do next tasks",
+		"repo": "woocommerce/woocommerce",
+		"number": 66125,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66125",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Approved",
+		"ts": 1783089790000
 	},
 	{
 		"title": "Fix duplicate shipping marketplace link",
@@ -1491,20 +1505,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1783020363000
-	},
-	{
-		"title": "Add Woo Home click tracking to Things to do next tasks",
-		"repo": "woocommerce/woocommerce",
-		"number": 66125,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66125",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1783004461000
 	},
 	{
 		"title": "Add skip action to Things to do next tasks",
@@ -1974,20 +1974,20 @@
 		"latestAt": "2026-04-27T08:51:12.000Z"
 	},
 	{
+		"login": "beaulebens",
+		"avatar": "https://avatars.githubusercontent.com/u/108942?v=4",
+		"url": "https://github.com/beaulebens",
+		"reviewedPrs": 1,
+		"approvals": 0,
+		"latestAt": "2026-07-03T17:13:43.000Z"
+	},
+	{
 		"login": "PV-Web",
 		"avatar": "https://avatars.githubusercontent.com/u/10065830?v=4",
 		"url": "https://github.com/PV-Web",
 		"reviewedPrs": 1,
 		"approvals": 0,
 		"latestAt": "2026-07-01T10:47:48.000Z"
-	},
-	{
-		"login": "beaulebens",
-		"avatar": "https://avatars.githubusercontent.com/u/108942?v=4",
-		"url": "https://github.com/beaulebens",
-		"reviewedPrs": 1,
-		"approvals": 0,
-		"latestAt": "2026-06-30T14:34:53.000Z"
 	},
 	{
 		"login": "elizaan36",
@@ -2008,7 +2008,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-03T13:54:51.988Z"
+	"updatedAt": "2026-07-03T19:14:44.727Z"
 };
 
 	function person(id) {
