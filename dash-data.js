@@ -143,7 +143,7 @@
 		],
 		"reviewers": [],
 		"ts": 1782805349000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "Fix express payment button focus outline",
@@ -1423,18 +1423,18 @@
 
 	const OPEN = [
 	{
-		"title": "Improve Woo Home dashboard card visuals",
+		"title": "Fix email order item alignment",
 		"repo": "woocommerce/woocommerce",
-		"number": 66198,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66198",
-		"area": "Home",
+		"number": 66141,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66141",
+		"area": "Orders",
 		"flagged": false,
 		"authors": [
-			"poli"
+			"ann"
 		],
 		"reviewers": [],
-		"status": "Open",
-		"ts": 1783020363000
+		"status": "Approved",
+		"ts": 1783068106000
 	},
 	{
 		"title": "Fix duplicate shipping marketplace link",
@@ -1448,7 +1448,35 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1783009310000
+		"ts": 1783058561000
+	},
+	{
+		"title": "Add TreeSelect prototype source references",
+		"repo": "woocommerce/woocommerce",
+		"number": 66142,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66142",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1783051955000
+	},
+	{
+		"title": "Improve Woo Home dashboard card visuals",
+		"repo": "woocommerce/woocommerce",
+		"number": 66198,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66198",
+		"area": "Home",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1783020363000
 	},
 	{
 		"title": "Add Woo Home click tracking to Things to do next tasks",
@@ -1505,34 +1533,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1782924324000
-	},
-	{
-		"title": "Fix email order item alignment",
-		"repo": "woocommerce/woocommerce",
-		"number": 66141,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66141",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1782882879000
-	},
-	{
-		"title": "Add TreeSelect prototype source references",
-		"repo": "woocommerce/woocommerce",
-		"number": 66142,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66142",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1782881731000
 	},
 	{
 		"title": "Improve custom fields editing flow",
@@ -1631,20 +1631,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1781186434000
-	},
-	{
-		"title": "[DO NOT MERGE] Product editor design prototype with dev panel",
-		"repo": "woocommerce/woocommerce",
-		"number": 65482,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65482",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1781097752000
 	},
 	{
 		"title": "[Prototype, do not merge] Order detail Update redesign — visual demo",
@@ -2000,7 +1986,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-03T02:35:32.859Z"
+	"updatedAt": "2026-07-03T08:57:04.210Z"
 };
 
 	function person(id) {
