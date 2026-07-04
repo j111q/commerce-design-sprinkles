@@ -129,7 +129,7 @@
 		],
 		"reviewers": [],
 		"ts": 1782857055000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "Improve classic editor visibility controls layout",
@@ -143,7 +143,7 @@
 		],
 		"reviewers": [],
 		"ts": 1782856573000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "Fix product description editor alignment in classic product editor",
@@ -1448,7 +1448,7 @@
 		],
 		"reviewers": [],
 		"status": "Draft",
-		"ts": 1783105367000
+		"ts": 1783108284000
 	},
 	{
 		"title": "Add Woo Home click tracking to Things to do next tasks",
@@ -2008,7 +2008,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-03T19:14:44.727Z"
+	"updatedAt": "2026-07-04T02:32:49.662Z"
 };
 
 	function person(id) {
