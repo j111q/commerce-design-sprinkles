@@ -101,7 +101,7 @@
 		],
 		"reviewers": [],
 		"ts": 1782924322000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "Update Product Filters description copy",
@@ -115,7 +115,7 @@
 		],
 		"reviewers": [],
 		"ts": 1782914648000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "Editor: Improve Classic Editor status dropdown layout",
@@ -2008,7 +2008,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-04T13:16:11.769Z"
+	"updatedAt": "2026-07-04T19:05:24.850Z"
 };
 
 	function person(id) {
