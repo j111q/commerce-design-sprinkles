@@ -1437,6 +1437,62 @@
 
 	const OPEN = [
 	{
+		"title": "Administration: Add box reordering toggle to Screen Options.",
+		"repo": "WordPress/wordpress-develop",
+		"number": 12180,
+		"url": "https://github.com/WordPress/wordpress-develop/pull/12180",
+		"area": "WordPress",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1783207997000
+	},
+	{
+		"title": "Administration: Improve dashboard meta box control visuals",
+		"repo": "WordPress/wordpress-develop",
+		"number": 12339,
+		"url": "https://github.com/WordPress/wordpress-develop/pull/12339",
+		"area": "WordPress",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1783207996000
+	},
+	{
+		"title": "Enhance classic editor timestamp fields with native controls",
+		"repo": "WordPress/wordpress-develop",
+		"number": 12275,
+		"url": "https://github.com/WordPress/wordpress-develop/pull/12275",
+		"area": "WordPress",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1783207996000
+	},
+	{
+		"title": "Improve custom fields editing flow",
+		"repo": "WordPress/wordpress-develop",
+		"number": 12348,
+		"url": "https://github.com/WordPress/wordpress-develop/pull/12348",
+		"area": "WordPress",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1783207995000
+	},
+	{
 		"title": "Fix Date and Status columns ignoring Screen Options on small screens",
 		"repo": "woocommerce/woocommerce",
 		"number": 66242,
@@ -1521,20 +1577,6 @@
 		"ts": 1782998532000
 	},
 	{
-		"title": "Administration: Add box reordering toggle to Screen Options.",
-		"repo": "WordPress/wordpress-develop",
-		"number": 12180,
-		"url": "https://github.com/WordPress/wordpress-develop/pull/12180",
-		"area": "WordPress",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1782981345000
-	},
-	{
 		"title": "Migrate customer stock notification screens to the order actions \"more actions\" menu",
 		"repo": "woocommerce/woocommerce",
 		"number": 65788,
@@ -1547,20 +1589,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1782924324000
-	},
-	{
-		"title": "Improve custom fields editing flow",
-		"repo": "WordPress/wordpress-develop",
-		"number": 12348,
-		"url": "https://github.com/WordPress/wordpress-develop/pull/12348",
-		"area": "WordPress",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1782761479000
 	},
 	{
 		"title": "Add search and pagination to order tax modal",
@@ -1577,20 +1605,6 @@
 		"ts": 1782728029000
 	},
 	{
-		"title": "Enhance classic editor timestamp fields with native controls",
-		"repo": "WordPress/wordpress-develop",
-		"number": 12275,
-		"url": "https://github.com/WordPress/wordpress-develop/pull/12275",
-		"area": "WordPress",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1782726776000
-	},
-	{
 		"title": "Order detail: apply 2-column grid sizing standard (720 / 24 / 320)",
 		"repo": "woocommerce/woocommerce",
 		"number": 65699,
@@ -1603,20 +1617,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1782724448000
-	},
-	{
-		"title": "Administration: Improve dashboard meta box control visuals",
-		"repo": "WordPress/wordpress-develop",
-		"number": 12339,
-		"url": "https://github.com/WordPress/wordpress-develop/pull/12339",
-		"area": "WordPress",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1782588847000
 	},
 	{
 		"title": "Coupon edit: apply 2-column grid sizing standard (720 / 24 / 320)",
@@ -2008,7 +2008,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-04T19:05:24.850Z"
+	"updatedAt": "2026-07-05T02:42:57.684Z"
 };
 
 	function person(id) {
