@@ -87,7 +87,7 @@
 		],
 		"reviewers": [],
 		"ts": 1782979871000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "Align Order Edit meta boxes with WordPress 7.0 design conventions",
@@ -2008,7 +2008,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-05T02:42:57.684Z"
+	"updatedAt": "2026-07-05T08:47:53.903Z"
 };
 
 	function person(id) {
