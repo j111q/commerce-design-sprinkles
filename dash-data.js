@@ -73,7 +73,7 @@
 		],
 		"reviewers": [],
 		"ts": 1783074732000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "Update WooCommerce catalog visibility publish panel layout",
@@ -1753,7 +1753,7 @@
 	"mergedFlagged": 42,
 	"mergedPublic": 56,
 	"privateMerged": 4,
-	"privateUpdated": "2026-07-05"
+	"privateUpdated": "2026-07-06"
 };
 
 	const KUDOS = [
@@ -2008,7 +2008,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-06T10:11:19.304Z"
+	"updatedAt": "2026-07-06T11:24:46.960Z"
 };
 
 	function person(id) {
