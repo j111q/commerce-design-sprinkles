@@ -1437,6 +1437,34 @@
 
 	const OPEN = [
 	{
+		"title": "Fix Date and Status columns ignoring Screen Options on small screens",
+		"repo": "woocommerce/woocommerce",
+		"number": 66242,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66242",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1783327880000
+	},
+	{
+		"title": "Fix duplicate shipping marketplace link",
+		"repo": "woocommerce/woocommerce",
+		"number": 66110,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66110",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1783313526000
+	},
+	{
 		"title": "Administration: Add box reordering toggle to Screen Options.",
 		"repo": "WordPress/wordpress-develop",
 		"number": 12180,
@@ -1448,21 +1476,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1783207997000
-	},
-	{
-		"title": "Administration: Improve dashboard meta box control visuals",
-		"repo": "WordPress/wordpress-develop",
-		"number": 12339,
-		"url": "https://github.com/WordPress/wordpress-develop/pull/12339",
-		"area": "WordPress",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1783207996000
+		"ts": 1783307421000
 	},
 	{
 		"title": "Enhance classic editor timestamp fields with native controls",
@@ -1476,7 +1490,21 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1783207996000
+		"ts": 1783307419000
+	},
+	{
+		"title": "Administration: Improve dashboard meta box control visuals",
+		"repo": "WordPress/wordpress-develop",
+		"number": 12339,
+		"url": "https://github.com/WordPress/wordpress-develop/pull/12339",
+		"area": "WordPress",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1783307418000
 	},
 	{
 		"title": "Improve custom fields editing flow",
@@ -1490,21 +1518,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1783207995000
-	},
-	{
-		"title": "Fix Date and Status columns ignoring Screen Options on small screens",
-		"repo": "woocommerce/woocommerce",
-		"number": 66242,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66242",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1783108284000
+		"ts": 1783307418000
 	},
 	{
 		"title": "Add Woo Home click tracking to Things to do next tasks",
@@ -1519,20 +1533,6 @@
 		"reviewers": [],
 		"status": "Approved",
 		"ts": 1783089790000
-	},
-	{
-		"title": "Fix duplicate shipping marketplace link",
-		"repo": "woocommerce/woocommerce",
-		"number": 66110,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66110",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1783073482000
 	},
 	{
 		"title": "Add TreeSelect prototype source references",
@@ -2008,7 +2008,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-06T02:48:32.090Z"
+	"updatedAt": "2026-07-06T10:11:19.304Z"
 };
 
 	function person(id) {
