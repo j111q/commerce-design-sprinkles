@@ -62,6 +62,20 @@
 
 	const MERGED = [
 	{
+		"title": "Improve Woo Home dashboard card visuals",
+		"repo": "woocommerce/woocommerce",
+		"number": 66198,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66198",
+		"area": "Home",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"ts": 1783434340000,
+		"fresh": true
+	},
+	{
 		"title": "Add Woo Home click tracking to Things to do next tasks",
 		"repo": "woocommerce/woocommerce",
 		"number": 66125,
@@ -1451,6 +1465,34 @@
 
 	const OPEN = [
 	{
+		"title": "Administration: Add box reordering toggle to Screen Options.",
+		"repo": "WordPress/wordpress-develop",
+		"number": 12180,
+		"url": "https://github.com/WordPress/wordpress-develop/pull/12180",
+		"area": "WordPress",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1783451372000
+	},
+	{
+		"title": "Fix keyboard flow when adding products to an order (rogue search box) + clear/chevron overlap",
+		"repo": "woocommerce/woocommerce",
+		"number": 66381,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66381",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1783441586000
+	},
+	{
 		"title": "Add warnings for shadowed shipping zones",
 		"repo": "woocommerce/woocommerce",
 		"number": 66348,
@@ -1462,7 +1504,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1783433731000
+		"ts": 1783434591000
 	},
 	{
 		"title": "Fix duplicate shipping marketplace link",
@@ -1476,7 +1518,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1783433550000
+		"ts": 1783434267000
 	},
 	{
 		"title": "Fix shipping zone save button after adding method",
@@ -1491,20 +1533,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1783433053000
-	},
-	{
-		"title": "Improve Woo Home dashboard card visuals",
-		"repo": "woocommerce/woocommerce",
-		"number": 66198,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66198",
-		"area": "Home",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1783426042000
 	},
 	{
 		"title": "Add skip action to Things to do next tasks",
@@ -1533,20 +1561,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1783327880000
-	},
-	{
-		"title": "Administration: Add box reordering toggle to Screen Options.",
-		"repo": "WordPress/wordpress-develop",
-		"number": 12180,
-		"url": "https://github.com/WordPress/wordpress-develop/pull/12180",
-		"area": "WordPress",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1783307421000
 	},
 	{
 		"title": "Enhance classic editor timestamp fields with native controls",
@@ -1740,11 +1754,11 @@
 		"count": 4
 	},
 	{
-		"name": "Emails",
-		"count": 2
+		"name": "Home",
+		"count": 3
 	},
 	{
-		"name": "Home",
+		"name": "Emails",
 		"count": 2
 	},
 	{
@@ -1774,12 +1788,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 99,
+	"merged": 100,
 	"surfaces": 13,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 57,
+	"mergedPublic": 58,
 	"privateMerged": 4,
 	"privateUpdated": "2026-07-07"
 };
@@ -1938,6 +1952,14 @@
 		"latestAt": "2026-06-30T10:50:39.000Z"
 	},
 	{
+		"login": "dilirity",
+		"avatar": "https://avatars.githubusercontent.com/u/11799079?u=2ad75928f3967b0a85902d43df80ad3366fea5b1&v=4",
+		"url": "https://github.com/dilirity",
+		"reviewedPrs": 1,
+		"approvals": 1,
+		"latestAt": "2026-07-07T11:49:05.000Z"
+	},
+	{
 		"login": "NeosinneR",
 		"avatar": "https://avatars.githubusercontent.com/u/470616?v=4",
 		"url": "https://github.com/NeosinneR",
@@ -2036,7 +2058,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-07T14:23:23.698Z"
+	"updatedAt": "2026-07-07T19:49:56.396Z"
 };
 
 	function person(id) {
