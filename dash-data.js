@@ -62,6 +62,20 @@
 
 	const MERGED = [
 	{
+		"title": "Add Woo Home click tracking to Things to do next tasks",
+		"repo": "woocommerce/woocommerce",
+		"number": 66125,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66125",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"ts": 1783411668000,
+		"fresh": true
+	},
+	{
 		"title": "Fix email order item alignment",
 		"repo": "woocommerce/woocommerce",
 		"number": 66141,
@@ -1437,6 +1451,48 @@
 
 	const OPEN = [
 	{
+		"title": "Fix shipping zone save button after adding method",
+		"repo": "woocommerce/woocommerce",
+		"number": 66343,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66343",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1783416342000
+	},
+	{
+		"title": "Add warnings for shadowed shipping zones",
+		"repo": "woocommerce/woocommerce",
+		"number": 66348,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66348",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1783416240000
+	},
+	{
+		"title": "Add skip action to Things to do next tasks",
+		"repo": "woocommerce/woocommerce",
+		"number": 66199,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66199",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1783408368000
+	},
+	{
 		"title": "Fix Date and Status columns ignoring Screen Options on small screens",
 		"repo": "woocommerce/woocommerce",
 		"number": 66242,
@@ -1521,20 +1577,6 @@
 		"ts": 1783307418000
 	},
 	{
-		"title": "Add Woo Home click tracking to Things to do next tasks",
-		"repo": "woocommerce/woocommerce",
-		"number": 66125,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66125",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1783089790000
-	},
-	{
 		"title": "Add TreeSelect prototype source references",
 		"repo": "woocommerce/woocommerce",
 		"number": 66142,
@@ -1561,20 +1603,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1783020363000
-	},
-	{
-		"title": "Add skip action to Things to do next tasks",
-		"repo": "woocommerce/woocommerce",
-		"number": 66199,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66199",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1782998532000
 	},
 	{
 		"title": "Migrate customer stock notification screens to the order actions \"more actions\" menu",
@@ -1697,7 +1725,7 @@
 	},
 	{
 		"name": "Other admin",
-		"count": 27
+		"count": 28
 	},
 	{
 		"name": "Orders",
@@ -1746,12 +1774,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 98,
+	"merged": 99,
 	"surfaces": 13,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 56,
+	"mergedPublic": 57,
 	"privateMerged": 4,
 	"privateUpdated": "2026-07-06"
 };
@@ -1820,6 +1848,14 @@
 		"reviewedPrs": 3,
 		"approvals": 3,
 		"latestAt": "2026-06-11T18:28:30.000Z"
+	},
+	{
+		"login": "m1r0",
+		"avatar": "https://avatars.githubusercontent.com/u/1612178?u=5590e563adb88885fea6c5d4ab9dd1798bd3a8fa&v=4",
+		"url": "https://github.com/m1r0",
+		"reviewedPrs": 2,
+		"approvals": 2,
+		"latestAt": "2026-07-07T07:54:12.000Z"
 	},
 	{
 		"login": "joedolson",
@@ -1918,14 +1954,6 @@
 		"latestAt": "2026-06-26T07:18:02.000Z"
 	},
 	{
-		"login": "m1r0",
-		"avatar": "https://avatars.githubusercontent.com/u/1612178?u=5590e563adb88885fea6c5d4ab9dd1798bd3a8fa&v=4",
-		"url": "https://github.com/m1r0",
-		"reviewedPrs": 1,
-		"approvals": 1,
-		"latestAt": "2026-06-25T14:25:11.000Z"
-	},
-	{
 		"login": "PanosSynetos",
 		"avatar": "https://avatars.githubusercontent.com/u/2484390?u=686d5070a1fb733985ac8043984102117d505a9c&v=4",
 		"url": "https://github.com/PanosSynetos",
@@ -2008,7 +2036,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-07T02:43:39.667Z"
+	"updatedAt": "2026-07-07T09:35:04.808Z"
 };
 
 	function person(id) {
