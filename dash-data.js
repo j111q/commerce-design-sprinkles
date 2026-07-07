@@ -1451,6 +1451,34 @@
 
 	const OPEN = [
 	{
+		"title": "Add warnings for shadowed shipping zones",
+		"repo": "woocommerce/woocommerce",
+		"number": 66348,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66348",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1783433731000
+	},
+	{
+		"title": "Fix duplicate shipping marketplace link",
+		"repo": "woocommerce/woocommerce",
+		"number": 66110,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66110",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1783433550000
+	},
+	{
 		"title": "Fix shipping zone save button after adding method",
 		"repo": "woocommerce/woocommerce",
 		"number": 66343,
@@ -1462,21 +1490,21 @@
 		],
 		"reviewers": [],
 		"status": "Draft",
-		"ts": 1783416342000
+		"ts": 1783433053000
 	},
 	{
-		"title": "Add warnings for shadowed shipping zones",
+		"title": "Improve Woo Home dashboard card visuals",
 		"repo": "woocommerce/woocommerce",
-		"number": 66348,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66348",
-		"area": "Shipping",
+		"number": 66198,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66198",
+		"area": "Home",
 		"flagged": false,
 		"authors": [
-			"ann"
+			"poli"
 		],
 		"reviewers": [],
-		"status": "Draft",
-		"ts": 1783416240000
+		"status": "Approved",
+		"ts": 1783426042000
 	},
 	{
 		"title": "Add skip action to Things to do next tasks",
@@ -1505,20 +1533,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1783327880000
-	},
-	{
-		"title": "Fix duplicate shipping marketplace link",
-		"repo": "woocommerce/woocommerce",
-		"number": 66110,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66110",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1783313526000
 	},
 	{
 		"title": "Administration: Add box reordering toggle to Screen Options.",
@@ -1589,20 +1603,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1783051955000
-	},
-	{
-		"title": "Improve Woo Home dashboard card visuals",
-		"repo": "woocommerce/woocommerce",
-		"number": 66198,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66198",
-		"area": "Home",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1783020363000
 	},
 	{
 		"title": "Migrate customer stock notification screens to the order actions \"more actions\" menu",
@@ -2036,7 +2036,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-07T10:20:56.734Z"
+	"updatedAt": "2026-07-07T14:23:23.698Z"
 };
 
 	function person(id) {
