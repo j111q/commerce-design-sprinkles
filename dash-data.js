@@ -1465,6 +1465,20 @@
 
 	const OPEN = [
 	{
+		"title": "Fix duplicate shipping marketplace link",
+		"repo": "woocommerce/woocommerce",
+		"number": 66110,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66110",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1783502418000
+	},
+	{
 		"title": "Fix keyboard flow when adding products to an order (rogue search box) + clear/chevron overlap",
 		"repo": "woocommerce/woocommerce",
 		"number": 66381,
@@ -1476,7 +1490,7 @@
 		],
 		"reviewers": [],
 		"status": "Draft",
-		"ts": 1783495372000
+		"ts": 1783500772000
 	},
 	{
 		"title": "Fix shipping zone save button after adding method",
@@ -1519,20 +1533,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1783434591000
-	},
-	{
-		"title": "Fix duplicate shipping marketplace link",
-		"repo": "woocommerce/woocommerce",
-		"number": 66110,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66110",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1783434267000
 	},
 	{
 		"title": "Add skip action to Things to do next tasks",
@@ -1795,7 +1795,7 @@
 	"mergedFlagged": 42,
 	"mergedPublic": 58,
 	"privateMerged": 4,
-	"privateUpdated": "2026-07-07"
+	"privateUpdated": "2026-07-08"
 };
 
 	const KUDOS = [
@@ -2058,7 +2058,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-08T08:21:50.235Z"
+	"updatedAt": "2026-07-08T09:23:00.672Z"
 };
 
 	function person(id) {
