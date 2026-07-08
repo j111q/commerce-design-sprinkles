@@ -1465,6 +1465,20 @@
 
 	const OPEN = [
 	{
+		"title": "Enhance classic editor timestamp fields with native controls",
+		"repo": "WordPress/wordpress-develop",
+		"number": 12275,
+		"url": "https://github.com/WordPress/wordpress-develop/pull/12275",
+		"area": "WordPress",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1783516591000
+	},
+	{
 		"title": "Fix duplicate shipping marketplace link",
 		"repo": "woocommerce/woocommerce",
 		"number": 66110,
@@ -1476,7 +1490,21 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1783502418000
+		"ts": 1783515886000
+	},
+	{
+		"title": "Administration: Add box reordering toggle to Screen Options.",
+		"repo": "WordPress/wordpress-develop",
+		"number": 12180,
+		"url": "https://github.com/WordPress/wordpress-develop/pull/12180",
+		"area": "WordPress",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1783515835000
 	},
 	{
 		"title": "Fix keyboard flow when adding products to an order (rogue search box) + clear/chevron overlap",
@@ -1489,8 +1517,8 @@
 			"jana"
 		],
 		"reviewers": [],
-		"status": "Draft",
-		"ts": 1783500772000
+		"status": "Open",
+		"ts": 1783504276000
 	},
 	{
 		"title": "Fix shipping zone save button after adding method",
@@ -1505,20 +1533,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1783483696000
-	},
-	{
-		"title": "Administration: Add box reordering toggle to Screen Options.",
-		"repo": "WordPress/wordpress-develop",
-		"number": 12180,
-		"url": "https://github.com/WordPress/wordpress-develop/pull/12180",
-		"area": "WordPress",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1783451372000
 	},
 	{
 		"title": "Add warnings for shadowed shipping zones",
@@ -1561,20 +1575,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1783327880000
-	},
-	{
-		"title": "Enhance classic editor timestamp fields with native controls",
-		"repo": "WordPress/wordpress-develop",
-		"number": 12275,
-		"url": "https://github.com/WordPress/wordpress-develop/pull/12275",
-		"area": "WordPress",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1783307419000
 	},
 	{
 		"title": "Administration: Improve dashboard meta box control visuals",
@@ -2058,7 +2058,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-08T09:23:00.672Z"
+	"updatedAt": "2026-07-08T13:54:15.481Z"
 };
 
 	function person(id) {
