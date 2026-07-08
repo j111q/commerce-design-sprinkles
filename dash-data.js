@@ -1465,6 +1465,20 @@
 
 	const OPEN = [
 	{
+		"title": "Fix duplicate shipping marketplace link",
+		"repo": "woocommerce/woocommerce",
+		"number": 66110,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66110",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1783521381000
+	},
+	{
 		"title": "Enhance classic editor timestamp fields with native controls",
 		"repo": "WordPress/wordpress-develop",
 		"number": 12275,
@@ -1477,20 +1491,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1783516591000
-	},
-	{
-		"title": "Fix duplicate shipping marketplace link",
-		"repo": "woocommerce/woocommerce",
-		"number": 66110,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66110",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1783515886000
 	},
 	{
 		"title": "Administration: Add box reordering toggle to Screen Options.",
@@ -2058,7 +2058,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-08T13:54:15.481Z"
+	"updatedAt": "2026-07-08T19:19:29.896Z"
 };
 
 	function person(id) {
