@@ -1465,6 +1465,34 @@
 
 	const OPEN = [
 	{
+		"title": "Fix keyboard flow when adding products to an order (rogue search box) + clear/chevron overlap",
+		"repo": "woocommerce/woocommerce",
+		"number": 66381,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66381",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1783495372000
+	},
+	{
+		"title": "Fix shipping zone save button after adding method",
+		"repo": "woocommerce/woocommerce",
+		"number": 66343,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66343",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1783483696000
+	},
+	{
 		"title": "Administration: Add box reordering toggle to Screen Options.",
 		"repo": "WordPress/wordpress-develop",
 		"number": 12180,
@@ -1477,20 +1505,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1783451372000
-	},
-	{
-		"title": "Fix keyboard flow when adding products to an order (rogue search box) + clear/chevron overlap",
-		"repo": "woocommerce/woocommerce",
-		"number": 66381,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66381",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1783441586000
 	},
 	{
 		"title": "Add warnings for shadowed shipping zones",
@@ -1519,20 +1533,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1783434267000
-	},
-	{
-		"title": "Fix shipping zone save button after adding method",
-		"repo": "woocommerce/woocommerce",
-		"number": 66343,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66343",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1783433053000
 	},
 	{
 		"title": "Add skip action to Things to do next tasks",
@@ -2058,7 +2058,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-08T02:22:21.271Z"
+	"updatedAt": "2026-07-08T08:21:50.235Z"
 };
 
 	function person(id) {
