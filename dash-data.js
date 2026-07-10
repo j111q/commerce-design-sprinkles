@@ -62,6 +62,20 @@
 
 	const MERGED = [
 	{
+		"title": "Analytics: remove trailing colon from FilterPicker labels",
+		"repo": "woocommerce/woocommerce",
+		"number": 66477,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66477",
+		"area": "Analytics",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"ts": 1783664764000,
+		"fresh": true
+	},
+	{
 		"title": "Improve Woo Home dashboard card visuals",
 		"repo": "woocommerce/woocommerce",
 		"number": 66198,
@@ -87,7 +101,7 @@
 		],
 		"reviewers": [],
 		"ts": 1783411668000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "Fix email order item alignment",
@@ -1465,6 +1479,20 @@
 
 	const OPEN = [
 	{
+		"title": "Restore generic blank-state icon style at the refreshed 32px scale",
+		"repo": "woocommerce/woocommerce",
+		"number": 66481,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66481",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Approved",
+		"ts": 1783675001000
+	},
+	{
 		"title": "Fix duplicate shipping marketplace link",
 		"repo": "woocommerce/woocommerce",
 		"number": 66110,
@@ -1476,7 +1504,21 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1783613006000
+		"ts": 1783671616000
+	},
+	{
+		"title": "Remove redundant changelog entry for PR #66477",
+		"repo": "woocommerce/woocommerce",
+		"number": 66484,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66484",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1783665810000
 	},
 	{
 		"title": "Enhance classic editor timestamp fields with native controls",
@@ -1758,6 +1800,10 @@
 		"count": 3
 	},
 	{
+		"name": "Analytics",
+		"count": 2
+	},
+	{
 		"name": "Emails",
 		"count": 2
 	},
@@ -1774,10 +1820,6 @@
 		"count": 2
 	},
 	{
-		"name": "Analytics",
-		"count": 1
-	},
-	{
 		"name": "Coupons",
 		"count": 1
 	},
@@ -1788,12 +1830,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 100,
+	"merged": 101,
 	"surfaces": 13,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 58,
+	"mergedPublic": 59,
 	"privateMerged": 4,
 	"privateUpdated": "2026-07-09"
 };
@@ -1808,20 +1850,20 @@
 		"latestAt": "2026-05-22T13:18:09.000Z"
 	},
 	{
+		"login": "chihsuan",
+		"avatar": "https://avatars.githubusercontent.com/u/4344253?u=893568c74d526595be65e1748b2fde2626a185f2&v=4",
+		"url": "https://github.com/chihsuan",
+		"reviewedPrs": 10,
+		"approvals": 10,
+		"latestAt": "2026-07-10T06:13:52.000Z"
+	},
+	{
 		"login": "ayushpahwa",
 		"avatar": "https://avatars.githubusercontent.com/u/8526215?u=4b9aa323a770ea89605eaa11a0dc9c9ac0e7dfde&v=4",
 		"url": "https://github.com/ayushpahwa",
 		"reviewedPrs": 10,
 		"approvals": 10,
 		"latestAt": "2026-05-11T07:31:32.000Z"
-	},
-	{
-		"login": "chihsuan",
-		"avatar": "https://avatars.githubusercontent.com/u/4344253?u=893568c74d526595be65e1748b2fde2626a185f2&v=4",
-		"url": "https://github.com/chihsuan",
-		"reviewedPrs": 9,
-		"approvals": 9,
-		"latestAt": "2026-06-18T06:29:03.000Z"
 	},
 	{
 		"login": "mordeth",
@@ -2058,7 +2100,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-10T02:37:43.108Z"
+	"updatedAt": "2026-07-10T09:28:23.055Z"
 };
 
 	function person(id) {
