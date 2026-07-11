@@ -1479,6 +1479,20 @@
 
 	const OPEN = [
 	{
+		"title": "Remove redundant changelog entry for PR #66477",
+		"repo": "woocommerce/woocommerce",
+		"number": 66484,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66484",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Approved",
+		"ts": 1783720404000
+	},
+	{
 		"title": "Restore generic blank-state icon style at the refreshed 32px scale",
 		"repo": "woocommerce/woocommerce",
 		"number": 66481,
@@ -1505,20 +1519,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1783671616000
-	},
-	{
-		"title": "Remove redundant changelog entry for PR #66477",
-		"repo": "woocommerce/woocommerce",
-		"number": 66484,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66484",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1783665810000
 	},
 	{
 		"title": "Enhance classic editor timestamp fields with native controls",
@@ -2100,7 +2100,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-10T19:22:04.668Z"
+	"updatedAt": "2026-07-11T02:13:21.729Z"
 };
 
 	function person(id) {
