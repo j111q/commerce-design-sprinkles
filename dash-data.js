@@ -1507,6 +1507,34 @@
 
 	const OPEN = [
 	{
+		"title": "Fix duplicate shipping marketplace link",
+		"repo": "woocommerce/woocommerce",
+		"number": 66110,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66110",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1783963465000
+	},
+	{
+		"title": "Add warnings for shadowed shipping zones",
+		"repo": "woocommerce/woocommerce",
+		"number": 66348,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66348",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Approved",
+		"ts": 1783962881000
+	},
+	{
 		"title": "Add search and pagination to order tax modal",
 		"repo": "woocommerce/woocommerce",
 		"number": 66039,
@@ -1519,20 +1547,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1783948430000
-	},
-	{
-		"title": "Fix duplicate shipping marketplace link",
-		"repo": "woocommerce/woocommerce",
-		"number": 66110,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66110",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1783671616000
 	},
 	{
 		"title": "Enhance classic editor timestamp fields with native controls",
@@ -1589,20 +1603,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1783483696000
-	},
-	{
-		"title": "Add warnings for shadowed shipping zones",
-		"repo": "woocommerce/woocommerce",
-		"number": 66348,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66348",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1783434591000
 	},
 	{
 		"title": "Add skip action to Things to do next tasks",
@@ -2100,7 +2100,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-13T14:25:18.498Z"
+	"updatedAt": "2026-07-13T19:18:56.646Z"
 };
 
 	function person(id) {
