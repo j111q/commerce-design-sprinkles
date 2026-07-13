@@ -62,6 +62,34 @@
 
 	const MERGED = [
 	{
+		"title": "Restore generic blank-state icon style at the refreshed 32px scale",
+		"repo": "woocommerce/woocommerce",
+		"number": 66481,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66481",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"ts": 1783916567000,
+		"fresh": true
+	},
+	{
+		"title": "Remove redundant changelog entry for PR #66477",
+		"repo": "woocommerce/woocommerce",
+		"number": 66484,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66484",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"ts": 1783912260000,
+		"fresh": true
+	},
+	{
 		"title": "Analytics: remove trailing colon from FilterPicker labels",
 		"repo": "woocommerce/woocommerce",
 		"number": 66477,
@@ -73,7 +101,7 @@
 		],
 		"reviewers": [],
 		"ts": 1783664764000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "Improve Woo Home dashboard card visuals",
@@ -1479,34 +1507,6 @@
 
 	const OPEN = [
 	{
-		"title": "Remove redundant changelog entry for PR #66477",
-		"repo": "woocommerce/woocommerce",
-		"number": 66484,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66484",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1783720404000
-	},
-	{
-		"title": "Restore generic blank-state icon style at the refreshed 32px scale",
-		"repo": "woocommerce/woocommerce",
-		"number": 66481,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66481",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1783675001000
-	},
-	{
 		"title": "Fix duplicate shipping marketplace link",
 		"repo": "woocommerce/woocommerce",
 		"number": 66110,
@@ -1781,7 +1781,7 @@
 	},
 	{
 		"name": "Other admin",
-		"count": 28
+		"count": 30
 	},
 	{
 		"name": "Orders",
@@ -1830,12 +1830,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 101,
+	"merged": 103,
 	"surfaces": 13,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 59,
+	"mergedPublic": 61,
 	"privateMerged": 4,
 	"privateUpdated": "2026-07-12"
 };
@@ -1853,9 +1853,9 @@
 		"login": "chihsuan",
 		"avatar": "https://avatars.githubusercontent.com/u/4344253?u=893568c74d526595be65e1748b2fde2626a185f2&v=4",
 		"url": "https://github.com/chihsuan",
-		"reviewedPrs": 10,
-		"approvals": 10,
-		"latestAt": "2026-07-10T06:13:52.000Z"
+		"reviewedPrs": 11,
+		"approvals": 11,
+		"latestAt": "2026-07-13T03:46:36.000Z"
 	},
 	{
 		"login": "ayushpahwa",
@@ -1866,6 +1866,14 @@
 		"latestAt": "2026-05-11T07:31:32.000Z"
 	},
 	{
+		"login": "Aljullu",
+		"avatar": "https://avatars.githubusercontent.com/u/3616980?v=4",
+		"url": "https://github.com/Aljullu",
+		"reviewedPrs": 8,
+		"approvals": 7,
+		"latestAt": "2026-07-10T09:16:41.000Z"
+	},
+	{
 		"login": "mordeth",
 		"avatar": "https://avatars.githubusercontent.com/u/8667118?u=9607f4dc0fb4cad1132842efea47cae8aff424f3&v=4",
 		"url": "https://github.com/mordeth",
@@ -1874,20 +1882,20 @@
 		"latestAt": "2026-05-22T08:34:53.000Z"
 	},
 	{
-		"login": "Aljullu",
-		"avatar": "https://avatars.githubusercontent.com/u/3616980?v=4",
-		"url": "https://github.com/Aljullu",
-		"reviewedPrs": 7,
-		"approvals": 6,
-		"latestAt": "2026-07-01T14:18:05.000Z"
-	},
-	{
 		"login": "robcmcdowall",
 		"avatar": "https://avatars.githubusercontent.com/u/123248278?v=4",
 		"url": "https://github.com/robcmcdowall",
 		"reviewedPrs": 4,
 		"approvals": 0,
 		"latestAt": "2026-06-18T14:54:14.000Z"
+	},
+	{
+		"login": "dmallory42",
+		"avatar": "https://avatars.githubusercontent.com/u/11770181?u=6cffd497439a5032fdeda7281e630cacbc32c280&v=4",
+		"url": "https://github.com/dmallory42",
+		"reviewedPrs": 3,
+		"approvals": 3,
+		"latestAt": "2026-07-10T21:53:24.000Z"
 	},
 	{
 		"login": "jorgeatorres",
@@ -1928,14 +1936,6 @@
 		"reviewedPrs": 2,
 		"approvals": 2,
 		"latestAt": "2026-06-25T14:40:10.000Z"
-	},
-	{
-		"login": "dmallory42",
-		"avatar": "https://avatars.githubusercontent.com/u/11770181?u=6cffd497439a5032fdeda7281e630cacbc32c280&v=4",
-		"url": "https://github.com/dmallory42",
-		"reviewedPrs": 2,
-		"approvals": 2,
-		"latestAt": "2026-05-22T06:48:11.000Z"
 	},
 	{
 		"login": "pavel-mailpoet",
@@ -2100,7 +2100,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-13T02:25:19.869Z"
+	"updatedAt": "2026-07-13T09:18:48.797Z"
 };
 
 	function person(id) {
