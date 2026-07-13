@@ -1507,6 +1507,20 @@
 
 	const OPEN = [
 	{
+		"title": "Add search and pagination to order tax modal",
+		"repo": "woocommerce/woocommerce",
+		"number": 66039,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66039",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1783948430000
+	},
+	{
 		"title": "Fix duplicate shipping marketplace link",
 		"repo": "woocommerce/woocommerce",
 		"number": 66110,
@@ -1673,20 +1687,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1782924324000
-	},
-	{
-		"title": "Add search and pagination to order tax modal",
-		"repo": "woocommerce/woocommerce",
-		"number": 66039,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66039",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1782728029000
 	},
 	{
 		"title": "Order detail: apply 2-column grid sizing standard (720 / 24 / 320)",
@@ -2100,7 +2100,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-13T10:18:40.327Z"
+	"updatedAt": "2026-07-13T14:25:18.498Z"
 };
 
 	function person(id) {
