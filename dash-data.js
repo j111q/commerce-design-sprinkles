@@ -1507,20 +1507,6 @@
 
 	const OPEN = [
 	{
-		"title": "Fix duplicate shipping marketplace link",
-		"repo": "woocommerce/woocommerce",
-		"number": 66110,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66110",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1783963465000
-	},
-	{
 		"title": "Add warnings for shadowed shipping zones",
 		"repo": "woocommerce/woocommerce",
 		"number": 66348,
@@ -1532,7 +1518,21 @@
 		],
 		"reviewers": [],
 		"status": "Approved",
-		"ts": 1783962881000
+		"ts": 1784010339000
+	},
+	{
+		"title": "Fix duplicate shipping marketplace link",
+		"repo": "woocommerce/woocommerce",
+		"number": 66110,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66110",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1784009602000
 	},
 	{
 		"title": "Add search and pagination to order tax modal",
@@ -2100,7 +2100,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-14T02:05:16.328Z"
+	"updatedAt": "2026-07-14T07:56:15.350Z"
 };
 
 	function person(id) {
