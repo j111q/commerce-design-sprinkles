@@ -62,6 +62,20 @@
 
 	const MERGED = [
 	{
+		"title": "Fix duplicate shipping marketplace link",
+		"repo": "woocommerce/woocommerce",
+		"number": 66110,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66110",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1784126591000,
+		"fresh": true
+	},
+	{
 		"title": "Add warnings for shadowed shipping zones",
 		"repo": "woocommerce/woocommerce",
 		"number": 66348,
@@ -1521,18 +1535,18 @@
 
 	const OPEN = [
 	{
-		"title": "Fix duplicate shipping marketplace link",
+		"title": "Fix shipping zone save button after adding method",
 		"repo": "woocommerce/woocommerce",
-		"number": 66110,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66110",
+		"number": 66343,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66343",
 		"area": "Shipping",
 		"flagged": false,
 		"authors": [
 			"ann"
 		],
 		"reviewers": [],
-		"status": "Approved",
-		"ts": 1784117120000
+		"status": "Open",
+		"ts": 1784129078000
 	},
 	{
 		"title": "Add search and pagination to order tax modal",
@@ -1547,20 +1561,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1784114891000
-	},
-	{
-		"title": "Fix shipping zone save button after adding method",
-		"repo": "woocommerce/woocommerce",
-		"number": 66343,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66343",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1784113110000
 	},
 	{
 		"title": "[Email Editor] Fix global font weight rendering",
@@ -1803,7 +1803,7 @@
 	},
 	{
 		"name": "Shipping",
-		"count": 5
+		"count": 6
 	},
 	{
 		"name": "Payments",
@@ -1844,12 +1844,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 104,
+	"merged": 105,
 	"surfaces": 13,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 62,
+	"mergedPublic": 63,
 	"privateMerged": 4,
 	"privateUpdated": "2026-07-15"
 };
@@ -2016,6 +2016,14 @@
 		"latestAt": "2026-06-30T10:50:39.000Z"
 	},
 	{
+		"login": "BogdanUngureanu",
+		"avatar": "https://avatars.githubusercontent.com/u/995955?u=6432bdb385bffcbf1c1fc0b6992008c702a1f849&v=4",
+		"url": "https://github.com/BogdanUngureanu",
+		"reviewedPrs": 1,
+		"approvals": 1,
+		"latestAt": "2026-07-15T12:05:20.000Z"
+	},
+	{
 		"login": "dilirity",
 		"avatar": "https://avatars.githubusercontent.com/u/11799079?u=2ad75928f3967b0a85902d43df80ad3366fea5b1&v=4",
 		"url": "https://github.com/dilirity",
@@ -2114,7 +2122,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-15T13:28:02.947Z"
+	"updatedAt": "2026-07-15T19:04:58.945Z"
 };
 
 	function person(id) {
