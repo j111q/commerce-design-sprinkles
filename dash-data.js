@@ -62,6 +62,20 @@
 
 	const MERGED = [
 	{
+		"title": "Add warnings for shadowed shipping zones",
+		"repo": "woocommerce/woocommerce",
+		"number": 66348,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66348",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1784093278000,
+		"fresh": true
+	},
+	{
 		"title": "Restore generic blank-state icon style at the refreshed 32px scale",
 		"repo": "woocommerce/woocommerce",
 		"number": 66481,
@@ -1507,6 +1521,20 @@
 
 	const OPEN = [
 	{
+		"title": "[Email Editor] Fix global font weight rendering",
+		"repo": "woocommerce/woocommerce",
+		"number": 66620,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66620",
+		"area": "Emails",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1784093667000
+	},
+	{
 		"title": "Fix duplicate shipping marketplace link",
 		"repo": "woocommerce/woocommerce",
 		"number": 66110,
@@ -1519,20 +1547,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1784037272000
-	},
-	{
-		"title": "Add warnings for shadowed shipping zones",
-		"repo": "woocommerce/woocommerce",
-		"number": 66348,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66348",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1784036847000
 	},
 	{
 		"title": "Add search and pagination to order tax modal",
@@ -1788,11 +1802,11 @@
 		"count": 7
 	},
 	{
-		"name": "Payments",
-		"count": 4
+		"name": "Shipping",
+		"count": 5
 	},
 	{
-		"name": "Shipping",
+		"name": "Payments",
 		"count": 4
 	},
 	{
@@ -1830,12 +1844,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 103,
+	"merged": 104,
 	"surfaces": 13,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 61,
+	"mergedPublic": 62,
 	"privateMerged": 4,
 	"privateUpdated": "2026-07-14"
 };
@@ -1912,6 +1926,14 @@
 		"reviewedPrs": 3,
 		"approvals": 3,
 		"latestAt": "2026-06-11T18:28:30.000Z"
+	},
+	{
+		"login": "Ferdev",
+		"avatar": "https://avatars.githubusercontent.com/u/130142?v=4",
+		"url": "https://github.com/Ferdev",
+		"reviewedPrs": 2,
+		"approvals": 2,
+		"latestAt": "2026-07-14T13:47:27.000Z"
 	},
 	{
 		"login": "m1r0",
@@ -2058,14 +2080,6 @@
 		"latestAt": "2026-05-08T09:48:40.000Z"
 	},
 	{
-		"login": "Ferdev",
-		"avatar": "https://avatars.githubusercontent.com/u/130142?v=4",
-		"url": "https://github.com/Ferdev",
-		"reviewedPrs": 1,
-		"approvals": 1,
-		"latestAt": "2026-04-27T08:51:12.000Z"
-	},
-	{
 		"login": "beaulebens",
 		"avatar": "https://avatars.githubusercontent.com/u/108942?v=4",
 		"url": "https://github.com/beaulebens",
@@ -2100,7 +2114,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-15T02:02:51.225Z"
+	"updatedAt": "2026-07-15T08:01:34.912Z"
 };
 
 	function person(id) {
