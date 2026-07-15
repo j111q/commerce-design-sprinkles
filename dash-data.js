@@ -1521,20 +1521,6 @@
 
 	const OPEN = [
 	{
-		"title": "[Email Editor] Fix global font weight rendering",
-		"repo": "woocommerce/woocommerce",
-		"number": 66620,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66620",
-		"area": "Emails",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1784093667000
-	},
-	{
 		"title": "Fix duplicate shipping marketplace link",
 		"repo": "woocommerce/woocommerce",
 		"number": 66110,
@@ -1545,8 +1531,8 @@
 			"ann"
 		],
 		"reviewers": [],
-		"status": "Open",
-		"ts": 1784037272000
+		"status": "Approved",
+		"ts": 1784117120000
 	},
 	{
 		"title": "Add search and pagination to order tax modal",
@@ -1560,7 +1546,35 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1783948430000
+		"ts": 1784114891000
+	},
+	{
+		"title": "Fix shipping zone save button after adding method",
+		"repo": "woocommerce/woocommerce",
+		"number": 66343,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66343",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1784113110000
+	},
+	{
+		"title": "[Email Editor] Fix global font weight rendering",
+		"repo": "woocommerce/woocommerce",
+		"number": 66620,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66620",
+		"area": "Emails",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1784110283000
 	},
 	{
 		"title": "Enhance classic editor timestamp fields with native controls",
@@ -1603,20 +1617,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1783504276000
-	},
-	{
-		"title": "Fix shipping zone save button after adding method",
-		"repo": "woocommerce/woocommerce",
-		"number": 66343,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66343",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1783483696000
 	},
 	{
 		"title": "Add skip action to Things to do next tasks",
@@ -2114,7 +2114,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-15T09:06:40.092Z"
+	"updatedAt": "2026-07-15T13:28:02.947Z"
 };
 
 	function person(id) {
