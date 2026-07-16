@@ -101,7 +101,7 @@
 		],
 		"reviewers": [],
 		"ts": 1783916567000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "Remove redundant changelog entry for PR #66477",
@@ -115,7 +115,7 @@
 		],
 		"reviewers": [],
 		"ts": 1783912260000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "Analytics: remove trailing colon from FilterPicker labels",
@@ -1535,6 +1535,20 @@
 
 	const OPEN = [
 	{
+		"title": "Fix shipping recommendation dismissal accessibility and fallbacks",
+		"repo": "woocommerce/woocommerce",
+		"number": 66689,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66689",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1784188721000
+	},
+	{
 		"title": "Fix shipping zone save button after adding method",
 		"repo": "woocommerce/woocommerce",
 		"number": 66343,
@@ -1546,7 +1560,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1784129078000
+		"ts": 1784180620000
 	},
 	{
 		"title": "Add search and pagination to order tax modal",
@@ -2122,7 +2136,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-16T02:11:52.176Z"
+	"updatedAt": "2026-07-16T08:06:08.821Z"
 };
 
 	function person(id) {
