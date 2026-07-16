@@ -1535,6 +1535,20 @@
 
 	const OPEN = [
 	{
+		"title": "Fix shipping zone save button after adding method",
+		"repo": "woocommerce/woocommerce",
+		"number": 66343,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66343",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1784224313000
+	},
+	{
 		"title": "[Email Editor] Fix global font weight rendering",
 		"repo": "woocommerce/woocommerce",
 		"number": 66620,
@@ -1561,20 +1575,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1784188721000
-	},
-	{
-		"title": "Fix shipping zone save button after adding method",
-		"repo": "woocommerce/woocommerce",
-		"number": 66343,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66343",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1784180620000
 	},
 	{
 		"title": "Add search and pagination to order tax modal",
@@ -2136,7 +2136,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-16T13:41:32.816Z"
+	"updatedAt": "2026-07-16T19:03:51.690Z"
 };
 
 	function person(id) {
