@@ -1535,6 +1535,20 @@
 
 	const OPEN = [
 	{
+		"title": "[Email Editor] Fix global font weight rendering",
+		"repo": "woocommerce/woocommerce",
+		"number": 66620,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66620",
+		"area": "Emails",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1784191224000
+	},
+	{
 		"title": "Fix shipping recommendation dismissal accessibility and fallbacks",
 		"repo": "woocommerce/woocommerce",
 		"number": 66689,
@@ -1575,20 +1589,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1784114891000
-	},
-	{
-		"title": "[Email Editor] Fix global font weight rendering",
-		"repo": "woocommerce/woocommerce",
-		"number": 66620,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66620",
-		"area": "Emails",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1784110283000
 	},
 	{
 		"title": "Enhance classic editor timestamp fields with native controls",
@@ -1865,7 +1865,7 @@
 	"mergedFlagged": 42,
 	"mergedPublic": 63,
 	"privateMerged": 4,
-	"privateUpdated": "2026-07-15"
+	"privateUpdated": "2026-07-16"
 };
 
 	const KUDOS = [
@@ -2136,7 +2136,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-16T08:06:08.821Z"
+	"updatedAt": "2026-07-16T09:09:38.367Z"
 };
 
 	function person(id) {
