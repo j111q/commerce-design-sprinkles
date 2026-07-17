@@ -1535,6 +1535,20 @@
 
 	const OPEN = [
 	{
+		"title": "[Email Editor] Fix global font weight rendering",
+		"repo": "woocommerce/woocommerce",
+		"number": 66620,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66620",
+		"area": "Emails",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1784288387000
+	},
+	{
 		"title": "Fix shipping zone save button after adding method",
 		"repo": "woocommerce/woocommerce",
 		"number": 66343,
@@ -1547,20 +1561,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1784272361000
-	},
-	{
-		"title": "[Email Editor] Fix global font weight rendering",
-		"repo": "woocommerce/woocommerce",
-		"number": 66620,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66620",
-		"area": "Emails",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1784191224000
 	},
 	{
 		"title": "Fix shipping recommendation dismissal accessibility and fallbacks",
@@ -2136,7 +2136,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-17T09:04:44.679Z"
+	"updatedAt": "2026-07-17T13:19:22.485Z"
 };
 
 	function person(id) {
