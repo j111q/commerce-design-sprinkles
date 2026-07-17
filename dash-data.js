@@ -1546,7 +1546,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1784224313000
+		"ts": 1784272361000
 	},
 	{
 		"title": "[Email Editor] Fix global font weight rendering",
@@ -2136,7 +2136,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-17T02:16:19.268Z"
+	"updatedAt": "2026-07-17T08:03:09.368Z"
 };
 
 	function person(id) {
