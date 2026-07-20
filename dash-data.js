@@ -62,6 +62,20 @@
 
 	const MERGED = [
 	{
+		"title": "[Email Editor] Fix global typography rendering",
+		"repo": "woocommerce/woocommerce",
+		"number": 66620,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66620",
+		"area": "Emails",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1784550728000,
+		"fresh": true
+	},
+	{
 		"title": "Fix duplicate shipping marketplace link",
 		"repo": "woocommerce/woocommerce",
 		"number": 66110,
@@ -1545,22 +1559,8 @@
 			"jill"
 		],
 		"reviewers": [],
-		"status": "Open",
-		"ts": 1784533741000
-	},
-	{
-		"title": "[Email Editor] Fix global typography rendering",
-		"repo": "woocommerce/woocommerce",
-		"number": 66620,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66620",
-		"area": "Emails",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
 		"status": "Approved",
-		"ts": 1784533740000
+		"ts": 1784551528000
 	},
 	{
 		"title": "Fix shipping zone save button after adding method",
@@ -1573,8 +1573,8 @@
 			"ann"
 		],
 		"reviewers": [],
-		"status": "Open",
-		"ts": 1784524338000
+		"status": "Approved",
+		"ts": 1784551494000
 	},
 	{
 		"title": "Fix shipping recommendation dismissal accessibility and fallbacks",
@@ -1824,15 +1824,15 @@
 		"count": 4
 	},
 	{
+		"name": "Emails",
+		"count": 3
+	},
+	{
 		"name": "Home",
 		"count": 3
 	},
 	{
 		"name": "Analytics",
-		"count": 2
-	},
-	{
-		"name": "Emails",
 		"count": 2
 	},
 	{
@@ -1858,12 +1858,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 105,
+	"merged": 106,
 	"surfaces": 13,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 63,
+	"mergedPublic": 64,
 	"privateMerged": 4,
 	"privateUpdated": "2026-07-20"
 };
@@ -2030,6 +2030,14 @@
 		"latestAt": "2026-06-30T10:50:39.000Z"
 	},
 	{
+		"login": "eason9487",
+		"avatar": "https://avatars.githubusercontent.com/u/17420811?u=ababe0130f7a2cf3aad2d9ee3dd523172eb91b15&v=4",
+		"url": "https://github.com/eason9487",
+		"reviewedPrs": 1,
+		"approvals": 1,
+		"latestAt": "2026-07-20T07:48:51.000Z"
+	},
+	{
 		"login": "BogdanUngureanu",
 		"avatar": "https://avatars.githubusercontent.com/u/995955?u=6432bdb385bffcbf1c1fc0b6992008c702a1f849&v=4",
 		"url": "https://github.com/BogdanUngureanu",
@@ -2136,7 +2144,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-20T09:53:24.934Z"
+	"updatedAt": "2026-07-20T13:57:30.310Z"
 };
 
 	function person(id) {
