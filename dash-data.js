@@ -1535,7 +1535,21 @@
 
 	const OPEN = [
 	{
-		"title": "[Email Editor] Fix global font weight rendering",
+		"title": "Add search and pagination to order tax modal",
+		"repo": "woocommerce/woocommerce",
+		"number": 66039,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66039",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1784533741000
+	},
+	{
+		"title": "[Email Editor] Fix global typography rendering",
 		"repo": "woocommerce/woocommerce",
 		"number": 66620,
 		"url": "https://github.com/woocommerce/woocommerce/pull/66620",
@@ -1545,8 +1559,8 @@
 			"ann"
 		],
 		"reviewers": [],
-		"status": "Open",
-		"ts": 1784288387000
+		"status": "Approved",
+		"ts": 1784533740000
 	},
 	{
 		"title": "Fix shipping zone save button after adding method",
@@ -1560,7 +1574,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1784272361000
+		"ts": 1784524338000
 	},
 	{
 		"title": "Fix shipping recommendation dismissal accessibility and fallbacks",
@@ -1575,20 +1589,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1784188721000
-	},
-	{
-		"title": "Add search and pagination to order tax modal",
-		"repo": "woocommerce/woocommerce",
-		"number": 66039,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66039",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1784114891000
 	},
 	{
 		"title": "Enhance classic editor timestamp fields with native controls",
@@ -2136,7 +2136,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-20T02:36:45.384Z"
+	"updatedAt": "2026-07-20T08:51:11.562Z"
 };
 
 	function person(id) {
