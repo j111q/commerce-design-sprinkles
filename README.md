@@ -1,6 +1,6 @@
 # The Sprinkles Spree 🧁
 
-A little dashboard for the **Commerce Design Squad** — five designers (Jill, Ann, Poli, Jana, Veronica) shipping improvements into WooCommerce, one pull request at a time.
+A little dashboard for the **Commerce Design Squad** — six designers (Jill, Ann, Poli, Jana, Veronica, Filipe) shipping improvements into WooCommerce and WordPress, one pull request at a time.
 
 **Live:** https://j111q.github.io/commerce-design-sprinkles/
 
@@ -14,4 +14,4 @@ To refresh manually:
 GH_TOKEN=$(gh auth token) node fetch-data.mjs
 ```
 
-`fetch-data.mjs` searches each squad member's merged + open PRs across WooCommerce core and first-party extension repos (WooPayments, MailPoet, Woo Shipping, Google for WooCommerce), derives a focus area per PR, and rewrites `dash-data.js`. Edit the `SQUAD` / `REPOS` lists at the top to change scope.
+`fetch-data.mjs` searches each squad member's merged + open PRs across WooCommerce core, first-party extension repos (WooPayments, MailPoet, Woo Shipping, Google for WooCommerce), and WordPress Core, derives a focus area per PR, and rewrites `dash-data.js`. Edit the `SQUAD` / `REPOS` lists at the top to change scope.

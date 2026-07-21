@@ -105,7 +105,7 @@ function DashQuiet() {
 					<p className="h5" style={{ color: "var(--woo-purple)", marginBottom: 8 }}>Commerce design squad</p>
 					<h1 className="h1" style={{ marginBottom: 8 }}>What we're shipping into production</h1>
 					<p className="body-lg" style={{ color: "var(--fg2)", margin: 0, maxWidth: 560 }}>
-						Five designers making Woo better with real, merged code — one PR at a time.
+						Six designers making Woo and WordPress better with real, merged code — one PR at a time.
 					</p>
 					<div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 20 }}>
 						<div style={{ display: "flex", paddingLeft: 6 }}>

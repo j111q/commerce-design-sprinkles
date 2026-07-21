@@ -63,7 +63,7 @@ function DashCream() {
 					We ship what we design.
 				</h1>
 				<p style={{ font: "400 19px/1.5 var(--font-sans)", color: "var(--woo-ink-soft)", margin: 0, maxWidth: 600 }}>
-					Five designers pushing real improvements into Woo, in production, through pull requests.
+					Six designers making pull requests in Woo and WordPress.
 					{" "}{D.TOTALS.merged} merged across {D.TOTALS.surfaces} focus areas since {D.TOTALS.since}.
 				</p>
 				<div style={{ display: "flex", alignItems: "center", gap: 14, marginTop: 24 }}>

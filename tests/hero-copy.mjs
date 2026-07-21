@@ -2,8 +2,8 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 
 const app = readFileSync(resolve("sprinkles-app.jsx"), "utf8");
-const expected = "Five designers making pull requests in Woo and WordPress.";
-const previous = "Five designers making pull requests in Woo.";
+const expected = "Six designers making pull requests in Woo and WordPress.";
+const previous = "Five designers making pull requests in Woo and WordPress.";
 
 if (!app.includes(expected)) {
 	console.error(`Expected hero subtitle to include: ${expected}`);

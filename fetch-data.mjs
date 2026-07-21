@@ -38,7 +38,8 @@ const SQUAD = [
 	{ id: "ann",  name: "Ann",      handle: "annchichi",      color: "#3C2A7D", fg: "#fff" },
 	{ id: "poli", name: "Poli",     handle: "poligilad-auto", color: "#533582", fg: "#fff" },
 	{ id: "jana", name: "Jana",     handle: "JanaMW27",       color: "#C9B8E8", fg: "#1E1142" },
-	{ id: "veronica", name: "Veronica", handle: "verofasulo", color: "#E84A9C", fg: "#fff" }
+	{ id: "veronica", name: "Veronica", handle: "verofasulo", color: "#E84A9C", fg: "#fff" },
+	{ id: "filipe", name: "Filipe", handle: "keoshi", color: "#2271B1", fg: "#fff" }
 ];
 
 /* ---- github ---------------------------------------------------------------- */

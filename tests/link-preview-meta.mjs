@@ -2,8 +2,8 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 
 const html = readFileSync(resolve("index.html"), "utf8");
-const expected = "Five Woo designers, real PRs, and don't ask us how many tokens.";
-const previous = "What the Commerce Design Squad is shipping into WooCommerce — real, merged pull requests, one at a time.";
+const expected = "Six Woo designers, real PRs, and don't ask us how many tokens.";
+const previous = "Five Woo designers, real PRs, and don't ask us how many tokens.";
 
 const descriptionTags = Array.from(
 	html.matchAll(/<meta\s+name="description"\s+content="([^"]*)"\s*\/>/g),
