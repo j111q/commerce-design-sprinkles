@@ -596,7 +596,7 @@ function SprinklesApp() {
         .pr-title:focus-visible { outline: 2px solid var(--woo-purple); outline-offset: 3px; border-radius: 4px; }
         /* Responsive scaffold — horizontal rhythm + feed/rail columns. */
         .sprk-wrap { max-width: 1180px; margin: 0 auto; box-sizing: border-box; padding-left: 56px; padding-right: 56px; }
-        .sprk-grid { display: grid; grid-template-columns: minmax(0, 1fr) 348px; gap: 28px; align-items: start; }
+        .sprk-grid { display: grid; grid-template-columns: minmax(0, 1fr) 372px; gap: 28px; align-items: start; }
         .sprk-tabs-scroll { max-width: 100%; min-width: 0; overflow-x: auto; overflow-y: hidden; scrollbar-width: none; }
         .sprk-tabs-scroll::-webkit-scrollbar { display: none; }
         .sprk-tabs-scroll > button { flex: 0 0 auto; }
@@ -660,6 +660,7 @@ function SprinklesApp() {
         .sprk-rail::-webkit-scrollbar { width: 8px; }
         .sprk-rail::-webkit-scrollbar-track { background: transparent; }
         .sprk-rail::-webkit-scrollbar-thumb { background: rgba(127,84,179,0.24); border-radius: 999px; }
+        .sprk-squad-avatars { display: flex; flex-wrap: nowrap; gap: 8px; }
         .sprk-area-select { display: none; }
         .sprk-area-select select {
           -webkit-appearance: none; appearance: none; font: 600 13px/1 var(--font-sans);
@@ -943,7 +944,7 @@ function SprinklesApp() {
 				<div className="sprk-rail" style={{ display: "flex", flexDirection: "column", gap: 28 }}>
 					<div style={Object.assign({}, card, { padding: 28 })}>
 						<h2 style={{ font: "700 18px/24px var(--font-sans)", letterSpacing: "-0.015em", margin: "0 0 14px" }}>Who we are</h2>
-						<div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+						<div className="sprk-squad-avatars">
 							{D.SQUAD.map(function (p) {
 								return (
 									<SFilterAvatar

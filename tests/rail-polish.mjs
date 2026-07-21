@@ -41,6 +41,16 @@ const checks = [
 		pass: /\.sprk-rail\s*\{[^}]*max-height: calc\(100vh - 88px\);[^}]*overflow-y: auto;[^}]*overscroll-behavior: contain;/.test(app),
 	},
 	{
+		name: "desktop grid keeps the same overall page width while giving the right rail more room",
+		pass: /\.sprk-wrap\s*\{[^}]*max-width: 1180px;/.test(app) &&
+			/\.sprk-grid\s*\{[^}]*grid-template-columns: minmax\(0, 1fr\) 372px;/.test(app),
+	},
+	{
+		name: "designer avatars stay on one row in the right rail",
+		pass: /className="sprk-squad-avatars"/.test(app) &&
+			/\.sprk-squad-avatars\s*\{[^}]*display: flex;[^}]*flex-wrap: nowrap;[^}]*gap: 8px;/.test(app),
+	},
+	{
 		name: "right rail keeps its scrollbar unobtrusive",
 		pass: /\.sprk-rail\s*\{[^}]*scrollbar-width: thin;[^}]*scrollbar-color: rgba\(127,84,179,0\.28\) transparent;/.test(app),
 	},
