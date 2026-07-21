@@ -1549,6 +1549,20 @@
 
 	const OPEN = [
 	{
+		"title": "Fix shipping zone save button after adding method",
+		"repo": "woocommerce/woocommerce",
+		"number": 66343,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66343",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Approved",
+		"ts": 1784613674000
+	},
+	{
 		"title": "Add search and pagination to order tax modal",
 		"repo": "woocommerce/woocommerce",
 		"number": 66039,
@@ -1561,20 +1575,6 @@
 		"reviewers": [],
 		"status": "Approved",
 		"ts": 1784551528000
-	},
-	{
-		"title": "Fix shipping zone save button after adding method",
-		"repo": "woocommerce/woocommerce",
-		"number": 66343,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66343",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1784551494000
 	},
 	{
 		"title": "Fix shipping recommendation dismissal accessibility and fallbacks",
@@ -2144,7 +2144,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-21T02:15:08.434Z"
+	"updatedAt": "2026-07-21T08:21:20.187Z"
 };
 
 	function person(id) {
