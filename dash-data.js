@@ -1549,6 +1549,20 @@
 
 	const OPEN = [
 	{
+		"title": "Fix shipping method names on manual orders",
+		"repo": "woocommerce/woocommerce",
+		"number": 66811,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66811",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1784625040000
+	},
+	{
 		"title": "Fix shipping zone save button after adding method",
 		"repo": "woocommerce/woocommerce",
 		"number": 66343,
@@ -1560,7 +1574,7 @@
 		],
 		"reviewers": [],
 		"status": "Approved",
-		"ts": 1784613674000
+		"ts": 1784623681000
 	},
 	{
 		"title": "Add search and pagination to order tax modal",
@@ -1865,7 +1879,7 @@
 	"mergedFlagged": 42,
 	"mergedPublic": 64,
 	"privateMerged": 4,
-	"privateUpdated": "2026-07-20"
+	"privateUpdated": "2026-07-21"
 };
 
 	const KUDOS = [
@@ -2144,7 +2158,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-21T08:21:20.187Z"
+	"updatedAt": "2026-07-21T09:24:14.441Z"
 };
 
 	function person(id) {
