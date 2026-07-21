@@ -281,20 +281,6 @@
 		"fresh": false
 	},
 	{
-		"title": "Fix FedEx phone notice spacing",
-		"repo": "woocommerce/woocommerce-shipping",
-		"number": 1619,
-		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1619",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"ts": 1782726989000,
-		"fresh": false
-	},
-	{
 		"title": "Fix express payment button focus outline",
 		"repo": "woocommerce/woocommerce",
 		"number": 65901,
@@ -362,20 +348,6 @@
 		],
 		"reviewers": [],
 		"ts": 1781764150000,
-		"fresh": false
-	},
-	{
-		"title": "Refresh shipping label ready panel",
-		"repo": "woocommerce/woocommerce-shipping",
-		"number": 1604,
-		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1604",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"ts": 1781615252000,
 		"fresh": false
 	},
 	{
@@ -449,20 +421,6 @@
 		"fresh": false
 	},
 	{
-		"title": "Tweak label purchase blue accents",
-		"repo": "woocommerce/woocommerce-shipping",
-		"number": 1605,
-		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1605",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"ts": 1780895081000,
-		"fresh": false
-	},
-	{
 		"title": "Make WooPay save-info copy smaller",
 		"repo": "Automattic/woocommerce-payments",
 		"number": 11734,
@@ -474,20 +432,6 @@
 		],
 		"reviewers": [],
 		"ts": 1780059781000,
-		"fresh": false
-	},
-	{
-		"title": "Simplify SCAN Forms history empty state",
-		"repo": "woocommerce/woocommerce-shipping",
-		"number": 1594,
-		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1594",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"ts": 1779963903000,
 		"fresh": false
 	},
 	{
@@ -1670,20 +1614,6 @@
 		"ts": 1784188721000
 	},
 	{
-		"title": "Add tracking to shipping label ready panel",
-		"repo": "woocommerce/woocommerce-shipping",
-		"number": 1627,
-		"url": "https://github.com/woocommerce/woocommerce-shipping/pull/1627",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1784009787000
-	},
-	{
 		"title": "Enhance classic editor timestamp fields with native controls",
 		"repo": "WordPress/wordpress-develop",
 		"number": 12275,
@@ -1905,12 +1835,12 @@
 		"count": 30
 	},
 	{
-		"name": "Shipping",
-		"count": 10
-	},
-	{
 		"name": "Orders",
 		"count": 7
+	},
+	{
+		"name": "Shipping",
+		"count": 6
 	},
 	{
 		"name": "Payments",
@@ -1951,12 +1881,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 110,
+	"merged": 106,
 	"surfaces": 13,
-	"repos": 4,
+	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 68,
+	"mergedPublic": 64,
 	"privateMerged": 4,
 	"privateUpdated": "2026-07-21"
 };
@@ -2003,28 +1933,12 @@
 		"latestAt": "2026-05-22T08:34:53.000Z"
 	},
 	{
-		"login": "samnajian",
-		"avatar": "https://avatars.githubusercontent.com/u/789421?u=02f17ad708b24dea93c1293301ed3dca390285ec&v=4",
-		"url": "https://github.com/samnajian",
-		"reviewedPrs": 5,
-		"approvals": 5,
-		"latestAt": "2026-06-16T13:07:25.000Z"
-	},
-	{
 		"login": "robcmcdowall",
 		"avatar": "https://avatars.githubusercontent.com/u/123248278?v=4",
 		"url": "https://github.com/robcmcdowall",
 		"reviewedPrs": 4,
 		"approvals": 0,
 		"latestAt": "2026-06-18T14:54:14.000Z"
-	},
-	{
-		"login": "Ferdev",
-		"avatar": "https://avatars.githubusercontent.com/u/130142?v=4",
-		"url": "https://github.com/Ferdev",
-		"reviewedPrs": 3,
-		"approvals": 3,
-		"latestAt": "2026-07-14T13:47:27.000Z"
 	},
 	{
 		"login": "dmallory42",
@@ -2049,6 +1963,14 @@
 		"reviewedPrs": 3,
 		"approvals": 3,
 		"latestAt": "2026-06-11T18:28:30.000Z"
+	},
+	{
+		"login": "Ferdev",
+		"avatar": "https://avatars.githubusercontent.com/u/130142?v=4",
+		"url": "https://github.com/Ferdev",
+		"reviewedPrs": 2,
+		"approvals": 2,
+		"latestAt": "2026-07-14T13:47:27.000Z"
 	},
 	{
 		"login": "m1r0",
@@ -2081,6 +2003,14 @@
 		"reviewedPrs": 2,
 		"approvals": 2,
 		"latestAt": "2026-05-12T07:50:53.000Z"
+	},
+	{
+		"login": "samnajian",
+		"avatar": "https://avatars.githubusercontent.com/u/789421?u=02f17ad708b24dea93c1293301ed3dca390285ec&v=4",
+		"url": "https://github.com/samnajian",
+		"reviewedPrs": 2,
+		"approvals": 2,
+		"latestAt": "2026-05-05T09:58:19.000Z"
 	},
 	{
 		"login": "oaratovskyi",
@@ -2237,7 +2167,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-21T11:02:22.923Z"
+	"updatedAt": "2026-07-21T11:04:58.010Z"
 };
 
 	function person(id) {
