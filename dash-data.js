@@ -1558,20 +1558,6 @@
 
 	const OPEN = [
 	{
-		"title": "Fix shipping method names on manual orders",
-		"repo": "woocommerce/woocommerce",
-		"number": 66811,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66811",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1784627402000
-	},
-	{
 		"title": "Fix shipping zone save button after adding method",
 		"repo": "woocommerce/woocommerce",
 		"number": 66343,
@@ -1583,7 +1569,35 @@
 		],
 		"reviewers": [],
 		"status": "Approved",
-		"ts": 1784623681000
+		"ts": 1784649911000
+	},
+	{
+		"title": "Fix shipping method names on manual orders",
+		"repo": "woocommerce/woocommerce",
+		"number": 66811,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66811",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1784649538000
+	},
+	{
+		"title": "Administration: Add box reordering toggle to Screen Options.",
+		"repo": "WordPress/wordpress-develop",
+		"number": 12627,
+		"url": "https://github.com/WordPress/wordpress-develop/pull/12627",
+		"area": "WordPress",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1784645088000
 	},
 	{
 		"title": "Add search and pagination to order tax modal",
@@ -2167,7 +2181,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-21T13:39:05.209Z"
+	"updatedAt": "2026-07-21T19:14:50.671Z"
 };
 
 	function person(id) {
