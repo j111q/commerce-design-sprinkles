@@ -1596,8 +1596,22 @@
 			"ann"
 		],
 		"reviewers": [],
+		"status": "Approved",
+		"ts": 1784724029000
+	},
+	{
+		"title": "Fix shipping recommendation dismissal accessibility and fallbacks",
+		"repo": "woocommerce/woocommerce",
+		"number": 66689,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66689",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
 		"status": "Open",
-		"ts": 1784711527000
+		"ts": 1784721132000
 	},
 	{
 		"title": "Administration: Add box reordering toggle to Screen Options.",
@@ -1626,20 +1640,6 @@
 		"reviewers": [],
 		"status": "Approved",
 		"ts": 1784551528000
-	},
-	{
-		"title": "Fix shipping recommendation dismissal accessibility and fallbacks",
-		"repo": "woocommerce/woocommerce",
-		"number": 66689,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66689",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1784188721000
 	},
 	{
 		"title": "Enhance classic editor timestamp fields with native controls",
@@ -2195,7 +2195,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-22T09:23:31.370Z"
+	"updatedAt": "2026-07-22T13:42:18.312Z"
 };
 
 	function person(id) {
