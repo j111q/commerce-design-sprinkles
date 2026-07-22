@@ -71,6 +71,34 @@
 
 	const MERGED = [
 	{
+		"title": "Clarify shipping zone save action when adding a method",
+		"repo": "woocommerce/woocommerce",
+		"number": 66343,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66343",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1784693022000,
+		"fresh": true
+	},
+	{
+		"title": "Fix shipping method names on manual orders",
+		"repo": "woocommerce/woocommerce",
+		"number": 66811,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66811",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1784691419000,
+		"fresh": true
+	},
+	{
 		"title": "[Email Editor] Fix global typography rendering",
 		"repo": "woocommerce/woocommerce",
 		"number": 66620,
@@ -1558,32 +1586,18 @@
 
 	const OPEN = [
 	{
-		"title": "Fix shipping method names on manual orders",
+		"title": "Fix shipping line names changing on order save",
 		"repo": "woocommerce/woocommerce",
-		"number": 66811,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66811",
+		"number": 66849,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66849",
 		"area": "Shipping",
 		"flagged": false,
 		"authors": [
 			"ann"
 		],
 		"reviewers": [],
-		"status": "Approved",
-		"ts": 1784666482000
-	},
-	{
-		"title": "Fix shipping zone save button after adding method",
-		"repo": "woocommerce/woocommerce",
-		"number": 66343,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66343",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1784665385000
+		"status": "Open",
+		"ts": 1784704059000
 	},
 	{
 		"title": "Administration: Add box reordering toggle to Screen Options.",
@@ -1596,8 +1610,8 @@
 			"jill"
 		],
 		"reviewers": [],
-		"status": "Draft",
-		"ts": 1784645088000
+		"status": "Open",
+		"ts": 1784697926000
 	},
 	{
 		"title": "Add search and pagination to order tax modal",
@@ -1849,12 +1863,12 @@
 		"count": 30
 	},
 	{
-		"name": "Orders",
-		"count": 7
+		"name": "Shipping",
+		"count": 8
 	},
 	{
-		"name": "Shipping",
-		"count": 6
+		"name": "Orders",
+		"count": 7
 	},
 	{
 		"name": "Payments",
@@ -1895,12 +1909,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 106,
+	"merged": 108,
 	"surfaces": 13,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 64,
+	"mergedPublic": 66,
 	"privateMerged": 4,
 	"privateUpdated": "2026-07-21"
 };
@@ -1947,6 +1961,14 @@
 		"latestAt": "2026-05-22T08:34:53.000Z"
 	},
 	{
+		"login": "Ferdev",
+		"avatar": "https://avatars.githubusercontent.com/u/130142?v=4",
+		"url": "https://github.com/Ferdev",
+		"reviewedPrs": 4,
+		"approvals": 4,
+		"latestAt": "2026-07-21T20:41:22.000Z"
+	},
+	{
 		"login": "robcmcdowall",
 		"avatar": "https://avatars.githubusercontent.com/u/123248278?v=4",
 		"url": "https://github.com/robcmcdowall",
@@ -1979,12 +2001,12 @@
 		"latestAt": "2026-06-11T18:28:30.000Z"
 	},
 	{
-		"login": "Ferdev",
-		"avatar": "https://avatars.githubusercontent.com/u/130142?v=4",
-		"url": "https://github.com/Ferdev",
-		"reviewedPrs": 2,
+		"login": "samnajian",
+		"avatar": "https://avatars.githubusercontent.com/u/789421?u=02f17ad708b24dea93c1293301ed3dca390285ec&v=4",
+		"url": "https://github.com/samnajian",
+		"reviewedPrs": 3,
 		"approvals": 2,
-		"latestAt": "2026-07-14T13:47:27.000Z"
+		"latestAt": "2026-07-16T17:51:53.000Z"
 	},
 	{
 		"login": "m1r0",
@@ -2017,14 +2039,6 @@
 		"reviewedPrs": 2,
 		"approvals": 2,
 		"latestAt": "2026-05-12T07:50:53.000Z"
-	},
-	{
-		"login": "samnajian",
-		"avatar": "https://avatars.githubusercontent.com/u/789421?u=02f17ad708b24dea93c1293301ed3dca390285ec&v=4",
-		"url": "https://github.com/samnajian",
-		"reviewedPrs": 2,
-		"approvals": 2,
-		"latestAt": "2026-05-05T09:58:19.000Z"
 	},
 	{
 		"login": "oaratovskyi",
@@ -2181,7 +2195,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-22T02:13:01.487Z"
+	"updatedAt": "2026-07-22T08:21:56.172Z"
 };
 
 	function person(id) {
