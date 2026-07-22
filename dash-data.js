@@ -71,6 +71,20 @@
 
 	const MERGED = [
 	{
+		"title": "Fix shipping line names changing on order save",
+		"repo": "woocommerce/woocommerce",
+		"number": 66849,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66849",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1784733946000,
+		"fresh": true
+	},
+	{
 		"title": "Clarify shipping zone save action when adding a method",
 		"repo": "woocommerce/woocommerce",
 		"number": 66343,
@@ -1586,20 +1600,6 @@
 
 	const OPEN = [
 	{
-		"title": "Fix shipping line names changing on order save",
-		"repo": "woocommerce/woocommerce",
-		"number": 66849,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66849",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1784724029000
-	},
-	{
 		"title": "Fix shipping recommendation dismissal accessibility and fallbacks",
 		"repo": "woocommerce/woocommerce",
 		"number": 66689,
@@ -1864,7 +1864,7 @@
 	},
 	{
 		"name": "Shipping",
-		"count": 8
+		"count": 9
 	},
 	{
 		"name": "Orders",
@@ -1909,12 +1909,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 108,
+	"merged": 109,
 	"surfaces": 13,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 66,
+	"mergedPublic": 67,
 	"privateMerged": 4,
 	"privateUpdated": "2026-07-22"
 };
@@ -1964,9 +1964,17 @@
 		"login": "Ferdev",
 		"avatar": "https://avatars.githubusercontent.com/u/130142?v=4",
 		"url": "https://github.com/Ferdev",
+		"reviewedPrs": 5,
+		"approvals": 5,
+		"latestAt": "2026-07-22T12:40:29.000Z"
+	},
+	{
+		"login": "jorgeatorres",
+		"avatar": "https://avatars.githubusercontent.com/u/184724?u=04d9507fd3e519c04c272ab4e3c6f70566b1ab92&v=4",
+		"url": "https://github.com/jorgeatorres",
 		"reviewedPrs": 4,
-		"approvals": 4,
-		"latestAt": "2026-07-21T20:41:22.000Z"
+		"approvals": 3,
+		"latestAt": "2026-07-22T11:26:44.000Z"
 	},
 	{
 		"login": "robcmcdowall",
@@ -1983,14 +1991,6 @@
 		"reviewedPrs": 3,
 		"approvals": 3,
 		"latestAt": "2026-07-10T21:53:24.000Z"
-	},
-	{
-		"login": "jorgeatorres",
-		"avatar": "https://avatars.githubusercontent.com/u/184724?u=04d9507fd3e519c04c272ab4e3c6f70566b1ab92&v=4",
-		"url": "https://github.com/jorgeatorres",
-		"reviewedPrs": 3,
-		"approvals": 3,
-		"latestAt": "2026-07-01T16:45:20.000Z"
 	},
 	{
 		"login": "sunyatasattva",
@@ -2047,6 +2047,14 @@
 		"reviewedPrs": 2,
 		"approvals": 2,
 		"latestAt": "2026-04-24T08:07:07.000Z"
+	},
+	{
+		"login": "tjcafferkey",
+		"avatar": "https://avatars.githubusercontent.com/u/8639742?v=4",
+		"url": "https://github.com/tjcafferkey",
+		"reviewedPrs": 2,
+		"approvals": 1,
+		"latestAt": "2026-07-22T15:55:02.000Z"
 	},
 	{
 		"login": "bor0",
@@ -2111,14 +2119,6 @@
 		"reviewedPrs": 1,
 		"approvals": 1,
 		"latestAt": "2026-07-03T10:18:49.000Z"
-	},
-	{
-		"login": "tjcafferkey",
-		"avatar": "https://avatars.githubusercontent.com/u/8639742?u=8468454f62312af6c53fb31669b44a696cd54f21&v=4",
-		"url": "https://github.com/tjcafferkey",
-		"reviewedPrs": 1,
-		"approvals": 1,
-		"latestAt": "2026-06-26T07:18:02.000Z"
 	},
 	{
 		"login": "PanosSynetos",
@@ -2195,7 +2195,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-22T13:42:18.312Z"
+	"updatedAt": "2026-07-22T19:09:21.593Z"
 };
 
 	function person(id) {
