@@ -1597,7 +1597,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1784704059000
+		"ts": 1784711527000
 	},
 	{
 		"title": "Administration: Add box reordering toggle to Screen Options.",
@@ -1916,7 +1916,7 @@
 	"mergedFlagged": 42,
 	"mergedPublic": 66,
 	"privateMerged": 4,
-	"privateUpdated": "2026-07-21"
+	"privateUpdated": "2026-07-22"
 };
 
 	const KUDOS = [
@@ -2195,7 +2195,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-22T08:21:56.172Z"
+	"updatedAt": "2026-07-22T09:23:31.370Z"
 };
 
 	function person(id) {
