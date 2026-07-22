@@ -1558,6 +1558,20 @@
 
 	const OPEN = [
 	{
+		"title": "Fix shipping method names on manual orders",
+		"repo": "woocommerce/woocommerce",
+		"number": 66811,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66811",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Approved",
+		"ts": 1784666482000
+	},
+	{
 		"title": "Fix shipping zone save button after adding method",
 		"repo": "woocommerce/woocommerce",
 		"number": 66343,
@@ -1569,21 +1583,7 @@
 		],
 		"reviewers": [],
 		"status": "Approved",
-		"ts": 1784649911000
-	},
-	{
-		"title": "Fix shipping method names on manual orders",
-		"repo": "woocommerce/woocommerce",
-		"number": 66811,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66811",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1784649538000
+		"ts": 1784665385000
 	},
 	{
 		"title": "Administration: Add box reordering toggle to Screen Options.",
@@ -2181,7 +2181,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-21T19:14:50.671Z"
+	"updatedAt": "2026-07-22T02:13:01.487Z"
 };
 
 	function person(id) {
