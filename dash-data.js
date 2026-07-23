@@ -124,7 +124,7 @@
 		],
 		"reviewers": [],
 		"ts": 1784550728000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "Fix duplicate shipping marketplace link",
@@ -1600,6 +1600,20 @@
 
 	const OPEN = [
 	{
+		"title": "Fix Date and Status columns ignoring Screen Options on small screens",
+		"repo": "woocommerce/woocommerce",
+		"number": 66242,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66242",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"status": "Approved",
+		"ts": 1784812768000
+	},
+	{
 		"title": "Fix shipping recommendation dismissal accessibility and fallbacks",
 		"repo": "woocommerce/woocommerce",
 		"number": 66689,
@@ -1696,20 +1710,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1783408368000
-	},
-	{
-		"title": "Fix Date and Status columns ignoring Screen Options on small screens",
-		"repo": "woocommerce/woocommerce",
-		"number": 66242,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66242",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1783327880000
 	},
 	{
 		"title": "Administration: Improve dashboard meta box control visuals",
@@ -2195,7 +2195,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-23T09:21:44.446Z"
+	"updatedAt": "2026-07-23T13:47:57.118Z"
 };
 
 	function person(id) {
