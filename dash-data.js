@@ -1600,6 +1600,20 @@
 
 	const OPEN = [
 	{
+		"title": "Fix keyboard flow when adding products to an order (rogue search box) + clear/chevron overlap",
+		"repo": "woocommerce/woocommerce",
+		"number": 66381,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66381",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1784818358000
+	},
+	{
 		"title": "Fix Date and Status columns ignoring Screen Options on small screens",
 		"repo": "woocommerce/woocommerce",
 		"number": 66242,
@@ -1682,20 +1696,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1783515835000
-	},
-	{
-		"title": "Fix keyboard flow when adding products to an order (rogue search box) + clear/chevron overlap",
-		"repo": "woocommerce/woocommerce",
-		"number": 66381,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66381",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1783504276000
 	},
 	{
 		"title": "Add skip action to Things to do next tasks",
@@ -2195,7 +2195,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-23T13:47:57.118Z"
+	"updatedAt": "2026-07-23T19:08:57.727Z"
 };
 
 	function person(id) {
