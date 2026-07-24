@@ -1610,8 +1610,22 @@
 			"ann"
 		],
 		"reviewers": [],
-		"status": "Open",
-		"ts": 1784872828000
+		"status": "Approved",
+		"ts": 1784904490000
+	},
+	{
+		"title": "Add search and pagination to order tax modal",
+		"repo": "woocommerce/woocommerce",
+		"number": 66039,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66039",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Approved",
+		"ts": 1784899654000
 	},
 	{
 		"title": "Fix keyboard flow when adding products to an order (rogue search box) + clear/chevron overlap",
@@ -1654,20 +1668,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1784697926000
-	},
-	{
-		"title": "Add search and pagination to order tax modal",
-		"repo": "woocommerce/woocommerce",
-		"number": 66039,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66039",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1784551528000
 	},
 	{
 		"title": "Enhance classic editor timestamp fields with native controls",
@@ -2195,7 +2195,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-24T13:27:55.756Z"
+	"updatedAt": "2026-07-24T19:19:01.221Z"
 };
 
 	function person(id) {
