@@ -1600,6 +1600,20 @@
 
 	const OPEN = [
 	{
+		"title": "Fix shipping recommendation dismissal accessibility and fallbacks",
+		"repo": "woocommerce/woocommerce",
+		"number": 66689,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66689",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1784872828000
+	},
+	{
 		"title": "Fix keyboard flow when adding products to an order (rogue search box) + clear/chevron overlap",
 		"repo": "woocommerce/woocommerce",
 		"number": 66381,
@@ -1626,20 +1640,6 @@
 		"reviewers": [],
 		"status": "Approved",
 		"ts": 1784812768000
-	},
-	{
-		"title": "Fix shipping recommendation dismissal accessibility and fallbacks",
-		"repo": "woocommerce/woocommerce",
-		"number": 66689,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66689",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1784787754000
 	},
 	{
 		"title": "Administration: Add box reordering toggle to Screen Options.",
@@ -2195,7 +2195,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-24T02:21:20.571Z"
+	"updatedAt": "2026-07-24T08:20:54.735Z"
 };
 
 	function person(id) {
