@@ -82,7 +82,7 @@
 		],
 		"reviewers": [],
 		"ts": 1784733946000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "Clarify shipping zone save action when adding a method",
@@ -2195,7 +2195,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-25T13:16:11.071Z"
+	"updatedAt": "2026-07-25T19:01:41.394Z"
 };
 
 	function person(id) {
