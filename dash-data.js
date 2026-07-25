@@ -96,7 +96,7 @@
 		],
 		"reviewers": [],
 		"ts": 1784693022000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "Fix shipping method names on manual orders",
@@ -110,7 +110,7 @@
 		],
 		"reviewers": [],
 		"ts": 1784691419000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "[Email Editor] Fix global typography rendering",
@@ -2195,7 +2195,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-25T02:14:42.552Z"
+	"updatedAt": "2026-07-25T08:01:08.403Z"
 };
 
 	function person(id) {
