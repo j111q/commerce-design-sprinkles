@@ -1625,7 +1625,21 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1785145099000
+		"ts": 1785147809000
+	},
+	{
+		"title": "Fix legacy report custom date field contrast",
+		"repo": "woocommerce/woocommerce",
+		"number": 67014,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67014",
+		"area": "Analytics",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1785146017000
 	},
 	{
 		"title": "Fix Date and Status columns ignoring Screen Options on small screens",
@@ -1930,7 +1944,7 @@
 	"mergedFlagged": 42,
 	"mergedPublic": 68,
 	"privateMerged": 4,
-	"privateUpdated": "2026-07-26"
+	"privateUpdated": "2026-07-27"
 };
 
 	const KUDOS = [
@@ -2209,7 +2223,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-27T09:42:46.930Z"
+	"updatedAt": "2026-07-27T10:36:01.364Z"
 };
 
 	function person(id) {
