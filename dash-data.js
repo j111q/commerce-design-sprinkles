@@ -1614,6 +1614,20 @@
 
 	const OPEN = [
 	{
+		"title": "Fix keyboard flow when adding products to an order (rogue search box) + clear/chevron overlap",
+		"repo": "woocommerce/woocommerce",
+		"number": 66381,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66381",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1785149751000
+	},
+	{
 		"title": "Clean up shipping method title test coverage",
 		"repo": "woocommerce/woocommerce",
 		"number": 67006,
@@ -1668,20 +1682,6 @@
 		"reviewers": [],
 		"status": "Approved",
 		"ts": 1784899654000
-	},
-	{
-		"title": "Fix keyboard flow when adding products to an order (rogue search box) + clear/chevron overlap",
-		"repo": "woocommerce/woocommerce",
-		"number": 66381,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66381",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1784818358000
 	},
 	{
 		"title": "Administration: Add box reordering toggle to Screen Options.",
@@ -2223,7 +2223,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-27T10:36:01.364Z"
+	"updatedAt": "2026-07-27T14:24:00.520Z"
 };
 
 	function person(id) {
