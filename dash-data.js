@@ -71,6 +71,20 @@
 
 	const MERGED = [
 	{
+		"title": "Fix shipping recommendation dismissal accessibility and fallbacks",
+		"repo": "woocommerce/woocommerce",
+		"number": 66689,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66689",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1785131873000,
+		"fresh": true
+	},
+	{
 		"title": "Fix shipping line names changing on order save",
 		"repo": "woocommerce/woocommerce",
 		"number": 66849,
@@ -1600,18 +1614,32 @@
 
 	const OPEN = [
 	{
-		"title": "Fix shipping recommendation dismissal accessibility and fallbacks",
+		"title": "Clean up shipping method title test coverage",
 		"repo": "woocommerce/woocommerce",
-		"number": 66689,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66689",
+		"number": 67006,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67006",
 		"area": "Shipping",
 		"flagged": false,
 		"authors": [
 			"ann"
 		],
 		"reviewers": [],
+		"status": "Open",
+		"ts": 1785145099000
+	},
+	{
+		"title": "Fix Date and Status columns ignoring Screen Options on small screens",
+		"repo": "woocommerce/woocommerce",
+		"number": 66242,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66242",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
 		"status": "Approved",
-		"ts": 1784904490000
+		"ts": 1785144368000
 	},
 	{
 		"title": "Add search and pagination to order tax modal",
@@ -1640,20 +1668,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1784818358000
-	},
-	{
-		"title": "Fix Date and Status columns ignoring Screen Options on small screens",
-		"repo": "woocommerce/woocommerce",
-		"number": 66242,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66242",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1784812768000
 	},
 	{
 		"title": "Administration: Add box reordering toggle to Screen Options.",
@@ -1864,7 +1878,7 @@
 	},
 	{
 		"name": "Shipping",
-		"count": 9
+		"count": 10
 	},
 	{
 		"name": "Orders",
@@ -1909,12 +1923,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 109,
+	"merged": 110,
 	"surfaces": 13,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 67,
+	"mergedPublic": 68,
 	"privateMerged": 4,
 	"privateUpdated": "2026-07-26"
 };
@@ -1964,9 +1978,9 @@
 		"login": "Ferdev",
 		"avatar": "https://avatars.githubusercontent.com/u/130142?v=4",
 		"url": "https://github.com/Ferdev",
-		"reviewedPrs": 5,
-		"approvals": 5,
-		"latestAt": "2026-07-22T12:40:29.000Z"
+		"reviewedPrs": 6,
+		"approvals": 6,
+		"latestAt": "2026-07-24T14:48:10.000Z"
 	},
 	{
 		"login": "jorgeatorres",
@@ -2195,7 +2209,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-27T02:33:18.810Z"
+	"updatedAt": "2026-07-27T09:42:46.930Z"
 };
 
 	function person(id) {
