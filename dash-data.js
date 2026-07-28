@@ -71,6 +71,20 @@
 
 	const MERGED = [
 	{
+		"title": "Fix Date and Status columns ignoring Screen Options on small screens",
+		"repo": "woocommerce/woocommerce",
+		"number": 66242,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66242",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"ts": 1785247153000,
+		"fresh": true
+	},
+	{
 		"title": "Fix shipping recommendation dismissal accessibility and fallbacks",
 		"repo": "woocommerce/woocommerce",
 		"number": 66689,
@@ -1656,20 +1670,6 @@
 		"ts": 1785146017000
 	},
 	{
-		"title": "Fix Date and Status columns ignoring Screen Options on small screens",
-		"repo": "woocommerce/woocommerce",
-		"number": 66242,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66242",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1785144368000
-	},
-	{
 		"title": "Add search and pagination to order tax modal",
 		"repo": "woocommerce/woocommerce",
 		"number": 66039,
@@ -1888,7 +1888,7 @@
 	},
 	{
 		"name": "Other admin",
-		"count": 30
+		"count": 31
 	},
 	{
 		"name": "Shipping",
@@ -1937,12 +1937,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 110,
+	"merged": 111,
 	"surfaces": 13,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 68,
+	"mergedPublic": 69,
 	"privateMerged": 4,
 	"privateUpdated": "2026-07-28"
 };
@@ -2000,9 +2000,9 @@
 		"login": "jorgeatorres",
 		"avatar": "https://avatars.githubusercontent.com/u/184724?u=04d9507fd3e519c04c272ab4e3c6f70566b1ab92&v=4",
 		"url": "https://github.com/jorgeatorres",
-		"reviewedPrs": 4,
-		"approvals": 3,
-		"latestAt": "2026-07-22T11:26:44.000Z"
+		"reviewedPrs": 5,
+		"approvals": 4,
+		"latestAt": "2026-07-23T13:19:28.000Z"
 	},
 	{
 		"login": "robcmcdowall",
@@ -2223,7 +2223,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-28T13:56:06.122Z"
+	"updatedAt": "2026-07-28T19:17:11.504Z"
 };
 
 	function person(id) {
