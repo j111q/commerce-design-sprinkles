@@ -71,6 +71,20 @@
 
 	const MERGED = [
 	{
+		"title": "Fix keyboard flow when adding products to an order (rogue search box) + clear/chevron overlap",
+		"repo": "woocommerce/woocommerce",
+		"number": 66381,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66381",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"ts": 1785333514000,
+		"fresh": true
+	},
+	{
 		"title": "Fix legacy report custom date field contrast",
 		"repo": "woocommerce/woocommerce",
 		"number": 67014,
@@ -1642,20 +1656,6 @@
 
 	const OPEN = [
 	{
-		"title": "Fix keyboard flow when adding products to an order (rogue search box) + clear/chevron overlap",
-		"repo": "woocommerce/woocommerce",
-		"number": 66381,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66381",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1785149751000
-	},
-	{
 		"title": "Clean up shipping method title test coverage",
 		"repo": "woocommerce/woocommerce",
 		"number": 67006,
@@ -1884,7 +1884,7 @@
 	const AREAS = [
 	{
 		"name": "Products & catalog",
-		"count": 43
+		"count": 44
 	},
 	{
 		"name": "Other admin",
@@ -1937,12 +1937,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 112,
+	"merged": 113,
 	"surfaces": 13,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 70,
+	"mergedPublic": 71,
 	"privateMerged": 4,
 	"privateUpdated": "2026-07-29"
 };
@@ -2000,9 +2000,9 @@
 		"login": "jorgeatorres",
 		"avatar": "https://avatars.githubusercontent.com/u/184724?u=04d9507fd3e519c04c272ab4e3c6f70566b1ab92&v=4",
 		"url": "https://github.com/jorgeatorres",
-		"reviewedPrs": 5,
-		"approvals": 4,
-		"latestAt": "2026-07-23T13:19:28.000Z"
+		"reviewedPrs": 6,
+		"approvals": 5,
+		"latestAt": "2026-07-29T10:42:56.000Z"
 	},
 	{
 		"login": "robcmcdowall",
@@ -2223,7 +2223,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-29T09:34:29.381Z"
+	"updatedAt": "2026-07-29T14:00:51.187Z"
 };
 
 	function person(id) {
