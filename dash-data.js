@@ -1628,6 +1628,20 @@
 
 	const OPEN = [
 	{
+		"title": "Fix legacy report custom date field contrast",
+		"repo": "woocommerce/woocommerce",
+		"number": 67014,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67014",
+		"area": "Analytics",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1785311402000
+	},
+	{
 		"title": "Fix keyboard flow when adding products to an order (rogue search box) + clear/chevron overlap",
 		"repo": "woocommerce/woocommerce",
 		"number": 66381,
@@ -1654,20 +1668,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1785147809000
-	},
-	{
-		"title": "Fix legacy report custom date field contrast",
-		"repo": "woocommerce/woocommerce",
-		"number": 67014,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67014",
-		"area": "Analytics",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1785146017000
 	},
 	{
 		"title": "Add search and pagination to order tax modal",
@@ -2223,7 +2223,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-29T02:11:43.128Z"
+	"updatedAt": "2026-07-29T08:33:34.605Z"
 };
 
 	function person(id) {
