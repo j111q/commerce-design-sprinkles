@@ -71,6 +71,20 @@
 
 	const MERGED = [
 	{
+		"title": "Fix legacy report custom date field contrast",
+		"repo": "woocommerce/woocommerce",
+		"number": 67014,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67014",
+		"area": "Analytics",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1785317487000,
+		"fresh": true
+	},
+	{
 		"title": "Fix Date and Status columns ignoring Screen Options on small screens",
 		"repo": "woocommerce/woocommerce",
 		"number": 66242,
@@ -1628,20 +1642,6 @@
 
 	const OPEN = [
 	{
-		"title": "Fix legacy report custom date field contrast",
-		"repo": "woocommerce/woocommerce",
-		"number": 67014,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67014",
-		"area": "Analytics",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1785311402000
-	},
-	{
 		"title": "Fix keyboard flow when adding products to an order (rogue search box) + clear/chevron overlap",
 		"repo": "woocommerce/woocommerce",
 		"number": 66381,
@@ -1903,16 +1903,16 @@
 		"count": 4
 	},
 	{
+		"name": "Analytics",
+		"count": 3
+	},
+	{
 		"name": "Emails",
 		"count": 3
 	},
 	{
 		"name": "Home",
 		"count": 3
-	},
-	{
-		"name": "Analytics",
-		"count": 2
 	},
 	{
 		"name": "Marketplace",
@@ -1937,14 +1937,14 @@
 ];
 
 	const TOTALS = {
-	"merged": 111,
+	"merged": 112,
 	"surfaces": 13,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 69,
+	"mergedPublic": 70,
 	"privateMerged": 4,
-	"privateUpdated": "2026-07-28"
+	"privateUpdated": "2026-07-29"
 };
 
 	const KUDOS = [
@@ -1960,9 +1960,9 @@
 		"login": "chihsuan",
 		"avatar": "https://avatars.githubusercontent.com/u/4344253?u=893568c74d526595be65e1748b2fde2626a185f2&v=4",
 		"url": "https://github.com/chihsuan",
-		"reviewedPrs": 11,
-		"approvals": 11,
-		"latestAt": "2026-07-13T03:46:36.000Z"
+		"reviewedPrs": 12,
+		"approvals": 12,
+		"latestAt": "2026-07-29T09:16:15.000Z"
 	},
 	{
 		"login": "ayushpahwa",
@@ -2223,7 +2223,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-29T08:33:34.605Z"
+	"updatedAt": "2026-07-29T09:34:29.381Z"
 };
 
 	function person(id) {
