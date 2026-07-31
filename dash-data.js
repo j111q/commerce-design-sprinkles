@@ -1670,6 +1670,20 @@
 
 	const OPEN = [
 	{
+		"title": "Fix long product name overflow in the order Add products modal",
+		"repo": "woocommerce/woocommerce",
+		"number": 67183,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67183",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1785503606000
+	},
+	{
 		"title": "Add search and pagination to order tax modal",
 		"repo": "woocommerce/woocommerce",
 		"number": 66039,
@@ -2223,7 +2237,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-31T09:38:52.287Z"
+	"updatedAt": "2026-07-31T13:55:11.430Z"
 };
 
 	function person(id) {
