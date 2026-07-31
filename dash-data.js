@@ -71,6 +71,20 @@
 
 	const MERGED = [
 	{
+		"title": "Clean up shipping method title test coverage",
+		"repo": "woocommerce/woocommerce",
+		"number": 67006,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67006",
+		"area": "Shipping",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1785481107000,
+		"fresh": true
+	},
+	{
 		"title": "Fix keyboard flow when adding products to an order (rogue search box) + clear/chevron overlap",
 		"repo": "woocommerce/woocommerce",
 		"number": 66381,
@@ -1656,20 +1670,6 @@
 
 	const OPEN = [
 	{
-		"title": "Clean up shipping method title test coverage",
-		"repo": "woocommerce/woocommerce",
-		"number": 67006,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67006",
-		"area": "Shipping",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1785408240000
-	},
-	{
 		"title": "Add search and pagination to order tax modal",
 		"repo": "woocommerce/woocommerce",
 		"number": 66039,
@@ -1892,7 +1892,7 @@
 	},
 	{
 		"name": "Shipping",
-		"count": 10
+		"count": 11
 	},
 	{
 		"name": "Orders",
@@ -1937,12 +1937,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 113,
+	"merged": 114,
 	"surfaces": 13,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 71,
+	"mergedPublic": 72,
 	"privateMerged": 4,
 	"privateUpdated": "2026-07-30"
 };
@@ -2029,6 +2029,14 @@
 		"latestAt": "2026-06-11T18:28:30.000Z"
 	},
 	{
+		"login": "tjcafferkey",
+		"avatar": "https://avatars.githubusercontent.com/u/8639742?u=8468454f62312af6c53fb31669b44a696cd54f21&v=4",
+		"url": "https://github.com/tjcafferkey",
+		"reviewedPrs": 3,
+		"approvals": 2,
+		"latestAt": "2026-07-30T10:44:00.000Z"
+	},
+	{
 		"login": "samnajian",
 		"avatar": "https://avatars.githubusercontent.com/u/789421?u=02f17ad708b24dea93c1293301ed3dca390285ec&v=4",
 		"url": "https://github.com/samnajian",
@@ -2075,14 +2083,6 @@
 		"reviewedPrs": 2,
 		"approvals": 2,
 		"latestAt": "2026-04-24T08:07:07.000Z"
-	},
-	{
-		"login": "tjcafferkey",
-		"avatar": "https://avatars.githubusercontent.com/u/8639742?v=4",
-		"url": "https://github.com/tjcafferkey",
-		"reviewedPrs": 2,
-		"approvals": 1,
-		"latestAt": "2026-07-22T15:55:02.000Z"
 	},
 	{
 		"login": "bor0",
@@ -2223,7 +2223,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-07-31T02:26:20.468Z"
+	"updatedAt": "2026-07-31T08:43:47.273Z"
 };
 
 	function person(id) {
