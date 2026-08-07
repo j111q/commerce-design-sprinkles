@@ -1670,6 +1670,20 @@
 
 	const OPEN = [
 	{
+		"title": "[Email Editor] Fix spacing below block email buttons",
+		"repo": "woocommerce/woocommerce",
+		"number": 67466,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67466",
+		"area": "Emails",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1786085768000
+	},
+	{
 		"title": "Fix long product name overflow in the order Add products modal",
 		"repo": "woocommerce/woocommerce",
 		"number": 67183,
@@ -2237,7 +2251,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-07T02:27:50.726Z"
+	"updatedAt": "2026-08-07T07:08:38.121Z"
 };
 
 	function person(id) {
