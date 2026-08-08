@@ -1681,7 +1681,7 @@
 		],
 		"reviewers": [],
 		"status": "Approved",
-		"ts": 1786107502000
+		"ts": 1786130000000
 	},
 	{
 		"title": "Fix long product name overflow in the order Add products modal",
@@ -2251,7 +2251,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-07T18:50:00.481Z"
+	"updatedAt": "2026-08-08T01:15:34.688Z"
 };
 
 	function person(id) {
