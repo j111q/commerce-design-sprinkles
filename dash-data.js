@@ -71,6 +71,20 @@
 
 	const MERGED = [
 	{
+		"title": "[Email Editor] Fix spacing below block email buttons",
+		"repo": "woocommerce/woocommerce",
+		"number": 67466,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67466",
+		"area": "Emails",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1786332414000,
+		"fresh": true
+	},
+	{
 		"title": "Clean up shipping method title test coverage",
 		"repo": "woocommerce/woocommerce",
 		"number": 67006,
@@ -1670,20 +1684,6 @@
 
 	const OPEN = [
 	{
-		"title": "[Email Editor] Fix spacing below block email buttons",
-		"repo": "woocommerce/woocommerce",
-		"number": 67466,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67466",
-		"area": "Emails",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1786294413000
-	},
-	{
 		"title": "Fix long product name overflow in the order Add products modal",
 		"repo": "woocommerce/woocommerce",
 		"number": 67183,
@@ -1927,15 +1927,15 @@
 		"count": 7
 	},
 	{
+		"name": "Emails",
+		"count": 4
+	},
+	{
 		"name": "Payments",
 		"count": 4
 	},
 	{
 		"name": "Analytics",
-		"count": 3
-	},
-	{
-		"name": "Emails",
 		"count": 3
 	},
 	{
@@ -1965,12 +1965,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 114,
+	"merged": 115,
 	"surfaces": 13,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 72,
+	"mergedPublic": 73,
 	"privateMerged": 5,
 	"privateUpdated": "2026-08-09"
 };
@@ -2145,6 +2145,14 @@
 		"latestAt": "2026-06-30T10:50:39.000Z"
 	},
 	{
+		"login": "costasovo",
+		"avatar": "https://avatars.githubusercontent.com/u/1082140?v=4",
+		"url": "https://github.com/costasovo",
+		"reviewedPrs": 1,
+		"approvals": 1,
+		"latestAt": "2026-08-07T19:13:20.000Z"
+	},
+	{
 		"login": "eason9487",
 		"avatar": "https://avatars.githubusercontent.com/u/17420811?u=ababe0130f7a2cf3aad2d9ee3dd523172eb91b15&v=4",
 		"url": "https://github.com/eason9487",
@@ -2217,6 +2225,14 @@
 		"latestAt": "2026-05-08T09:48:40.000Z"
 	},
 	{
+		"login": "yuliyan",
+		"avatar": "https://avatars.githubusercontent.com/u/2722412?v=4",
+		"url": "https://github.com/yuliyan",
+		"reviewedPrs": 1,
+		"approvals": 0,
+		"latestAt": "2026-08-09T16:53:33.000Z"
+	},
+	{
 		"login": "beaulebens",
 		"avatar": "https://avatars.githubusercontent.com/u/108942?v=4",
 		"url": "https://github.com/beaulebens",
@@ -2251,7 +2267,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-10T01:22:20.029Z"
+	"updatedAt": "2026-08-10T07:23:55.239Z"
 };
 
 	function person(id) {
