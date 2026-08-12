@@ -1906,20 +1906,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1779176538000
-	},
-	{
-		"title": "[Sandbox] Order edit page UI explorations (not for review/merge)",
-		"repo": "woocommerce/woocommerce",
-		"number": 64626,
-		"url": "https://github.com/woocommerce/woocommerce/pull/64626",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1778012568000
 	}
 ];
 
@@ -2281,7 +2267,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-12T12:59:31.142Z"
+	"updatedAt": "2026-08-12T18:56:24.814Z"
 };
 
 	function person(id) {
