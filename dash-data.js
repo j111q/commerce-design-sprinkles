@@ -1684,6 +1684,20 @@
 
 	const OPEN = [
 	{
+		"title": "[Email Editor] Fix social links spacing in rendered emails",
+		"repo": "woocommerce/woocommerce",
+		"number": 67642,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67642",
+		"area": "Emails",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1786509252000
+	},
+	{
 		"title": "Fix long product name overflow in the order Add products modal",
 		"repo": "woocommerce/woocommerce",
 		"number": 67183,
@@ -2267,7 +2281,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-12T01:28:48.880Z"
+	"updatedAt": "2026-08-12T07:18:13.589Z"
 };
 
 	function person(id) {
