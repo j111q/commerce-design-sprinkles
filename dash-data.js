@@ -1695,7 +1695,49 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1786684843000
+		"ts": 1786708222000
+	},
+	{
+		"title": "Add skip action to Things to do next tasks",
+		"repo": "woocommerce/woocommerce",
+		"number": 66199,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66199",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1786700840000
+	},
+	{
+		"title": "Editor: Enhance classic editor timestamp fields with native controls (continues #12275)",
+		"repo": "WordPress/wordpress-develop",
+		"number": 13050,
+		"url": "https://github.com/WordPress/wordpress-develop/pull/13050",
+		"area": "WordPress",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1786700637000
+	},
+	{
+		"title": "Enhance classic editor timestamp fields with native controls",
+		"repo": "WordPress/wordpress-develop",
+		"number": 12275,
+		"url": "https://github.com/WordPress/wordpress-develop/pull/12275",
+		"area": "WordPress",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1786698483000
 	},
 	{
 		"title": "Fix long product name overflow in the order Add products modal",
@@ -1740,20 +1782,6 @@
 		"ts": 1784697926000
 	},
 	{
-		"title": "Enhance classic editor timestamp fields with native controls",
-		"repo": "WordPress/wordpress-develop",
-		"number": 12275,
-		"url": "https://github.com/WordPress/wordpress-develop/pull/12275",
-		"area": "WordPress",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1783516591000
-	},
-	{
 		"title": "Administration: Add box reordering toggle to Screen Options.",
 		"repo": "WordPress/wordpress-develop",
 		"number": 12180,
@@ -1766,20 +1794,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1783515835000
-	},
-	{
-		"title": "Add skip action to Things to do next tasks",
-		"repo": "woocommerce/woocommerce",
-		"number": 66199,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66199",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1783408368000
 	},
 	{
 		"title": "Administration: Improve dashboard meta box control visuals",
@@ -2267,7 +2281,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-14T08:09:22.527Z"
+	"updatedAt": "2026-08-14T12:56:25.960Z"
 };
 
 	function person(id) {
