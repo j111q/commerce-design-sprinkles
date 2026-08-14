@@ -1684,6 +1684,48 @@
 
 	const OPEN = [
 	{
+		"title": "Let themes size the Order Confirmation section headings",
+		"repo": "woocommerce/woocommerce",
+		"number": 67743,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67743",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"filipe"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1786723711000
+	},
+	{
+		"title": "Fix disabled buttons not looking disabled in cart and checkout",
+		"repo": "woocommerce/woocommerce",
+		"number": 67738,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67738",
+		"area": "Checkout",
+		"flagged": false,
+		"authors": [
+			"filipe"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1786721848000
+	},
+	{
+		"title": "Fix oversized gap between core profiler buttons on mobile",
+		"repo": "woocommerce/woocommerce",
+		"number": 67729,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67729",
+		"area": "Onboarding",
+		"flagged": false,
+		"authors": [
+			"filipe"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1786716519000
+	},
+	{
 		"title": "[Email Editor] Fix social links spacing in rendered emails",
 		"repo": "woocommerce/woocommerce",
 		"number": 67642,
@@ -2281,7 +2323,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-14T12:56:25.960Z"
+	"updatedAt": "2026-08-14T18:47:05.987Z"
 };
 
 	function person(id) {
