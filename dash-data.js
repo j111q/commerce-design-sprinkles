@@ -1712,6 +1712,20 @@
 
 	const OPEN = [
 	{
+		"title": "Fix misleading error copy on the admin NoMatch screen",
+		"repo": "woocommerce/woocommerce",
+		"number": 67779,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67779",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"filipe"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1786983459000
+	},
+	{
 		"title": "Keep the \"+N more\" badge on the same line to even out Analytics rows",
 		"repo": "woocommerce/woocommerce",
 		"number": 67765,
@@ -2345,7 +2359,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-17T12:35:16.174Z"
+	"updatedAt": "2026-08-17T18:32:46.264Z"
 };
 
 	function person(id) {
