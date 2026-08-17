@@ -1684,6 +1684,20 @@
 
 	const OPEN = [
 	{
+		"title": "Add skip action to Things to do next tasks",
+		"repo": "woocommerce/woocommerce",
+		"number": 66199,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66199",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1786952706000
+	},
+	{
 		"title": "[Email Editor] Fix social links spacing in rendered emails",
 		"repo": "woocommerce/woocommerce",
 		"number": 67642,
@@ -1696,20 +1710,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1786948470000
-	},
-	{
-		"title": "Add skip action to Things to do next tasks",
-		"repo": "woocommerce/woocommerce",
-		"number": 66199,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66199",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1786943204000
 	},
 	{
 		"title": "Let themes size the Order Confirmation section headings",
@@ -2028,7 +2028,7 @@
 	"mergedFlagged": 42,
 	"mergedPublic": 73,
 	"privateMerged": 5,
-	"privateUpdated": "2026-08-16"
+	"privateUpdated": "2026-08-17"
 };
 
 	const KUDOS = [
@@ -2323,7 +2323,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-17T06:44:11.409Z"
+	"updatedAt": "2026-08-17T07:45:57.791Z"
 };
 
 	function person(id) {
