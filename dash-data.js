@@ -1684,6 +1684,34 @@
 
 	const OPEN = [
 	{
+		"title": "[Email Editor] Fix social links spacing in rendered emails",
+		"repo": "woocommerce/woocommerce",
+		"number": 67642,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67642",
+		"area": "Emails",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1786948470000
+	},
+	{
+		"title": "Add skip action to Things to do next tasks",
+		"repo": "woocommerce/woocommerce",
+		"number": 66199,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66199",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1786943204000
+	},
+	{
 		"title": "Let themes size the Order Confirmation section headings",
 		"repo": "woocommerce/woocommerce",
 		"number": 67743,
@@ -1724,34 +1752,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1786716519000
-	},
-	{
-		"title": "[Email Editor] Fix social links spacing in rendered emails",
-		"repo": "woocommerce/woocommerce",
-		"number": 67642,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67642",
-		"area": "Emails",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1786708222000
-	},
-	{
-		"title": "Add skip action to Things to do next tasks",
-		"repo": "woocommerce/woocommerce",
-		"number": 66199,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66199",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1786700840000
 	},
 	{
 		"title": "Editor: Enhance classic editor timestamp fields with native controls (continues #12275)",
@@ -2323,7 +2323,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-17T01:00:48.851Z"
+	"updatedAt": "2026-08-17T06:44:11.409Z"
 };
 
 	function person(id) {
