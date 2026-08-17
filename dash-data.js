@@ -71,6 +71,34 @@
 
 	const MERGED = [
 	{
+		"title": "Fix long product name overflow in the order Add products modal",
+		"repo": "woocommerce/woocommerce",
+		"number": 67183,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67183",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"ts": 1786967494000,
+		"fresh": true
+	},
+	{
+		"title": "[Email Editor] Fix social links spacing in rendered emails",
+		"repo": "woocommerce/woocommerce",
+		"number": 67642,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67642",
+		"area": "Emails",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1786964659000,
+		"fresh": true
+	},
+	{
 		"title": "[Email Editor] Fix spacing below block email buttons",
 		"repo": "woocommerce/woocommerce",
 		"number": 67466,
@@ -1684,6 +1712,48 @@
 
 	const OPEN = [
 	{
+		"title": "Keep the \"+N more\" badge on the same line to even out Analytics rows",
+		"repo": "woocommerce/woocommerce",
+		"number": 67765,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67765",
+		"area": "Analytics",
+		"flagged": false,
+		"authors": [
+			"filipe"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1786967152000
+	},
+	{
+		"title": "Add search and pagination to order tax modal",
+		"repo": "woocommerce/woocommerce",
+		"number": 66039,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66039",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Approved",
+		"ts": 1786966994000
+	},
+	{
+		"title": "Editor: Enhance classic editor timestamp fields with native controls (continues #12275)",
+		"repo": "WordPress/wordpress-develop",
+		"number": 13050,
+		"url": "https://github.com/WordPress/wordpress-develop/pull/13050",
+		"area": "WordPress",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1786959098000
+	},
+	{
 		"title": "Add skip action to Things to do next tasks",
 		"repo": "woocommerce/woocommerce",
 		"number": 66199,
@@ -1695,21 +1765,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1786952706000
-	},
-	{
-		"title": "[Email Editor] Fix social links spacing in rendered emails",
-		"repo": "woocommerce/woocommerce",
-		"number": 67642,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67642",
-		"area": "Emails",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1786948470000
+		"ts": 1786957414000
 	},
 	{
 		"title": "Let themes size the Order Confirmation section headings",
@@ -1754,20 +1810,6 @@
 		"ts": 1786716519000
 	},
 	{
-		"title": "Editor: Enhance classic editor timestamp fields with native controls (continues #12275)",
-		"repo": "WordPress/wordpress-develop",
-		"number": 13050,
-		"url": "https://github.com/WordPress/wordpress-develop/pull/13050",
-		"area": "WordPress",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1786700637000
-	},
-	{
 		"title": "Enhance classic editor timestamp fields with native controls",
 		"repo": "WordPress/wordpress-develop",
 		"number": 12275,
@@ -1780,34 +1822,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1786698483000
-	},
-	{
-		"title": "Fix long product name overflow in the order Add products modal",
-		"repo": "woocommerce/woocommerce",
-		"number": 67183,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67183",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1785854312000
-	},
-	{
-		"title": "Add search and pagination to order tax modal",
-		"repo": "woocommerce/woocommerce",
-		"number": 66039,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66039",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1784899654000
 	},
 	{
 		"title": "Administration: Add box reordering toggle to Screen Options.",
@@ -1968,7 +1982,7 @@
 	const AREAS = [
 	{
 		"name": "Products & catalog",
-		"count": 44
+		"count": 45
 	},
 	{
 		"name": "Other admin",
@@ -1984,7 +1998,7 @@
 	},
 	{
 		"name": "Emails",
-		"count": 4
+		"count": 5
 	},
 	{
 		"name": "Payments",
@@ -2021,12 +2035,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 115,
+	"merged": 117,
 	"surfaces": 13,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 73,
+	"mergedPublic": 75,
 	"privateMerged": 5,
 	"privateUpdated": "2026-08-17"
 };
@@ -2073,20 +2087,20 @@
 		"latestAt": "2026-05-22T08:34:53.000Z"
 	},
 	{
+		"login": "jorgeatorres",
+		"avatar": "https://avatars.githubusercontent.com/u/184724?u=04d9507fd3e519c04c272ab4e3c6f70566b1ab92&v=4",
+		"url": "https://github.com/jorgeatorres",
+		"reviewedPrs": 7,
+		"approvals": 6,
+		"latestAt": "2026-08-17T11:51:23.000Z"
+	},
+	{
 		"login": "Ferdev",
 		"avatar": "https://avatars.githubusercontent.com/u/130142?v=4",
 		"url": "https://github.com/Ferdev",
 		"reviewedPrs": 6,
 		"approvals": 6,
 		"latestAt": "2026-07-24T14:48:10.000Z"
-	},
-	{
-		"login": "jorgeatorres",
-		"avatar": "https://avatars.githubusercontent.com/u/184724?u=04d9507fd3e519c04c272ab4e3c6f70566b1ab92&v=4",
-		"url": "https://github.com/jorgeatorres",
-		"reviewedPrs": 6,
-		"approvals": 5,
-		"latestAt": "2026-07-29T10:42:56.000Z"
 	},
 	{
 		"login": "robcmcdowall",
@@ -2199,6 +2213,14 @@
 		"reviewedPrs": 2,
 		"approvals": 0,
 		"latestAt": "2026-06-30T10:50:39.000Z"
+	},
+	{
+		"login": "triple0t",
+		"avatar": "https://avatars.githubusercontent.com/u/30554163?u=e207c3ff41a5ece88340a3db9ae64bd697d68301&v=4",
+		"url": "https://github.com/triple0t",
+		"reviewedPrs": 1,
+		"approvals": 1,
+		"latestAt": "2026-08-17T11:02:51.000Z"
 	},
 	{
 		"login": "costasovo",
@@ -2323,7 +2345,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-17T07:45:57.791Z"
+	"updatedAt": "2026-08-17T12:35:16.174Z"
 };
 
 	function person(id) {
