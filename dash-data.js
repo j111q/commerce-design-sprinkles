@@ -71,6 +71,20 @@
 
 	const MERGED = [
 	{
+		"title": "[Email Editor] Fix locale-sensitive pill padding",
+		"repo": "woocommerce/woocommerce",
+		"number": 67790,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67790",
+		"area": "Emails",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"ts": 1787044443000,
+		"fresh": true
+	},
+	{
 		"title": "Fix long product name overflow in the order Add products modal",
 		"repo": "woocommerce/woocommerce",
 		"number": 67183,
@@ -1712,32 +1726,18 @@
 
 	const OPEN = [
 	{
-		"title": "[Email Editor] Fix locale-sensitive pill padding",
+		"title": "Name the conflicting product in SKU uniqueness errors",
 		"repo": "woocommerce/woocommerce",
-		"number": 67790,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67790",
-		"area": "Emails",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1787035899000
-	},
-	{
-		"title": "Keep the \"+N more\" badge on the same line to even out Analytics rows",
-		"repo": "woocommerce/woocommerce",
-		"number": 67765,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67765",
-		"area": "Analytics",
+		"number": 67810,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67810",
+		"area": "Products & catalog",
 		"flagged": false,
 		"authors": [
 			"filipe"
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1787033651000
+		"ts": 1787056010000
 	},
 	{
 		"title": "Fix misleading error copy on the admin NoMatch screen",
@@ -1751,7 +1751,35 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1787021897000
+		"ts": 1787054917000
+	},
+	{
+		"title": "Add stock notification emails as WC_Email classes",
+		"repo": "woocommerce/woocommerce",
+		"number": 67808,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67808",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1787051566000
+	},
+	{
+		"title": "Keep the \"+N more\" badge on the same line to even out Analytics rows",
+		"repo": "woocommerce/woocommerce",
+		"number": 67765,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67765",
+		"area": "Analytics",
+		"flagged": false,
+		"authors": [
+			"filipe"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1787045153000
 	},
 	{
 		"title": "Add search and pagination to order tax modal",
@@ -2026,7 +2054,7 @@
 	},
 	{
 		"name": "Emails",
-		"count": 5
+		"count": 6
 	},
 	{
 		"name": "Payments",
@@ -2063,12 +2091,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 117,
+	"merged": 118,
 	"surfaces": 13,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 75,
+	"mergedPublic": 76,
 	"privateMerged": 5,
 	"privateUpdated": "2026-08-18"
 };
@@ -2171,6 +2199,14 @@
 		"latestAt": "2026-07-16T17:51:53.000Z"
 	},
 	{
+		"login": "triple0t",
+		"avatar": "https://avatars.githubusercontent.com/u/30554163?u=e207c3ff41a5ece88340a3db9ae64bd697d68301&v=4",
+		"url": "https://github.com/triple0t",
+		"reviewedPrs": 2,
+		"approvals": 2,
+		"latestAt": "2026-08-18T08:57:30.000Z"
+	},
+	{
 		"login": "m1r0",
 		"avatar": "https://avatars.githubusercontent.com/u/1612178?u=5590e563adb88885fea6c5d4ab9dd1798bd3a8fa&v=4",
 		"url": "https://github.com/m1r0",
@@ -2241,14 +2277,6 @@
 		"reviewedPrs": 2,
 		"approvals": 0,
 		"latestAt": "2026-06-30T10:50:39.000Z"
-	},
-	{
-		"login": "triple0t",
-		"avatar": "https://avatars.githubusercontent.com/u/30554163?u=e207c3ff41a5ece88340a3db9ae64bd697d68301&v=4",
-		"url": "https://github.com/triple0t",
-		"reviewedPrs": 1,
-		"approvals": 1,
-		"latestAt": "2026-08-17T11:02:51.000Z"
 	},
 	{
 		"login": "costasovo",
@@ -2373,7 +2401,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-18T07:32:12.280Z"
+	"updatedAt": "2026-08-18T12:36:57.927Z"
 };
 
 	function person(id) {
