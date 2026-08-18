@@ -1712,20 +1712,6 @@
 
 	const OPEN = [
 	{
-		"title": "Fix misleading error copy on the admin NoMatch screen",
-		"repo": "woocommerce/woocommerce",
-		"number": 67779,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67779",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"filipe"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1786983459000
-	},
-	{
 		"title": "Keep the \"+N more\" badge on the same line to even out Analytics rows",
 		"repo": "woocommerce/woocommerce",
 		"number": 67765,
@@ -1737,7 +1723,35 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1786967152000
+		"ts": 1787033651000
+	},
+	{
+		"title": "[Email Editor] Fix locale-sensitive pill padding",
+		"repo": "woocommerce/woocommerce",
+		"number": 67790,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67790",
+		"area": "Emails",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1787032300000
+	},
+	{
+		"title": "Fix misleading error copy on the admin NoMatch screen",
+		"repo": "woocommerce/woocommerce",
+		"number": 67779,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67779",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"filipe"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1787021897000
 	},
 	{
 		"title": "Add search and pagination to order tax modal",
@@ -2359,7 +2373,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-18T00:58:43.286Z"
+	"updatedAt": "2026-08-18T06:35:58.628Z"
 };
 
 	function person(id) {
