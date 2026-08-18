@@ -1712,6 +1712,20 @@
 
 	const OPEN = [
 	{
+		"title": "[Email Editor] Fix locale-sensitive pill padding",
+		"repo": "woocommerce/woocommerce",
+		"number": 67790,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67790",
+		"area": "Emails",
+		"flagged": false,
+		"authors": [
+			"ann"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1787035899000
+	},
+	{
 		"title": "Keep the \"+N more\" badge on the same line to even out Analytics rows",
 		"repo": "woocommerce/woocommerce",
 		"number": 67765,
@@ -1724,20 +1738,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1787033651000
-	},
-	{
-		"title": "[Email Editor] Fix locale-sensitive pill padding",
-		"repo": "woocommerce/woocommerce",
-		"number": 67790,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67790",
-		"area": "Emails",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1787032300000
 	},
 	{
 		"title": "Fix misleading error copy on the admin NoMatch screen",
@@ -2070,7 +2070,7 @@
 	"mergedFlagged": 42,
 	"mergedPublic": 75,
 	"privateMerged": 5,
-	"privateUpdated": "2026-08-17"
+	"privateUpdated": "2026-08-18"
 };
 
 	const KUDOS = [
@@ -2373,7 +2373,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-18T06:35:58.628Z"
+	"updatedAt": "2026-08-18T07:32:12.280Z"
 };
 
 	function person(id) {
