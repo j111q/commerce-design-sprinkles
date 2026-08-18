@@ -1726,6 +1726,48 @@
 
 	const OPEN = [
 	{
+		"title": "Add search and pagination to order tax modal",
+		"repo": "woocommerce/woocommerce",
+		"number": 66039,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66039",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Approved",
+		"ts": 1787065990000
+	},
+	{
+		"title": "Add translator context to the Orders list Status column",
+		"repo": "woocommerce/woocommerce",
+		"number": 67816,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67816",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"filipe"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1787059988000
+	},
+	{
+		"title": "Add stock notification emails as WC_Email classes",
+		"repo": "woocommerce/woocommerce",
+		"number": 67808,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67808",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1787059783000
+	},
+	{
 		"title": "Name the conflicting product in SKU uniqueness errors",
 		"repo": "woocommerce/woocommerce",
 		"number": 67810,
@@ -1754,20 +1796,6 @@
 		"ts": 1787054917000
 	},
 	{
-		"title": "Add stock notification emails as WC_Email classes",
-		"repo": "woocommerce/woocommerce",
-		"number": 67808,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67808",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1787051566000
-	},
-	{
 		"title": "Keep the \"+N more\" badge on the same line to even out Analytics rows",
 		"repo": "woocommerce/woocommerce",
 		"number": 67765,
@@ -1780,20 +1808,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1787045153000
-	},
-	{
-		"title": "Add search and pagination to order tax modal",
-		"repo": "woocommerce/woocommerce",
-		"number": 66039,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66039",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1786966994000
 	},
 	{
 		"title": "Editor: Enhance classic editor timestamp fields with native controls (continues #12275)",
@@ -2401,7 +2415,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-18T12:36:57.927Z"
+	"updatedAt": "2026-08-18T18:31:21.053Z"
 };
 
 	function person(id) {
