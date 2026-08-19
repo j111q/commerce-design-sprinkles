@@ -1726,6 +1726,20 @@
 
 	const OPEN = [
 	{
+		"title": "Name the conflicting product in SKU uniqueness errors",
+		"repo": "woocommerce/woocommerce",
+		"number": 67810,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67810",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"filipe"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1787143284000
+	},
+	{
 		"title": "Add skip action to Things to do next tasks",
 		"repo": "woocommerce/woocommerce",
 		"number": 66199,
@@ -1794,20 +1808,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1787059783000
-	},
-	{
-		"title": "Name the conflicting product in SKU uniqueness errors",
-		"repo": "woocommerce/woocommerce",
-		"number": 67810,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67810",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"filipe"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1787056010000
 	},
 	{
 		"title": "Fix misleading error copy on the admin NoMatch screen",
@@ -2415,7 +2415,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-19T12:37:37.103Z"
+	"updatedAt": "2026-08-19T18:28:11.190Z"
 };
 
 	function person(id) {
