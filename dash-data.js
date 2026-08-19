@@ -1726,6 +1726,34 @@
 
 	const OPEN = [
 	{
+		"title": "Add skip action to Things to do next tasks",
+		"repo": "woocommerce/woocommerce",
+		"number": 66199,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66199",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1787135826000
+	},
+	{
+		"title": "Keep the \"+N more\" badge on the same line to even out Analytics rows",
+		"repo": "woocommerce/woocommerce",
+		"number": 67765,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67765",
+		"area": "Analytics",
+		"flagged": false,
+		"authors": [
+			"filipe"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1787128382000
+	},
+	{
 		"title": "Add search and pagination to order tax modal",
 		"repo": "woocommerce/woocommerce",
 		"number": 66039,
@@ -1796,20 +1824,6 @@
 		"ts": 1787054917000
 	},
 	{
-		"title": "Keep the \"+N more\" badge on the same line to even out Analytics rows",
-		"repo": "woocommerce/woocommerce",
-		"number": 67765,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67765",
-		"area": "Analytics",
-		"flagged": false,
-		"authors": [
-			"filipe"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1787045153000
-	},
-	{
 		"title": "Editor: Enhance classic editor timestamp fields with native controls (continues #12275)",
 		"repo": "WordPress/wordpress-develop",
 		"number": 13050,
@@ -1822,20 +1836,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1786959098000
-	},
-	{
-		"title": "Add skip action to Things to do next tasks",
-		"repo": "woocommerce/woocommerce",
-		"number": 66199,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66199",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1786957414000
 	},
 	{
 		"title": "Let themes size the Order Confirmation section headings",
@@ -2415,7 +2415,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-19T07:32:54.270Z"
+	"updatedAt": "2026-08-19T12:37:37.103Z"
 };
 
 	function person(id) {
