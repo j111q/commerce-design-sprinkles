@@ -1726,6 +1726,20 @@
 
 	const OPEN = [
 	{
+		"title": "Add search and pagination to order tax modal",
+		"repo": "woocommerce/woocommerce",
+		"number": 66039,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66039",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1787186246000
+	},
+	{
 		"title": "Name the conflicting product in SKU uniqueness errors",
 		"repo": "woocommerce/woocommerce",
 		"number": 67810,
@@ -1766,20 +1780,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1787128382000
-	},
-	{
-		"title": "Add search and pagination to order tax modal",
-		"repo": "woocommerce/woocommerce",
-		"number": 66039,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66039",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1787112469000
 	},
 	{
 		"title": "Add translator context to the Orders list Status column",
@@ -2415,7 +2415,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-19T18:28:11.190Z"
+	"updatedAt": "2026-08-20T00:59:18.066Z"
 };
 
 	function person(id) {
