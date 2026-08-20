@@ -96,7 +96,7 @@
 		],
 		"reviewers": [],
 		"ts": 1786967494000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "[Email Editor] Fix social links spacing in rendered emails",
@@ -110,7 +110,7 @@
 		],
 		"reviewers": [],
 		"ts": 1786964659000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "[Email Editor] Fix spacing below block email buttons",
@@ -1726,6 +1726,20 @@
 
 	const OPEN = [
 	{
+		"title": "Name the conflicting product in SKU uniqueness errors",
+		"repo": "woocommerce/woocommerce",
+		"number": 67810,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67810",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"filipe"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1787216100000
+	},
+	{
 		"title": "Add search and pagination to order tax modal",
 		"repo": "woocommerce/woocommerce",
 		"number": 66039,
@@ -1738,20 +1752,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1787186246000
-	},
-	{
-		"title": "Name the conflicting product in SKU uniqueness errors",
-		"repo": "woocommerce/woocommerce",
-		"number": 67810,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67810",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"filipe"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1787143284000
 	},
 	{
 		"title": "Add skip action to Things to do next tasks",
@@ -2415,7 +2415,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-20T07:35:23.276Z"
+	"updatedAt": "2026-08-20T12:38:58.335Z"
 };
 
 	function person(id) {
