@@ -71,6 +71,20 @@
 
 	const MERGED = [
 	{
+		"title": "Fix disabled buttons not looking disabled in cart and checkout",
+		"repo": "woocommerce/woocommerce",
+		"number": 67738,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67738",
+		"area": "Checkout",
+		"flagged": false,
+		"authors": [
+			"filipe"
+		],
+		"reviewers": [],
+		"ts": 1787244807000,
+		"fresh": true
+	},
+	{
 		"title": "[Email Editor] Fix locale-sensitive pill padding",
 		"repo": "woocommerce/woocommerce",
 		"number": 67790,
@@ -1852,20 +1866,6 @@
 		"ts": 1786723711000
 	},
 	{
-		"title": "Fix disabled buttons not looking disabled in cart and checkout",
-		"repo": "woocommerce/woocommerce",
-		"number": 67738,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67738",
-		"area": "Checkout",
-		"flagged": false,
-		"authors": [
-			"filipe"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1786721848000
-	},
-	{
 		"title": "Fix oversized gap between core profiler buttons on mobile",
 		"repo": "woocommerce/woocommerce",
 		"number": 67729,
@@ -2095,6 +2095,10 @@
 		"count": 2
 	},
 	{
+		"name": "Checkout",
+		"count": 1
+	},
+	{
 		"name": "Coupons",
 		"count": 1
 	},
@@ -2105,12 +2109,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 118,
-	"surfaces": 13,
+	"merged": 119,
+	"surfaces": 14,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 76,
+	"mergedPublic": 77,
 	"privateMerged": 5,
 	"privateUpdated": "2026-08-20"
 };
@@ -2293,6 +2297,14 @@
 		"latestAt": "2026-06-30T10:50:39.000Z"
 	},
 	{
+		"login": "senadir",
+		"avatar": "https://avatars.githubusercontent.com/u/6165348?u=9e58496c7aba4f16a9cfd0de1072ccf116a3773f&v=4",
+		"url": "https://github.com/senadir",
+		"reviewedPrs": 1,
+		"approvals": 1,
+		"latestAt": "2026-08-20T16:53:18.000Z"
+	},
+	{
 		"login": "costasovo",
 		"avatar": "https://avatars.githubusercontent.com/u/1082140?v=4",
 		"url": "https://github.com/costasovo",
@@ -2415,7 +2427,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-20T12:38:58.335Z"
+	"updatedAt": "2026-08-20T18:32:44.947Z"
 };
 
 	function person(id) {
