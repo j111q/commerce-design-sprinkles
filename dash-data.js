@@ -96,7 +96,7 @@
 		],
 		"reviewers": [],
 		"ts": 1787044443000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "Fix long product name overflow in the order Add products modal",
@@ -1740,6 +1740,20 @@
 
 	const OPEN = [
 	{
+		"title": "Add skip action to Things to do next tasks",
+		"repo": "woocommerce/woocommerce",
+		"number": 66199,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66199",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1787302925000
+	},
+	{
 		"title": "Name the conflicting product in SKU uniqueness errors",
 		"repo": "woocommerce/woocommerce",
 		"number": 67810,
@@ -1766,20 +1780,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1787186246000
-	},
-	{
-		"title": "Add skip action to Things to do next tasks",
-		"repo": "woocommerce/woocommerce",
-		"number": 66199,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66199",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1787135826000
 	},
 	{
 		"title": "Keep the \"+N more\" badge on the same line to even out Analytics rows",
@@ -2427,7 +2427,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-21T07:37:23.019Z"
+	"updatedAt": "2026-08-21T12:37:54.745Z"
 };
 
 	function person(id) {
