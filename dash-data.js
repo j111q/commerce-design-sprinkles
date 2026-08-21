@@ -1740,6 +1740,20 @@
 
 	const OPEN = [
 	{
+		"title": "Fix dropdown icon overlap on WP 7.0+ admin screens",
+		"repo": "woocommerce/woocommerce",
+		"number": 67918,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67918",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1787325868000
+	},
+	{
 		"title": "Add skip action to Things to do next tasks",
 		"repo": "woocommerce/woocommerce",
 		"number": 66199,
@@ -2427,7 +2441,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-21T12:37:54.745Z"
+	"updatedAt": "2026-08-21T18:30:35.933Z"
 };
 
 	function person(id) {
