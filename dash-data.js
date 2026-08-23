@@ -82,7 +82,7 @@
 		],
 		"reviewers": [],
 		"ts": 1787244807000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "[Email Editor] Fix locale-sensitive pill padding",
@@ -2441,7 +2441,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-23T12:31:08.124Z"
+	"updatedAt": "2026-08-23T18:22:18.775Z"
 };
 
 	function person(id) {
