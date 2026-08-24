@@ -71,6 +71,20 @@
 
 	const MERGED = [
 	{
+		"title": "Fix dropdown icon overlap on WP 7.0+ admin screens",
+		"repo": "woocommerce/woocommerce",
+		"number": 67918,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67918",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"ts": 1787574491000,
+		"fresh": true
+	},
+	{
 		"title": "Fix disabled buttons not looking disabled in cart and checkout",
 		"repo": "woocommerce/woocommerce",
 		"number": 67738,
@@ -1740,20 +1754,6 @@
 
 	const OPEN = [
 	{
-		"title": "Fix dropdown icon overlap on WP 7.0+ admin screens",
-		"repo": "woocommerce/woocommerce",
-		"number": 67918,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67918",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1787325868000
-	},
-	{
 		"title": "Add skip action to Things to do next tasks",
 		"repo": "woocommerce/woocommerce",
 		"number": 66199,
@@ -2070,7 +2070,7 @@
 	},
 	{
 		"name": "Other admin",
-		"count": 31
+		"count": 32
 	},
 	{
 		"name": "Shipping",
@@ -2123,12 +2123,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 119,
+	"merged": 120,
 	"surfaces": 14,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 77,
+	"mergedPublic": 78,
 	"privateMerged": 5,
 	"privateUpdated": "2026-08-24"
 };
@@ -2138,9 +2138,9 @@
 		"login": "gigitux",
 		"avatar": "https://avatars.githubusercontent.com/u/4463174?u=e62244f638a3dc7b760cf883bf3a15f62844f87c&v=4",
 		"url": "https://github.com/gigitux",
-		"reviewedPrs": 41,
-		"approvals": 39,
-		"latestAt": "2026-05-22T13:18:09.000Z"
+		"reviewedPrs": 42,
+		"approvals": 40,
+		"latestAt": "2026-08-24T12:24:52.000Z"
 	},
 	{
 		"login": "chihsuan",
@@ -2441,7 +2441,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-24T07:52:25.688Z"
+	"updatedAt": "2026-08-24T12:40:29.652Z"
 };
 
 	function person(id) {
