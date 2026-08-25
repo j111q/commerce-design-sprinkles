@@ -1754,6 +1754,34 @@
 
 	const OPEN = [
 	{
+		"title": "Add stock notification emails as WC_Email classes",
+		"repo": "woocommerce/woocommerce",
+		"number": 67808,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67808",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1787667936000
+	},
+	{
+		"title": "Add search and pagination to order tax modal",
+		"repo": "woocommerce/woocommerce",
+		"number": 66039,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66039",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1787667611000
+	},
+	{
 		"title": "Add skip action to Things to do next tasks",
 		"repo": "woocommerce/woocommerce",
 		"number": 66199,
@@ -1782,20 +1810,6 @@
 		"ts": 1787216100000
 	},
 	{
-		"title": "Add search and pagination to order tax modal",
-		"repo": "woocommerce/woocommerce",
-		"number": 66039,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66039",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1787186246000
-	},
-	{
 		"title": "Keep the \"+N more\" badge on the same line to even out Analytics rows",
 		"repo": "woocommerce/woocommerce",
 		"number": 67765,
@@ -1822,20 +1836,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1787059988000
-	},
-	{
-		"title": "Add stock notification emails as WC_Email classes",
-		"repo": "woocommerce/woocommerce",
-		"number": 67808,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67808",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1787059783000
 	},
 	{
 		"title": "Fix misleading error copy on the admin NoMatch screen",
@@ -2441,7 +2441,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-25T12:39:17.981Z"
+	"updatedAt": "2026-08-25T18:33:56.310Z"
 };
 
 	function person(id) {
