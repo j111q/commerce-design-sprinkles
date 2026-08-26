@@ -1754,6 +1754,20 @@
 
 	const OPEN = [
 	{
+		"title": "Add search and pagination to order tax modal",
+		"repo": "woocommerce/woocommerce",
+		"number": 66039,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66039",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1787745050000
+	},
+	{
 		"title": "Add stock notification emails as WC_Email classes",
 		"repo": "woocommerce/woocommerce",
 		"number": 67808,
@@ -1766,20 +1780,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1787667936000
-	},
-	{
-		"title": "Add search and pagination to order tax modal",
-		"repo": "woocommerce/woocommerce",
-		"number": 66039,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66039",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1787667611000
 	},
 	{
 		"title": "Add skip action to Things to do next tasks",
@@ -2441,7 +2441,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-26T07:40:18.472Z"
+	"updatedAt": "2026-08-26T12:42:33.655Z"
 };
 
 	function person(id) {
