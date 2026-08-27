@@ -82,7 +82,7 @@
 		],
 		"reviewers": [],
 		"ts": 1787574491000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "Fix disabled buttons not looking disabled in cart and checkout",
@@ -1754,6 +1754,34 @@
 
 	const OPEN = [
 	{
+		"title": "Analytics: add a setting to exclude free orders from report totals",
+		"repo": "woocommerce/woocommerce",
+		"number": 68075,
+		"url": "https://github.com/woocommerce/woocommerce/pull/68075",
+		"area": "Analytics",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1787842350000
+	},
+	{
+		"title": "Add stock notification emails as WC_Email classes",
+		"repo": "woocommerce/woocommerce",
+		"number": 67808,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67808",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1787841937000
+	},
+	{
 		"title": "Add skip action to Things to do next tasks",
 		"repo": "woocommerce/woocommerce",
 		"number": 66199,
@@ -1764,8 +1792,8 @@
 			"poli"
 		],
 		"reviewers": [],
-		"status": "Open",
-		"ts": 1787813626000
+		"status": "Approved",
+		"ts": 1787821032000
 	},
 	{
 		"title": "Add search and pagination to order tax modal",
@@ -1780,20 +1808,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1787745050000
-	},
-	{
-		"title": "Add stock notification emails as WC_Email classes",
-		"repo": "woocommerce/woocommerce",
-		"number": 67808,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67808",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1787667936000
 	},
 	{
 		"title": "Name the conflicting product in SKU uniqueness errors",
@@ -2130,7 +2144,7 @@
 	"mergedFlagged": 42,
 	"mergedPublic": 78,
 	"privateMerged": 5,
-	"privateUpdated": "2026-08-26"
+	"privateUpdated": "2026-08-27"
 };
 
 	const KUDOS = [
@@ -2441,7 +2455,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-27T07:00:52.579Z"
+	"updatedAt": "2026-08-27T18:01:33.222Z"
 };
 
 	function person(id) {
