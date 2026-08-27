@@ -1754,6 +1754,20 @@
 
 	const OPEN = [
 	{
+		"title": "Add skip action to Things to do next tasks",
+		"repo": "woocommerce/woocommerce",
+		"number": 66199,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66199",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1787813626000
+	},
+	{
 		"title": "Add search and pagination to order tax modal",
 		"repo": "woocommerce/woocommerce",
 		"number": 66039,
@@ -1780,20 +1794,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1787667936000
-	},
-	{
-		"title": "Add skip action to Things to do next tasks",
-		"repo": "woocommerce/woocommerce",
-		"number": 66199,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66199",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1787582010000
 	},
 	{
 		"title": "Name the conflicting product in SKU uniqueness errors",
@@ -2441,7 +2441,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-26T19:44:02.574Z"
+	"updatedAt": "2026-08-27T07:00:52.579Z"
 };
 
 	function person(id) {
