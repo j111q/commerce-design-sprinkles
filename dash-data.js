@@ -71,6 +71,20 @@
 
 	const MERGED = [
 	{
+		"title": "Add skip action to Things to do next tasks",
+		"repo": "woocommerce/woocommerce",
+		"number": 66199,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66199",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"ts": 1787899689000,
+		"fresh": true
+	},
+	{
 		"title": "Fix dropdown icon overlap on WP 7.0+ admin screens",
 		"repo": "woocommerce/woocommerce",
 		"number": 67918,
@@ -1782,20 +1796,6 @@
 		"ts": 1787841937000
 	},
 	{
-		"title": "Add skip action to Things to do next tasks",
-		"repo": "woocommerce/woocommerce",
-		"number": 66199,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66199",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1787821032000
-	},
-	{
 		"title": "Add search and pagination to order tax modal",
 		"repo": "woocommerce/woocommerce",
 		"number": 66039,
@@ -2084,7 +2084,7 @@
 	},
 	{
 		"name": "Other admin",
-		"count": 32
+		"count": 33
 	},
 	{
 		"name": "Shipping",
@@ -2137,12 +2137,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 120,
+	"merged": 121,
 	"surfaces": 14,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 78,
+	"mergedPublic": 79,
 	"privateMerged": 5,
 	"privateUpdated": "2026-08-27"
 };
@@ -2213,6 +2213,14 @@
 		"latestAt": "2026-06-18T14:54:14.000Z"
 	},
 	{
+		"login": "m1r0",
+		"avatar": "https://avatars.githubusercontent.com/u/1612178?u=5590e563adb88885fea6c5d4ab9dd1798bd3a8fa&v=4",
+		"url": "https://github.com/m1r0",
+		"reviewedPrs": 3,
+		"approvals": 3,
+		"latestAt": "2026-08-27T08:57:12.000Z"
+	},
+	{
 		"login": "dmallory42",
 		"avatar": "https://avatars.githubusercontent.com/u/11770181?u=6cffd497439a5032fdeda7281e630cacbc32c280&v=4",
 		"url": "https://github.com/dmallory42",
@@ -2253,14 +2261,6 @@
 		"latestAt": "2026-08-18T08:57:30.000Z"
 	},
 	{
-		"login": "m1r0",
-		"avatar": "https://avatars.githubusercontent.com/u/1612178?u=5590e563adb88885fea6c5d4ab9dd1798bd3a8fa&v=4",
-		"url": "https://github.com/m1r0",
-		"reviewedPrs": 2,
-		"approvals": 2,
-		"latestAt": "2026-07-07T07:54:12.000Z"
-	},
-	{
 		"login": "joedolson",
 		"avatar": "https://avatars.githubusercontent.com/u/1686451?u=f531f4549aab704d4ee535b43d89f86df63b0235&v=4",
 		"url": "https://github.com/joedolson",
@@ -2291,6 +2291,14 @@
 		"reviewedPrs": 2,
 		"approvals": 2,
 		"latestAt": "2026-04-24T08:07:07.000Z"
+	},
+	{
+		"login": "PanosSynetos",
+		"avatar": "https://avatars.githubusercontent.com/u/2484390?v=4",
+		"url": "https://github.com/PanosSynetos",
+		"reviewedPrs": 2,
+		"approvals": 1,
+		"latestAt": "2026-07-07T07:12:48.000Z"
 	},
 	{
 		"login": "bor0",
@@ -2373,14 +2381,6 @@
 		"latestAt": "2026-07-03T10:18:49.000Z"
 	},
 	{
-		"login": "PanosSynetos",
-		"avatar": "https://avatars.githubusercontent.com/u/2484390?u=686d5070a1fb733985ac8043984102117d505a9c&v=4",
-		"url": "https://github.com/PanosSynetos",
-		"reviewedPrs": 1,
-		"approvals": 1,
-		"latestAt": "2026-06-25T13:18:48.000Z"
-	},
-	{
 		"login": "kmanijak",
 		"avatar": "https://avatars.githubusercontent.com/u/20098064?u=90fe666e70c13d1826ae20946c920c264b18e42a&v=4",
 		"url": "https://github.com/kmanijak",
@@ -2455,7 +2455,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-27T21:40:11.617Z"
+	"updatedAt": "2026-08-28T08:48:41.976Z"
 };
 
 	function person(id) {
