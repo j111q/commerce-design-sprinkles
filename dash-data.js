@@ -1768,6 +1768,20 @@
 
 	const OPEN = [
 	{
+		"title": "Add search and pagination to order tax modal",
+		"repo": "woocommerce/woocommerce",
+		"number": 66039,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66039",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Approved",
+		"ts": 1787924078000
+	},
+	{
 		"title": "Analytics: add a setting to exclude free orders from report totals",
 		"repo": "woocommerce/woocommerce",
 		"number": 68075,
@@ -1794,20 +1808,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1787841937000
-	},
-	{
-		"title": "Add search and pagination to order tax modal",
-		"repo": "woocommerce/woocommerce",
-		"number": 66039,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66039",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1787745050000
 	},
 	{
 		"title": "Name the conflicting product in SKU uniqueness errors",
@@ -2144,7 +2144,7 @@
 	"mergedFlagged": 42,
 	"mergedPublic": 79,
 	"privateMerged": 5,
-	"privateUpdated": "2026-08-27"
+	"privateUpdated": "2026-08-28"
 };
 
 	const KUDOS = [
@@ -2455,7 +2455,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-28T08:48:41.976Z"
+	"updatedAt": "2026-08-28T19:11:24.562Z"
 };
 
 	function person(id) {
