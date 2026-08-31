@@ -1792,8 +1792,8 @@
 			"jana"
 		],
 		"reviewers": [],
-		"status": "Draft",
-		"ts": 1788178396000
+		"status": "Open",
+		"ts": 1788180644000
 	},
 	{
 		"title": "Do not confirm a modal on Enter from a button, link or select",
@@ -2172,7 +2172,7 @@
 	"mergedFlagged": 42,
 	"mergedPublic": 80,
 	"privateMerged": 5,
-	"privateUpdated": "2026-08-30"
+	"privateUpdated": "2026-08-31"
 };
 
 	const KUDOS = [
@@ -2483,7 +2483,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-31T12:33:47.997Z"
+	"updatedAt": "2026-08-31T22:21:40.898Z"
 };
 
 	function person(id) {
