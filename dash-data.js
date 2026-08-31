@@ -71,6 +71,20 @@
 
 	const MERGED = [
 	{
+		"title": "Add search and pagination to order tax modal",
+		"repo": "woocommerce/woocommerce",
+		"number": 66039,
+		"url": "https://github.com/woocommerce/woocommerce/pull/66039",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"ts": 1788170006000,
+		"fresh": true
+	},
+	{
 		"title": "Add skip action to Things to do next tasks",
 		"repo": "woocommerce/woocommerce",
 		"number": 66199,
@@ -82,7 +96,7 @@
 		],
 		"reviewers": [],
 		"ts": 1787899689000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "Fix dropdown icon overlap on WP 7.0+ admin screens",
@@ -1768,18 +1782,32 @@
 
 	const OPEN = [
 	{
-		"title": "Add search and pagination to order tax modal",
+		"title": "Rename the default Payment method option from N/A to All methods available",
 		"repo": "woocommerce/woocommerce",
-		"number": 66039,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66039",
-		"area": "Orders",
+		"number": 68187,
+		"url": "https://github.com/woocommerce/woocommerce/pull/68187",
+		"area": "Payments",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1788178396000
+	},
+	{
+		"title": "Do not confirm a modal on Enter from a button, link or select",
+		"repo": "woocommerce/woocommerce",
+		"number": 68185,
+		"url": "https://github.com/woocommerce/woocommerce/pull/68185",
+		"area": "Other admin",
 		"flagged": false,
 		"authors": [
 			"jill"
 		],
 		"reviewers": [],
-		"status": "Approved",
-		"ts": 1787924078000
+		"status": "Open",
+		"ts": 1788176316000
 	},
 	{
 		"title": "Analytics: add a setting to exclude free orders from report totals",
@@ -2092,7 +2120,7 @@
 	},
 	{
 		"name": "Orders",
-		"count": 7
+		"count": 8
 	},
 	{
 		"name": "Emails",
@@ -2137,12 +2165,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 121,
+	"merged": 122,
 	"surfaces": 14,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 79,
+	"mergedPublic": 80,
 	"privateMerged": 5,
 	"privateUpdated": "2026-08-30"
 };
@@ -2189,6 +2217,14 @@
 		"latestAt": "2026-05-22T08:34:53.000Z"
 	},
 	{
+		"login": "Ferdev",
+		"avatar": "https://avatars.githubusercontent.com/u/130142?v=4",
+		"url": "https://github.com/Ferdev",
+		"reviewedPrs": 7,
+		"approvals": 6,
+		"latestAt": "2026-08-26T11:50:50.000Z"
+	},
+	{
 		"login": "jorgeatorres",
 		"avatar": "https://avatars.githubusercontent.com/u/184724?u=04d9507fd3e519c04c272ab4e3c6f70566b1ab92&v=4",
 		"url": "https://github.com/jorgeatorres",
@@ -2197,12 +2233,20 @@
 		"latestAt": "2026-08-17T11:51:23.000Z"
 	},
 	{
-		"login": "Ferdev",
-		"avatar": "https://avatars.githubusercontent.com/u/130142?v=4",
-		"url": "https://github.com/Ferdev",
-		"reviewedPrs": 6,
-		"approvals": 6,
-		"latestAt": "2026-07-24T14:48:10.000Z"
+		"login": "tjcafferkey",
+		"avatar": "https://avatars.githubusercontent.com/u/8639742?u=8468454f62312af6c53fb31669b44a696cd54f21&v=4",
+		"url": "https://github.com/tjcafferkey",
+		"reviewedPrs": 4,
+		"approvals": 3,
+		"latestAt": "2026-08-28T13:34:38.000Z"
+	},
+	{
+		"login": "samnajian",
+		"avatar": "https://avatars.githubusercontent.com/u/789421?u=02f17ad708b24dea93c1293301ed3dca390285ec&v=4",
+		"url": "https://github.com/samnajian",
+		"reviewedPrs": 4,
+		"approvals": 2,
+		"latestAt": "2026-07-16T17:51:53.000Z"
 	},
 	{
 		"login": "robcmcdowall",
@@ -2235,22 +2279,6 @@
 		"reviewedPrs": 3,
 		"approvals": 3,
 		"latestAt": "2026-06-11T18:28:30.000Z"
-	},
-	{
-		"login": "tjcafferkey",
-		"avatar": "https://avatars.githubusercontent.com/u/8639742?u=8468454f62312af6c53fb31669b44a696cd54f21&v=4",
-		"url": "https://github.com/tjcafferkey",
-		"reviewedPrs": 3,
-		"approvals": 2,
-		"latestAt": "2026-07-30T10:44:00.000Z"
-	},
-	{
-		"login": "samnajian",
-		"avatar": "https://avatars.githubusercontent.com/u/789421?u=02f17ad708b24dea93c1293301ed3dca390285ec&v=4",
-		"url": "https://github.com/samnajian",
-		"reviewedPrs": 3,
-		"approvals": 2,
-		"latestAt": "2026-07-16T17:51:53.000Z"
 	},
 	{
 		"login": "triple0t",
@@ -2455,7 +2483,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-08-31T03:17:22.974Z"
+	"updatedAt": "2026-08-31T12:33:47.997Z"
 };
 
 	function person(id) {
