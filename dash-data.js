@@ -71,6 +71,20 @@
 
 	const MERGED = [
 	{
+		"title": "Rename the default Payment method option from N/A to All methods available",
+		"repo": "woocommerce/woocommerce",
+		"number": 68187,
+		"url": "https://github.com/woocommerce/woocommerce/pull/68187",
+		"area": "Payments",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"ts": 1788268292000,
+		"fresh": true
+	},
+	{
 		"title": "Add search and pagination to order tax modal",
 		"repo": "woocommerce/woocommerce",
 		"number": 66039,
@@ -1782,6 +1796,20 @@
 
 	const OPEN = [
 	{
+		"title": "Gate the restock checkbox on a refund quantity",
+		"repo": "woocommerce/woocommerce",
+		"number": 68230,
+		"url": "https://github.com/woocommerce/woocommerce/pull/68230",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1788271202000
+	},
+	{
 		"title": "Fix misleading error copy on the admin NoMatch screen",
 		"repo": "woocommerce/woocommerce",
 		"number": 67779,
@@ -1794,20 +1822,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1788253945000
-	},
-	{
-		"title": "Rename the default Payment method option from N/A to All methods available",
-		"repo": "woocommerce/woocommerce",
-		"number": 68187,
-		"url": "https://github.com/woocommerce/woocommerce/pull/68187",
-		"area": "Payments",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1788180644000
 	},
 	{
 		"title": "Analytics: add a setting to exclude free orders from report totals",
@@ -2114,7 +2128,7 @@
 	},
 	{
 		"name": "Payments",
-		"count": 4
+		"count": 5
 	},
 	{
 		"name": "Analytics",
@@ -2151,12 +2165,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 122,
+	"merged": 123,
 	"surfaces": 14,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 80,
+	"mergedPublic": 81,
 	"privateMerged": 5,
 	"privateUpdated": "2026-09-01"
 };
@@ -2347,6 +2361,14 @@
 		"latestAt": "2026-06-30T10:50:39.000Z"
 	},
 	{
+		"login": "opr",
+		"avatar": "https://avatars.githubusercontent.com/u/5656702?u=acc8c2931bf08be73732fea0d48457c8d72a1a0b&v=4",
+		"url": "https://github.com/opr",
+		"reviewedPrs": 1,
+		"approvals": 1,
+		"latestAt": "2026-09-01T12:54:19.000Z"
+	},
+	{
 		"login": "senadir",
 		"avatar": "https://avatars.githubusercontent.com/u/6165348?u=9e58496c7aba4f16a9cfd0de1072ccf116a3773f&v=4",
 		"url": "https://github.com/senadir",
@@ -2469,7 +2491,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-09-01T12:16:52.700Z"
+	"updatedAt": "2026-09-01T15:59:37.760Z"
 };
 
 	function person(id) {
