@@ -1782,6 +1782,20 @@
 
 	const OPEN = [
 	{
+		"title": "Fix misleading error copy on the admin NoMatch screen",
+		"repo": "woocommerce/woocommerce",
+		"number": 67779,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67779",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"filipe"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1788253945000
+	},
+	{
 		"title": "Rename the default Payment method option from N/A to All methods available",
 		"repo": "woocommerce/woocommerce",
 		"number": 68187,
@@ -1794,20 +1808,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1788180644000
-	},
-	{
-		"title": "Do not confirm a modal on Enter from a button, link or select",
-		"repo": "woocommerce/woocommerce",
-		"number": 68185,
-		"url": "https://github.com/woocommerce/woocommerce/pull/68185",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1788176316000
 	},
 	{
 		"title": "Analytics: add a setting to exclude free orders from report totals",
@@ -1878,20 +1878,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1787059988000
-	},
-	{
-		"title": "Fix misleading error copy on the admin NoMatch screen",
-		"repo": "woocommerce/woocommerce",
-		"number": 67779,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67779",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"filipe"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1787054917000
 	},
 	{
 		"title": "Editor: Enhance classic editor timestamp fields with native controls (continues #12275)",
@@ -2483,7 +2469,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-09-01T03:20:11.795Z"
+	"updatedAt": "2026-09-01T11:01:14.410Z"
 };
 
 	function person(id) {
