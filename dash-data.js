@@ -1796,6 +1796,20 @@
 
 	const OPEN = [
 	{
+		"title": "Keep the \"+N more\" badge on the same line to even out Analytics rows",
+		"repo": "woocommerce/woocommerce",
+		"number": 67765,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67765",
+		"area": "Analytics",
+		"flagged": false,
+		"authors": [
+			"filipe"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1788349652000
+	},
+	{
 		"title": "Gate the restock checkbox on a refund quantity",
 		"repo": "woocommerce/woocommerce",
 		"number": 68230,
@@ -1864,20 +1878,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1787216100000
-	},
-	{
-		"title": "Keep the \"+N more\" badge on the same line to even out Analytics rows",
-		"repo": "woocommerce/woocommerce",
-		"number": 67765,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67765",
-		"area": "Analytics",
-		"flagged": false,
-		"authors": [
-			"filipe"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1787128382000
 	},
 	{
 		"title": "Add translator context to the Orders list Status column",
@@ -2172,7 +2172,7 @@
 	"mergedFlagged": 42,
 	"mergedPublic": 81,
 	"privateMerged": 5,
-	"privateUpdated": "2026-09-01"
+	"privateUpdated": "2026-09-02"
 };
 
 	const KUDOS = [
@@ -2491,7 +2491,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-09-02T10:31:19.954Z"
+	"updatedAt": "2026-09-02T11:54:08.238Z"
 };
 
 	function person(id) {
