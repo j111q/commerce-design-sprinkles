@@ -1807,7 +1807,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1788407107000
+		"ts": 1788450616000
 	},
 	{
 		"title": "Gate the restock checkbox on a refund quantity",
@@ -2491,7 +2491,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-09-03T15:42:35.026Z"
+	"updatedAt": "2026-09-03T20:26:09.393Z"
 };
 
 	function person(id) {
