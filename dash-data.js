@@ -1810,20 +1810,6 @@
 		"ts": 1788450616000
 	},
 	{
-		"title": "Gate the restock checkbox on a refund quantity",
-		"repo": "woocommerce/woocommerce",
-		"number": 68230,
-		"url": "https://github.com/woocommerce/woocommerce/pull/68230",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1788289701000
-	},
-	{
 		"title": "Fix misleading error copy on the admin NoMatch screen",
 		"repo": "woocommerce/woocommerce",
 		"number": 67779,
@@ -2491,7 +2477,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-09-08T11:55:38.766Z"
+	"updatedAt": "2026-09-08T15:54:49.299Z"
 };
 
 	function person(id) {
