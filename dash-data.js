@@ -71,6 +71,34 @@
 
 	const MERGED = [
 	{
+		"title": "Fix oversized gap between core profiler buttons on mobile",
+		"repo": "woocommerce/woocommerce",
+		"number": 67729,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67729",
+		"area": "Onboarding",
+		"flagged": false,
+		"authors": [
+			"filipe"
+		],
+		"reviewers": [],
+		"ts": 1788968819000,
+		"fresh": true
+	},
+	{
+		"title": "Add translator context to the Orders list Status column",
+		"repo": "woocommerce/woocommerce",
+		"number": 67816,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67816",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"filipe"
+		],
+		"reviewers": [],
+		"ts": 1788962356000,
+		"fresh": true
+	},
+	{
 		"title": "Rename the default Payment method option from N/A to All methods available",
 		"repo": "woocommerce/woocommerce",
 		"number": 68187,
@@ -1796,6 +1824,34 @@
 
 	const OPEN = [
 	{
+		"title": "Let themes size the Order Confirmation section headings",
+		"repo": "woocommerce/woocommerce",
+		"number": 67743,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67743",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"filipe"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1788984503000
+	},
+	{
+		"title": "Add prev/next order navigation to Order detail page header",
+		"repo": "woocommerce/woocommerce",
+		"number": 64711,
+		"url": "https://github.com/woocommerce/woocommerce/pull/64711",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1788966360000
+	},
+	{
 		"title": "Keep the \"+N more\" badge on the same line to even out Analytics rows",
 		"repo": "woocommerce/woocommerce",
 		"number": 67765,
@@ -1866,20 +1922,6 @@
 		"ts": 1787216100000
 	},
 	{
-		"title": "Add translator context to the Orders list Status column",
-		"repo": "woocommerce/woocommerce",
-		"number": 67816,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67816",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"filipe"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1787059988000
-	},
-	{
 		"title": "Editor: Enhance classic editor timestamp fields with native controls (continues #12275)",
 		"repo": "WordPress/wordpress-develop",
 		"number": 13050,
@@ -1892,34 +1934,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1786959098000
-	},
-	{
-		"title": "Let themes size the Order Confirmation section headings",
-		"repo": "woocommerce/woocommerce",
-		"number": 67743,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67743",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"filipe"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1786723711000
-	},
-	{
-		"title": "Fix oversized gap between core profiler buttons on mobile",
-		"repo": "woocommerce/woocommerce",
-		"number": 67729,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67729",
-		"area": "Onboarding",
-		"flagged": false,
-		"authors": [
-			"filipe"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1786716519000
 	},
 	{
 		"title": "Enhance classic editor timestamp fields with native controls",
@@ -2048,20 +2062,6 @@
 		"ts": 1781779288000
 	},
 	{
-		"title": "Add prev/next order navigation to Order detail page header",
-		"repo": "woocommerce/woocommerce",
-		"number": 64711,
-		"url": "https://github.com/woocommerce/woocommerce/pull/64711",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1781186434000
-	},
-	{
 		"title": "[Prototype, do not merge] Order detail Update redesign — visual demo",
 		"repo": "woocommerce/woocommerce",
 		"number": 65176,
@@ -2106,7 +2106,7 @@
 	},
 	{
 		"name": "Orders",
-		"count": 8
+		"count": 9
 	},
 	{
 		"name": "Emails",
@@ -2129,6 +2129,10 @@
 		"count": 2
 	},
 	{
+		"name": "Onboarding",
+		"count": 2
+	},
+	{
 		"name": "Settings",
 		"count": 2
 	},
@@ -2143,20 +2147,16 @@
 	{
 		"name": "Coupons",
 		"count": 1
-	},
-	{
-		"name": "Onboarding",
-		"count": 1
 	}
 ];
 
 	const TOTALS = {
-	"merged": 123,
+	"merged": 125,
 	"surfaces": 14,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 81,
+	"mergedPublic": 83,
 	"privateMerged": 5,
 	"privateUpdated": "2026-09-09"
 };
@@ -2241,6 +2241,14 @@
 		"reviewedPrs": 4,
 		"approvals": 0,
 		"latestAt": "2026-06-18T14:54:14.000Z"
+	},
+	{
+		"login": "opr",
+		"avatar": "https://avatars.githubusercontent.com/u/5656702?u=acc8c2931bf08be73732fea0d48457c8d72a1a0b&v=4",
+		"url": "https://github.com/opr",
+		"reviewedPrs": 3,
+		"approvals": 3,
+		"latestAt": "2026-09-09T15:46:50.000Z"
 	},
 	{
 		"login": "m1r0",
@@ -2345,14 +2353,6 @@
 		"reviewedPrs": 2,
 		"approvals": 0,
 		"latestAt": "2026-06-30T10:50:39.000Z"
-	},
-	{
-		"login": "opr",
-		"avatar": "https://avatars.githubusercontent.com/u/5656702?u=acc8c2931bf08be73732fea0d48457c8d72a1a0b&v=4",
-		"url": "https://github.com/opr",
-		"reviewedPrs": 1,
-		"approvals": 1,
-		"latestAt": "2026-09-01T12:54:19.000Z"
 	},
 	{
 		"login": "senadir",
@@ -2477,7 +2477,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-09-09T12:05:46.180Z"
+	"updatedAt": "2026-09-09T20:20:15.710Z"
 };
 
 	function person(id) {
