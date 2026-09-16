@@ -1824,6 +1824,20 @@
 
 	const OPEN = [
 	{
+		"title": "Administration: Add box reordering toggle to Screen Options.",
+		"repo": "WordPress/wordpress-develop",
+		"number": 12627,
+		"url": "https://github.com/WordPress/wordpress-develop/pull/12627",
+		"area": "WordPress",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1789517390000
+	},
+	{
 		"title": "Let themes size the Order Confirmation section headings",
 		"repo": "woocommerce/woocommerce",
 		"number": 67743,
@@ -1948,20 +1962,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1786698483000
-	},
-	{
-		"title": "Administration: Add box reordering toggle to Screen Options.",
-		"repo": "WordPress/wordpress-develop",
-		"number": 12627,
-		"url": "https://github.com/WordPress/wordpress-develop/pull/12627",
-		"area": "WordPress",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1784697926000
 	},
 	{
 		"title": "Administration: Add box reordering toggle to Screen Options.",
@@ -2477,7 +2477,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-09-15T20:48:55.514Z"
+	"updatedAt": "2026-09-16T03:06:16.721Z"
 };
 
 	function person(id) {
