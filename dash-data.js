@@ -1824,6 +1824,20 @@
 
 	const OPEN = [
 	{
+		"title": "Document the three site visibility states for integrators",
+		"repo": "woocommerce/woocommerce",
+		"number": 68801,
+		"url": "https://github.com/woocommerce/woocommerce/pull/68801",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1789631845000
+	},
+	{
 		"title": "Administration: Add box reordering toggle to Screen Options.",
 		"repo": "WordPress/wordpress-develop",
 		"number": 12627,
@@ -2477,7 +2491,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-09-17T03:10:41.130Z"
+	"updatedAt": "2026-09-17T10:53:04.976Z"
 };
 
 	function person(id) {
