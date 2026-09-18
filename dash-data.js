@@ -1824,6 +1824,20 @@
 
 	const OPEN = [
 	{
+		"title": "Let themes size the Order Confirmation section headings",
+		"repo": "woocommerce/woocommerce",
+		"number": 67743,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67743",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"filipe"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1789752825000
+	},
+	{
 		"title": "Document the three site visibility states for integrators",
 		"repo": "woocommerce/woocommerce",
 		"number": 68801,
@@ -1850,20 +1864,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1789517390000
-	},
-	{
-		"title": "Let themes size the Order Confirmation section headings",
-		"repo": "woocommerce/woocommerce",
-		"number": 67743,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67743",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"filipe"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1789469181000
 	},
 	{
 		"title": "Add prev/next order navigation to Order detail page header",
@@ -2491,7 +2491,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-09-18T15:44:22.561Z"
+	"updatedAt": "2026-09-18T20:19:28.330Z"
 };
 
 	function person(id) {
