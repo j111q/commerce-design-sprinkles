@@ -2491,7 +2491,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-09-20T03:08:42.688Z"
+	"updatedAt": "2026-09-20T10:32:23.755Z"
 };
 
 	function person(id) {
