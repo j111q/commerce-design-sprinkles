@@ -1824,6 +1824,20 @@
 
 	const OPEN = [
 	{
+		"title": "Document the three site visibility states for integrators",
+		"repo": "woocommerce/woocommerce",
+		"number": 68801,
+		"url": "https://github.com/woocommerce/woocommerce/pull/68801",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1789977498000
+	},
+	{
 		"title": "Let themes size the Order Confirmation section headings",
 		"repo": "woocommerce/woocommerce",
 		"number": 67743,
@@ -1836,20 +1850,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1789752825000
-	},
-	{
-		"title": "Document the three site visibility states for integrators",
-		"repo": "woocommerce/woocommerce",
-		"number": 68801,
-		"url": "https://github.com/woocommerce/woocommerce/pull/68801",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1789656788000
 	},
 	{
 		"title": "Administration: Add box reordering toggle to Screen Options.",
@@ -2491,7 +2491,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-09-21T03:05:03.565Z"
+	"updatedAt": "2026-09-21T11:52:09.695Z"
 };
 
 	function person(id) {
