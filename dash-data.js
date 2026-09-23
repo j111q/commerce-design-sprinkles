@@ -1824,6 +1824,20 @@
 
 	const OPEN = [
 	{
+		"title": "Reference branch for #68127 — ten metrics, grid columns, and a first-run tour",
+		"repo": "woocommerce/woocommerce",
+		"number": 68995,
+		"url": "https://github.com/woocommerce/woocommerce/pull/68995",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1790153866000
+	},
+	{
 		"title": "Document the three site visibility states for integrators",
 		"repo": "woocommerce/woocommerce",
 		"number": 68801,
@@ -2491,7 +2505,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-09-23T03:04:39.785Z"
+	"updatedAt": "2026-09-23T10:41:22.212Z"
 };
 
 	function person(id) {
