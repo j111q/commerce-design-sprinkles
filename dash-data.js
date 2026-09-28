@@ -1824,6 +1824,20 @@
 
 	const OPEN = [
 	{
+		"title": "Analytics: add a setting to exclude free orders from report totals",
+		"repo": "woocommerce/woocommerce",
+		"number": 68075,
+		"url": "https://github.com/woocommerce/woocommerce/pull/68075",
+		"area": "Analytics",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1790622138000
+	},
+	{
 		"title": "Reference branch for #68127 — ten metrics, grid columns, and a first-run tour",
 		"repo": "woocommerce/woocommerce",
 		"number": 68995,
@@ -1920,20 +1934,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1788253945000
-	},
-	{
-		"title": "Analytics: add a setting to exclude free orders from report totals",
-		"repo": "woocommerce/woocommerce",
-		"number": 68075,
-		"url": "https://github.com/woocommerce/woocommerce/pull/68075",
-		"area": "Analytics",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1787842350000
 	},
 	{
 		"title": "Add stock notification emails as WC_Email classes",
@@ -2505,7 +2505,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-09-28T12:46:50.337Z"
+	"updatedAt": "2026-09-28T22:53:48.026Z"
 };
 
 	function person(id) {
