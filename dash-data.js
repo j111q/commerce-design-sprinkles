@@ -1824,6 +1824,20 @@
 
 	const OPEN = [
 	{
+		"title": "Give Summary grids of eleven to fifteen tiles their own column rules",
+		"repo": "woocommerce/woocommerce",
+		"number": 69224,
+		"url": "https://github.com/woocommerce/woocommerce/pull/69224",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1790707502000
+	},
+	{
 		"title": "Analytics: add a setting to exclude free orders from report totals",
 		"repo": "woocommerce/woocommerce",
 		"number": 68075,
@@ -1835,7 +1849,7 @@
 		],
 		"reviewers": [],
 		"status": "Draft",
-		"ts": 1790622138000
+		"ts": 1790705337000
 	},
 	{
 		"title": "Reference branch for #68127 — ten metrics, grid columns, and a first-run tour",
@@ -2505,7 +2519,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-09-29T12:02:30.295Z"
+	"updatedAt": "2026-09-29T21:47:42.982Z"
 };
 
 	function person(id) {
