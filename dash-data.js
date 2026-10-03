@@ -1824,6 +1824,20 @@
 
 	const OPEN = [
 	{
+		"title": "Administration: Add box reordering toggle to Screen Options.",
+		"repo": "WordPress/wordpress-develop",
+		"number": 12627,
+		"url": "https://github.com/WordPress/wordpress-develop/pull/12627",
+		"area": "WordPress",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1790983048000
+	},
+	{
 		"title": "Give Summary grids of eleven to fifteen tiles their own column rules",
 		"repo": "woocommerce/woocommerce",
 		"number": 69224,
@@ -1892,20 +1906,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1789752825000
-	},
-	{
-		"title": "Administration: Add box reordering toggle to Screen Options.",
-		"repo": "WordPress/wordpress-develop",
-		"number": 12627,
-		"url": "https://github.com/WordPress/wordpress-develop/pull/12627",
-		"area": "WordPress",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1789517390000
 	},
 	{
 		"title": "Add prev/next order navigation to Order detail page header",
@@ -2519,7 +2519,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-10-02T21:45:53.732Z"
+	"updatedAt": "2026-10-03T03:35:02.835Z"
 };
 
 	function person(id) {
