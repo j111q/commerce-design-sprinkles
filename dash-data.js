@@ -1824,6 +1824,34 @@
 
 	const OPEN = [
 	{
+		"title": "Add stock notification emails as WC_Email classes",
+		"repo": "woocommerce/woocommerce",
+		"number": 67808,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67808",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1791224545000
+	},
+	{
+		"title": "Let themes size the Order Confirmation section headings",
+		"repo": "woocommerce/woocommerce",
+		"number": 67743,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67743",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"filipe"
+		],
+		"reviewers": [],
+		"status": "Approved",
+		"ts": 1791212180000
+	},
+	{
 		"title": "Administration: Add box reordering toggle to Screen Options.",
 		"repo": "WordPress/wordpress-develop",
 		"number": 12627,
@@ -1894,20 +1922,6 @@
 		"ts": 1789977498000
 	},
 	{
-		"title": "Let themes size the Order Confirmation section headings",
-		"repo": "woocommerce/woocommerce",
-		"number": 67743,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67743",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"filipe"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1789752825000
-	},
-	{
 		"title": "Add prev/next order navigation to Order detail page header",
 		"repo": "woocommerce/woocommerce",
 		"number": 64711,
@@ -1948,20 +1962,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1788253945000
-	},
-	{
-		"title": "Add stock notification emails as WC_Email classes",
-		"repo": "woocommerce/woocommerce",
-		"number": 67808,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67808",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1787841937000
 	},
 	{
 		"title": "Name the conflicting product in SKU uniqueness errors",
@@ -2519,7 +2519,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-10-05T13:28:26.519Z"
+	"updatedAt": "2026-10-05T23:39:55.707Z"
 };
 
 	function person(id) {
