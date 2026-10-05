@@ -2462,7 +2462,7 @@
 	},
 	{
 		"login": "htdat",
-		"avatar": "https://avatars.githubusercontent.com/u/10045087?u=e04306a561e084898133cbeabc10b7a335aa61a7&v=4",
+		"avatar": "https://avatars.githubusercontent.com/u/10045087?u=e139050274e89e4305c1a9913c1263b1bc490d94&v=4",
 		"url": "https://github.com/htdat",
 		"reviewedPrs": 1,
 		"approvals": 1,
@@ -2519,7 +2519,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-10-05T03:49:17.784Z"
+	"updatedAt": "2026-10-05T13:28:26.519Z"
 };
 
 	function person(id) {
