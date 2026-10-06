@@ -71,6 +71,20 @@
 
 	const MERGED = [
 	{
+		"title": "Let themes size the Order Confirmation section headings",
+		"repo": "woocommerce/woocommerce",
+		"number": 67743,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67743",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"filipe"
+		],
+		"reviewers": [],
+		"ts": 1791305503000,
+		"fresh": true
+	},
+	{
 		"title": "Fix oversized gap between core profiler buttons on mobile",
 		"repo": "woocommerce/woocommerce",
 		"number": 67729,
@@ -1852,20 +1866,6 @@
 		"ts": 1791224545000
 	},
 	{
-		"title": "Let themes size the Order Confirmation section headings",
-		"repo": "woocommerce/woocommerce",
-		"number": 67743,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67743",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"filipe"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1791212180000
-	},
-	{
 		"title": "Administration: Add box reordering toggle to Screen Options.",
 		"repo": "WordPress/wordpress-develop",
 		"number": 12627,
@@ -2148,7 +2148,7 @@
 	},
 	{
 		"name": "Orders",
-		"count": 9
+		"count": 10
 	},
 	{
 		"name": "Emails",
@@ -2193,12 +2193,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 125,
+	"merged": 126,
 	"surfaces": 14,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 83,
+	"mergedPublic": 84,
 	"privateMerged": 5,
 	"privateUpdated": "2026-09-27"
 };
@@ -2397,6 +2397,14 @@
 		"latestAt": "2026-06-30T10:50:39.000Z"
 	},
 	{
+		"login": "ralucaStan",
+		"avatar": "https://avatars.githubusercontent.com/u/1628454?u=ec5ec9053e8f15085ff7fe62829a005bdc1a70c4&v=4",
+		"url": "https://github.com/ralucaStan",
+		"reviewedPrs": 1,
+		"approvals": 1,
+		"latestAt": "2026-10-06T16:51:39.000Z"
+	},
+	{
 		"login": "senadir",
 		"avatar": "https://avatars.githubusercontent.com/u/6165348?u=9e58496c7aba4f16a9cfd0de1072ccf116a3773f&v=4",
 		"url": "https://github.com/senadir",
@@ -2477,6 +2485,22 @@
 		"latestAt": "2026-05-08T09:48:40.000Z"
 	},
 	{
+		"login": "Manussakis",
+		"avatar": "https://avatars.githubusercontent.com/u/9420947?v=4",
+		"url": "https://github.com/Manussakis",
+		"reviewedPrs": 1,
+		"approvals": 0,
+		"latestAt": "2026-09-09T23:36:19.000Z"
+	},
+	{
+		"login": "kkoteen",
+		"avatar": "https://avatars.githubusercontent.com/u/312929?v=4",
+		"url": "https://github.com/kkoteen",
+		"reviewedPrs": 1,
+		"approvals": 0,
+		"latestAt": "2026-09-09T20:08:22.000Z"
+	},
+	{
 		"login": "yuliyan",
 		"avatar": "https://avatars.githubusercontent.com/u/2722412?v=4",
 		"url": "https://github.com/yuliyan",
@@ -2519,7 +2543,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-10-06T12:40:26.257Z"
+	"updatedAt": "2026-10-06T22:14:52.003Z"
 };
 
 	function person(id) {
