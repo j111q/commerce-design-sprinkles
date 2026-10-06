@@ -1824,6 +1824,20 @@
 
 	const OPEN = [
 	{
+		"title": "Give Summary grids of eleven to fifteen tiles their own column rules",
+		"repo": "woocommerce/woocommerce",
+		"number": 69224,
+		"url": "https://github.com/woocommerce/woocommerce/pull/69224",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1791273249000
+	},
+	{
 		"title": "Add stock notification emails as WC_Email classes",
 		"repo": "woocommerce/woocommerce",
 		"number": 67808,
@@ -1864,20 +1878,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1790983048000
-	},
-	{
-		"title": "Give Summary grids of eleven to fifteen tiles their own column rules",
-		"repo": "woocommerce/woocommerce",
-		"number": 69224,
-		"url": "https://github.com/woocommerce/woocommerce/pull/69224",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1790707502000
 	},
 	{
 		"title": "Analytics: add a setting to exclude free orders from report totals",
@@ -2519,7 +2519,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-10-06T04:37:15.822Z"
+	"updatedAt": "2026-10-06T12:40:26.257Z"
 };
 
 	function person(id) {
