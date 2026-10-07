@@ -1838,6 +1838,34 @@
 
 	const OPEN = [
 	{
+		"title": "Administration: Add box reordering toggle to Screen Options.",
+		"repo": "WordPress/wordpress-develop",
+		"number": 12627,
+		"url": "https://github.com/WordPress/wordpress-develop/pull/12627",
+		"area": "WordPress",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1791363956000
+	},
+	{
+		"title": "Document the three site visibility states for integrators",
+		"repo": "woocommerce/woocommerce",
+		"number": 68801,
+		"url": "https://github.com/woocommerce/woocommerce/pull/68801",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1791360658000
+	},
+	{
 		"title": "Give Summary grids of eleven to fifteen tiles their own column rules",
 		"repo": "woocommerce/woocommerce",
 		"number": 69224,
@@ -1864,62 +1892,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1791224545000
-	},
-	{
-		"title": "Administration: Add box reordering toggle to Screen Options.",
-		"repo": "WordPress/wordpress-develop",
-		"number": 12627,
-		"url": "https://github.com/WordPress/wordpress-develop/pull/12627",
-		"area": "WordPress",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1790983048000
-	},
-	{
-		"title": "Analytics: add a setting to exclude free orders from report totals",
-		"repo": "woocommerce/woocommerce",
-		"number": 68075,
-		"url": "https://github.com/woocommerce/woocommerce/pull/68075",
-		"area": "Analytics",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1790705337000
-	},
-	{
-		"title": "Reference branch for #68127 — ten metrics, grid columns, and a first-run tour",
-		"repo": "woocommerce/woocommerce",
-		"number": 68995,
-		"url": "https://github.com/woocommerce/woocommerce/pull/68995",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1790326669000
-	},
-	{
-		"title": "Document the three site visibility states for integrators",
-		"repo": "woocommerce/woocommerce",
-		"number": 68801,
-		"url": "https://github.com/woocommerce/woocommerce/pull/68801",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1789977498000
 	},
 	{
 		"title": "Add prev/next order navigation to Order detail page header",
@@ -2543,7 +2515,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-10-07T04:03:07.036Z"
+	"updatedAt": "2026-10-07T12:33:57.239Z"
 };
 
 	function person(id) {
