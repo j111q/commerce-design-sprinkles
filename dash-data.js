@@ -1838,6 +1838,20 @@
 
 	const OPEN = [
 	{
+		"title": "Administration: Improve dashboard meta box control visuals",
+		"repo": "WordPress/wordpress-develop",
+		"number": 12339,
+		"url": "https://github.com/WordPress/wordpress-develop/pull/12339",
+		"area": "WordPress",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1791472044000
+	},
+	{
 		"title": "Administration: Add box reordering toggle to Screen Options.",
 		"repo": "WordPress/wordpress-develop",
 		"number": 12627,
@@ -1849,7 +1863,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1791363956000
+		"ts": 1791466448000
 	},
 	{
 		"title": "Document the three site visibility states for integrators",
@@ -1990,20 +2004,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1783515835000
-	},
-	{
-		"title": "Administration: Improve dashboard meta box control visuals",
-		"repo": "WordPress/wordpress-develop",
-		"number": 12339,
-		"url": "https://github.com/WordPress/wordpress-develop/pull/12339",
-		"area": "WordPress",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1783307418000
 	},
 	{
 		"title": "Improve custom fields editing flow",
@@ -2515,7 +2515,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-10-08T12:43:40.688Z"
+	"updatedAt": "2026-10-08T22:48:28.359Z"
 };
 
 	function person(id) {
