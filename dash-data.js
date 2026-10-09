@@ -82,7 +82,7 @@
 		],
 		"reviewers": [],
 		"ts": 1791305503000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "Fix oversized gap between core profiler buttons on mobile",
@@ -2515,7 +2515,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-10-09T12:30:19.746Z"
+	"updatedAt": "2026-10-09T22:11:00.261Z"
 };
 
 	function person(id) {
