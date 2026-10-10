@@ -71,6 +71,20 @@
 
 	const MERGED = [
 	{
+		"title": "Give Summary grids of eleven to fifteen tiles their own column rules",
+		"repo": "woocommerce/woocommerce",
+		"number": 69224,
+		"url": "https://github.com/woocommerce/woocommerce/pull/69224",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"ts": 1791656555000,
+		"fresh": true
+	},
+	{
 		"title": "Let themes size the Order Confirmation section headings",
 		"repo": "woocommerce/woocommerce",
 		"number": 67743,
@@ -1880,20 +1894,6 @@
 		"ts": 1791360658000
 	},
 	{
-		"title": "Give Summary grids of eleven to fifteen tiles their own column rules",
-		"repo": "woocommerce/woocommerce",
-		"number": 69224,
-		"url": "https://github.com/woocommerce/woocommerce/pull/69224",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1791273249000
-	},
-	{
 		"title": "Add stock notification emails as WC_Email classes",
 		"repo": "woocommerce/woocommerce",
 		"number": 67808,
@@ -2112,7 +2112,7 @@
 	},
 	{
 		"name": "Other admin",
-		"count": 33
+		"count": 34
 	},
 	{
 		"name": "Shipping",
@@ -2165,12 +2165,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 126,
+	"merged": 127,
 	"surfaces": 14,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 84,
+	"mergedPublic": 85,
 	"privateMerged": 5,
 	"privateUpdated": "2026-09-27"
 };
@@ -2287,6 +2287,14 @@
 		"reviewedPrs": 3,
 		"approvals": 3,
 		"latestAt": "2026-06-11T18:28:30.000Z"
+	},
+	{
+		"login": "NeosinneR",
+		"avatar": "https://avatars.githubusercontent.com/u/470616?v=4",
+		"url": "https://github.com/NeosinneR",
+		"reviewedPrs": 2,
+		"approvals": 2,
+		"latestAt": "2026-10-10T18:22:19.000Z"
 	},
 	{
 		"login": "triple0t",
@@ -2417,14 +2425,6 @@
 		"latestAt": "2026-07-07T11:49:05.000Z"
 	},
 	{
-		"login": "NeosinneR",
-		"avatar": "https://avatars.githubusercontent.com/u/470616?v=4",
-		"url": "https://github.com/NeosinneR",
-		"reviewedPrs": 1,
-		"approvals": 1,
-		"latestAt": "2026-07-03T10:18:49.000Z"
-	},
-	{
 		"login": "kmanijak",
 		"avatar": "https://avatars.githubusercontent.com/u/20098064?u=90fe666e70c13d1826ae20946c920c264b18e42a&v=4",
 		"url": "https://github.com/kmanijak",
@@ -2515,7 +2515,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-10-10T16:52:49.864Z"
+	"updatedAt": "2026-10-10T21:05:04.226Z"
 };
 
 	function person(id) {
