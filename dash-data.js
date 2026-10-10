@@ -1848,8 +1848,8 @@
 			"jill"
 		],
 		"reviewers": [],
-		"status": "Open",
-		"ts": 1791545774000
+		"status": "Approved",
+		"ts": 1791599550000
 	},
 	{
 		"title": "Administration: Improve dashboard meta box control visuals",
@@ -2515,7 +2515,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-10-09T22:11:00.261Z"
+	"updatedAt": "2026-10-10T04:06:22.761Z"
 };
 
 	function person(id) {
