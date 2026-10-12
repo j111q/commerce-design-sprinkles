@@ -71,6 +71,48 @@
 
 	const MERGED = [
 	{
+		"title": "Administration: Add box reordering toggle to Screen Options.",
+		"repo": "WordPress/wordpress-develop",
+		"number": 12180,
+		"url": "https://github.com/WordPress/wordpress-develop/pull/12180",
+		"area": "WordPress",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"ts": 1791753920000,
+		"fresh": true
+	},
+	{
+		"title": "Administration: Add box reordering toggle to Screen Options.",
+		"repo": "WordPress/wordpress-develop",
+		"number": 12627,
+		"url": "https://github.com/WordPress/wordpress-develop/pull/12627",
+		"area": "WordPress",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"ts": 1791753918000,
+		"fresh": true
+	},
+	{
+		"title": "Administration: Improve dashboard meta box control visuals",
+		"repo": "WordPress/wordpress-develop",
+		"number": 12339,
+		"url": "https://github.com/WordPress/wordpress-develop/pull/12339",
+		"area": "WordPress",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"ts": 1791753916000,
+		"fresh": true
+	},
+	{
 		"title": "Give Summary grids of eleven to fifteen tiles their own column rules",
 		"repo": "woocommerce/woocommerce",
 		"number": 69224,
@@ -1852,34 +1894,6 @@
 
 	const OPEN = [
 	{
-		"title": "Administration: Add box reordering toggle to Screen Options.",
-		"repo": "WordPress/wordpress-develop",
-		"number": 12627,
-		"url": "https://github.com/WordPress/wordpress-develop/pull/12627",
-		"area": "WordPress",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Approved",
-		"ts": 1791752507000
-	},
-	{
-		"title": "Administration: Improve dashboard meta box control visuals",
-		"repo": "WordPress/wordpress-develop",
-		"number": 12339,
-		"url": "https://github.com/WordPress/wordpress-develop/pull/12339",
-		"area": "WordPress",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1791545573000
-	},
-	{
 		"title": "Document the three site visibility states for integrators",
 		"repo": "woocommerce/woocommerce",
 		"number": 68801,
@@ -1990,20 +2004,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1786698483000
-	},
-	{
-		"title": "Administration: Add box reordering toggle to Screen Options.",
-		"repo": "WordPress/wordpress-develop",
-		"number": 12180,
-		"url": "https://github.com/WordPress/wordpress-develop/pull/12180",
-		"area": "WordPress",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1783515835000
 	},
 	{
 		"title": "Improve custom fields editing flow",
@@ -2131,6 +2131,10 @@
 		"count": 5
 	},
 	{
+		"name": "WordPress",
+		"count": 5
+	},
+	{
 		"name": "Analytics",
 		"count": 3
 	},
@@ -2151,10 +2155,6 @@
 		"count": 2
 	},
 	{
-		"name": "WordPress",
-		"count": 2
-	},
-	{
 		"name": "Checkout",
 		"count": 1
 	},
@@ -2165,12 +2165,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 127,
+	"merged": 130,
 	"surfaces": 14,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 85,
+	"mergedPublic": 88,
 	"privateMerged": 5,
 	"privateUpdated": "2026-09-27"
 };
@@ -2233,6 +2233,14 @@
 		"latestAt": "2026-08-17T11:51:23.000Z"
 	},
 	{
+		"login": "joedolson",
+		"avatar": "https://avatars.githubusercontent.com/u/1686451?u=f531f4549aab704d4ee535b43d89f86df63b0235&v=4",
+		"url": "https://github.com/joedolson",
+		"reviewedPrs": 4,
+		"approvals": 3,
+		"latestAt": "2026-10-10T02:32:30.000Z"
+	},
+	{
 		"login": "tjcafferkey",
 		"avatar": "https://avatars.githubusercontent.com/u/8639742?u=8468454f62312af6c53fb31669b44a696cd54f21&v=4",
 		"url": "https://github.com/tjcafferkey",
@@ -2289,6 +2297,14 @@
 		"latestAt": "2026-06-11T18:28:30.000Z"
 	},
 	{
+		"login": "tyxla",
+		"avatar": "https://avatars.githubusercontent.com/u/8436925?u=f3fa79cebb61f436e4c910d32e62c9b2680586d5&v=4",
+		"url": "https://github.com/tyxla",
+		"reviewedPrs": 3,
+		"approvals": 0,
+		"latestAt": "2026-07-08T13:03:55.000Z"
+	},
+	{
 		"login": "NeosinneR",
 		"avatar": "https://avatars.githubusercontent.com/u/470616?v=4",
 		"url": "https://github.com/NeosinneR",
@@ -2303,14 +2319,6 @@
 		"reviewedPrs": 2,
 		"approvals": 2,
 		"latestAt": "2026-08-18T08:57:30.000Z"
-	},
-	{
-		"login": "joedolson",
-		"avatar": "https://avatars.githubusercontent.com/u/1686451?u=f531f4549aab704d4ee535b43d89f86df63b0235&v=4",
-		"url": "https://github.com/joedolson",
-		"reviewedPrs": 2,
-		"approvals": 2,
-		"latestAt": "2026-06-30T21:43:14.000Z"
 	},
 	{
 		"login": "mikejolley",
@@ -2353,20 +2361,20 @@
 		"latestAt": "2026-05-12T08:35:44.000Z"
 	},
 	{
+		"login": "afercia",
+		"avatar": "https://avatars.githubusercontent.com/u/1682452?v=4",
+		"url": "https://github.com/afercia",
+		"reviewedPrs": 2,
+		"approvals": 0,
+		"latestAt": "2026-10-08T15:06:29.000Z"
+	},
+	{
 		"login": "fcoveram",
 		"avatar": "https://avatars.githubusercontent.com/u/895819?v=4",
 		"url": "https://github.com/fcoveram",
 		"reviewedPrs": 2,
 		"approvals": 0,
 		"latestAt": "2026-06-30T14:23:08.000Z"
-	},
-	{
-		"login": "tyxla",
-		"avatar": "https://avatars.githubusercontent.com/u/8436925?u=f3fa79cebb61f436e4c910d32e62c9b2680586d5&v=4",
-		"url": "https://github.com/tyxla",
-		"reviewedPrs": 2,
-		"approvals": 0,
-		"latestAt": "2026-06-30T13:34:07.000Z"
 	},
 	{
 		"login": "lauroraa",
@@ -2515,7 +2523,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-10-11T21:25:05.940Z"
+	"updatedAt": "2026-10-12T04:05:24.651Z"
 };
 
 	function person(id) {
