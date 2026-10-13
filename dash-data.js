@@ -1880,20 +1880,6 @@
 
 	const OPEN = [
 	{
-		"title": "Administration: Improve dashboard meta box control visuals",
-		"repo": "WordPress/wordpress-develop",
-		"number": 12339,
-		"url": "https://github.com/WordPress/wordpress-develop/pull/12339",
-		"area": "WordPress",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1791820359000
-	},
-	{
 		"title": "[Prototype] Use @wordpress/icons for WooCommerce admin menu icons (WP 7.2)",
 		"repo": "woocommerce/woocommerce",
 		"number": 69716,
@@ -1905,7 +1891,21 @@
 		],
 		"reviewers": [],
 		"status": "Draft",
-		"ts": 1791818669000
+		"ts": 1791884480000
+	},
+	{
+		"title": "Administration: Improve dashboard meta box control visuals",
+		"repo": "WordPress/wordpress-develop",
+		"number": 12339,
+		"url": "https://github.com/WordPress/wordpress-develop/pull/12339",
+		"area": "WordPress",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1791879197000
 	},
 	{
 		"title": "Document the three site visibility states for integrators",
@@ -2537,7 +2537,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-10-13T00:05:03.110Z"
+	"updatedAt": "2026-10-13T13:27:18.557Z"
 };
 
 	function person(id) {
