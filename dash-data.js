@@ -99,20 +99,6 @@
 		"fresh": true
 	},
 	{
-		"title": "Administration: Improve dashboard meta box control visuals",
-		"repo": "WordPress/wordpress-develop",
-		"number": 12339,
-		"url": "https://github.com/WordPress/wordpress-develop/pull/12339",
-		"area": "WordPress",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"ts": 1791753916000,
-		"fresh": true
-	},
-	{
 		"title": "Give Summary grids of eleven to fifteen tiles their own column rules",
 		"repo": "woocommerce/woocommerce",
 		"number": 69224,
@@ -1894,6 +1880,34 @@
 
 	const OPEN = [
 	{
+		"title": "Administration: Improve dashboard meta box control visuals",
+		"repo": "WordPress/wordpress-develop",
+		"number": 12339,
+		"url": "https://github.com/WordPress/wordpress-develop/pull/12339",
+		"area": "WordPress",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1791820359000
+	},
+	{
+		"title": "[Prototype] Use @wordpress/icons for WooCommerce admin menu icons (WP 7.2)",
+		"repo": "woocommerce/woocommerce",
+		"number": 69716,
+		"url": "https://github.com/woocommerce/woocommerce/pull/69716",
+		"area": "Navigation",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1791818669000
+	},
+	{
 		"title": "Document the three site visibility states for integrators",
 		"repo": "woocommerce/woocommerce",
 		"number": 68801,
@@ -2132,7 +2146,7 @@
 	},
 	{
 		"name": "WordPress",
-		"count": 5
+		"count": 4
 	},
 	{
 		"name": "Analytics",
@@ -2165,12 +2179,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 130,
+	"merged": 129,
 	"surfaces": 14,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 88,
+	"mergedPublic": 87,
 	"privateMerged": 5,
 	"privateUpdated": "2026-09-27"
 };
@@ -2361,14 +2375,6 @@
 		"latestAt": "2026-05-12T08:35:44.000Z"
 	},
 	{
-		"login": "afercia",
-		"avatar": "https://avatars.githubusercontent.com/u/1682452?v=4",
-		"url": "https://github.com/afercia",
-		"reviewedPrs": 2,
-		"approvals": 0,
-		"latestAt": "2026-10-08T15:06:29.000Z"
-	},
-	{
 		"login": "fcoveram",
 		"avatar": "https://avatars.githubusercontent.com/u/895819?v=4",
 		"url": "https://github.com/fcoveram",
@@ -2465,6 +2471,14 @@
 		"latestAt": "2026-05-08T09:48:40.000Z"
 	},
 	{
+		"login": "afercia",
+		"avatar": "https://avatars.githubusercontent.com/u/1682452?v=4",
+		"url": "https://github.com/afercia",
+		"reviewedPrs": 1,
+		"approvals": 0,
+		"latestAt": "2026-10-07T09:05:55.000Z"
+	},
+	{
 		"login": "Manussakis",
 		"avatar": "https://avatars.githubusercontent.com/u/9420947?v=4",
 		"url": "https://github.com/Manussakis",
@@ -2523,7 +2537,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-10-12T14:17:35.835Z"
+	"updatedAt": "2026-10-13T00:05:03.110Z"
 };
 
 	function person(id) {
