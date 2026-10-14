@@ -1880,6 +1880,20 @@
 
 	const OPEN = [
 	{
+		"title": "[Prototype] Purple in Customize your store (do not merge)",
+		"repo": "woocommerce/woocommerce",
+		"number": 69783,
+		"url": "https://github.com/woocommerce/woocommerce/pull/69783",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1791969846000
+	},
+	{
 		"title": "Improve custom fields editing flow",
 		"repo": "WordPress/wordpress-develop",
 		"number": 12348,
@@ -1892,20 +1906,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1791933682000
-	},
-	{
-		"title": "[Prototype] Purple in Customize your store (do not merge)",
-		"repo": "woocommerce/woocommerce",
-		"number": 69783,
-		"url": "https://github.com/woocommerce/woocommerce/pull/69783",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1791917278000
 	},
 	{
 		"title": "[Prototype] Use @wordpress/icons for WooCommerce admin menu icons (WP 7.2)",
@@ -2551,7 +2551,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-10-14T03:20:18.148Z"
+	"updatedAt": "2026-10-14T11:04:50.108Z"
 };
 
 	function person(id) {
