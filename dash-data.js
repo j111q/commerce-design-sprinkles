@@ -1880,6 +1880,20 @@
 
 	const OPEN = [
 	{
+		"title": "Improve custom fields editing flow",
+		"repo": "WordPress/wordpress-develop",
+		"number": 12348,
+		"url": "https://github.com/WordPress/wordpress-develop/pull/12348",
+		"area": "WordPress",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1791933682000
+	},
+	{
 		"title": "[Prototype] Purple in Customize your store (do not merge)",
 		"repo": "woocommerce/woocommerce",
 		"number": 69783,
@@ -2032,20 +2046,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1786698483000
-	},
-	{
-		"title": "Improve custom fields editing flow",
-		"repo": "WordPress/wordpress-develop",
-		"number": 12348,
-		"url": "https://github.com/WordPress/wordpress-develop/pull/12348",
-		"area": "WordPress",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1783307418000
 	},
 	{
 		"title": "Add TreeSelect prototype source references",
@@ -2551,7 +2551,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-10-13T22:14:48.788Z"
+	"updatedAt": "2026-10-14T03:20:18.148Z"
 };
 
 	function person(id) {
