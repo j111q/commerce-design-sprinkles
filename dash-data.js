@@ -1891,7 +1891,21 @@
 		],
 		"reviewers": [],
 		"status": "Draft",
-		"ts": 1791969846000
+		"ts": 1791983957000
+	},
+	{
+		"title": "Name the conflicting product in SKU uniqueness errors",
+		"repo": "woocommerce/woocommerce",
+		"number": 67810,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67810",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"filipe"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1791982080000
 	},
 	{
 		"title": "Improve custom fields editing flow",
@@ -2004,20 +2018,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1788253945000
-	},
-	{
-		"title": "Name the conflicting product in SKU uniqueness errors",
-		"repo": "woocommerce/woocommerce",
-		"number": 67810,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67810",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"filipe"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1787216100000
 	},
 	{
 		"title": "Editor: Enhance classic editor timestamp fields with native controls (continues #12275)",
@@ -2551,7 +2551,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-10-14T11:04:50.108Z"
+	"updatedAt": "2026-10-14T16:24:58.343Z"
 };
 
 	function person(id) {
