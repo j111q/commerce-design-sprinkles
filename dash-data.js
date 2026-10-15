@@ -82,7 +82,7 @@
 		],
 		"reviewers": [],
 		"ts": 1791753920000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "Administration: Add box reordering toggle to Screen Options.",
@@ -96,7 +96,7 @@
 		],
 		"reviewers": [],
 		"ts": 1791753918000,
-		"fresh": true
+		"fresh": false
 	},
 	{
 		"title": "Give Summary grids of eleven to fifteen tiles their own column rules",
@@ -2551,7 +2551,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-10-14T21:14:42.586Z"
+	"updatedAt": "2026-10-15T02:58:53.244Z"
 };
 
 	function person(id) {
