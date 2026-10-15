@@ -1880,6 +1880,20 @@
 
 	const OPEN = [
 	{
+		"title": "Order detail: apply 2-column grid sizing standard (720 / 24 / 320)",
+		"repo": "woocommerce/woocommerce",
+		"number": 65699,
+		"url": "https://github.com/woocommerce/woocommerce/pull/65699",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1792094233000
+	},
+	{
 		"title": "[Prototype] Purple in Customize your store (do not merge)",
 		"repo": "woocommerce/woocommerce",
 		"number": 69783,
@@ -2074,20 +2088,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1782924324000
-	},
-	{
-		"title": "Order detail: apply 2-column grid sizing standard (720 / 24 / 320)",
-		"repo": "woocommerce/woocommerce",
-		"number": 65699,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65699",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1782724448000
 	},
 	{
 		"title": "Coupon edit: apply 2-column grid sizing standard (720 / 24 / 320)",
@@ -2551,7 +2551,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-10-15T16:13:11.641Z"
+	"updatedAt": "2026-10-15T20:52:58.923Z"
 };
 
 	function person(id) {
