@@ -71,6 +71,20 @@
 
 	const MERGED = [
 	{
+		"title": "Keep the \"+N more\" badge on the same line to even out Analytics rows",
+		"repo": "woocommerce/woocommerce",
+		"number": 67765,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67765",
+		"area": "Analytics",
+		"flagged": false,
+		"authors": [
+			"filipe"
+		],
+		"reviewers": [],
+		"ts": 1792130539000,
+		"fresh": true
+	},
+	{
 		"title": "Administration: Add box reordering toggle to Screen Options.",
 		"repo": "WordPress/wordpress-develop",
 		"number": 12180,
@@ -1880,6 +1894,20 @@
 
 	const OPEN = [
 	{
+		"title": "Fix misleading error copy on the admin NoMatch screen",
+		"repo": "woocommerce/woocommerce",
+		"number": 67779,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67779",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"filipe"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1792120129000
+	},
+	{
 		"title": "Order detail: apply 2-column grid sizing standard (720 / 24 / 320)",
 		"repo": "woocommerce/woocommerce",
 		"number": 65699,
@@ -2004,34 +2032,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1788966360000
-	},
-	{
-		"title": "Keep the \"+N more\" badge on the same line to even out Analytics rows",
-		"repo": "woocommerce/woocommerce",
-		"number": 67765,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67765",
-		"area": "Analytics",
-		"flagged": false,
-		"authors": [
-			"filipe"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1788450616000
-	},
-	{
-		"title": "Fix misleading error copy on the admin NoMatch screen",
-		"repo": "woocommerce/woocommerce",
-		"number": 67779,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67779",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"filipe"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1788253945000
 	},
 	{
 		"title": "Editor: Enhance classic editor timestamp fields with native controls (continues #12275)",
@@ -2159,12 +2159,12 @@
 		"count": 5
 	},
 	{
-		"name": "WordPress",
+		"name": "Analytics",
 		"count": 4
 	},
 	{
-		"name": "Analytics",
-		"count": 3
+		"name": "WordPress",
+		"count": 4
 	},
 	{
 		"name": "Home",
@@ -2193,12 +2193,12 @@
 ];
 
 	const TOTALS = {
-	"merged": 129,
+	"merged": 130,
 	"surfaces": 14,
 	"repos": 3,
 	"since": "April 2026",
 	"mergedFlagged": 42,
-	"mergedPublic": 87,
+	"mergedPublic": 88,
 	"privateMerged": 5,
 	"privateUpdated": "2026-09-27"
 };
@@ -2216,9 +2216,9 @@
 		"login": "chihsuan",
 		"avatar": "https://avatars.githubusercontent.com/u/4344253?u=893568c74d526595be65e1748b2fde2626a185f2&v=4",
 		"url": "https://github.com/chihsuan",
-		"reviewedPrs": 12,
-		"approvals": 12,
-		"latestAt": "2026-07-29T09:16:15.000Z"
+		"reviewedPrs": 13,
+		"approvals": 13,
+		"latestAt": "2026-10-16T05:52:26.000Z"
 	},
 	{
 		"login": "ayushpahwa",
@@ -2551,7 +2551,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-10-16T02:56:30.057Z"
+	"updatedAt": "2026-10-16T10:35:41.313Z"
 };
 
 	function person(id) {
