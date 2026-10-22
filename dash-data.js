@@ -87,20 +87,6 @@
 	{
 		"title": "Administration: Add box reordering toggle to Screen Options.",
 		"repo": "WordPress/wordpress-develop",
-		"number": 12180,
-		"url": "https://github.com/WordPress/wordpress-develop/pull/12180",
-		"area": "WordPress",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"ts": 1791753920000,
-		"fresh": false
-	},
-	{
-		"title": "Administration: Add box reordering toggle to Screen Options.",
-		"repo": "WordPress/wordpress-develop",
 		"number": 12627,
 		"url": "https://github.com/WordPress/wordpress-develop/pull/12627",
 		"area": "WordPress",
@@ -169,20 +155,6 @@
 		"fresh": false
 	},
 	{
-		"title": "Rename the default Payment method option from N/A to All methods available",
-		"repo": "woocommerce/woocommerce",
-		"number": 68187,
-		"url": "https://github.com/woocommerce/woocommerce/pull/68187",
-		"area": "Payments",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"ts": 1788268292000,
-		"fresh": false
-	},
-	{
 		"title": "Add search and pagination to order tax modal",
 		"repo": "woocommerce/woocommerce",
 		"number": 66039,
@@ -211,20 +183,6 @@
 		"fresh": false
 	},
 	{
-		"title": "Fix dropdown icon overlap on WP 7.0+ admin screens",
-		"repo": "woocommerce/woocommerce",
-		"number": 67918,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67918",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"ts": 1787574491000,
-		"fresh": false
-	},
-	{
 		"title": "Fix disabled buttons not looking disabled in cart and checkout",
 		"repo": "woocommerce/woocommerce",
 		"number": 67738,
@@ -250,20 +208,6 @@
 		],
 		"reviewers": [],
 		"ts": 1787044443000,
-		"fresh": false
-	},
-	{
-		"title": "Fix long product name overflow in the order Add products modal",
-		"repo": "woocommerce/woocommerce",
-		"number": 67183,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67183",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"ts": 1786967494000,
 		"fresh": false
 	},
 	{
@@ -309,20 +253,6 @@
 		"fresh": false
 	},
 	{
-		"title": "Fix keyboard flow when adding products to an order (rogue search box) + clear/chevron overlap",
-		"repo": "woocommerce/woocommerce",
-		"number": 66381,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66381",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"ts": 1785333514000,
-		"fresh": false
-	},
-	{
 		"title": "Fix legacy report custom date field contrast",
 		"repo": "woocommerce/woocommerce",
 		"number": 67014,
@@ -334,20 +264,6 @@
 		],
 		"reviewers": [],
 		"ts": 1785317487000,
-		"fresh": false
-	},
-	{
-		"title": "Fix Date and Status columns ignoring Screen Options on small screens",
-		"repo": "woocommerce/woocommerce",
-		"number": 66242,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66242",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"ts": 1785247153000,
 		"fresh": false
 	},
 	{
@@ -575,34 +491,6 @@
 		"fresh": false
 	},
 	{
-		"title": "Editor: Improve Classic Editor status dropdown layout",
-		"repo": "WordPress/wordpress-develop",
-		"number": 12304,
-		"url": "https://github.com/WordPress/wordpress-develop/pull/12304",
-		"area": "WordPress",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"ts": 1782857055000,
-		"fresh": false
-	},
-	{
-		"title": "Improve classic editor visibility controls layout",
-		"repo": "WordPress/wordpress-develop",
-		"number": 12298,
-		"url": "https://github.com/WordPress/wordpress-develop/pull/12298",
-		"area": "WordPress",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"ts": 1782856573000,
-		"fresh": false
-	},
-	{
 		"title": "Fix product description editor alignment in classic product editor",
 		"repo": "woocommerce/woocommerce",
 		"number": 66087,
@@ -628,20 +516,6 @@
 		],
 		"reviewers": [],
 		"ts": 1782460651000,
-		"fresh": false
-	},
-	{
-		"title": "Fix order edit screen text color contrast for WCAG AA",
-		"repo": "woocommerce/woocommerce",
-		"number": 65714,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65714",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"ts": 1782400699000,
 		"fresh": false
 	},
 	{
@@ -1303,20 +1177,6 @@
 		"fresh": false
 	},
 	{
-		"title": "Add order-detail-redesign feature flag and 1200px cap on Order edit",
-		"repo": "woocommerce/woocommerce",
-		"number": 64669,
-		"url": "https://github.com/woocommerce/woocommerce/pull/64669",
-		"area": "Orders",
-		"flagged": true,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"ts": 1778589542000,
-		"fresh": false
-	},
-	{
 		"title": "Fix Marketplace product card title focus ring",
 		"repo": "woocommerce/woocommerce",
 		"number": 64788,
@@ -1894,6 +1754,20 @@
 
 	const OPEN = [
 	{
+		"title": "Fix misleading error copy on the admin NoMatch screen",
+		"repo": "woocommerce/woocommerce",
+		"number": 67779,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67779",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"filipe"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1792686416000
+	},
+	{
 		"title": "[Prototype] Purple in Customize your store (do not merge)",
 		"repo": "woocommerce/woocommerce",
 		"number": 69783,
@@ -1906,20 +1780,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1792160249000
-	},
-	{
-		"title": "Fix misleading error copy on the admin NoMatch screen",
-		"repo": "woocommerce/woocommerce",
-		"number": 67779,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67779",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"filipe"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1792120129000
 	},
 	{
 		"title": "Order detail: apply 2-column grid sizing standard (720 / 24 / 320)",
@@ -2062,20 +1922,6 @@
 		"ts": 1786698483000
 	},
 	{
-		"title": "Add TreeSelect prototype source references",
-		"repo": "woocommerce/woocommerce",
-		"number": 66142,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66142",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1783051955000
-	},
-	{
 		"title": "Migrate customer stock notification screens to the order actions \"more actions\" menu",
 		"repo": "woocommerce/woocommerce",
 		"number": 65788,
@@ -2136,11 +1982,11 @@
 	const AREAS = [
 	{
 		"name": "Products & catalog",
-		"count": 45
+		"count": 43
 	},
 	{
 		"name": "Other admin",
-		"count": 34
+		"count": 32
 	},
 	{
 		"name": "Shipping",
@@ -2148,22 +1994,18 @@
 	},
 	{
 		"name": "Orders",
-		"count": 10
+		"count": 8
 	},
 	{
 		"name": "Emails",
 		"count": 6
 	},
 	{
-		"name": "Payments",
-		"count": 5
-	},
-	{
 		"name": "Analytics",
 		"count": 4
 	},
 	{
-		"name": "WordPress",
+		"name": "Payments",
 		"count": 4
 	},
 	{
@@ -2189,16 +2031,20 @@
 	{
 		"name": "Coupons",
 		"count": 1
+	},
+	{
+		"name": "WordPress",
+		"count": 1
 	}
 ];
 
 	const TOTALS = {
-	"merged": 130,
+	"merged": 120,
 	"surfaces": 14,
 	"repos": 3,
 	"since": "April 2026",
-	"mergedFlagged": 42,
-	"mergedPublic": 88,
+	"mergedFlagged": 41,
+	"mergedPublic": 79,
 	"privateMerged": 5,
 	"privateUpdated": "2026-09-27"
 };
@@ -2208,9 +2054,9 @@
 		"login": "gigitux",
 		"avatar": "https://avatars.githubusercontent.com/u/4463174?u=e62244f638a3dc7b760cf883bf3a15f62844f87c&v=4",
 		"url": "https://github.com/gigitux",
-		"reviewedPrs": 42,
-		"approvals": 40,
-		"latestAt": "2026-08-24T12:24:52.000Z"
+		"reviewedPrs": 41,
+		"approvals": 39,
+		"latestAt": "2026-05-22T13:18:09.000Z"
 	},
 	{
 		"login": "chihsuan",
@@ -2253,28 +2099,20 @@
 		"latestAt": "2026-08-26T11:50:50.000Z"
 	},
 	{
-		"login": "jorgeatorres",
-		"avatar": "https://avatars.githubusercontent.com/u/184724?u=04d9507fd3e519c04c272ab4e3c6f70566b1ab92&v=4",
-		"url": "https://github.com/jorgeatorres",
-		"reviewedPrs": 7,
-		"approvals": 6,
-		"latestAt": "2026-08-17T11:51:23.000Z"
-	},
-	{
-		"login": "joedolson",
-		"avatar": "https://avatars.githubusercontent.com/u/1686451?u=f531f4549aab704d4ee535b43d89f86df63b0235&v=4",
-		"url": "https://github.com/joedolson",
-		"reviewedPrs": 4,
-		"approvals": 3,
-		"latestAt": "2026-10-10T02:32:30.000Z"
-	},
-	{
 		"login": "tjcafferkey",
 		"avatar": "https://avatars.githubusercontent.com/u/8639742?u=8468454f62312af6c53fb31669b44a696cd54f21&v=4",
 		"url": "https://github.com/tjcafferkey",
 		"reviewedPrs": 4,
 		"approvals": 3,
 		"latestAt": "2026-08-28T13:34:38.000Z"
+	},
+	{
+		"login": "jorgeatorres",
+		"avatar": "https://avatars.githubusercontent.com/u/184724?u=04d9507fd3e519c04c272ab4e3c6f70566b1ab92&v=4",
+		"url": "https://github.com/jorgeatorres",
+		"reviewedPrs": 4,
+		"approvals": 3,
+		"latestAt": "2026-07-22T11:26:44.000Z"
 	},
 	{
 		"login": "samnajian",
@@ -2291,14 +2129,6 @@
 		"reviewedPrs": 4,
 		"approvals": 0,
 		"latestAt": "2026-06-18T14:54:14.000Z"
-	},
-	{
-		"login": "opr",
-		"avatar": "https://avatars.githubusercontent.com/u/5656702?u=acc8c2931bf08be73732fea0d48457c8d72a1a0b&v=4",
-		"url": "https://github.com/opr",
-		"reviewedPrs": 3,
-		"approvals": 3,
-		"latestAt": "2026-09-09T15:46:50.000Z"
 	},
 	{
 		"login": "m1r0",
@@ -2325,14 +2155,6 @@
 		"latestAt": "2026-06-11T18:28:30.000Z"
 	},
 	{
-		"login": "tyxla",
-		"avatar": "https://avatars.githubusercontent.com/u/8436925?u=f3fa79cebb61f436e4c910d32e62c9b2680586d5&v=4",
-		"url": "https://github.com/tyxla",
-		"reviewedPrs": 3,
-		"approvals": 0,
-		"latestAt": "2026-07-08T13:03:55.000Z"
-	},
-	{
 		"login": "NeosinneR",
 		"avatar": "https://avatars.githubusercontent.com/u/470616?v=4",
 		"url": "https://github.com/NeosinneR",
@@ -2341,20 +2163,20 @@
 		"latestAt": "2026-10-10T18:22:19.000Z"
 	},
 	{
+		"login": "opr",
+		"avatar": "https://avatars.githubusercontent.com/u/5656702?u=acc8c2931bf08be73732fea0d48457c8d72a1a0b&v=4",
+		"url": "https://github.com/opr",
+		"reviewedPrs": 2,
+		"approvals": 2,
+		"latestAt": "2026-09-09T15:46:50.000Z"
+	},
+	{
 		"login": "triple0t",
 		"avatar": "https://avatars.githubusercontent.com/u/30554163?u=e207c3ff41a5ece88340a3db9ae64bd697d68301&v=4",
 		"url": "https://github.com/triple0t",
 		"reviewedPrs": 2,
 		"approvals": 2,
 		"latestAt": "2026-08-18T08:57:30.000Z"
-	},
-	{
-		"login": "mikejolley",
-		"avatar": "https://avatars.githubusercontent.com/u/90977?v=4",
-		"url": "https://github.com/mikejolley",
-		"reviewedPrs": 2,
-		"approvals": 2,
-		"latestAt": "2026-06-25T14:40:10.000Z"
 	},
 	{
 		"login": "pavel-mailpoet",
@@ -2389,20 +2211,20 @@
 		"latestAt": "2026-05-12T08:35:44.000Z"
 	},
 	{
-		"login": "fcoveram",
-		"avatar": "https://avatars.githubusercontent.com/u/895819?v=4",
-		"url": "https://github.com/fcoveram",
-		"reviewedPrs": 2,
-		"approvals": 0,
-		"latestAt": "2026-06-30T14:23:08.000Z"
-	},
-	{
 		"login": "lauroraa",
 		"avatar": "https://avatars.githubusercontent.com/u/82584767?v=4",
 		"url": "https://github.com/lauroraa",
 		"reviewedPrs": 2,
 		"approvals": 0,
 		"latestAt": "2026-06-30T10:50:39.000Z"
+	},
+	{
+		"login": "joedolson",
+		"avatar": "https://avatars.githubusercontent.com/u/1686451?u=f531f4549aab704d4ee535b43d89f86df63b0235&v=4",
+		"url": "https://github.com/joedolson",
+		"reviewedPrs": 1,
+		"approvals": 1,
+		"latestAt": "2026-10-10T02:32:30.000Z"
 	},
 	{
 		"login": "ralucaStan",
@@ -2551,7 +2373,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-10-22T11:04:17.198Z"
+	"updatedAt": "2026-10-22T16:32:29.222Z"
 };
 
 	function person(id) {
