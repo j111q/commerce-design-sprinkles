@@ -2062,48 +2062,6 @@
 		"ts": 1786698483000
 	},
 	{
-		"title": "Add TreeSelect prototype source references",
-		"repo": "woocommerce/woocommerce",
-		"number": 66142,
-		"url": "https://github.com/woocommerce/woocommerce/pull/66142",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"ann"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1783051955000
-	},
-	{
-		"title": "Migrate customer stock notification screens to the order actions \"more actions\" menu",
-		"repo": "woocommerce/woocommerce",
-		"number": 65788,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65788",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1782924324000
-	},
-	{
-		"title": "Coupon edit: apply 2-column grid sizing standard (720 / 24 / 320)",
-		"repo": "woocommerce/woocommerce",
-		"number": 65717,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65717",
-		"area": "Coupons",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1781779288000
-	},
-	{
 		"title": "[Prototype, do not merge] Order detail Update redesign — visual demo",
 		"repo": "woocommerce/woocommerce",
 		"number": 65176,
@@ -2116,20 +2074,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1779916658000
-	},
-	{
-		"title": "[DEMO, do not merge] Order detail page polish, all four PRs stacked",
-		"repo": "woocommerce/woocommerce",
-		"number": 65142,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65142",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1779176538000
 	}
 ];
 
@@ -2551,7 +2495,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-10-25T10:37:13.480Z"
+	"updatedAt": "2026-10-25T15:28:25.799Z"
 };
 
 	function person(id) {
