@@ -1894,6 +1894,34 @@
 
 	const OPEN = [
 	{
+		"title": "Add stock notification emails as WC_Email classes",
+		"repo": "woocommerce/woocommerce",
+		"number": 67808,
+		"url": "https://github.com/woocommerce/woocommerce/pull/67808",
+		"area": "Products & catalog",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1792993051000
+	},
+	{
+		"title": "Document the three site visibility states for integrators",
+		"repo": "woocommerce/woocommerce",
+		"number": 68801,
+		"url": "https://github.com/woocommerce/woocommerce/pull/68801",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"jill"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1792993045000
+	},
+	{
 		"title": "Fix misleading error copy on the admin NoMatch screen",
 		"repo": "woocommerce/woocommerce",
 		"number": 67779,
@@ -1990,34 +2018,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1791879197000
-	},
-	{
-		"title": "Document the three site visibility states for integrators",
-		"repo": "woocommerce/woocommerce",
-		"number": 68801,
-		"url": "https://github.com/woocommerce/woocommerce/pull/68801",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1791360658000
-	},
-	{
-		"title": "Add stock notification emails as WC_Email classes",
-		"repo": "woocommerce/woocommerce",
-		"number": 67808,
-		"url": "https://github.com/woocommerce/woocommerce/pull/67808",
-		"area": "Products & catalog",
-		"flagged": false,
-		"authors": [
-			"jill"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1791224545000
 	},
 	{
 		"title": "Add prev/next order navigation to Order detail page header",
@@ -2495,7 +2495,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-10-26T02:58:18.939Z"
+	"updatedAt": "2026-10-26T12:10:23.275Z"
 };
 
 	function person(id) {
