@@ -1950,20 +1950,6 @@
 		"ts": 1792160249000
 	},
 	{
-		"title": "Order detail: apply 2-column grid sizing standard (720 / 24 / 320)",
-		"repo": "woocommerce/woocommerce",
-		"number": 65699,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65699",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1792094233000
-	},
-	{
 		"title": "Name the conflicting product in SKU uniqueness errors",
 		"repo": "woocommerce/woocommerce",
 		"number": 67810,
@@ -2060,20 +2046,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1786698483000
-	},
-	{
-		"title": "[Prototype, do not merge] Order detail Update redesign — visual demo",
-		"repo": "woocommerce/woocommerce",
-		"number": 65176,
-		"url": "https://github.com/woocommerce/woocommerce/pull/65176",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1779916658000
 	}
 ];
 
@@ -2495,7 +2467,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-10-26T12:10:23.275Z"
+	"updatedAt": "2026-10-26T22:14:07.942Z"
 };
 
 	function person(id) {
