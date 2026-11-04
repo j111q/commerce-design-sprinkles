@@ -1894,6 +1894,20 @@
 
 	const OPEN = [
 	{
+		"title": "Add prev/next order navigation to Order detail page header",
+		"repo": "woocommerce/woocommerce",
+		"number": 64711,
+		"url": "https://github.com/woocommerce/woocommerce/pull/64711",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1793798577000
+	},
+	{
 		"title": "Add stock notification emails as WC_Email classes",
 		"repo": "woocommerce/woocommerce",
 		"number": 67808,
@@ -2004,20 +2018,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1791879197000
-	},
-	{
-		"title": "Add prev/next order navigation to Order detail page header",
-		"repo": "woocommerce/woocommerce",
-		"number": 64711,
-		"url": "https://github.com/woocommerce/woocommerce/pull/64711",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1788966360000
 	},
 	{
 		"title": "Editor: Enhance classic editor timestamp fields with native controls (continues #12275)",
@@ -2467,7 +2467,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-11-04T04:39:22.100Z"
+	"updatedAt": "2026-11-04T13:42:44.751Z"
 };
 
 	function person(id) {
