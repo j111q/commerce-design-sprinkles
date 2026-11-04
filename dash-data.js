@@ -1992,20 +1992,6 @@
 		"ts": 1791933682000
 	},
 	{
-		"title": "[Prototype] Use @wordpress/icons for WooCommerce admin menu icons (WP 7.2)",
-		"repo": "woocommerce/woocommerce",
-		"number": 69716,
-		"url": "https://github.com/woocommerce/woocommerce/pull/69716",
-		"area": "Navigation",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1791903656000
-	},
-	{
 		"title": "Administration: Improve dashboard meta box control visuals",
 		"repo": "WordPress/wordpress-develop",
 		"number": 12339,
@@ -2467,7 +2453,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-11-04T13:42:44.751Z"
+	"updatedAt": "2026-11-04T23:08:30.291Z"
 };
 
 	function person(id) {
