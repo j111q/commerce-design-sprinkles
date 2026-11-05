@@ -1894,7 +1894,7 @@
 
 	const OPEN = [
 	{
-		"title": "Add prev/next order navigation to Order detail page header",
+		"title": "Add Newer / Older order navigation to the Order edit page header",
 		"repo": "woocommerce/woocommerce",
 		"number": 64711,
 		"url": "https://github.com/woocommerce/woocommerce/pull/64711",
@@ -1905,7 +1905,7 @@
 		],
 		"reviewers": [],
 		"status": "Open",
-		"ts": 1793798577000
+		"ts": 1793880091000
 	},
 	{
 		"title": "Add stock notification emails as WC_Email classes",
@@ -2453,7 +2453,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-11-05T04:54:26.790Z"
+	"updatedAt": "2026-11-05T13:55:22.012Z"
 };
 
 	function person(id) {
