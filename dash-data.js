@@ -1894,6 +1894,20 @@
 
 	const OPEN = [
 	{
+		"title": "[Prototype] Purple in Customize your store, v2 (do not merge)",
+		"repo": "woocommerce/woocommerce",
+		"number": 70718,
+		"url": "https://github.com/woocommerce/woocommerce/pull/70718",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1793894697000
+	},
+	{
 		"title": "Add Newer / Older order navigation to the Order edit page header",
 		"repo": "woocommerce/woocommerce",
 		"number": 64711,
@@ -1948,20 +1962,6 @@
 		"reviewers": [],
 		"status": "Open",
 		"ts": 1792687235000
-	},
-	{
-		"title": "[Prototype] Purple in Customize your store (do not merge)",
-		"repo": "woocommerce/woocommerce",
-		"number": 69783,
-		"url": "https://github.com/woocommerce/woocommerce/pull/69783",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1792160249000
 	},
 	{
 		"title": "Name the conflicting product in SKU uniqueness errors",
@@ -2453,7 +2453,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-11-05T13:55:22.012Z"
+	"updatedAt": "2026-11-05T23:12:35.829Z"
 };
 
 	function person(id) {
