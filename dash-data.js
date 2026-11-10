@@ -1894,6 +1894,20 @@
 
 	const OPEN = [
 	{
+		"title": "Add Newer / Older order navigation to the Order edit page header",
+		"repo": "woocommerce/woocommerce",
+		"number": 64711,
+		"url": "https://github.com/woocommerce/woocommerce/pull/64711",
+		"area": "Orders",
+		"flagged": false,
+		"authors": [
+			"jana"
+		],
+		"reviewers": [],
+		"status": "Open",
+		"ts": 1794310858000
+	},
+	{
 		"title": "[Prototype] Purple in Customize your store, v2 (do not merge)",
 		"repo": "woocommerce/woocommerce",
 		"number": 70718,
@@ -1906,20 +1920,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1793959622000
-	},
-	{
-		"title": "Add Newer / Older order navigation to the Order edit page header",
-		"repo": "woocommerce/woocommerce",
-		"number": 64711,
-		"url": "https://github.com/woocommerce/woocommerce/pull/64711",
-		"area": "Orders",
-		"flagged": false,
-		"authors": [
-			"jana"
-		],
-		"reviewers": [],
-		"status": "Open",
-		"ts": 1793953068000
 	},
 	{
 		"title": "Add stock notification emails as WC_Email classes",
@@ -2453,7 +2453,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-11-10T01:07:21.931Z"
+	"updatedAt": "2026-11-10T14:14:08.277Z"
 };
 
 	function person(id) {
