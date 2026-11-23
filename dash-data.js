@@ -1894,6 +1894,20 @@
 
 	const OPEN = [
 	{
+		"title": "Prototype: AI access settings on Site visibility",
+		"repo": "woocommerce/woocommerce",
+		"number": 71310,
+		"url": "https://github.com/woocommerce/woocommerce/pull/71310",
+		"area": "Settings",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1795434212000
+	},
+	{
 		"title": "Add Newer / Older order navigation to the Order edit page header",
 		"repo": "woocommerce/woocommerce",
 		"number": 64711,
@@ -2453,7 +2467,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-11-23T05:31:20.417Z"
+	"updatedAt": "2026-11-23T17:14:54.800Z"
 };
 
 	function person(id) {
