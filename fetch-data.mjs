@@ -513,15 +513,19 @@ const HELPERS = `
 	}`;
 
 /* Private-PR overlay — counts shipped in private repos, produced by the separate
-   private counter repo and committed here as private-prs.json. Counts only,
+   private counter repo and committed here as private-prs.json. It also carries
+   internal-repo counts (internalByDesigner / internalTotal). Counts only,
    keyed by handle: no titles, links, or repo names ever cross over. Missing file
    => all zeros, so the dashboard works fine before the counter pipeline is live. */
 function readPrivateCounts() {
 	try {
 		const raw = JSON.parse(readFileSync(new URL("./private-prs.json", import.meta.url), "utf8"));
-		return { byDesigner: raw.byDesigner || {}, total: raw.total || 0, lastUpdated: raw.lastUpdated || null };
+		return {
+			byDesigner: raw.byDesigner || {}, total: raw.total || 0, lastUpdated: raw.lastUpdated || null,
+			internalByDesigner: raw.internalByDesigner || {}, internalTotal: raw.internalTotal || 0
+		};
 	} catch {
-		return { byDesigner: {}, total: 0, lastUpdated: null };
+		return { byDesigner: {}, total: 0, lastUpdated: null, internalByDesigner: {}, internalTotal: 0 };
 	}
 }
 
@@ -529,9 +533,12 @@ function emit({ MERGED, OPEN, AREAS, TOTALS, KUDOS }) {
 	const PRIV = readPrivateCounts();
 	const SQUAD_OUT = SQUAD.map((p) => ({
 		id: p.id, name: p.name, handle: p.handle, avatar: p.avatar || null, color: p.color, fg: p.fg,
-		privateMerged: PRIV.byDesigner[p.handle] || 0
+		privateMerged: PRIV.byDesigner[p.handle] || 0,
+		internalMerged: PRIV.internalByDesigner[p.handle] || 0
 	}));
-	TOTALS = Object.assign({}, TOTALS, { privateMerged: PRIV.total, privateUpdated: PRIV.lastUpdated });
+	TOTALS = Object.assign({}, TOTALS, {
+		privateMerged: PRIV.total, privateUpdated: PRIV.lastUpdated, internalMerged: PRIV.internalTotal
+	});
 	const DATA_META = { updatedAt: new Date().toISOString() };
 	const j = (v) => JSON.stringify(v, null, "\t");
 	return `/* Shared data for the squad PR dashboard directions.

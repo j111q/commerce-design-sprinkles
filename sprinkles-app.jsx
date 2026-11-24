@@ -585,7 +585,7 @@ function SprinklesApp() {
     [/\bicon/, "touching up icons"]].
   map(function (r) {var n = _tally(r[0]);return n ? n + " PRs " + r[1] : null;}).filter(Boolean);
   funFacts.push(D.SQUAD.length + " designers and don’t ask us how many tokens");
-  funFacts.push((D.TOTALS.merged + D.TOTALS.privateMerged) + " merged across " + D.TOTALS.surfaces + " focus areas");
+  funFacts.push((D.TOTALS.merged + D.TOTALS.privateMerged + (D.TOTALS.internalMerged || 0)) + " merged across " + D.TOTALS.surfaces + " focus areas");
   funFacts.push("designers chasing the dopamine hit of hitting merge");
   funFacts.push("made with pull requests & 🧁");
 
@@ -887,7 +887,7 @@ function SprinklesApp() {
 				</h1>
 				<p style={{ font: "400 16px/1.6 'Menlo', 'Consolas', monospace", color: "var(--woo-ink-soft)", margin: 0, maxWidth: 640, textWrap: "pretty" }}>
 					Six designers making pull requests in Woo and WordPress.
-					{" "}<strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.merged + D.TOTALS.privateMerged} /></strong> merged across <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.surfaces} /></strong> focus areas since {D.TOTALS.since} — <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.mergedPublic + D.TOTALS.privateMerged} /></strong> in public releases, and <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.mergedFlagged} /></strong> behind feature flags.
+					{" "}<strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.merged + D.TOTALS.privateMerged + (D.TOTALS.internalMerged || 0)} /></strong> merged across <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.surfaces} /></strong> focus areas since {D.TOTALS.since} — <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.mergedPublic + D.TOTALS.privateMerged} /></strong> in public releases, <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.mergedFlagged} /></strong> behind feature flags{D.TOTALS.internalMerged > 0 ? <>, and <strong style={{ color: "var(--woo-ink)", fontWeight: 700 }}><CountUp value={D.TOTALS.internalMerged} /></strong> in internal repos</> : null}.
 				</p>
 				<p className="sprk-updated">{D.dataUpdatedLabel()}</p>
 				<div className="sprk-kudos-mobile">
@@ -991,7 +991,8 @@ function SprinklesApp() {
 								})}
 							</div>
 							{(function () {
-								const n = person ? ((D.person(person) || {}).privateMerged || 0) : D.TOTALS.privateMerged;
+								const p = person ? (D.person(person) || {}) : null;
+								const n = p ? (p.privateMerged || 0) + (p.internalMerged || 0) : D.TOTALS.privateMerged + (D.TOTALS.internalMerged || 0);
 								return n > 0 ?
 									<p style={{ font: "400 12px/16px var(--font-sans)", fontStyle: "italic", color: "var(--woo-ink-soft)", margin: "12px 0 0", textWrap: "pretty" }}>
 										+ {n} more merged in private repo{n === 1 ? "" : "s"}

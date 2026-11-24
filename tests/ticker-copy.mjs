@@ -10,9 +10,9 @@ const checks = [
 		pass: app.includes(`funFacts.push("${tickerLine}");`),
 	},
 	{
-		name: "ticker merged total includes private repo merges",
+		name: "ticker merged total includes private and internal repo merges",
 		pass: app.includes(
-			`funFacts.push((D.TOTALS.merged + D.TOTALS.privateMerged) + " merged across " + D.TOTALS.surfaces + " focus areas");`
+			`funFacts.push((D.TOTALS.merged + D.TOTALS.privateMerged + (D.TOTALS.internalMerged || 0)) + " merged across " + D.TOTALS.surfaces + " focus areas");`
 		),
 	},
 	{
