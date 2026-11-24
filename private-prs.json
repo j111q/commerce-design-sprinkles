@@ -1,11 +1,22 @@
 {
-	"lastUpdated": "2026-11-23",
+	"lastUpdated": "2026-11-24",
 	"byDesigner": {
 		"j111q": 0,
 		"annchichi": 5,
 		"poligilad-auto": 0,
 		"JanaMW27": 0,
-		"verofasulo": 0
+		"verofasulo": 0,
+		"keoshi": 0
 	},
-	"total": 5
+	"total": 5,
+	"internalByDesigner": {
+		"j111q": 64,
+		"annchichi": 0,
+		"poligilad-auto": 1,
+		"JanaMW27": 0,
+		"verofasulo": 0,
+		"keoshi": 161
+	},
+	"internalTotal": 226,
+	"internalUpdated": "2026-11-24"
 }
