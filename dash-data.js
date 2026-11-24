@@ -11,7 +11,8 @@
 		"avatar": "https://avatars.githubusercontent.com/u/65582817?v=4",
 		"color": "#7F54B3",
 		"fg": "#fff",
-		"privateMerged": 0
+		"privateMerged": 0,
+		"internalMerged": 64
 	},
 	{
 		"id": "ann",
@@ -20,7 +21,8 @@
 		"avatar": "https://avatars.githubusercontent.com/u/13378873?v=4",
 		"color": "#3C2A7D",
 		"fg": "#fff",
-		"privateMerged": 5
+		"privateMerged": 5,
+		"internalMerged": 0
 	},
 	{
 		"id": "poli",
@@ -29,7 +31,8 @@
 		"avatar": "https://avatars.githubusercontent.com/u/83961704?v=4",
 		"color": "#533582",
 		"fg": "#fff",
-		"privateMerged": 0
+		"privateMerged": 0,
+		"internalMerged": 1
 	},
 	{
 		"id": "jana",
@@ -38,7 +41,8 @@
 		"avatar": "https://avatars.githubusercontent.com/u/71137829?v=4",
 		"color": "#C9B8E8",
 		"fg": "#1E1142",
-		"privateMerged": 0
+		"privateMerged": 0,
+		"internalMerged": 0
 	},
 	{
 		"id": "veronica",
@@ -47,7 +51,8 @@
 		"avatar": "https://avatars.githubusercontent.com/u/98944206?v=4",
 		"color": "#E84A9C",
 		"fg": "#fff",
-		"privateMerged": 0
+		"privateMerged": 0,
+		"internalMerged": 0
 	},
 	{
 		"id": "filipe",
@@ -56,7 +61,8 @@
 		"avatar": "https://avatars.githubusercontent.com/u/390760?v=4",
 		"color": "#2271B1",
 		"fg": "#fff",
-		"privateMerged": 0
+		"privateMerged": 0,
+		"internalMerged": 161
 	}
 ];
 
@@ -2116,7 +2122,8 @@
 	"mergedFlagged": 42,
 	"mergedPublic": 88,
 	"privateMerged": 5,
-	"privateUpdated": "2026-11-23"
+	"privateUpdated": "2026-11-24",
+	"internalMerged": 226
 };
 
 	const KUDOS = [
@@ -2467,7 +2474,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-11-24T03:44:51.427Z"
+	"updatedAt": "2026-11-24T08:16:58.221Z"
 };
 
 	function person(id) {
