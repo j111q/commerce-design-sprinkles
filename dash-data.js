@@ -1900,6 +1900,20 @@
 
 	const OPEN = [
 	{
+		"title": "Prototype: AI assistant experiments switch on the Features page",
+		"repo": "woocommerce/woocommerce",
+		"number": 71365,
+		"url": "https://github.com/woocommerce/woocommerce/pull/71365",
+		"area": "Other admin",
+		"flagged": false,
+		"authors": [
+			"poli"
+		],
+		"reviewers": [],
+		"status": "Draft",
+		"ts": 1795549583000
+	},
+	{
 		"title": "Prototype: AI access settings on Site visibility",
 		"repo": "woocommerce/woocommerce",
 		"number": 71310,
@@ -1912,20 +1926,6 @@
 		"reviewers": [],
 		"status": "Draft",
 		"ts": 1795538053000
-	},
-	{
-		"title": "Prototype: AI assistant experiments switch on the Features page",
-		"repo": "woocommerce/woocommerce",
-		"number": 71365,
-		"url": "https://github.com/woocommerce/woocommerce/pull/71365",
-		"area": "Other admin",
-		"flagged": false,
-		"authors": [
-			"poli"
-		],
-		"reviewers": [],
-		"status": "Draft",
-		"ts": 1795537839000
 	},
 	{
 		"title": "Add Newer / Older order navigation to the Order edit page header",
@@ -2488,7 +2488,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-11-24T16:54:50.009Z"
+	"updatedAt": "2026-11-25T01:52:09.317Z"
 };
 
 	function person(id) {
