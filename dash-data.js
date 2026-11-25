@@ -1900,7 +1900,7 @@
 
 	const OPEN = [
 	{
-		"title": "Prototype: AI assistant experiments switch on the Features page",
+		"title": "Prototype: Features for AI assistants switch on the Features page and AI tools",
 		"repo": "woocommerce/woocommerce",
 		"number": 71365,
 		"url": "https://github.com/woocommerce/woocommerce/pull/71365",
@@ -1911,7 +1911,7 @@
 		],
 		"reviewers": [],
 		"status": "Draft",
-		"ts": 1795549583000
+		"ts": 1795610624000
 	},
 	{
 		"title": "Prototype: AI access settings on Site visibility",
@@ -2488,7 +2488,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-11-25T01:52:09.317Z"
+	"updatedAt": "2026-11-25T16:43:14.507Z"
 };
 
 	function person(id) {
