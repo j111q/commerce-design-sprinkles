@@ -1900,7 +1900,7 @@
 
 	const OPEN = [
 	{
-		"title": "Prototype: Features for AI assistants switch on the Features page and AI tools",
+		"title": "Prototype: Features for AI assistants switch, suggested from AI shopping health",
 		"repo": "woocommerce/woocommerce",
 		"number": 71365,
 		"url": "https://github.com/woocommerce/woocommerce/pull/71365",
@@ -1911,7 +1911,7 @@
 		],
 		"reviewers": [],
 		"status": "Draft",
-		"ts": 1795610624000
+		"ts": 1795691918000
 	},
 	{
 		"title": "Prototype: AI access settings on Site visibility",
@@ -2422,6 +2422,14 @@
 		"latestAt": "2026-05-08T09:48:40.000Z"
 	},
 	{
+		"login": "kaushikasomaiya",
+		"avatar": "https://avatars.githubusercontent.com/u/92479346?v=4",
+		"url": "https://github.com/kaushikasomaiya",
+		"reviewedPrs": 1,
+		"approvals": 0,
+		"latestAt": "2026-11-26T09:17:36.000Z"
+	},
+	{
 		"login": "afercia",
 		"avatar": "https://avatars.githubusercontent.com/u/1682452?v=4",
 		"url": "https://github.com/afercia",
@@ -2488,7 +2496,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-11-26T01:29:16.719Z"
+	"updatedAt": "2026-11-26T16:17:56.867Z"
 };
 
 	function person(id) {
