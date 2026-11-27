@@ -1911,7 +1911,7 @@
 		],
 		"reviewers": [],
 		"status": "Draft",
-		"ts": 1795691918000
+		"ts": 1795769251000
 	},
 	{
 		"title": "Prototype: AI access settings on Site visibility",
@@ -2496,7 +2496,7 @@
 ];
 
 	const DATA_META = {
-	"updatedAt": "2026-11-27T01:26:36.727Z"
+	"updatedAt": "2026-11-27T16:02:10.030Z"
 };
 
 	function person(id) {
